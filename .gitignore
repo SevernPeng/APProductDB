@@ -1,0 +1,43 @@
+# Local environment and editor state
+.env
+.venv/
+app/.venv/
+.vscode/
+.idea/
+.agents/
+.codex/
+.codex-spreadsheet/
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime data (never commit mutable or sensitive state)
+*.sqlite3
+*.log
+data/
+media/
+staticfiles/
+logs/
+backups/
+restore-tests/
+tmp/
+test-media/
+test-logs/
+.test-runtime/
+.work/
+outputs/
+models/
+tools/
+scratch/
+app/import_samples/
+
+# Generated inspection artifacts
+*.inspect.ndjson
+Thumbs.db
+.DS_Store

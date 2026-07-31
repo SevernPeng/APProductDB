@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}{{ product.brand.name }} {{ product.model }} · APProductDB{% endblock %}
+{% block main_class %}container-fluid product-detail-page px-3 px-xl-4{% endblock %}
+
+{% block content %}
+<nav aria-label="面包屑" class="mb-2 small">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item"><a href="{% url 'product-list' %}?category={{ product.category.slug }}">产品查询</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ product.brand.name }} {{ product.model }}</li>
+  </ol>
+</nav>
+
+<div class="card border-0 shadow-sm mb-3 product-summary-card">
+  <div class="card-body p-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div>
+        <div class="small text-body-secondary">{{ product.brand.name }}</div>
+        <h1 class="h3 font-monospace mb-2">{{ product.model }}</h1>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-bg-primary">{{ product.category.name }}</span>
+          {% if product.product_type %}<span class="badge text-bg-light border">{{ product.product_type.name }}</span>{% elif product.category.slug == 'access-point' %}<span class="badge text-bg-light border">{{ product.get_ap_type_display }}</span>{% endif %}
+          {% if product.category.slug == 'access-point' or product.category.slug == 'wireless-bridge' %}<span class="badge text-bg-light border">{{ product.wifi_standard|default:'Wi-Fi standard unknown' }}</span>{% endif %}
+          <span class="badge text-bg-light border">{{ product.region }}{% if product.hardware_version %} · {{ product.hardware_version }}{% endif %}</span>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2">
+        {% if product.official_url %}<a class="btn btn-outline-primary" href="{{ product.official_url }}" target="_blank" rel="noopener noreferrer">查看官方页面</a>{% endif %}
+        {% if can_contribute %}
+          <a class="btn btn-outline-secondary" href="{% url 'changes:suggest' product.pk %}">提交修改建议</a>
+          <a class="btn btn-primary" href="{% url 'product-datasheet' product.pk %}">Datasheet 识别</a>
+        {% else %}
+          <button class="btn btn-outline-secondary" type="button" disabled title="当前账户不可提交">提交修改建议</button>
+          <a class="btn btn-outline-primary" href="{% url 'product-datasheet' product.pk %}">查看识别记录</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="d-flex flex-wrap gap-x-3 gap-1 small text-body-secondary mt-2">
+      {% if product.notes %}<span>{{ product.notes }}</span>{% endif %}
+      <span>最后更新：{{ product.updated_at|date:"Y-m-d H:i" }}</span>
+    </div>
+  </div>
+</div>
+
+<div class="card border-0 shadow-sm mb-3 overflow-hidden spec-card">
+  <div class="card-header bg-white fw-semibold py-2 px-3">核心规格与来源</div>
+  <div class="table-responsive spec-table-wrap">
+    <table class="table align-middle mb-0 spec-source-table">
+      <colgroup>
+        <col class="spec-col-group">
+        <col class="spec-col-field">
+        <col class="spec-col-value">
+        <col class="spec-col-source">
+      </colgroup>
+      <thead class="table-light"><tr><th>分组</th><th>规格字段</th><th>值</th><th>来源 / 验证日期</th></tr></thead>
+      <tbody>
+        <tr class="table-secondary spec-priority-row"><th colspan="4">P0 · 核心对标规格</th></tr>
+        {% if product.category.slug == 'access-point' %}<tr class="table-primary">
+          <td>Performance</td><td class="fw-semibold">Aggregate Rate</td><td class="fw-semibold">{{ aggregate_rate|stringformat:"g" }} Mbps</td>
+          <td class="spec-source-meta">系统计算（各频段最大速率之和）<br><small>{% if aggregate_verified_date %}{{ aggregate_verified_date|date:"Y-m-d" }}{% else %}Unknown{% endif %}</small></td>
+        </tr>{% endif %}
+        {% include "includes/spec_source_rows.html" with rows=p0_spec_rows %}
+        {% if p1_spec_rows %}<tr class="table-secondary spec-priority-row"><th colspan="4">P1 · 重要规格</th></tr>{% endif %}
+        {% include "includes/spec_source_rows.html" with rows=p1_spec_rows %}
+      </tbody>
+    </table>
+  </div>
+  {% if p2_spec_rows %}
+  <details class="border-top" open>
+    <summary class="px-3 py-2 fw-semibold bg-body-tertiary">更多规格（P2）</summary>
+    <div class="table-responsive spec-table-wrap">
+      <table class="table align-middle mb-0 spec-source-table">
+        <colgroup>
+          <col class="spec-col-group">
+          <col class="spec-col-field">
+          <col class="spec-col-value">
+          <col class="spec-col-source">
+        </colgroup>
+        <thead class="table-light"><tr><th>分组</th><th>规格字段</th><th>值</th><th>来源 / 验证日期</th></tr></thead>
+        <tbody>{% include "includes/spec_source_rows.html" with rows=p2_spec_rows %}</tbody>
+      </table>
+    </div>
+  </details>
+  {% endif %}
+</div>
+
+<div class="card border-0 shadow-sm">
+  <div class="card-header bg-white d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <span class="fw-semibold">当前对标关系</span>
+    {% if compare_matches_url %}<a class="btn btn-sm btn-primary" href="{{ compare_matches_url }}">比较当前全部产品</a>{% endif %}
+  </div>
+  <div class="list-group list-group-flush">
+    {% for item in matches %}
+      <div class="list-group-item d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div><span class="text-body-secondary">{{ item.relationship }}</span> · <a class="fw-semibold" href="{% url 'product-detail' item.product.pk %}">{{ item.product.brand.name }} {{ item.product.model }}</a><br><small class="text-body-secondary">{{ item.match.get_match_type_display }} · {{ item.match.get_status_display }}</small></div>
+        <a class="btn btn-sm btn-outline-primary" href="{% url 'comparison:compare' %}?products={{ product.pk }}&amp;products={{ item.product.pk }}">比较规格</a>
+      </div>
+    {% empty %}<div class="list-group-item text-body-secondary">暂无对标关系。</div>{% endfor %}
+  </div>
+</div>
+{% endblock %}

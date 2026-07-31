@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}APProductDB{% endblock %}</title>
+  <link href="{% static 'vendor/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/app.css' %}" rel="stylesheet">
+</head>
+<body class="bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="{% url 'home' %}">APProductDB</a>
+      {% if user.is_authenticated %}
+        <div class="d-flex align-items-center gap-3 text-white">
+          <a class="link-light" href="{% url 'product-list' %}">产品查询</a>
+          <a class="link-light" href="{% url 'comparison:benchmark' %}">竞品对标</a>
+          <a class="link-light" href="{% url 'comparison:compare' %}">产品比较</a>
+          {% if can_contribute %}<a class="link-light" href="{% url 'changes:mine' %}">我的申请</a>{% endif %}
+          {% if can_review_changes %}<a class="link-light" href="{% url 'reviews:list' %}">修改审核</a>{% endif %}
+          {% if user.is_superuser %}
+            <a class="link-light" href="{% url 'imports:upload' %}">Excel 导入</a>
+          {% endif %}
+          {% if can_manage_accounts %}<a class="link-light" href="{% url 'accounts:list' %}">账户管理</a>{% endif %}
+          <span>{{ user.username }}{% if account_role %} · {{ account_role|upper }}{% endif %}</span>
+          <form method="post" action="{% url 'logout' %}" class="m-0">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-sm btn-outline-light">退出</button>
+          </form>
+        </div>
+      {% endif %}
+      {% if not user.is_authenticated %}
+        <div class="d-flex gap-2">
+          <a class="btn btn-sm btn-outline-light" href="{% url 'login' %}">登录</a>
+          <a class="btn btn-sm btn-light" href="{% url 'accounts:register' %}">注册</a>
+        </div>
+      {% endif %}
+    </div>
+  </nav>
+  <main class="{% block main_class %}container{% endblock %} py-4">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags|default:'info' }}" role="alert">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+    {% block content %}{% endblock %}
+  </main>
+  <script src="{% static 'js/product-autocomplete.js' %}" defer></script>
+</body>
+</html>

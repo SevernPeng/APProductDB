@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}导入任务 #{{ job.pk }} · APProductDB{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <div><h1 class="h3 mb-1">导入任务 #{{ job.pk }}</h1><p class="text-body-secondary mb-0"><a href="{% url 'imports:source_file' job.pk %}">{{ job.uploaded_file.name }}</a></p></div>
+  <a href="{% url 'imports:upload' %}" class="btn btn-outline-secondary">返回导入列表</a>
+</div>
+
+<div class="row g-3 mb-4">
+  {% if job.product_type %}
+  <div class="col-12">
+    <div class="alert alert-secondary mb-0">
+      产品形态：<strong>{{ job.product_type.category.name }} / {{ job.product_type.name }}</strong>
+    </div>
+  </div>
+  {% endif %}
+  <div class="col-md-3"><div class="card h-100"><div class="card-body"><div class="text-body-secondary">状态</div><div class="fs-4">{{ job.get_status_display }}</div></div></div></div>
+  <div class="col-md-3"><div class="card h-100"><div class="card-body"><div class="text-body-secondary">模式</div><div class="fs-4">{{ job.get_mode_display }}</div></div></div></div>
+  <div class="col-md-3"><div class="card h-100"><div class="card-body"><div class="text-body-secondary">有效行</div><div class="fs-4">{{ job.valid_rows }}/{{ job.total_rows }}</div></div></div></div>
+  <div class="col-md-3"><div class="card h-100"><div class="card-body"><div class="text-body-secondary">错误行</div><div class="fs-4">{{ job.error_rows }}</div></div></div></div>
+</div>
+
+{% if job.error_report %}<a class="btn btn-danger mb-4" href="{% url 'imports:error_report' job.pk %}">下载错误报告 CSV</a>{% endif %}
+
+{% if job.status == "ready" and job.mode != "preview" %}
+  <form method="post" class="card border-warning mb-4"><div class="card-body">
+    {% csrf_token %}
+    <h2 class="h5">确认正式导入</h2>
+    <p>确认后将在一个数据库事务中写入；若发生严重错误，整批数据都会回滚。</p>
+    <button class="btn btn-warning" type="submit">确认导入</button>
+  </div></form>
+{% elif job.status == "ready" and job.mode == "preview" %}
+  <div class="alert alert-info">Preview only 已完成校验，没有写入数据库。</div>
+{% endif %}
+
+{% if job.summary.result %}
+<h2 class="h5">导入结果</h2>
+<dl class="row">
+  {% for key, value in job.summary.result.items %}<dt class="col-sm-4">{{ key }}</dt><dd class="col-sm-8">{{ value }}</dd>{% endfor %}
+</dl>
+{% endif %}
+
+<h2 class="h5 mt-4">产品预览（前10条）</h2>
+<div class="table-responsive"><table class="table table-sm table-striped"><thead><tr><th>行</th><th>品牌</th><th>型号</th><th>区域/硬件</th><th>系统计算聚合速率</th><th>动作</th></tr></thead><tbody>
+{% for row in job.summary.product_preview %}<tr><td>{{ row.row }}</td><td>{{ row.brand }}</td><td>{{ row.model }}</td><td>{{ row.region }} {{ row.hardware_version }}</td><td>{{ row.aggregate_rate_mbps }} Mbps</td><td>{{ row.action }}</td></tr>{% empty %}<tr><td colspan="6">无产品预览。</td></tr>{% endfor %}
+</tbody></table></div>
+
+<h2 class="h5 mt-4">对标预览（前10条）</h2>
+<div class="table-responsive"><table class="table table-sm table-striped"><thead><tr><th>行</th><th>我方产品</th><th>竞品</th><th>区域</th><th>动作</th></tr></thead><tbody>
+{% for row in job.summary.match_preview %}<tr><td>{{ row.row }}</td><td>{{ row.our_product }}</td><td>{{ row.competitor_product }}</td><td>{{ row.region }}</td><td>{{ row.action }}</td></tr>{% empty %}<tr><td colspan="5">无对标预览。</td></tr>{% endfor %}
+</tbody></table></div>
+
+{% if job.summary.errors %}
+<h2 class="h5 mt-4">错误预览（前50条）</h2>
+<div class="table-responsive"><table class="table table-sm table-danger"><thead><tr><th>Sheet</th><th>行</th><th>列</th><th>原值</th><th>代码</th><th>说明</th></tr></thead><tbody>
+{% for error in job.summary.errors %}<tr><td>{{ error.sheet_name }}</td><td>{{ error.row_number }}</td><td>{{ error.column_name }}</td><td>{{ error.original_value }}</td><td>{{ error.error_code }}</td><td>{{ error.message }}</td></tr>{% endfor %}
+</tbody></table></div>
+{% endif %}
+{% endblock %}

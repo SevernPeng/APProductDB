@@ -1,0 +1,34 @@
+<div class="product-autocomplete" data-product-autocomplete>
+  <input
+    class="form-control"
+    type="search"
+    id="product-picker-{{ input_id }}"
+    value="{% if selected %}{{ selected.brand.name }} {{ selected.model }} · {{ selected.category.name }} · {{ selected.region }}{% if selected.hardware_version %} · {{ selected.hardware_version }}{% endif %}{% endif %}"
+    placeholder="{{ placeholder|default:'输入品牌或型号搜索' }}"
+    autocomplete="off"
+    role="combobox"
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-controls="product-picker-{{ input_id }}-suggestions"
+    {% if required %}required{% endif %}
+    data-product-search
+  >
+  <input type="hidden" name="{{ input_name }}" value="{% if selected %}{{ selected.pk }}{% endif %}" data-product-value>
+  <div class="product-autocomplete-menu list-group d-none" id="product-picker-{{ input_id }}-suggestions" role="listbox" data-product-menu>
+    {% for option in options %}
+      <button
+        class="list-group-item list-group-item-action product-autocomplete-option"
+        type="button"
+        role="option"
+        data-product-option
+        data-value="{{ option.pk }}"
+        data-label="{{ option.brand.name }} {{ option.model }} · {{ option.category.name }} · {{ option.region }}{% if option.hardware_version %} · {{ option.hardware_version }}{% endif %}"
+        data-search="{{ option.brand.name }} {{ option.model }} {{ option.category.name }} {{ option.region }} {{ option.hardware_version }}"
+      ><strong>{{ option.brand.name }} {{ option.model }}</strong><small class="text-body-secondary d-block">{{ option.category.name }} · {{ option.region }}{% if option.hardware_version %} · {{ option.hardware_version }}{% endif %}</small></button>
+    {% empty %}
+      <div class="list-group-item text-body-secondary">暂无可选产品</div>
+    {% endfor %}
+    <div class="list-group-item text-body-secondary d-none" data-product-empty>没有匹配的产品</div>
+  </div>
+  <div class="invalid-feedback">请从自动联想列表中选择有效产品。</div>
+</div>

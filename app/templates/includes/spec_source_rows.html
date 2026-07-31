@@ -1,0 +1,8 @@
+{% for row in rows %}
+<tr>
+  <td class="text-body-secondary">{{ row.display_group }}</td>
+  <td><span class="fw-semibold">{{ row.definition.display_name }}</span>{% if row.source_note %}<small class="spec-note text-body-secondary"> · {{ row.source_note }}</small>{% endif %}</td>
+  <td><span class="spec-value{% if row.display_value == 'Unknown' %} text-body-secondary{% elif row.display_value == 'Not Published' %} text-warning-emphasis{% elif row.display_value == 'Not Applicable' %} text-body-secondary{% endif %}">{{ row.display_value }}</span></td>
+  <td class="spec-source-meta">{% if row.source_url %}<a href="{{ row.source_url }}" target="_blank" rel="noopener noreferrer">官方来源</a>{% else %}<span class="text-body-secondary">Unknown</span>{% endif %}<br><small class="text-body-secondary">{% if row.verified_date %}{{ row.verified_date|date:"Y-m-d" }}{% else %}Unknown{% endif %}</small></td>
+</tr>
+{% endfor %}

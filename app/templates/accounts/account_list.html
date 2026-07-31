@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}账户管理 · APProductDB{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <div><h1 class="h3 mb-1">账户管理</h1><p class="text-body-secondary mb-0">Root 可以在 Admin 与 User 之间调整账户权限。</p></div>
+</div>
+<div class="card border-0 shadow-sm">
+  <div class="table-responsive">
+    <table class="table align-middle mb-0">
+      <thead><tr><th>账户</th><th>邮箱</th><th>当前角色</th><th>状态</th><th class="text-end">权限调整</th></tr></thead>
+      <tbody>
+      {% for profile in profiles %}
+        <tr>
+          <td>{{ profile.user.username }}</td>
+          <td>{{ profile.email|default:"—" }}</td>
+          <td><span class="badge text-bg-secondary">{{ profile.get_role_display }}</span></td>
+          <td>{% if profile.user.is_active %}正常{% else %}已停用{% endif %}</td>
+          <td class="text-end">
+            {% if profile.role != "root" %}
+              <form method="post" action="{% url 'accounts:update-role' profile.pk %}" class="d-inline-flex gap-2">
+                {% csrf_token %}
+                <select name="role" class="form-select form-select-sm" aria-label="选择角色">
+                  <option value="user"{% if profile.role == "user" %} selected{% endif %}>User</option>
+                  <option value="admin"{% if profile.role == "admin" %} selected{% endif %}>Admin</option>
+                </select>
+                <button class="btn btn-sm btn-primary" type="submit">保存</button>
+              </form>
+            {% else %}<span class="text-body-secondary">不可修改</span>{% endif %}
+          </td>
+        </tr>
+      {% empty %}<tr><td colspan="5" class="text-center text-body-secondary py-4">暂无账户</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

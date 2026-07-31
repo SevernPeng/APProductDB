@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}产品比较 · APProductDB{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+  <div>
+    <h1 class="h3 mb-1">产品横向比较</h1>
+    <p class="text-body-secondary mb-0">选择 2–4 个同一产品类型的已发布产品，系统将按 AP、网桥、网关或交换机模板展示对应字段。</p>
+  </div>
+  <a class="btn btn-outline-secondary" href="{% url 'comparison:benchmark' %}">清除产品</a>
+</div>
+
+{% if error %}<div class="alert alert-danger" role="alert">{{ error }}</div>{% endif %}
+
+<form method="get" class="card border-0 shadow-sm mb-4">
+  <div class="card-body">
+    <div class="row g-3">
+      {% for selected in selector_slots %}
+      <div class="col-12 col-md-6 col-xl-3">
+        <label class="form-label" for="product-picker-{{ forloop.counter }}">产品 {{ forloop.counter }}</label>
+        {% if forloop.counter <= 2 %}
+          {% include "includes/product_autocomplete.html" with input_name="products" input_id=forloop.counter selected=selected options=all_products required=True placeholder="输入品牌或型号，选择联想结果" %}
+        {% else %}
+          {% include "includes/product_autocomplete.html" with input_name="products" input_id=forloop.counter selected=selected options=all_products placeholder="可选：输入品牌或型号" %}
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
+      <div class="d-flex flex-wrap gap-3">
+        <div class="form-check"><input class="form-check-input" id="only-differences" type="checkbox" name="differences" value="1"{% if only_differences %} checked{% endif %}><label class="form-check-label" for="only-differences">只显示差异</label></div>
+        <div class="form-check"><input class="form-check-input" id="show-sources" type="checkbox" name="sources" value="1"{% if show_sources %} checked{% endif %}><label class="form-check-label" for="show-sources">显示来源</label></div>
+        <div class="form-check"><input class="form-check-input" id="include-extended" type="checkbox" name="extended" value="1"{% if include_extended %} checked{% endif %}><label class="form-check-label" for="include-extended">显示更多规格（P2）</label></div>
+      </div>
+      <button class="btn btn-primary" type="submit">更新比较</button>
+    </div>
+  </div>
+</form>
+
+{% if products %}
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+  <span class="text-body-secondary">当前显示 {{ row_count }} 个规格字段{% if only_differences %}（仅差异）{% endif %}</span>
+  <a class="btn btn-success" href="{{ export_url }}">导出当前比较 Excel</a>
+</div>
+
+<div class="card border-0 shadow-sm overflow-hidden">
+  <div class="table-responsive comparison-scroll">
+    <table class="table align-middle mb-0 comparison-table">
+      <thead class="table-light">
+        <tr>
+          <th class="comparison-field">规格字段</th>
+          {% for product in products %}
+          <th>
+            <a class="text-decoration-none" href="{% url 'product-detail' product.pk %}">{{ product.brand.name }}<br><span class="font-monospace">{{ product.model }}</span></a>
+            <br><a class="small fw-normal text-danger-emphasis" href="{{ product.remove_url }}">移除此产品</a>
+          </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+      {% for group, rows in grouped_rows %}
+        <tr class="table-secondary"><th colspan="{{ products|length|add:1 }}">{{ group }}</th></tr>
+        {% for row in rows %}
+        <tr{% if row.is_different %} class="comparison-difference"{% endif %}>
+          <th class="comparison-field">{{ row.name }}</th>
+          {% for value in row.values %}
+          <td>
+            <span class="fw-semibold{% if value.display == 'Unknown' or value.display == 'Not Applicable' %} text-body-secondary{% elif value.display == 'Not Published' %} text-warning-emphasis{% endif %}">{{ value.display }}</span>
+            {% if show_sources %}<br>{% if value.source_url %}<a class="small" href="{{ value.source_url }}" target="_blank" rel="noopener noreferrer">官方来源</a>{% else %}<small class="text-body-secondary">无来源</small>{% endif %}{% endif %}
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      {% empty %}<tr><td colspan="{{ products|length|add:1 }}" class="text-center py-5 text-body-secondary">这些产品在当前字段中没有差异。</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

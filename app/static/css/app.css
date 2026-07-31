@@ -1,0 +1,104 @@
+body { min-height: 100vh; }
+.metric-card {
+  align-items: flex-start;
+  background: #fff;
+  border-radius: .75rem;
+  box-shadow: 0 .125rem .5rem rgba(15, 23, 42, .08);
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  min-height: 7rem;
+  padding: 1.25rem;
+}
+.metric-card span { color: #64748b; font-size: .875rem; }
+.metric-card strong { color: #0f172a; font-size: 2rem; line-height: 1; }
+.product-table th { white-space: nowrap; }
+.product-interface { min-width: 14rem; max-width: 24rem; }
+.product-detail-page { max-width: 1600px; }
+.product-summary-card .btn { --bs-btn-padding-y: .3rem; --bs-btn-padding-x: .65rem; --bs-btn-font-size: .82rem; }
+.gap-x-3 { column-gap: 1rem; }
+.spec-source-table {
+  font-size: .79rem;
+  line-height: 1.22;
+  table-layout: fixed;
+  width: 100%;
+}
+.spec-source-table th,
+.spec-source-table td {
+  overflow-wrap: anywhere;
+  padding: .34rem .5rem;
+  vertical-align: top;
+  word-break: normal;
+}
+.spec-source-table thead th {
+  font-size: .74rem;
+  letter-spacing: .02em;
+  white-space: normal;
+}
+.spec-source-table .spec-col-group { width: 10%; }
+.spec-source-table .spec-col-field { width: 25%; }
+.spec-source-table .spec-col-value { width: 47%; }
+.spec-source-table .spec-col-source { width: 18%; }
+.spec-priority-row th { padding-block: .3rem; }
+.spec-note { font-size: .7rem; line-height: 1.15; }
+.spec-value { font-weight: 600; white-space: normal; }
+.spec-source-meta { line-height: 1.15; }
+.spec-source-meta a { white-space: nowrap; }
+.spec-source-meta small { font-size: .7rem; }
+.benchmark-table th { white-space: nowrap; }
+.benchmark-table td { min-width: 8rem; }
+.comparison-scroll { max-height: calc(100vh - 12rem); }
+.comparison-table { min-width: 52rem; }
+.comparison-table thead { position: sticky; top: 0; z-index: 2; }
+.comparison-table th,
+.comparison-table td { min-width: 12rem; vertical-align: top; }
+.comparison-table .comparison-field {
+  background: inherit;
+  left: 0;
+  min-width: 15rem;
+  position: sticky;
+  z-index: 1;
+}
+.product-autocomplete { position: relative; }
+.product-autocomplete-menu {
+  left: 0;
+  max-height: 20rem;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: calc(100% + .25rem);
+  z-index: 1050;
+}
+.product-autocomplete-option { text-align: left; }
+.comparison-difference > * { background-color: #fff8df; }
+.import-template-group + .import-template-group { border-top: 1px solid var(--bs-border-color); }
+.import-template-group summary {
+  background: var(--bs-body-bg);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.import-template-group summary::-webkit-details-marker { display: none; }
+.import-template-group summary::after {
+  content: "⌄";
+  float: right;
+  font-weight: 400;
+}
+.import-template-group[open] summary {
+  background: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+}
+.import-template-group[open] summary::after { content: "⌃"; }
+@media (max-width: 767.98px) {
+  .metric-card { min-height: 6rem; padding: 1rem; }
+  .product-table { font-size: .875rem; }
+  .product-detail-page { padding-inline: .5rem !important; }
+  .product-summary-card .card-body { padding: .75rem !important; }
+  .spec-source-table { font-size: .71rem; line-height: 1.16; }
+  .spec-source-table th,
+  .spec-source-table td { padding: .28rem .3rem; }
+  .spec-source-table .spec-col-group { width: 13%; }
+  .spec-source-table .spec-col-field { width: 27%; }
+  .spec-source-table .spec-col-value { width: 42%; }
+  .spec-source-table .spec-col-source { width: 18%; }
+}

@@ -1,0 +1,11 @@
+from django.contrib import admin
+
+from .models import AccountProfile
+
+
+@admin.register(AccountProfile)
+class AccountProfileAdmin(admin.ModelAdmin):
+    list_display = ("user", "email", "role", "created_at")
+    list_filter = ("role",)
+    search_fields = ("user__username", "email")
+    readonly_fields = ("created_at", "updated_at")

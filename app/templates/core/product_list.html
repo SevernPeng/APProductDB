@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}产品查询 · APProductDB{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+  <div>
+    <h1 class="h3 mb-1">产品查询</h1>
+    <p class="text-body-secondary mb-0">共找到 {{ page_obj.paginator.count }} 个已发布产品</p>
+  </div>
+</div>
+
+<form method="get" class="card border-0 shadow-sm mb-4">
+  <div class="card-body">
+    <div class="row g-3 align-items-end">
+      <div class="col-12 col-md-9">
+        <label class="form-label" for="product-search">型号搜索</label>
+        <input class="form-control" id="product-search" name="q" value="{{ filters.q }}" placeholder="输入产品型号">
+      </div>
+      <div class="col-12 col-md-3"><button class="btn btn-primary w-100" type="submit">搜索</button></div>
+    </div>
+  </div>
+</form>
+
+<form method="get" action="{% url 'comparison:compare' %}">
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
+  <small class="text-body-secondary">勾选当前页中的 2–4 个产品进行横向比较</small>
+  <button class="btn btn-sm btn-primary" type="submit">比较所选产品</button>
+</div>
+<div class="card border-0 shadow-sm overflow-hidden">
+  <div class="table-responsive">
+    <table class="table table-hover align-middle mb-0 product-table">
+      <thead class="table-light"><tr><th><span class="visually-hidden">选择</span></th><th>品牌 / 型号</th><th>产品类型</th><th>区域 / 硬件</th><th>最近更新</th></tr></thead>
+      <tbody>
+      {% for product in page_obj %}
+        <tr>
+          <td><input class="form-check-input" type="checkbox" name="products" value="{{ product.pk }}" aria-label="选择 {{ product.brand.name }} {{ product.model }}"></td>
+          <td><strong>{{ product.brand.name }}</strong><br><a class="font-monospace fw-semibold" href="{% url 'product-detail' product.pk %}">{{ product.model }}</a></td>
+          <td>{{ product.category.name }}</td>
+          <td>{{ product.region }}{% if product.hardware_version %}<br><small class="text-body-secondary">{{ product.hardware_version }}</small>{% endif %}</td>
+          <td class="text-nowrap">{{ product.updated_at|date:"Y-m-d" }}</td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="5" class="text-center py-5 text-body-secondary">没有找到匹配的产品，请调整搜索词。</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+
+{% if page_obj.paginator.num_pages > 1 %}
+<nav class="mt-4" aria-label="产品分页">
+  <ul class="pagination justify-content-center">
+    <li class="page-item{% if not page_obj.has_previous %} disabled{% endif %}">{% if page_obj.has_previous %}<a class="page-link" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.previous_page_number }}">上一页</a>{% else %}<span class="page-link">上一页</span>{% endif %}</li>
+    <li class="page-item disabled"><span class="page-link">第 {{ page_obj.number }} / {{ page_obj.paginator.num_pages }} 页</span></li>
+    <li class="page-item{% if not page_obj.has_next %} disabled{% endif %}">{% if page_obj.has_next %}<a class="page-link" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.next_page_number }}">下一页</a>{% else %}<span class="page-link">下一页</span>{% endif %}</li>
+  </ul>
+</nav>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Datasheet 识别 · {{ product.brand.name }} {{ product.model }}{% endblock %}
+{% block main_class %}container-fluid product-detail-page px-3 px-xl-4{% endblock %}
+
+{% block content %}
+<nav aria-label="面包屑" class="mb-2 small">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item"><a href="{% url 'product-list' %}">产品查询</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'product-detail' product.pk %}">{{ product.brand.name }} {{ product.model }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Datasheet 识别</li>
+  </ol>
+</nav>
+
+<div class="card border-0 shadow-sm mb-3">
+  <div class="card-body d-flex flex-wrap justify-content-between align-items-center gap-3">
+    <div>
+      <div class="small text-body-secondary">{{ product.brand.name }}</div>
+      <h1 class="h3 mb-1">Datasheet 自动识别</h1>
+      <div class="font-monospace">{{ product.model }}</div>
+    </div>
+    <a class="btn btn-outline-secondary" href="{% url 'product-detail' product.pk %}">返回产品详情</a>
+  </div>
+</div>
+
+<div class="alert alert-light border small" role="note">
+  系统会先校验文件、官方域名及产品型号。型号匹配后，再结合本机 Ollama AI 与规则提取当前产品形态模板中的规格，并记录证据、页码和置信度。已有人工规格不会被覆盖，Datasheet 也不会上传到外部 AI 服务。
+  提交后任务会在后台排队处理，您可以继续操作其他产品。
+</div>
+
+<div class="row g-3 mb-3">
+  <div class="col-lg-6">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-header bg-white fw-semibold">上传 Datasheet PDF</div>
+      <div class="card-body">
+        {% if can_contribute %}
+          <form method="post" enctype="multipart/form-data" action="{% url 'product-datasheet-upload' product.pk %}">
+            {% csrf_token %}
+            <label class="form-label" for="{{ datasheet_upload_form.datasheet.id_for_label }}">选择 PDF 文件</label>
+            {{ datasheet_upload_form.datasheet }}
+            {% for error in datasheet_upload_form.datasheet.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+            <div class="form-text">{{ datasheet_upload_form.datasheet.help_text }}</div>
+            <button class="btn btn-primary mt-3" type="submit">校验、提取并入库</button>
+          </form>
+        {% else %}
+          <p class="text-body-secondary mb-0">当前账户没有上传权限。</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-header bg-white fw-semibold">添加 Datasheet URL</div>
+      <div class="card-body">
+        {% if can_contribute %}
+          <form method="post" action="{% url 'product-datasheet-url' product.pk %}">
+            {% csrf_token %}
+            <label class="form-label" for="{{ datasheet_url_form.datasheet_url.id_for_label }}">厂商官方产品页或 PDF 地址</label>
+            {{ datasheet_url_form.datasheet_url }}
+            {% for error in datasheet_url_form.datasheet_url.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+            <div class="form-text">{{ datasheet_url_form.datasheet_url.help_text }}</div>
+            <button class="btn btn-primary mt-3" type="submit">校验、提取并保存 URL</button>
+          </form>
+          {% if product.datasheet_url %}
+            <div class="border-top mt-3 pt-3">
+              <div class="small text-body-secondary mb-1">当前已保存 URL</div>
+              <a class="small text-break" href="{{ product.datasheet_url }}" target="_blank" rel="noopener noreferrer">{{ product.datasheet_url }}</a>
+              <form method="post" action="{% url 'product-datasheet-reprocess' product.pk %}" class="mt-2">
+                {% csrf_token %}
+                <button class="btn btn-sm btn-outline-primary" type="submit">重新校验并抓取已保存 URL</button>
+              </form>
+            </div>
+          {% endif %}
+        {% else %}
+          <p class="text-body-secondary mb-0">当前账户没有添加或重新抓取 URL 的权限。</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card border-0 shadow-sm">
+  <div class="card-header bg-white fw-semibold">最近识别记录</div>
+  {% if datasheet_ingestions %}
+    <div class="table-responsive">
+      <table class="table table-sm align-middle mb-0">
+        <thead><tr><th>时间</th><th>来源</th><th>识别方式</th><th>状态</th><th>结果</th><th>规格</th></tr></thead>
+        <tbody>
+          {% for ingestion in datasheet_ingestions %}
+            <tr>
+              <td class="text-nowrap">{{ ingestion.created_at|date:"Y-m-d H:i" }}</td>
+              <td>{{ ingestion.get_source_type_display }}</td>
+              <td>
+                {{ ingestion.get_extraction_method_display }}
+                {% if ingestion.ai_model %}<br><small class="text-body-secondary">{{ ingestion.ai_model }}{% if ingestion.average_confidence %} · {{ ingestion.average_confidence }}{% endif %}</small>{% endif %}
+              </td>
+              <td>{{ ingestion.get_status_display }}</td>
+              <td>{{ ingestion.validation_message|default:"等待处理" }}</td>
+              <td class="text-nowrap">新增 {{ ingestion.extracted_spec_count }} / 保留 {{ ingestion.retained_spec_count }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="card-body text-body-secondary">暂无识别记录。</div>
+  {% endif %}
+</div>
+{% endblock %}

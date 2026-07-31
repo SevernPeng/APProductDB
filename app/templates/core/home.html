@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}首页 · APProductDB{% endblock %}
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+  <div>
+    <h1 class="h3 mb-1">网络产品竞品数据库</h1>
+    <p class="text-secondary mb-0">按产品类型查询 TP-Link 与竞品规格和对标关系。</p>
+  </div>
+  <span class="badge text-bg-success">系统可用</span>
+</div>
+
+<form class="card border-0 shadow-sm mb-4" role="search" method="get" action="{% url 'product-list' %}">
+  <div class="card-body">
+    <label for="global-search" class="form-label fw-semibold">全局型号搜索</label>
+    <div class="input-group">
+      <input id="global-search" name="q" class="form-control" placeholder="输入型号，例如 EAP772、U7 Pro" autocomplete="off">
+      <button class="btn btn-primary" type="submit">搜索</button>
+    </div>
+  </div>
+</form>
+
+<div class="row g-3 mb-4">
+  <div class="col-6 col-lg-3"><div class="metric-card"><span>产品总数</span><strong>{{ product_count }}</strong></div></div>
+  <div class="col-6 col-lg-3"><div class="metric-card"><span>TP-Link</span><strong>{{ own_brand_count }}</strong></div></div>
+  <div class="col-6 col-lg-3"><div class="metric-card"><span>竞品</span><strong>{{ competitor_count }}</strong></div></div>
+  <div class="col-6 col-lg-3"><div class="metric-card"><span>我的待处理修改</span><strong>{{ pending_change_count }}</strong></div></div>
+  {% if pending_review_count is not None %}<div class="col-6 col-lg-3"><div class="metric-card"><span>全站待审核</span><strong>{{ pending_review_count }}</strong></div></div>{% endif %}
+</div>
+
+<div class="card border-0 shadow-sm">
+  <div class="card-header bg-white fw-semibold">快捷入口</div>
+  <div class="list-group list-group-flush">
+    <a class="list-group-item list-group-item-action" href="{% url 'product-list' %}">产品查询 <small class="float-end">{{ product_count }} 个已发布产品</small></a>
+    <a class="list-group-item list-group-item-action" href="{% url 'comparison:benchmark' %}">竞品对标 <small class="float-end">查看 TP-Link 对标关系</small></a>
+    <a class="list-group-item list-group-item-action" href="{% url 'comparison:compare' %}">产品比较 <small class="float-end">同时比较 2–4 个产品</small></a>
+    {% if can_contribute %}<a class="list-group-item list-group-item-action" href="{% url 'changes:mine' %}">我的修改申请 <small class="float-end">{{ pending_change_count }} 个待审核</small></a>{% endif %}
+    {% if can_review_changes %}<a class="list-group-item list-group-item-action" href="{% url 'reviews:list' %}">修改审核 <small class="float-end">{{ pending_review_count }} 个待审核</small></a>{% endif %}
+  </div>
+</div>
+
+{% if recent_products %}
+<div class="card border-0 shadow-sm mt-4">
+  <div class="card-header bg-white fw-semibold">最近更新产品</div>
+  <div class="list-group list-group-flush">
+    {% for product in recent_products %}
+      <a class="list-group-item list-group-item-action" href="{% url 'product-detail' product.pk %}">{{ product.brand.name }} {{ product.model }} <small class="text-secondary float-end">{{ product.updated_at|date:"Y-m-d H:i" }}</small></a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}

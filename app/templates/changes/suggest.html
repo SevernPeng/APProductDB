@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}提交修改建议 · APProductDB{% endblock %}
+
+{% block content %}
+<nav aria-label="面包屑" class="mb-3"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="{% url 'product-detail' product.pk %}">{{ product.brand.name }} {{ product.model }}</a></li><li class="breadcrumb-item active">提交修改建议</li></ol></nav>
+<div class="mb-4"><h1 class="h3 mb-1">提交修改建议</h1><p class="text-body-secondary mb-0">每条申请只修改一个字段。Admin/Root 的提交自动生效，User 的提交需管理员批准。</p></div>
+
+<form method="get" class="card border-0 shadow-sm mb-4">
+  <div class="card-body">
+    <label class="form-label" for="target-field">修改字段</label>
+    <div class="input-group">
+      <select class="form-select" id="target-field" name="target">
+        {% regroup target_options by group as option_groups %}
+        {% for option_group in option_groups %}
+          <optgroup label="{{ option_group.grouper }}">
+            {% for option in option_group.list %}<option value="{{ option.key }}"{% if target_key == option.key %} selected{% endif %}>{{ option.label }} · 当前：{{ option.current }}</option>{% endfor %}
+          </optgroup>
+        {% endfor %}
+      </select>
+      <button class="btn btn-outline-primary" type="submit">加载当前值</button>
+    </div>
+  </div>
+</form>
+
+<div class="card border-0 shadow-sm">
+  <div class="card-header bg-white"><strong>{{ selection.label }}</strong><span class="text-body-secondary ms-2">当前正式值：{{ current_value }}</span></div>
+  <div class="card-body">
+    <form method="post" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}<input type="hidden" name="target" value="{{ target_key }}">
+      {% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
+      {% if selection.operation == 'delete_match' %}
+        {{ form.proposed_value }}
+        <div class="alert alert-warning">该申请获批后，此竞品对标关系将停止展示。产品档案本身不会被删除。</div>
+      {% else %}
+        <div class="mb-3"><label class="form-label" for="{{ form.proposed_value.id_for_label }}">{{ form.proposed_value.label }}</label>{{ form.proposed_value }}<div class="form-text">{{ value_hint }}</div>{% for error in form.proposed_value.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}</div>
+      {% endif %}
+      <div class="mb-3"><label class="form-label" for="{{ form.reason.id_for_label }}">{{ form.reason.label }}</label>{{ form.reason }}{% for error in form.reason.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}</div>
+      <div class="mb-3"><label class="form-label" for="{{ form.source_url.id_for_label }}">{{ form.source_url.label }}</label>{{ form.source_url }}{% for error in form.source_url.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}</div>
+      <div class="mb-4"><label class="form-label" for="{{ form.attachment.id_for_label }}">{{ form.attachment.label }}</label>{{ form.attachment }}<div class="form-text">{{ form.attachment.help_text }}</div>{% for error in form.attachment.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}</div>
+      <div class="d-flex gap-2"><button class="btn btn-primary" type="submit">提交申请</button><a class="btn btn-outline-secondary" href="{% url 'product-detail' product.pk %}">取消</a></div>
+    </form>
+  </div>
+</div>
+
+{% if product.brand.is_own_brand %}
+<div class="card border-0 shadow-sm mt-4">
+  <div class="card-header bg-white">
+    <strong>新增对标竞品</strong>
+    <span class="text-body-secondary ms-2">从数据库现有同类竞品中选择</span>
+  </div>
+  <div class="card-body">
+    <form method="post" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}
+      <input type="hidden" name="action" value="add_match">
+      {% if add_match_form.non_field_errors %}<div class="alert alert-danger">{{ add_match_form.non_field_errors }}</div>{% endif %}
+      <div class="row g-3">
+        {% for field in add_match_form %}
+          <div class="{% if field.name == 'relation_reason' or field.name == 'request_reason' or field.name == 'attachment' %}col-12{% else %}col-md-6{% endif %}">
+            <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+            {{ field }}
+            {% if field.help_text %}<div class="form-text">{{ field.help_text }}</div>{% endif %}
+            {% for error in field.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+      <button class="btn btn-success mt-3" type="submit">提交新增对标申请</button>
+    </form>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}登录 · APProductDB{% endblock %}
+{% block content %}
+<div class="row justify-content-center py-5">
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-4">
+        <h1 class="h4 mb-2">登录</h1>
+        <p class="text-secondary mb-4">Wi-Fi 7 AP 产品与竞品数据库</p>
+        {% if form.errors %}
+          <div class="alert alert-danger" role="alert">用户名或密码不正确。</div>
+        {% endif %}
+        <form method="post" novalidate>
+          {% csrf_token %}
+          {% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}
+          <div class="mb-3">
+            <label for="id_username" class="form-label">公司邮箱或 Root 用户名</label>
+            <input type="text" name="username" id="id_username" class="form-control" autocomplete="username" autofocus required>
+          </div>
+          <div class="mb-4">
+            <label for="id_password" class="form-label">密码</label>
+            <input type="password" name="password" id="id_password" class="form-control" autocomplete="current-password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">登录</button>
+        </form>
+        <p class="text-center text-secondary small mt-3 mb-0">还没有账户？<a href="{% url 'accounts:register' %}">使用公司邮箱注册</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
