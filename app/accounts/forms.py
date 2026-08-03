@@ -7,14 +7,14 @@ from .models import COMPANY_EMAIL_DOMAIN, AccountProfile
 
 
 class RegistrationForm(forms.Form):
-    email = forms.EmailField(label="公司邮箱", max_length=150)
+    email = forms.EmailField(label="Company Email", max_length=150)
     password1 = forms.CharField(
-        label="密码",
+        label="Password",
         strip=False,
         widget=forms.PasswordInput(attrs={"autocomplete": "new-password"}),
     )
     password2 = forms.CharField(
-        label="确认密码",
+        label="Confirm Password",
         strip=False,
         widget=forms.PasswordInput(attrs={"autocomplete": "new-password"}),
     )
@@ -27,13 +27,13 @@ class RegistrationForm(forms.Form):
     def clean_email(self):
         email = self.cleaned_data["email"].strip().lower()
         if email.rsplit("@", 1)[-1] != COMPANY_EMAIL_DOMAIN:
-            raise ValidationError("仅支持 @tp-link.com 公司邮箱。")
+            raise ValidationError("Only @tp-link.com company email addresses are supported.")
         user_model = get_user_model()
         if (
             user_model.objects.filter(email__iexact=email).exists()
             or AccountProfile.objects.filter(email__iexact=email).exists()
         ):
-            raise ValidationError("该邮箱已注册，请直接登录。")
+            raise ValidationError("This email is already registered. Please sign in.")
         return email
 
     def clean(self):
@@ -41,7 +41,7 @@ class RegistrationForm(forms.Form):
         password1 = cleaned.get("password1")
         password2 = cleaned.get("password2")
         if password1 and password2 and password1 != password2:
-            self.add_error("password2", "两次输入的密码不一致。")
+            self.add_error("password2", "The passwords do not match.")
         if password1:
             candidate = get_user_model()(username=cleaned.get("email", ""), email=cleaned.get("email", ""))
             try:
@@ -65,7 +65,7 @@ class RegistrationForm(forms.Form):
                 role=AccountProfile.Role.USER,
             )
         except IntegrityError as exc:
-            raise ValidationError("该邮箱已注册，请直接登录。") from exc
+            raise ValidationError("This email is already registered. Please sign in.") from exc
         return user
 
 
@@ -85,5 +85,5 @@ class RoleUpdateForm(forms.ModelForm):
     def clean_role(self):
         role = self.cleaned_data["role"]
         if role not in {AccountProfile.Role.ADMIN, AccountProfile.Role.USER}:
-            raise ValidationError("只能在 Admin 和 User 之间调整权限。")
+            raise ValidationError("The role must be Admin or User.")
         return role

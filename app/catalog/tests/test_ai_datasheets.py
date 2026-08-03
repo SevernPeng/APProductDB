@@ -155,7 +155,7 @@ class AIDatasheetExtractionTests(TestCase):
     def test_wrong_model_is_rejected(self, request_ollama):
         request_ollama.return_value = self.response_payload(model="EAP773")
 
-        with self.assertRaisesMessage(AIExtractionError, "足够置信度"):
+        with self.assertRaisesMessage(AIExtractionError, "sufficient confidence"):
             extract_specs_with_ai(
                 self.product,
                 self.document,
@@ -240,7 +240,7 @@ class AIDatasheetExtractionTests(TestCase):
             "message": {"content": json.dumps({"document_match": {}})}
         }
 
-        with self.assertRaisesMessage(AIExtractionError, "字段结构不完整"):
+        with self.assertRaisesMessage(AIExtractionError, "field structure returned by the local model is incomplete"):
             extract_specs_with_ai(
                 self.product,
                 self.document,

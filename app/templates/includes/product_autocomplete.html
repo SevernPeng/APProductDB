@@ -4,7 +4,7 @@
     type="search"
     id="product-picker-{{ input_id }}"
     value="{% if selected %}{{ selected.brand.name }} {{ selected.model }} · {{ selected.category.name }} · {{ selected.region }}{% if selected.hardware_version %} · {{ selected.hardware_version }}{% endif %}{% endif %}"
-    placeholder="{{ placeholder|default:'输入品牌或型号搜索' }}"
+    placeholder="{{ placeholder|default:'Search by brand or model' }}"
     autocomplete="off"
     role="combobox"
     aria-autocomplete="list"
@@ -26,9 +26,9 @@
         data-search="{{ option.brand.name }} {{ option.model }} {{ option.category.name }} {{ option.region }} {{ option.hardware_version }}"
       ><strong>{{ option.brand.name }} {{ option.model }}</strong><small class="text-body-secondary d-block">{{ option.category.name }} · {{ option.region }}{% if option.hardware_version %} · {{ option.hardware_version }}{% endif %}</small></button>
     {% empty %}
-      <div class="list-group-item text-body-secondary">暂无可选产品</div>
+      <div class="list-group-item text-body-secondary">No products available</div>
     {% endfor %}
-    <div class="list-group-item text-body-secondary d-none" data-product-empty>没有匹配的产品</div>
+    <div class="list-group-item text-body-secondary d-none" data-product-empty>No matching products</div>
   </div>
-  <div class="invalid-feedback">请从自动联想列表中选择有效产品。</div>
+  <div class="invalid-feedback">Select a valid product from the suggestions.</div>
 </div>

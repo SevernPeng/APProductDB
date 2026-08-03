@@ -23,9 +23,9 @@ def change_attachment_upload_to(instance, filename):
 def validate_change_attachment(uploaded_file):
     suffix = Path(uploaded_file.name).suffix.lower()
     if suffix not in ALLOWED_EXTENSIONS:
-        raise ValidationError("附件仅支持 PDF、PNG、JPG、JPEG 或 XLSX。")
+        raise ValidationError("Attachments must be PDF, PNG, JPG, JPEG, or XLSX.")
     if uploaded_file.size > MAX_ATTACHMENT_SIZE:
-        raise ValidationError("附件大小不能超过 10 MB。")
+        raise ValidationError("Attachments cannot exceed 10 MB.")
     close_after_validation = isinstance(uploaded_file, FieldFile) and uploaded_file.closed
     if close_after_validation:
         uploaded_file.open("rb")
@@ -38,4 +38,4 @@ def validate_change_attachment(uploaded_file):
         if close_after_validation:
             uploaded_file.close()
     if not any(header.startswith(signature) for signature in FILE_SIGNATURES[suffix]):
-        raise ValidationError("附件内容与文件扩展名不匹配。")
+        raise ValidationError("The attachment content does not match its file extension.")

@@ -29,9 +29,9 @@ class AccountProfile(models.Model):
         if self.email:
             self.email = self.email.strip().lower()
             if self.email.rsplit("@", 1)[-1] != COMPANY_EMAIL_DOMAIN:
-                raise ValidationError({"email": "仅支持 @tp-link.com 公司邮箱。"})
+                raise ValidationError({"email": "Only @tp-link.com company email addresses are supported."})
         if self.role == self.Role.ROOT and self.user.username != "root":
-            raise ValidationError({"role": "Root 角色只能分配给默认 root 账户。"})
+            raise ValidationError({"role": "The Root role is reserved for the default root account."})
 
     def save(self, *args, **kwargs):
         self.full_clean()

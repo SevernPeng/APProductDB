@@ -41,9 +41,9 @@ def upload(request):
             _log_action(request, job, ADDITION, "Uploaded workbook for validation.")
             validate_import_job(job)
             if job.status == ImportJob.Status.READY:
-                messages.success(request, "工作簿校验通过，请检查预览后确认导入。")
+                messages.success(request, "Workbook validated. Review the preview and confirm the import.")
             else:
-                messages.error(request, "工作簿校验未通过，请下载错误报告。")
+                messages.error(request, "Workbook validation failed. Download the error report.")
             return redirect("imports:detail", pk=job.pk)
     else:
         form = ImportUploadForm(initial={"mode": ImportJob.Mode.PREVIEW})
@@ -110,7 +110,7 @@ def detail(request, pk):
         except ImportValidationError as exc:
             messages.error(request, str(exc))
         except Exception:
-            messages.error(request, "导入失败，所有数据库变更已回滚。请查看任务审计信息和应用日志。")
+            messages.error(request, "Import failed. All database changes were rolled back.")
         else:
             _log_action(request, job, CHANGE, f"Confirmed Excel import: {counters}")
             AuditLog.objects.create(
@@ -123,7 +123,7 @@ def detail(request, pk):
                 after_data=counters,
                 ip_address=request.META.get("REMOTE_ADDR") or None,
             )
-            messages.success(request, "Excel 已在单一数据库事务中导入成功。")
+            messages.success(request, "Excel import completed successfully.")
         return redirect("imports:detail", pk=job.pk)
     return render(request, "imports/detail.html", {"job": job})
 

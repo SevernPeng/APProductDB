@@ -7,4 +7,4 @@ class CatalogConfig(AppConfig):
 
     def ready(self):
         from . import signals  # noqa: F401
-    verbose_name = "产品数据库"
+    verbose_name = "Product Database"

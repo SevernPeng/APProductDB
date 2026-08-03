@@ -98,11 +98,11 @@ class ChangeRequest(models.Model):
         else:
             valid = False
         if not valid:
-            raise ValidationError("申请类型与目标对象不一致。")
+            raise ValidationError("The request type does not match the target object.")
         if not self.reason.strip():
-            raise ValidationError({"reason": "修改原因不能为空。"})
+            raise ValidationError({"reason": "A reason is required."})
         if self.old_value == self.proposed_value:
-            raise ValidationError({"proposed_value": "建议值不能与当前值相同。"})
+            raise ValidationError({"proposed_value": "The proposed value must differ from the current value."})
 
     def save(self, *args, **kwargs):
         self.full_clean()

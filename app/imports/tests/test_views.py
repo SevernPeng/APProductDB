@@ -36,6 +36,9 @@ class ImportViewTests(TestCase):
             count=5,
         )
         self.assertNotContains(response, 'data-bs-toggle="collapse"')
+        self.assertContains(response, "Choose File")
+        self.assertContains(response, "No file chosen")
+        self.assertContains(response, 'data-file-picker')
 
     def test_upload_validates_but_requires_separate_confirmation(self):
         self.client.force_login(self.admin)
@@ -55,7 +58,7 @@ class ImportViewTests(TestCase):
         self.assertEqual(job.status, ImportJob.Status.READY)
         self.assertEqual(Product.objects.count(), 0)
         response = self.client.post(reverse("imports:detail", args=(job.pk,)), follow=True)
-        self.assertContains(response, "Excel 已在单一数据库事务中导入成功")
+        self.assertContains(response, "Excel import completed successfully")
         self.assertEqual(Product.objects.count(), 2)
         self.assertTrue(
             AuditLog.objects.filter(
@@ -80,7 +83,7 @@ class ImportViewTests(TestCase):
             },
         )
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "只支持 .xlsx 文件")
+        self.assertContains(response, "Only .xlsx files are supported")
         self.assertFalse(ImportJob.objects.exists())
 
     def test_source_workbook_download_requires_superuser(self):

@@ -151,7 +151,7 @@ def product_detail(request, pk):
             matches.append(
                 {
                     "product": match.competitor_product,
-                    "relationship": "竞品",
+                    "relationship": "Competitor",
                     "match": match,
                 }
             )
@@ -163,7 +163,7 @@ def product_detail(request, pk):
             matches.append(
                 {
                     "product": match.our_product,
-                    "relationship": "我方产品",
+                    "relationship": "Our Product",
                     "match": match,
                 }
             )
@@ -249,7 +249,7 @@ def upload_datasheet(request, pk):
     if not form.is_valid():
         messages.error(
             request,
-            "Datasheet 上传失败：" + "；".join(
+            "Datasheet upload failed: " + "; ".join(
                 message
                 for errors in form.errors.values()
                 for message in errors
@@ -265,7 +265,7 @@ def upload_datasheet(request, pk):
     schedule_datasheet_ingestion(ingestion.pk)
     messages.success(
         request,
-        "Datasheet 已加入后台识别队列，可以继续处理其他产品。",
+        "Datasheet queued for processing.",
     )
     return redirect("product-datasheet", pk=product.pk)
 
@@ -292,7 +292,7 @@ def submit_datasheet_url(request, pk):
     schedule_datasheet_ingestion(ingestion.pk)
     messages.success(
         request,
-        "Datasheet URL 已加入后台校验队列；校验通过后才会保存到产品。",
+        "Datasheet URL queued for validation.",
     )
     return redirect("product-datasheet", pk=product.pk)
 
@@ -302,7 +302,7 @@ def submit_datasheet_url(request, pk):
 def reprocess_datasheet_url(request, pk):
     product = get_object_or_404(Product, pk=pk, is_published=True)
     if not product.datasheet_url:
-        messages.error(request, "该产品尚未填写 Datasheet URL。")
+        messages.error(request, "This product does not have a Datasheet URL.")
         return redirect("product-datasheet", pk=product.pk)
     ingestion = DatasheetIngestion.objects.create(
         product=product,
@@ -311,7 +311,7 @@ def reprocess_datasheet_url(request, pk):
         requested_by=request.user,
     )
     schedule_datasheet_ingestion(ingestion.pk)
-    messages.success(request, "Datasheet URL 已加入后台重新识别队列。")
+    messages.success(request, "Datasheet URL queued for reprocessing.")
     return redirect("product-datasheet", pk=product.pk)
 
 

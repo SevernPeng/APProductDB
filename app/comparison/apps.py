@@ -4,4 +4,4 @@ from django.apps import AppConfig
 class ComparisonConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
     name = "comparison"
-    verbose_name = "竞品对标"
+    verbose_name = "Competitor Benchmarks"

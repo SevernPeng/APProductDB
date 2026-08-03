@@ -14,8 +14,8 @@ class AuthenticationTests(TestCase):
     def test_login_page_has_registration_link(self):
         response = self.client.get(reverse("login"))
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "登录")
-        self.assertContains(response, "注册")
+        self.assertContains(response, "Sign In")
+        self.assertContains(response, "Register")
 
     def test_successful_login_redirects_to_home(self):
         response = self.client.post(
@@ -49,7 +49,7 @@ class AccountSystemTests(TestCase):
             url,
             {"email": "person@example.com", "password1": "Good-Test-Pass-928!", "password2": "Good-Test-Pass-928!"},
         )
-        self.assertContains(response, "仅支持 @tp-link.com 公司邮箱")
+        self.assertContains(response, "Only @tp-link.com company email addresses are supported")
         response = self.client.post(
             url,
             {"email": "Person@TP-LINK.COM", "password1": "Good-Test-Pass-928!", "password2": "Good-Test-Pass-928!"},
@@ -62,7 +62,7 @@ class AccountSystemTests(TestCase):
             url,
             {"email": "PERSON@tp-link.com", "password1": "Another-Test-Pass-837!", "password2": "Another-Test-Pass-837!"},
         )
-        self.assertContains(response, "该邮箱已注册")
+        self.assertContains(response, "This email is already registered")
         self.assertEqual(get_user_model().objects.filter(email__iexact="person@tp-link.com").count(), 1)
 
     def test_company_email_login_is_case_insensitive(self):

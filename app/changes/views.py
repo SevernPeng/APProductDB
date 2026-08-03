@@ -60,7 +60,7 @@ def _submit_change(request, attributes):
             approve_change(
                 change.pk,
                 request.user,
-                "Admin/Root 提交，系统自动批准。",
+                "Automatically approved for Admin/Root.",
                 request_ip(request),
             )
     return change
@@ -128,9 +128,9 @@ def suggest_change(request, product_pk):
                 },
             )
             if can_review(request.user):
-                messages.success(request, "新增对标关系已提交并自动生效。")
+                messages.success(request, "Benchmark added and applied automatically.")
             else:
-                messages.success(request, "新增对标关系申请已提交，等待管理员审核。")
+                messages.success(request, "Benchmark request submitted for review.")
             return redirect("changes:detail", pk=change.pk)
         form = ChangeSubmissionForm(selection=selection)
     elif request.method == "POST":
@@ -159,9 +159,9 @@ def suggest_change(request, product_pk):
                 attributes["target_product"] = target.our_product
             change = _submit_change(request, attributes)
             if can_review(request.user):
-                messages.success(request, "修改已提交并自动生效，无需审核。")
+                messages.success(request, "Change submitted and applied automatically.")
             else:
-                messages.success(request, "修改申请已提交，等待管理员审核。")
+                messages.success(request, "Change request submitted for review.")
             return redirect("changes:detail", pk=change.pk)
     else:
         form = ChangeSubmissionForm(selection=selection)
@@ -300,7 +300,7 @@ def review_approve(request, pk):
         except (ChangeRequest.DoesNotExist, ValidationError) as exc:
             messages.error(request, str(exc))
         else:
-            messages.success(request, "申请已批准，正式数据已更新。")
+            messages.success(request, "Request approved and data updated.")
     return redirect("reviews:detail", pk=pk)
 
 
@@ -319,5 +319,5 @@ def review_reject(request, pk):
         except (ChangeRequest.DoesNotExist, ValidationError) as exc:
             messages.error(request, str(exc))
         else:
-            messages.success(request, "申请已拒绝。")
+            messages.success(request, "Request rejected.")
     return redirect("reviews:detail", pk=pk)

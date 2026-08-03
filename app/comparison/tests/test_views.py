@@ -149,7 +149,7 @@ class ComparisonViewTests(TestCase):
         self.assertContains(response, "U7-Pro")
         self.assertContains(response, "RG-AP7136-R")
         self.assertContains(response, "同级三频吸顶 AP")
-        self.assertContains(response, "比较当前全部产品")
+        self.assertContains(response, "Compare All")
         self.assertContains(response, f"products={self.eap772.pk}")
         self.assertContains(response, f"products={self.u7_pro.pk}")
         self.assertContains(response, f"products={self.rg_ap.pk}")
@@ -166,7 +166,7 @@ class ComparisonViewTests(TestCase):
         )
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, outdoor.model)
-        self.assertContains(response, "找到 1 个型号")
+        self.assertContains(response, "1 models")
         self.assertNotContains(response, '<select class="form-select"')
         self.assertNotContains(response, "U7-Pro")
 
@@ -236,7 +236,7 @@ class ComparisonViewTests(TestCase):
         response = self.client.get(self.comparison_url(self.eap772, switch))
 
         self.assertEqual(response.status_code, 400)
-        self.assertContains(response, "只能比较同一产品类型", status_code=400)
+        self.assertContains(response, "Only products of the same type can be compared", status_code=400)
 
     def test_only_differences_hides_equal_rows_and_sources_are_optional(self):
         self.client.force_login(self.viewer)
@@ -250,11 +250,11 @@ class ComparisonViewTests(TestCase):
         without_sources = self.client.get(
             self.comparison_url(self.eap772, self.u7_pro)
         )
-        self.assertNotContains(without_sources, ">官方来源</a>", html=False)
+        self.assertNotContains(without_sources, ">Official source</a>", html=False)
         with_sources = self.client.get(
             self.comparison_url(self.eap772, self.u7_pro, sources="1")
         )
-        self.assertContains(with_sources, ">官方来源</a>", html=False)
+        self.assertContains(with_sources, ">Official source</a>", html=False)
 
     def test_compare_extended_toggle_controls_p2_rows(self):
         template = ComparisonTemplate.objects.create(
@@ -318,7 +318,7 @@ class ComparisonViewTests(TestCase):
     def test_product_detail_has_one_click_three_product_comparison(self):
         self.client.force_login(self.viewer)
         response = self.client.get(reverse("product-detail", args=[self.eap772.pk]))
-        self.assertContains(response, "比较当前全部产品")
+        self.assertContains(response, "Compare All")
         self.assertContains(response, f"products={self.eap772.pk}")
         self.assertContains(response, f"products={self.u7_pro.pk}")
         self.assertContains(response, f"products={self.rg_ap.pk}")

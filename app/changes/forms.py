@@ -15,20 +15,20 @@ from .validators import validate_change_attachment
 
 class ChangeSubmissionForm(forms.Form):
     proposed_value = forms.CharField(
-        label="建议值",
+        label="Proposed Value",
         required=False,
         widget=forms.Textarea(attrs={"rows": 3}),
     )
     reason = forms.CharField(
-        label="修改原因",
+        label="Reason",
         widget=forms.Textarea(attrs={"rows": 4}),
     )
-    source_url = forms.URLField(label="官方来源 URL", required=False)
+    source_url = forms.URLField(label="Official Source URL", required=False)
     attachment = forms.FileField(
-        label="证据附件",
+        label="Evidence Attachment",
         required=False,
         validators=[validate_change_attachment],
-        help_text="支持 PDF、PNG、JPG、JPEG、XLSX，最大 10 MB。",
+        help_text="PDF, PNG, JPG, JPEG, or XLSX; up to 10 MB.",
     )
 
     def __init__(self, *args, selection, **kwargs):
@@ -98,13 +98,13 @@ class ChangeSubmissionForm(forms.Form):
             return cleaned
         old_value = snapshot_for_selection(self.selection)
         if old_value == proposed:
-            self.add_error("proposed_value", "建议值不能与当前值相同。")
+            self.add_error("proposed_value", "The proposed value must differ from the current value.")
         if (
             self.selection["request_type"] == "spec"
             and not cleaned.get("source_url")
             and not cleaned.get("attachment")
         ):
-            raise ValidationError("规格修改必须提供官方来源 URL 或证据附件。")
+            raise ValidationError("Provide an official source URL or evidence attachment.")
         cleaned["old_value"] = old_value
         cleaned["parsed_proposed_value"] = proposed
         return cleaned
@@ -112,48 +112,48 @@ class ChangeSubmissionForm(forms.Form):
 
 class MatchAddForm(forms.Form):
     competitor_product = forms.ModelChoiceField(
-        label="新增竞品",
+        label="Competitor",
         queryset=Product.objects.none(),
-        empty_label="请选择竞品型号",
+        empty_label="Select a competitor model",
     )
     match_type = forms.ChoiceField(
-        label="对标类型",
+        label="Match Type",
         choices=ProductMatch.MatchType.choices,
         initial=ProductMatch.MatchType.DIRECT,
     )
     match_level = forms.ChoiceField(
-        label="对标级别",
+        label="Match Level",
         choices=ProductMatch.MatchLevel.choices,
         initial=ProductMatch.MatchLevel.CORE,
     )
-    rank = forms.IntegerField(label="排序", min_value=0, required=False)
+    rank = forms.IntegerField(label="Rank", min_value=0, required=False)
     match_score = forms.IntegerField(
-        label="匹配分数",
+        label="Match Score",
         min_value=0,
         max_value=100,
         required=False,
     )
     confidence = forms.IntegerField(
-        label="置信度",
+        label="Confidence",
         min_value=0,
         max_value=100,
         required=False,
     )
     relation_reason = forms.CharField(
-        label="对标理由",
+        label="Rationale",
         required=False,
         widget=forms.Textarea(attrs={"rows": 2}),
     )
-    source_url = forms.URLField(label="官方来源 URL", required=False)
+    source_url = forms.URLField(label="Official Source URL", required=False)
     request_reason = forms.CharField(
-        label="新增原因",
+        label="Reason",
         widget=forms.Textarea(attrs={"rows": 3}),
     )
     attachment = forms.FileField(
-        label="证据附件",
+        label="Evidence Attachment",
         required=False,
         validators=[validate_change_attachment],
-        help_text="支持 PDF、PNG、JPG、JPEG、XLSX，最大 10 MB。",
+        help_text="PDF, PNG, JPG, JPEG, or XLSX; up to 10 MB.",
     )
 
     def __init__(self, *args, product, **kwargs):
@@ -186,15 +186,15 @@ class MatchAddForm(forms.Form):
         if competitor and self.product.competitor_matches.exclude(
             status=ProductMatch.Status.REJECTED
         ).filter(competitor_product=competitor).exists():
-            self.add_error("competitor_product", "该竞品已在当前对标关系中。")
+            self.add_error("competitor_product", "This competitor is already in the current benchmarks.")
         if not cleaned.get("source_url") and not cleaned.get("attachment"):
-            raise ValidationError("新增对标关系必须提供官方来源 URL 或证据附件。")
+            raise ValidationError("Provide an official source URL or evidence attachment.")
         return cleaned
 
 
 class ReviewDecisionForm(forms.Form):
     review_comment = forms.CharField(
-        label="审核意见",
+        label="Review Comment",
         required=False,
         widget=forms.Textarea(attrs={"rows": 3, "class": "form-control"}),
     )

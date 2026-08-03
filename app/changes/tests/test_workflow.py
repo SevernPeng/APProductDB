@@ -391,7 +391,7 @@ class ChangeWorkflowTests(TestCase):
                 "reason": "Correction",
             },
         )
-        self.assertContains(response, "规格修改必须提供官方来源 URL 或证据附件")
+        self.assertContains(response, "Provide an official source URL or evidence attachment")
         response = self.client.post(
             url,
             {
@@ -401,7 +401,7 @@ class ChangeWorkflowTests(TestCase):
                 "source_url": "https://example.com/source",
             },
         )
-        self.assertContains(response, "建议值不能与当前值相同")
+        self.assertContains(response, "The proposed value must differ from the current value")
         self.assertFalse(ChangeRequest.objects.exists())
 
     def test_valid_submission_uses_server_side_actor_and_keeps_formal_value(self):
@@ -489,7 +489,7 @@ class ChangeWorkflowTests(TestCase):
             reverse("reviews:approve", args=[change.pk]),
             follow=True,
         )
-        self.assertContains(response, "当前正式值已在申请提交后发生变化")
+        self.assertContains(response, "The current value changed after this request was submitted")
         change.refresh_from_db()
         self.spec.refresh_from_db()
         self.assertEqual(change.status, ChangeRequest.Status.PENDING)
@@ -553,7 +553,7 @@ class ChangeWorkflowTests(TestCase):
                 "attachment": invalid,
             },
         )
-        self.assertContains(response, "附件内容与文件扩展名不匹配")
+        self.assertContains(response, "The attachment content does not match its file extension")
 
         valid_content = b"%PDF-1.7\nproof"
         valid = SimpleUploadedFile("proof.pdf", valid_content)

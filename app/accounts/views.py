@@ -21,7 +21,7 @@ def register(request):
             form.add_error("email", exc)
         else:
             login(request, user)
-            messages.success(request, "账户注册成功。当前角色为 User。")
+            messages.success(request, "Account created successfully.")
             return redirect("home")
     return render(request, "registration/register.html", {"form": form})
 
@@ -37,12 +37,12 @@ def account_list(request):
 def update_role(request, pk):
     profile = get_object_or_404(AccountProfile.objects.select_related("user"), pk=pk)
     if profile.role == AccountProfile.Role.ROOT or profile.user.is_superuser:
-        messages.error(request, "默认 Root 账户的角色不可修改。")
+        messages.error(request, "The default root account role cannot be changed.")
         return redirect("accounts:list")
     form = RoleUpdateForm(request.POST, instance=profile)
     if form.is_valid():
         form.save()
-        messages.success(request, f"{profile.email} 已调整为 {profile.get_role_display()}。")
+        messages.success(request, f"{profile.email} is now {profile.get_role_display()}.")
     else:
-        messages.error(request, "角色调整失败。")
+        messages.error(request, "Could not update the role.")
     return redirect("accounts:list")

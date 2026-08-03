@@ -428,14 +428,14 @@ def _render_pdf_images(pdf_bytes, page_numbers=None):
         import fitz
     except ImportError as exc:
         raise AIExtractionError(
-            "扫描 PDF 需要安装 PyMuPDF 才能转为页面图片。"
+            "PyMuPDF is required to render scanned PDF pages as images."
         ) from exc
     try:
         pdf = fitz.open(stream=pdf_bytes, filetype="pdf")
         if len(pdf) > settings.AI_DATASHEET_MAX_VISION_PAGES:
             raise AIExtractionError(
-                f"扫描 PDF 超过 {settings.AI_DATASHEET_MAX_VISION_PAGES} 页，"
-                "为避免本地模型长时间占用 CPU，已停止视觉识别。"
+                f"The scanned PDF exceeds {settings.AI_DATASHEET_MAX_VISION_PAGES} pages; "
+                "visual extraction was stopped."
             )
         page_limit = max(1, settings.AI_DATASHEET_VISION_PAGE_LIMIT)
         selected_indexes = (
@@ -458,7 +458,7 @@ def _render_pdf_images(pdf_bytes, page_numbers=None):
     except AIExtractionError:
         raise
     except Exception as exc:
-        raise AIExtractionError("无法将扫描 PDF 渲染为页面图片。") from exc
+        raise AIExtractionError("The scanned PDF could not be rendered as page images.") from exc
 
 
 def _request_ollama(body):
@@ -481,10 +481,10 @@ def _request_ollama(body):
     except urllib.error.HTTPError as exc:
         details = exc.read(2000).decode("utf-8", errors="replace")
         raise AIExtractionError(
-            f"本地 Ollama 返回 HTTP {exc.code}: {details}"
+            f"Local Ollama returned HTTP {exc.code}: {details}"
         ) from exc
     except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        raise AIExtractionError(f"无法连接本地 Ollama 服务：{exc}") from exc
+        raise AIExtractionError(f"Could not connect to the local Ollama service: {exc}") from exc
 
 
 def _document_content(document, product, fields):
@@ -520,10 +520,10 @@ def _document_content(document, product, fields):
 
 def extract_specs_with_ai(product, document, template_items):
     if not ai_is_configured():
-        raise AIExtractionError("本地 AI Datasheet 识别尚未配置。")
+        raise AIExtractionError("Local AI Datasheet processing is not configured.")
     fields = _field_catalog(template_items)
     if not fields:
-        raise AIExtractionError("当前产品形态没有可供 AI 映射的规格字段。")
+        raise AIExtractionError("The current product type has no specification fields available for AI mapping.")
     schema = _response_schema([field["code"] for field in fields])
     field_json = json.dumps(fields, ensure_ascii=False, separators=(",", ":"))
     document_text, images, input_mode, selected_model, input_page_count = _document_content(
@@ -604,7 +604,7 @@ Rules:
         parsed = json.loads(structured_text)
     except (KeyError, json.JSONDecodeError, TypeError) as exc:
         raise AIExtractionError(
-            "本地模型返回的结构化结果无法解析。",
+            "The structured result returned by the local model could not be parsed.",
             metrics,
         ) from exc
 
@@ -625,7 +625,7 @@ Rules:
             raise TypeError("specs must be a list")
     except (KeyError, TypeError, ValueError) as exc:
         raise AIExtractionError(
-            "本地模型返回的字段结构不完整。",
+            "The field structure returned by the local model is incomplete.",
             metrics,
         ) from exc
     metrics["document_match"] = {
@@ -646,7 +646,7 @@ Rules:
         )
     ):
         raise AIExtractionError(
-            "本地 AI 无法以足够置信度确认产品型号一致。",
+            "The local AI could not confirm the product model with sufficient confidence.",
             metrics,
         )
 

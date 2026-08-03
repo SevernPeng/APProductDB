@@ -141,7 +141,7 @@ class DatasheetIngestionTests(TestCase):
             product=self.product,
             definition=self.dimensions,
             value_text="Old automated value",
-            source_note="已校验型号，并从 Datasheet 自动提取。",
+            source_note="Model validated and specifications extracted from the Datasheet.",
         )
         read_document.return_value = ExtractedDocument(
             text="EAP772\nDimensions: 220 x 220 x 32.5 mm",
@@ -173,7 +173,7 @@ class DatasheetIngestionTests(TestCase):
     def test_non_official_domain_is_rejected_before_fetch(self):
         with self.assertRaisesMessage(
             DatasheetValidationError,
-            "官方域名",
+            "official brand domain",
         ):
             validate_public_url(
                 "https://malicious.example/EAP772.pdf",
@@ -312,6 +312,6 @@ class DatasheetIngestionTests(TestCase):
         result = process_datasheet_ingestion(self.make_ingestion().pk)
 
         self.assertEqual(result.status, DatasheetIngestion.Status.VALIDATED)
-        self.assertIn("复用", result.validation_message)
+        self.assertIn("reused", result.validation_message)
         self.assertIn(f'"cached_ingestion_id":{cached.pk}', result.extraction_details)
         extract_ai.assert_not_called()

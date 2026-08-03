@@ -70,7 +70,7 @@
     options.forEach((option) => option.addEventListener("click", () => select(option)));
     component.closest("form")?.addEventListener("submit", (event) => {
       if (search.value.trim() && !value.value) {
-        search.setCustomValidity("请从自动联想列表中选择有效产品。");
+        search.setCustomValidity("Select a valid product from the suggestions.");
         search.reportValidity();
         event.preventDefault();
       }

@@ -82,21 +82,21 @@ def _host_matches(host, domains):
 def validate_public_url(url, allowed_domains=()):
     parsed = urllib.parse.urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.hostname:
-        raise DatasheetValidationError("Datasheet URL 必须是有效的 HTTP 或 HTTPS 地址。")
+        raise DatasheetValidationError("The Datasheet URL must be a valid HTTP or HTTPS address.")
     host = parsed.hostname.casefold().rstrip(".")
     if allowed_domains and not _host_matches(host, allowed_domains):
-        raise DatasheetValidationError("Datasheet URL 不是该品牌的官方域名。")
+        raise DatasheetValidationError("The Datasheet URL is not on an official brand domain.")
     try:
         addresses = {
             item[4][0]
             for item in socket.getaddrinfo(host, parsed.port or 443, type=socket.SOCK_STREAM)
         }
     except socket.gaierror as exc:
-        raise DatasheetValidationError("Datasheet URL 的域名无法解析。") from exc
+        raise DatasheetValidationError("The Datasheet URL domain could not be resolved.") from exc
     for address in addresses:
         ip = ipaddress.ip_address(address)
         if not ip.is_global:
-            raise DatasheetValidationError("Datasheet URL 指向非公网地址，已拒绝访问。")
+            raise DatasheetValidationError("The Datasheet URL points to a non-public address.")
     return url
 
 
@@ -119,28 +119,28 @@ def _fetch(url, allowed_domains):
             validate_public_url(final_url, allowed_domains)
             declared_size = response.headers.get("Content-Length", "")
             if declared_size.isdigit() and int(declared_size) > max_bytes:
-                raise DatasheetValidationError("Datasheet 文件超过系统允许的大小。")
+                raise DatasheetValidationError("The Datasheet exceeds the maximum allowed size.")
             data = response.read(max_bytes + 1)
             if len(data) > max_bytes:
-                raise DatasheetValidationError("Datasheet 文件超过系统允许的大小。")
+                raise DatasheetValidationError("The Datasheet exceeds the maximum allowed size.")
             return final_url, response.headers.get("Content-Type", ""), data
     except DatasheetValidationError:
         raise
     except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        raise DatasheetValidationError(f"无法读取 Datasheet URL：{exc}") from exc
+        raise DatasheetValidationError(f"Could not read the Datasheet URL: {exc}") from exc
 
 
 def _pdf_document(data, final_url=""):
     if not data.startswith(b"%PDF-"):
-        raise DatasheetValidationError("文件内容不是有效的 PDF。")
+        raise DatasheetValidationError("The file content is not a valid PDF.")
     try:
         reader = PdfReader(io.BytesIO(data))
         if reader.is_encrypted:
-            raise DatasheetValidationError("PDF 已加密，无法自动提取规格。")
+            raise DatasheetValidationError("Specifications cannot be extracted from an encrypted PDF.")
         if not reader.pages:
-            raise DatasheetValidationError("PDF 没有可读取的页面。")
+            raise DatasheetValidationError("The PDF has no readable pages.")
         if len(reader.pages) > 200:
-            raise DatasheetValidationError("PDF 页数超过 200 页，无法自动处理。")
+            raise DatasheetValidationError("PDFs over 200 pages cannot be processed.")
         page_texts = []
         for page_number, page in enumerate(reader.pages, start=1):
             try:
@@ -154,9 +154,9 @@ def _pdf_document(data, final_url=""):
     except DatasheetValidationError:
         raise
     except Exception as exc:
-        raise DatasheetValidationError("PDF 文件损坏或无法解析。") from exc
+        raise DatasheetValidationError("The PDF is damaged or could not be parsed.") from exc
     if len(re.sub(r"\s+", "", text)) < 20 and not ai_is_configured():
-        raise DatasheetValidationError("PDF 中没有足够的可提取文字，请上传文本型 Datasheet。")
+        raise DatasheetValidationError("The PDF does not contain enough extractable text. Upload a text-based Datasheet.")
     return ExtractedDocument(text, final_url, data, len(reader.pages), True)
 
 
@@ -194,16 +194,16 @@ def fetch_url_document(product, source_url=None):
             domains = (official_host.casefold().removeprefix("www."),)
     if not domains:
         raise DatasheetValidationError(
-            "该品牌尚未配置官方域名，无法安全地自动抓取 Datasheet URL。"
+            "No official domain is configured for this brand, so the Datasheet URL cannot be fetched safely."
         )
     requested_url = source_url or product.datasheet_url
     if not requested_url:
-        raise DatasheetValidationError("产品没有 Datasheet URL。")
+        raise DatasheetValidationError("The product does not have a Datasheet URL.")
     final_url, content_type, data = _fetch(requested_url, domains)
     if data.startswith(b"%PDF-") or "application/pdf" in content_type.casefold():
         return _pdf_document(data, final_url)
     if "html" not in content_type.casefold() and b"<html" not in data[:1000].lower():
-        raise DatasheetValidationError("Datasheet URL 返回的内容不是 PDF 或网页。")
+        raise DatasheetValidationError("The Datasheet URL did not return a PDF or web page.")
     page_text = html_to_text(data)
     pdf_links = _html_pdf_links(data, final_url)
     for linked_url in pdf_links:
@@ -217,10 +217,10 @@ def fetch_url_document(product, source_url=None):
             continue
     if pdf_links:
         raise DatasheetValidationError(
-            "Datasheet 网页包含 PDF，但 PDF 无法通过安全校验或型号校验。"
+            "The page links to a PDF that failed security or model validation."
         )
     if len(re.sub(r"\s+", "", page_text)) < 100:
-        raise DatasheetValidationError("Datasheet 网页没有足够的可提取规格内容。")
+        raise DatasheetValidationError("The Datasheet page does not contain enough extractable specification content.")
     return ExtractedDocument(page_text, final_url, data, None, False)
 
 
@@ -229,14 +229,14 @@ def read_uploaded_document(ingestion):
     with ingestion.uploaded_file.open("rb") as uploaded:
         data = uploaded.read(max_bytes + 1)
     if len(data) > max_bytes:
-        raise DatasheetValidationError("Datasheet 文件超过系统允许的大小。")
+        raise DatasheetValidationError("The Datasheet exceeds the maximum allowed size.")
     return _pdf_document(data)
 
 
 def validate_product_match(product, document, ai_result=None):
     if not model_token_present(product.model, document.text) and not ai_result:
         raise DatasheetMismatchError(
-            f"文档中未识别到产品型号 {product.model}，未写入任何规格。"
+            f"Product model {product.model} was not found in the document. No specifications were saved."
         )
     return ai_result.matched_model if ai_result else product.model
 
@@ -265,7 +265,7 @@ def _store_specs(
     }
     if not extracted:
         raise DatasheetValidationError(
-            "文档与型号匹配，但未提取到当前产品形态模板中的规格字段。"
+            "The document matches the model, but no specifications from the current product template were extracted."
         )
 
     today = date.today()
@@ -293,8 +293,8 @@ def _store_specs(
             definition=definition,
         ).first()
         automated_notes = {
-            "已校验型号，并从 Datasheet 自动提取。",
-            "已校验型号，并通过 AI 从 Datasheet 自动提取。",
+            "Model validated and specifications extracted from the Datasheet.",
+            "Model validated and specifications extracted from the Datasheet with AI.",
         }
         if (
             existing
@@ -315,9 +315,9 @@ def _store_specs(
                 "raw_value": str(raw_value)[:1000],
                 "source_url": document.final_url[:200],
                 "source_note": (
-                    "已校验型号，并通过 AI 从 Datasheet 自动提取。"
+                    "Model validated and specifications extracted from the Datasheet with AI."
                     if extraction_metadata.get(code, {}).get("method") == "ai"
-                    else "已校验型号，并从 Datasheet 自动提取。"
+                    else "Model validated and specifications extracted from the Datasheet."
                 ),
                 "verified_date": today,
                 "updated_by": ingestion.requested_by,
@@ -404,7 +404,7 @@ def process_datasheet_ingestion(ingestion_id):
         if ingestion.source_type == DatasheetIngestion.SourceType.URL:
             source_url = ingestion.source_url or ingestion.product.datasheet_url
             if not source_url:
-                raise DatasheetValidationError("产品没有 Datasheet URL。")
+                raise DatasheetValidationError("The product does not have a Datasheet URL.")
             document = fetch_url_document(ingestion.product, source_url)
         else:
             document = read_uploaded_document(ingestion)
@@ -429,7 +429,7 @@ def process_datasheet_ingestion(ingestion_id):
             ).count()
             DatasheetIngestion.objects.filter(pk=ingestion.pk).update(
                 status=DatasheetIngestion.Status.VALIDATED,
-                validation_message="Datasheet 内容未变化，已复用上次识别结果。",
+                validation_message="The Datasheet is unchanged; the previous result was reused.",
                 detected_model=cached.detected_model,
                 page_count=document.page_count,
                 file_sha256=file_hash,
@@ -518,7 +518,7 @@ def process_datasheet_ingestion(ingestion_id):
             )
             DatasheetIngestion.objects.filter(pk=ingestion.pk).update(
                 status=DatasheetIngestion.Status.VALIDATED,
-                validation_message="型号校验通过，规格已写入数据库。",
+                validation_message="Model validated and specifications saved.",
                 detected_model=detected_model,
                 page_count=document.page_count,
                 file_sha256=file_hash,
@@ -567,7 +567,7 @@ def process_datasheet_ingestion(ingestion_id):
         logger.exception("Datasheet ingestion %s failed", ingestion_id)
         DatasheetIngestion.objects.filter(pk=ingestion_id).update(
             status=DatasheetIngestion.Status.FAILED,
-            validation_message=f"处理失败：{exc}",
+            validation_message=f"Processing failed: {exc}",
             processed_at=timezone.now(),
         )
         return DatasheetIngestion.objects.get(pk=ingestion_id)

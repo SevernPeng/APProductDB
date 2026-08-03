@@ -29,7 +29,7 @@ def parse_product_ids(values):
         try:
             product_id = int(value)
         except ValueError as exc:
-            raise ValueError("产品参数无效，请重新选择。") from exc
+            raise ValueError("Invalid product selection.") from exc
         if product_id not in product_ids:
             product_ids.append(product_id)
     return product_ids
@@ -37,7 +37,7 @@ def parse_product_ids(values):
 
 def load_comparison_products(product_ids):
     if not 2 <= len(product_ids) <= 4:
-        raise ValueError("请选择 2–4 个不同的产品进行比较。")
+        raise ValueError("Select 2–4 different products to compare.")
 
     products = (
         Product.objects.filter(pk__in=product_ids, is_published=True)
@@ -51,10 +51,10 @@ def load_comparison_products(product_ids):
     )
     products_by_id = {product.pk: product for product in products}
     if len(products_by_id) != len(product_ids):
-        raise ValueError("所选产品不存在或尚未发布。")
+        raise ValueError("A selected product does not exist or is not published.")
     selected = [products_by_id[product_id] for product_id in product_ids]
     if len({product.category_id for product in selected}) != 1:
-        raise ValueError("只能比较同一产品类型的产品，请分别比较 AP、网桥、网关或交换机。")
+        raise ValueError("Only products of the same type can be compared.")
     return selected
 
 

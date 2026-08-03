@@ -104,12 +104,12 @@ def snapshot_for_selection(selection):
 
 def display_snapshot(snapshot):
     if "delete" in snapshot:
-        value = "删除对标关系"
+        value = "Remove benchmark relationship"
     elif "exists" in snapshot:
-        value = "已存在" if snapshot["exists"] else "尚未添加"
+        value = "Exists" if snapshot["exists"] else "Not added"
     elif "competitor_product_id" in snapshot and "match_type" in snapshot:
         value = (
-            f"竞品 #{snapshot['competitor_product_id']} · "
+            f"Competitor #{snapshot['competitor_product_id']} · "
             f"{snapshot['match_type']} · "
             f"{snapshot.get('match_level', '')}"
         )
@@ -153,7 +153,7 @@ def build_target_options(product):
                 "key": f"product:{field_name}",
                 "label": label,
                 "current": display_snapshot(snapshot_for_selection(selection)),
-                "group": "产品信息",
+                "group": "Product Information",
             }
         )
 
@@ -164,7 +164,7 @@ def build_target_options(product):
     )
     grouped_specs = {}
     for spec in specs:
-        group = spec.definition.group or "其他规格"
+        group = spec.definition.group or "Other Specifications"
         grouped_specs.setdefault(group, []).append(spec)
     for group, group_specs in grouped_specs.items():
         for spec in group_specs:
@@ -192,12 +192,12 @@ def build_target_options(product):
     for match in matches:
         if match.our_product_id == product.pk:
             related_product = match.competitor_product
-            relationship_label = "竞品"
+            relationship_label = "Competitor"
         else:
             related_product = match.our_product
-            relationship_label = "对标产品"
+            relationship_label = "Benchmark Product"
         related_name = f"{related_product.brand.name} {related_product.model}"
-        group_label = f"对标关系 · {relationship_label} {related_name}"
+        group_label = f"Benchmark · {relationship_label} {related_name}"
         for field_name, label in MATCH_FIELDS.items():
             selection = {
                 "request_type": ChangeRequest.RequestType.MATCH,
@@ -217,8 +217,8 @@ def build_target_options(product):
         options.append(
             {
                 "key": f"match:{match.pk}:{MATCH_DELETE_FIELD}",
-                "label": f"删除对标关系 · {related_name}",
-                "current": "当前有效",
+                "label": f"Remove Benchmark · {related_name}",
+                "current": "Active",
                 "group": group_label,
             }
         )
@@ -275,7 +275,7 @@ def resolve_target(product, target_key):
             )
             related_name = f"{related_product.brand.name} {related_product.model}"
             label = (
-                f"删除对标关系 · {related_name}"
+                f"Remove Benchmark · {related_name}"
                 if parts[2] == MATCH_DELETE_FIELD
                 else f"{related_name} · {MATCH_FIELDS[parts[2]]}"
             )
@@ -290,7 +290,7 @@ def resolve_target(product, target_key):
                     else "update"
                 ),
             }
-    raise ValidationError("所选修改字段无效或不属于当前产品。")
+    raise ValidationError("The selected field is invalid or does not belong to this product.")
 
 
 def parse_proposed_value(selection, raw_value):
@@ -313,24 +313,24 @@ def parse_proposed_value(selection, raw_value):
             try:
                 number = Decimal(value)
             except InvalidOperation as exc:
-                raise ValidationError("建议值必须是有效数字。") from exc
+                raise ValidationError("The proposed value must be a valid number.") from exc
             if data_type == "integer" and number != number.to_integral_value():
-                raise ValidationError("该字段只接受整数。")
+                raise ValidationError("This field accepts integers only.")
             return {"value_text": "", "value_number": _number_string(number)}
         if data_type == "boolean":
             normalized = value.lower()
             if normalized not in {"yes", "no", "true", "false", "1", "0"}:
-                raise ValidationError("布尔字段请输入 Yes 或 No。")
+                raise ValidationError("Enter Yes or No for a Boolean field.")
             return {"value_boolean": normalized in {"yes", "true", "1"}}
         return {"value_text": value, "value_number": None}
 
     if request_type == ChangeRequest.RequestType.PRODUCT:
         if field_name in {"region", "wifi_standard"} and not value:
-            raise ValidationError("该产品字段不能为空。")
+            raise ValidationError("This product field cannot be blank.")
         if field_name == "ap_type" and value not in Product.APType.values:
-            raise ValidationError("AP Type 建议值无效。")
+            raise ValidationError("Invalid AP Type value.")
         if field_name == "lifecycle_status" and value not in Product.LifecycleStatus.values:
-            raise ValidationError("Lifecycle Status 建议值无效。")
+            raise ValidationError("Invalid Lifecycle Status value.")
         if field_name in {"official_url", "datasheet_url"} and value:
             URLValidator()(value)
         if field_name == "launch_date" and value:
@@ -343,34 +343,34 @@ def parse_proposed_value(selection, raw_value):
         return {"value": value}
 
     if field_name == "match_type" and value not in ProductMatch.MatchType.values:
-        raise ValidationError("Match Type 建议值无效。")
+        raise ValidationError("Invalid Match Type value.")
     if field_name == "match_level" and value not in ProductMatch.MatchLevel.values:
-        raise ValidationError("Match Level 建议值无效。")
+        raise ValidationError("Invalid Match Level value.")
     if field_name == "status" and value not in ProductMatch.Status.values:
-        raise ValidationError("Status 建议值无效。")
+        raise ValidationError("Invalid Status value.")
     if field_name in {"match_score", "confidence"}:
         if not value:
             return {"value": None}
         try:
             score = int(value)
         except ValueError as exc:
-            raise ValidationError("该字段必须是 0–100 的整数。") from exc
+            raise ValidationError("This field must be an integer from 0 to 100.") from exc
         if not 0 <= score <= 100:
-            raise ValidationError("该字段必须是 0–100 的整数。")
+            raise ValidationError("This field must be an integer from 0 to 100.")
         return {"value": score}
     if field_name == "rank":
         try:
             rank = int(value)
         except ValueError as exc:
-            raise ValidationError("Rank 必须是非负整数。") from exc
+            raise ValidationError("Rank must be a non-negative integer.") from exc
         if rank < 0:
-            raise ValidationError("Rank 必须是非负整数。")
+            raise ValidationError("Rank must be a non-negative integer.")
         return {"value": rank}
     if field_name in {"valid_from", "valid_to"} and value:
         try:
             date.fromisoformat(value)
         except ValueError as exc:
-            raise ValidationError("日期必须使用 YYYY-MM-DD 格式。") from exc
+            raise ValidationError("Use YYYY-MM-DD date format.") from exc
     if field_name == "source_url" and value:
         URLValidator()(value)
     return {"value": value}
@@ -380,33 +380,33 @@ def proposed_value_hint(selection):
     target = selection["target"]
     field_name = selection["field_name"]
     if field_name == MATCH_DELETE_FIELD:
-        return "该申请获批后，对标关系会标记为已删除并立即停止展示。"
+        return "Approval will remove this benchmark relationship."
     if selection["request_type"] == ChangeRequest.RequestType.SPEC:
         if target.definition.data_type == "integer":
-            return f"请输入整数{f'，单位 {target.definition.unit}' if target.definition.unit else ''}。"
+            return f"Enter an integer{f' in {target.definition.unit}' if target.definition.unit else ''}."
         if target.definition.data_type == "decimal":
-            return f"请输入数字{f'，单位 {target.definition.unit}' if target.definition.unit else ''}。"
+            return f"Enter a number{f' in {target.definition.unit}' if target.definition.unit else ''}."
         if target.definition.data_type == "boolean":
-            return "请输入 Yes 或 No。"
+            return "Enter Yes or No."
     if field_name == "ap_type":
-        return "可用值：" + "、".join(value for value, _ in Product.APType.choices)
+        return "Allowed values: " + ", ".join(value for value, _ in Product.APType.choices)
     if field_name == "lifecycle_status":
-        return "可用值：" + "、".join(value for value, _ in Product.LifecycleStatus.choices)
+        return "Allowed values: " + ", ".join(value for value, _ in Product.LifecycleStatus.choices)
     if field_name == "match_type":
-        return "可用值：" + "、".join(value for value, _ in ProductMatch.MatchType.choices)
+        return "Allowed values: " + ", ".join(value for value, _ in ProductMatch.MatchType.choices)
     if field_name == "match_level":
-        return "可用值：" + "、".join(value for value, _ in ProductMatch.MatchLevel.choices)
+        return "Allowed values: " + ", ".join(value for value, _ in ProductMatch.MatchLevel.choices)
     if field_name == "status":
-        return "可用值：" + "、".join(value for value, _ in ProductMatch.Status.choices)
+        return "Allowed values: " + ", ".join(value for value, _ in ProductMatch.Status.choices)
     if field_name == "launch_date":
-        return "请使用 YYYY-MM-DD 格式；留空可清除日期。"
+        return "Use YYYY-MM-DD; leave blank to clear the date."
     if field_name in {"match_score", "confidence"}:
-        return "请输入 0–100 的整数，留空表示 Unknown。"
+        return "Enter an integer from 0 to 100; leave blank for Unknown."
     if field_name == "rank":
-        return "请输入非负整数。"
+        return "Enter a non-negative integer."
     if field_name in {"valid_from", "valid_to"}:
-        return "请使用 YYYY-MM-DD 格式；留空可清除日期。"
-    return "输入该字段的完整建议值；允许留空以清除可选字段。"
+        return "Use YYYY-MM-DD; leave blank to clear the date."
+    return "Enter the full proposed value; leave blank to clear an optional field."
 
 
 def current_snapshot(change, target):
@@ -516,7 +516,7 @@ def approve_change(change_id, reviewer, review_comment, ip):
         "target_product", "target_spec", "target_match", "submitted_by"
     ).get(pk=change_id)
     if change.status != ChangeRequest.Status.PENDING:
-        raise ValidationError("该申请已经完成审核。")
+        raise ValidationError("This request has already been reviewed.")
     if (
         change.request_type == ChangeRequest.RequestType.MATCH
         and change.field_name == MATCH_ADD_FIELD
@@ -525,7 +525,7 @@ def approve_change(change_id, reviewer, review_comment, ip):
         before = {"exists": _active_match_exists(change)}
         if before != change.old_value:
             raise ApprovalConflict(
-                "该竞品对标关系已在申请提交后发生变化，请重新提交申请。"
+                "This benchmark changed after the request was submitted. Submit a new request."
             )
         match = _apply_match_add(change, reviewer)
         after = {
@@ -552,7 +552,7 @@ def approve_change(change_id, reviewer, review_comment, ip):
     target = _locked_target(change)
     before = current_snapshot(change, target)
     if before != change.old_value:
-        raise ApprovalConflict("当前正式值已在申请提交后发生变化，请重新提交申请。")
+        raise ApprovalConflict("The current value changed after this request was submitted. Submit a new request.")
     _apply_proposed(change, target, reviewer)
     after = current_snapshot(change, target)
     change.status = ChangeRequest.Status.APPROVED
@@ -577,10 +577,10 @@ def approve_change(change_id, reviewer, review_comment, ip):
 def reject_change(change_id, reviewer, review_comment, ip):
     comment = review_comment.strip()
     if not comment:
-        raise ValidationError("拒绝申请时必须填写审核意见。")
+        raise ValidationError("A review comment is required when rejecting a request.")
     change = ChangeRequest.objects.select_for_update().get(pk=change_id)
     if change.status != ChangeRequest.Status.PENDING:
-        raise ValidationError("该申请已经完成审核。")
+        raise ValidationError("This request has already been reviewed.")
     change.status = ChangeRequest.Status.REJECTED
     change.reviewed_by = reviewer
     change.reviewed_at = timezone.now()

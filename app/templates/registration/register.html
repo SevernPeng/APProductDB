@@ -1,12 +1,11 @@
 {% extends "base.html" %}
-{% block title %}注册 · APProductDB{% endblock %}
+{% block title %}Register · APProductDB{% endblock %}
 {% block content %}
 <div class="row justify-content-center py-5">
   <div class="col-12 col-md-7 col-lg-5">
     <div class="card border-0 shadow-sm">
       <div class="card-body p-4">
-        <h1 class="h4 mb-2">注册账户</h1>
-        <p class="text-secondary mb-4">当前仅校验邮箱后缀。注册后默认角色为 User。</p>
+        <h1 class="h4 mb-4">Create Account</h1>
         <form method="post" novalidate>
           {% csrf_token %}
           {% for field in form %}
@@ -17,9 +16,9 @@
             </div>
           {% endfor %}
           {% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
-          <button type="submit" class="btn btn-primary w-100">注册并登录</button>
+          <button type="submit" class="btn btn-primary w-100">Register and Sign In</button>
         </form>
-        <p class="text-center text-secondary small mt-3 mb-0">已有账户？<a href="{% url 'login' %}">返回登录</a></p>
+        <p class="text-center text-secondary small mt-3 mb-0">Already registered? <a href="{% url 'login' %}">Sign in</a></p>
       </div>
     </div>
   </div>

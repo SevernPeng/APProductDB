@@ -36,10 +36,10 @@ class HomeTests(TestCase):
         self.client.force_login(self.user)
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "网络产品竞品数据库")
+        self.assertContains(response, "Network Product Database")
         self.assertContains(response, reverse("product-list"))
         self.assertContains(response, 'name="q"')
-        self.assertNotContains(response, "全站待审核")
+        self.assertNotContains(response, "Pending Reviews")
 
     def test_superuser_sees_sitewide_pending_review_metric(self):
         self.user.is_staff = True
@@ -47,7 +47,7 @@ class HomeTests(TestCase):
         self.user.save()
         self.client.force_login(self.user)
         response = self.client.get(reverse("home"))
-        self.assertContains(response, "全站待审核")
+        self.assertContains(response, "Pending Reviews")
 
     def test_home_counts_published_own_and_competitor_products(self):
         category = Category.objects.create(name="Access Point", slug="access-point")
@@ -169,7 +169,7 @@ class ProductListTests(TestCase):
         response, _ = self.get_products()
 
         self.assertContains(response, 'name="q"')
-        self.assertContains(response, '<button class="btn btn-primary w-100" type="submit">搜索</button>', html=True)
+        self.assertContains(response, '<button class="btn btn-primary w-100" type="submit">Search</button>', html=True)
         for obsolete_name in ("category", "brand", "ap_type", "bands", "streams", "lan_rate"):
             self.assertNotContains(response, f'name="{obsolete_name}"')
 
@@ -248,7 +248,7 @@ class ProductListTests(TestCase):
 
         self.assertEqual(products, [switch])
         self.assertContains(response, "Managed Switch")
-        self.assertContains(response, "产品类型")
+        self.assertContains(response, "Product Type")
         self.assertNotContains(response, "Switching Capacity")
         self.assertNotContains(response, "Total PoE Budget")
         self.assertNotContains(response, '<th>AP Type</th>', html=False)
@@ -350,7 +350,7 @@ class ProductDetailAndPermissionTests(TestCase):
         response = self.client.get(self.detail_url())
         self.assertContains(response, "https://example.com/eap-zero")
         self.assertContains(response, "2026-07-18")
-        self.assertContains(response, "系统计算（各频段最大速率之和）")
+        self.assertContains(response, "Calculated from maximum band rates")
 
     def test_detail_separates_p0_p1_and_collapsible_p2_fields(self):
         template = ComparisonTemplate.objects.create(
@@ -375,9 +375,9 @@ class ProductDetailAndPermissionTests(TestCase):
         self.client.force_login(self.viewer)
         response = self.client.get(self.detail_url())
 
-        self.assertContains(response, "P0 · 核心对标规格")
-        self.assertContains(response, "P1 · 重要规格")
-        self.assertContains(response, "更多规格（P2）")
+        self.assertContains(response, "P0 · Core Benchmark Specifications")
+        self.assertContains(response, "P1 · Important Specifications")
+        self.assertContains(response, "More Specifications (P2)")
         self.assertContains(response, "Group P1")
         self.assertEqual(len(response.context["p0_spec_rows"]), 1)
         self.assertEqual(len(response.context["p1_spec_rows"]), 1)
@@ -432,13 +432,13 @@ class ProductDetailAndPermissionTests(TestCase):
         self.client.force_login(self.contributor)
         response = self.client.get(self.detail_url())
 
-        self.assertContains(response, "Datasheet 识别")
+        self.assertContains(response, "Process Datasheet")
         self.assertContains(
             response,
             reverse("product-datasheet", args=(self.product.pk,)),
         )
         self.assertNotContains(response, 'type="file"')
-        self.assertNotContains(response, "最近识别记录")
+        self.assertNotContains(response, "Processing History")
 
     def test_datasheet_page_offers_pdf_and_url_inputs(self):
         self.client.force_login(self.contributor)
@@ -447,8 +447,8 @@ class ProductDetailAndPermissionTests(TestCase):
         )
 
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "上传 Datasheet PDF")
-        self.assertContains(response, "添加 Datasheet URL")
+        self.assertContains(response, "Upload Datasheet PDF")
+        self.assertContains(response, "Add Datasheet URL")
         self.assertContains(response, 'type="file"')
         self.assertContains(response, 'name="datasheet_url"')
 
@@ -498,7 +498,7 @@ class ProductDetailAndPermissionTests(TestCase):
         )
 
         self.assertEqual(response.status_code, 400)
-        self.assertContains(response, "输入一个有效的 URL", status_code=400)
+        self.assertContains(response, "Enter a valid URL", status_code=400)
         self.assertFalse(DatasheetIngestion.objects.exists())
 
 

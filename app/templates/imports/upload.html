@@ -1,41 +1,38 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}Excel 导入 · APProductDB{% endblock %}
+{% block title %}Excel Import · APProductDB{% endblock %}
 
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-4">
   <div>
-    <h1 class="h3 mb-1">Excel 导入</h1>
-    <p class="text-body-secondary mb-0">按产品形态下载模板，填写数据，再上传校验并确认导入。</p>
+    <h1 class="h3 mb-1">Excel Import</h1>
   </div>
-  <a href="{% url 'admin:index' %}" class="btn btn-outline-secondary">返回后台</a>
+  <a href="{% url 'admin:index' %}" class="btn btn-outline-secondary">Back to Admin</a>
 </div>
 
 <div class="row g-3 mb-4">
   <div class="col-md-4">
     <div class="card h-100 border-primary">
       <div class="card-body">
-        <div class="text-primary fw-semibold mb-2">第 1 步</div>
-        <h2 class="h5">选择产品形态并下载模板</h2>
-        <p class="text-body-secondary mb-0">每种产品形态包含独立字段结构，请不要跨形态复用模板。</p>
+        <div class="text-primary fw-semibold mb-2">Step 1</div>
+        <h2 class="h5">Download a Template</h2>
       </div>
     </div>
   </div>
   <div class="col-md-4">
     <div class="card h-100">
       <div class="card-body">
-        <div class="text-primary fw-semibold mb-2">第 2 步</div>
-        <h2 class="h5">在 Excel 中填写数据</h2>
-        <p class="text-body-secondary mb-0">按照 Field Definitions 的类型、单位和填写规则录入。</p>
+        <div class="text-primary fw-semibold mb-2">Step 2</div>
+        <h2 class="h5">Enter Data in Excel</h2>
       </div>
     </div>
   </div>
   <div class="col-md-4">
     <div class="card h-100">
       <div class="card-body">
-        <div class="text-primary fw-semibold mb-2">第 3 步</div>
-        <h2 class="h5">上传、校验并确认导入</h2>
-        <p class="text-body-secondary mb-0">上传阶段不写数据库；校验通过后在预览页确认正式导入。</p>
+        <div class="text-primary fw-semibold mb-2">Step 3</div>
+        <h2 class="h5">Upload and Validate</h2>
       </div>
     </div>
   </div>
@@ -43,7 +40,7 @@
 
 <div class="card shadow-sm mb-4">
   <div class="card-header bg-white">
-    <h2 class="h5 mb-0">产品形态模板</h2>
+    <h2 class="h5 mb-0">Product Templates</h2>
   </div>
   <div class="card-body">
     <div class="import-template-groups border rounded overflow-hidden">
@@ -71,37 +68,45 @@
 
 <div class="card shadow-sm mb-4">
   <div class="card-header bg-white">
-    <h2 class="h5 mb-0">上传填写完成的模板</h2>
+    <h2 class="h5 mb-0">Upload Completed Template</h2>
   </div>
   <div class="card-body">
     <div class="alert alert-info">
-      上传时选择的产品形态必须与模板中的 Template Metadata 一致，否则校验不会通过。
+      The selected product type must match the template metadata.
     </div>
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {% for field in form %}
         <div class="mb-3">
           <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
-          {{ field }}
+          {% if field.name == "uploaded_file" %}
+            <div class="custom-file-picker" data-file-picker>
+              {{ field }}
+              <label class="btn btn-outline-secondary" for="{{ field.id_for_label }}">Choose File</label>
+              <span class="custom-file-name" data-file-name aria-live="polite">No file chosen</span>
+            </div>
+          {% else %}
+            {{ field }}
+          {% endif %}
           {% for error in field.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
         </div>
       {% endfor %}
-      <button type="submit" class="btn btn-primary">上传并校验</button>
+      <button type="submit" class="btn btn-primary">Upload and Validate</button>
     </form>
   </div>
 </div>
 
-<h2 class="h5">最近任务</h2>
+<h2 class="h5">Recent Jobs</h2>
 <div class="table-responsive">
   <table class="table table-striped align-middle">
     <thead>
-      <tr><th>ID</th><th>产品形态</th><th>模式</th><th>状态</th><th>有效/总行数</th><th>上传者</th><th>时间</th></tr>
+      <tr><th>ID</th><th>Product Type</th><th>Mode</th><th>Status</th><th>Valid / Total</th><th>Uploaded By</th><th>Time</th></tr>
     </thead>
     <tbody>
       {% for job in recent_jobs %}
         <tr>
           <td><a href="{% url 'imports:detail' job.pk %}">#{{ job.pk }}</a></td>
-          <td>{% if job.product_type %}{{ job.product_type.category.name }} / {{ job.product_type.name }}{% else %}旧版模板{% endif %}</td>
+          <td>{% if job.product_type %}{{ job.product_type.category.name }} / {{ job.product_type.name }}{% else %}Legacy Template{% endif %}</td>
           <td>{{ job.get_mode_display }}</td>
           <td>{{ job.get_status_display }}</td>
           <td>{{ job.valid_rows }}/{{ job.total_rows }}</td>
@@ -109,9 +114,14 @@
           <td>{{ job.uploaded_at }}</td>
         </tr>
       {% empty %}
-        <tr><td colspan="7" class="text-body-secondary">暂无导入任务。</td></tr>
+        <tr><td colspan="7" class="text-body-secondary">No import jobs.</td></tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script src="{% static 'js/file-picker.js' %}" defer></script>
 {% endblock %}

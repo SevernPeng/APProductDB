@@ -34,7 +34,7 @@ def root_required(view_func):
     @wraps(view_func)
     def wrapped(request, *args, **kwargs):
         if not is_root(request.user):
-            raise PermissionDenied("只有 Root 可以管理账户权限。")
+            raise PermissionDenied("Only Root can manage account permissions.")
         return view_func(request, *args, **kwargs)
 
     return wrapped

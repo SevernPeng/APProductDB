@@ -67,7 +67,7 @@ def reviewer_required(view_func):
     @wraps(view_func)
     def wrapped(request, *args, **kwargs):
         if not can_review(request.user):
-            raise PermissionDenied("只有 Admin 或 Root 可以审核修改申请。")
+            raise PermissionDenied("Only Admin or Root can review change requests.")
         return view_func(request, *args, **kwargs)
 
     return wrapped
