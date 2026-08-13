@@ -23,6 +23,7 @@ from catalog.product_types import product_type_code
 from catalog.services import template_fields
 from changes.models import ChangeRequest
 from comparison.models import ProductMatch
+from comparison.scoring import calculate_benchmark_index
 
 from .permissions import catalog_access_required, contributor_required
 
@@ -143,8 +144,9 @@ def product_detail(request, pk):
         match_queryset = product.competitor_matches.exclude(
             status=ProductMatch.Status.REJECTED
         ).filter(competitor_product__is_published=True).select_related(
-            "competitor_product__brand"
-        )
+            "competitor_product__brand", "competitor_product__category",
+            "competitor_product__product_type",
+        ).prefetch_related("competitor_product__specs__definition")
         for match in match_queryset:
             matches.append(
                 {
@@ -156,7 +158,9 @@ def product_detail(request, pk):
     else:
         match_queryset = product.matched_as_competitor.exclude(
             status=ProductMatch.Status.REJECTED
-        ).filter(our_product__is_published=True).select_related("our_product__brand")
+        ).filter(our_product__is_published=True).select_related(
+            "our_product__brand", "our_product__category", "our_product__product_type"
+        ).prefetch_related("our_product__specs__definition")
         for match in match_queryset:
             matches.append(
                 {
@@ -166,9 +170,27 @@ def product_detail(request, pk):
                 }
             )
 
+    for item in matches:
+        match = item["match"]
+        item["benchmark_index"] = calculate_benchmark_index(
+            match.our_product,
+            match.competitor_product,
+            manual_score=match.match_score,
+        )
+    matches.sort(
+        key=lambda item: (
+            -item["benchmark_index"],
+            item["product"].brand.name.casefold(),
+            item["product"].model.casefold(),
+            item["product"].pk,
+        )
+    )
+    visible_matches = matches[:3]
+    collapsed_matches = matches[3:]
+
     compare_matches_url = ""
     if matches:
-        compare_ids = [product.pk] + [item["product"].pk for item in matches[:3]]
+        compare_ids = [product.pk] + [item["product"].pk for item in visible_matches]
         compare_matches_url = reverse("comparison:compare") + "?" + urlencode(
             [("products", product_id) for product_id in compare_ids]
         )
@@ -209,6 +231,8 @@ def product_detail(request, pk):
             "aggregate_rate": product.aggregate_rate_mbps,
             "aggregate_verified_date": max(rate_verified_dates, default=None),
             "matches": matches,
+            "visible_matches": visible_matches,
+            "collapsed_matches": collapsed_matches,
             "compare_matches_url": compare_matches_url,
         },
     )

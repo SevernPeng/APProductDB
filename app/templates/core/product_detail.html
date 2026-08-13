@@ -91,12 +91,29 @@
     {% if compare_matches_url %}<a class="btn btn-sm btn-primary" href="{{ compare_matches_url }}">Compare All</a>{% endif %}
   </div>
   <div class="list-group list-group-flush">
-    {% for item in matches %}
+    {% for item in visible_matches %}
       <div class="list-group-item d-flex flex-wrap justify-content-between align-items-center gap-3">
         <div><span class="text-body-secondary">{{ item.relationship }}</span> · <a class="fw-semibold" href="{% url 'product-detail' item.product.pk %}">{{ item.product.brand.name }} {{ item.product.model }}</a><br><small class="text-body-secondary">{{ item.match.get_match_type_display }} · {{ item.match.get_status_display }}</small></div>
-        <a class="btn btn-sm btn-outline-primary" href="{% url 'comparison:compare' %}?products={{ product.pk }}&amp;products={{ item.product.pk }}">Compare</a>
+        <div class="d-flex align-items-center gap-2">
+          <span class="badge rounded-pill text-bg-info">Benchmark Index {{ item.benchmark_index }}</span>
+          <a class="btn btn-sm btn-outline-primary" href="{% url 'comparison:compare' %}?products={{ product.pk }}&amp;products={{ item.product.pk }}">Compare</a>
+        </div>
       </div>
     {% empty %}<div class="list-group-item text-body-secondary">No benchmarks available.</div>{% endfor %}
+    {% if collapsed_matches %}
+      <details class="benchmark-more">
+        <summary class="list-group-item list-group-item-action text-primary text-center">Show {{ collapsed_matches|length }} more benchmarks</summary>
+        {% for item in collapsed_matches %}
+          <div class="list-group-item d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div><span class="text-body-secondary">{{ item.relationship }}</span> 路 <a class="fw-semibold" href="{% url 'product-detail' item.product.pk %}">{{ item.product.brand.name }} {{ item.product.model }}</a><br><small class="text-body-secondary">{{ item.match.get_match_type_display }} 路 {{ item.match.get_status_display }}</small></div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge rounded-pill text-bg-secondary">Benchmark Index {{ item.benchmark_index }}</span>
+              <a class="btn btn-sm btn-outline-primary" href="{% url 'comparison:compare' %}?products={{ product.pk }}&amp;products={{ item.product.pk }}">Compare</a>
+            </div>
+          </div>
+        {% endfor %}
+      </details>
+    {% endif %}
   </div>
 </div>
 </div>

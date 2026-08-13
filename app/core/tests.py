@@ -418,6 +418,38 @@ class ProductDetailAndPermissionTests(TestCase):
         self.assertContains(response, "mb-3 order-1")
         self.assertContains(self.client.get(self.detail_url(competitor)), "TP-Link EAP-ZERO")
 
+    def test_detail_shows_top_three_benchmark_indexes_and_collapses_the_rest(self):
+        competitors = []
+        for index, score in enumerate((20, 90, 40, 80, 70), start=1):
+            competitor = Product.objects.create(
+                brand=self.ubiquiti,
+                category=self.category,
+                model=f"RANK-{index}",
+                ap_type=Product.APType.CEILING,
+            )
+            ProductMatch.objects.create(
+                our_product=self.product,
+                competitor_product=competitor,
+                match_type=ProductMatch.MatchType.DIRECT,
+                status=ProductMatch.Status.CONFIRMED,
+                match_score=score,
+            )
+            competitors.append(competitor)
+
+        self.client.force_login(self.viewer)
+        response = self.client.get(self.detail_url())
+
+        self.assertEqual(
+            [item["benchmark_index"] for item in response.context["visible_matches"]],
+            [90, 80, 70],
+        )
+        self.assertEqual(
+            [item["benchmark_index"] for item in response.context["collapsed_matches"]],
+            [40, 20],
+        )
+        self.assertContains(response, "Show 2 more benchmarks")
+        self.assertContains(response, "Benchmark Index 90")
+
     def test_unpublished_product_is_not_exposed_and_query_routes_are_read_only(self):
         hidden = Product.objects.create(
             brand=self.tp_link,

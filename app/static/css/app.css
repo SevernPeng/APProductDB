@@ -49,16 +49,26 @@ body { min-height: 100vh; }
 .benchmark-table td { min-width: 8rem; }
 .comparison-scroll { max-height: calc(100vh - 12rem); }
 .comparison-table { min-width: 52rem; }
-.comparison-table thead { position: sticky; top: 0; z-index: 2; }
+.comparison-table thead th {
+  background-color: var(--bs-tertiary-bg);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 .comparison-table th,
 .comparison-table td { min-width: 12rem; vertical-align: top; }
 .comparison-table .comparison-field {
-  background: inherit;
+  background-color: var(--bs-body-bg);
   left: 0;
   min-width: 15rem;
   position: sticky;
-  z-index: 1;
+  z-index: 2;
 }
+.comparison-table thead .comparison-field {
+  background-color: var(--bs-tertiary-bg);
+  z-index: 4;
+}
+.comparison-table .comparison-difference .comparison-field { background-color: #fff8df; }
 .product-autocomplete { position: relative; }
 .product-autocomplete-menu {
   left: 0;
