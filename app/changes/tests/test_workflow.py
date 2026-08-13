@@ -92,23 +92,26 @@ class ChangeWorkflowTests(TestCase):
         values.update(overrides)
         return ChangeRequest.objects.create(**values)
 
-    def test_permissions_separate_viewer_contributor_owner_and_admin(self):
+    def test_all_authenticated_users_can_modify_and_only_owner_or_root_sees_history(self):
         suggest_url = reverse("changes:suggest", args=[self.product.pk])
-        review_url = reverse("reviews:list")
         self.assertEqual(self.client.get(suggest_url).status_code, 302)
         self.client.force_login(self.viewer)
-        self.assertEqual(self.client.get(suggest_url).status_code, 403)
+        self.assertEqual(self.client.get(suggest_url).status_code, 200)
         self.client.force_login(self.contributor)
         self.assertEqual(self.client.get(suggest_url).status_code, 200)
-        self.assertEqual(self.client.get(review_url).status_code, 403)
         change = self.create_spec_change()
         self.client.force_login(self.other_contributor)
         self.assertEqual(
             self.client.get(reverse("changes:detail", args=[change.pk])).status_code,
             403,
         )
-        self.client.force_login(self.admin)
-        self.assertEqual(self.client.get(review_url).status_code, 200)
+        root = get_user_model().objects.get(username="root")
+        self.client.force_login(root)
+        self.assertEqual(
+            self.client.get(reverse("changes:detail", args=[change.pk])).status_code,
+            200,
+        )
+        self.assertEqual(self.client.get("/reviews/").status_code, 404)
 
     def test_editable_fields_follow_product_category_and_actual_specs(self):
         secondary_definition = SpecDefinition.objects.create(
@@ -336,7 +339,7 @@ class ChangeWorkflowTests(TestCase):
         )
         self.assertEqual(delete_change.status, ChangeRequest.Status.APPROVED)
 
-    def test_contributor_match_add_waits_for_review_and_can_be_approved(self):
+    def test_user_match_add_is_applied_immediately(self):
         second_competitor = Product.objects.create(
             brand=self.ubiquiti,
             category=self.category,
@@ -357,21 +360,15 @@ class ChangeWorkflowTests(TestCase):
             },
         )
         self.assertEqual(response.status_code, 302)
-        self.assertFalse(
+        self.assertTrue(
             ProductMatch.objects.filter(
                 our_product=self.product,
                 competitor_product=second_competitor,
             ).exists()
         )
         change = ChangeRequest.objects.get(field_name="__add__")
-        self.assertEqual(change.status, ChangeRequest.Status.PENDING)
-
-        self.client.force_login(self.admin)
-        review_response = self.client.get(
-            reverse("reviews:detail", args=[change.pk])
-        )
-        self.assertEqual(review_response.status_code, 200)
-        self.client.post(reverse("reviews:approve", args=[change.pk]))
+        self.assertEqual(change.status, ChangeRequest.Status.APPROVED)
+        self.assertEqual(change.reviewed_by, self.contributor)
         self.assertTrue(
             ProductMatch.objects.filter(
                 our_product=self.product,
@@ -404,7 +401,7 @@ class ChangeWorkflowTests(TestCase):
         self.assertContains(response, "The proposed value must differ from the current value")
         self.assertFalse(ChangeRequest.objects.exists())
 
-    def test_valid_submission_uses_server_side_actor_and_keeps_formal_value(self):
+    def test_valid_submission_uses_server_side_actor_applies_and_audits(self):
         self.client.force_login(self.contributor)
         response = self.client.post(
             reverse("changes:suggest", args=[self.product.pk]),
@@ -421,124 +418,102 @@ class ChangeWorkflowTests(TestCase):
         self.assertEqual(change.submitted_by, self.contributor)
         self.assertEqual(change.old_value["value_number"], "100")
         self.spec.refresh_from_db()
-        self.assertEqual(self.spec.value_number, 100)
-        self.assertTrue(
-            AuditLog.objects.filter(
-                actor=self.contributor, action="change_request.submitted"
-            ).exists()
-        )
-
-    def test_admin_approval_updates_spec_and_creates_audit_log(self):
-        change = self.create_spec_change()
-        self.client.force_login(self.admin)
-        response = self.client.post(
-            reverse("reviews:approve", args=[change.pk]),
-            {"review_comment": "Verified"},
-        )
-        self.assertEqual(response.status_code, 302)
-        change.refresh_from_db()
-        self.spec.refresh_from_db()
-        self.assertEqual(change.status, ChangeRequest.Status.APPROVED)
-        self.assertEqual(change.reviewed_by, self.admin)
         self.assertEqual(self.spec.value_number, 200)
-        self.assertEqual(self.spec.source_url, "https://example.com/new")
-        audit = AuditLog.objects.get(action="change_request.approved")
+        change.refresh_from_db()
+        self.assertEqual(change.status, ChangeRequest.Status.APPROVED)
+        audit = AuditLog.objects.get(actor=self.contributor, action="change.applied")
         self.assertEqual(audit.before_data["value_number"], "100")
         self.assertEqual(audit.after_data["value_number"], "200")
 
-    def test_role_admin_submission_is_applied_without_review_queue(self):
-        role_admin = get_user_model().objects.create_user(
-            username="reviewer@tp-link.com", email="reviewer@tp-link.com", password="secret"
+    def test_non_root_account_is_user_and_change_is_applied_without_review(self):
+        user = get_user_model().objects.create_user(
+            username="editor@tp-link.com", email="editor@tp-link.com", password="secret"
         )
-        AccountProfile.objects.create(user=role_admin, email=role_admin.email, role="admin")
-        self.client.force_login(role_admin)
+        self.assertEqual(user.account_profile.role, AccountProfile.Role.USER)
+        self.assertFalse(user.is_superuser)
+        self.client.force_login(user)
         response = self.client.post(
             reverse("changes:suggest", args=[self.product.pk]),
             {
                 "target": f"spec:{self.spec.pk}",
                 "proposed_value": "250",
-                "reason": "Admin correction",
-                "source_url": "https://example.com/admin-source",
+                "reason": "User correction",
+                "source_url": "https://example.com/user-source",
             },
         )
         self.assertEqual(response.status_code, 302)
-        change = ChangeRequest.objects.get(submitted_by=role_admin)
+        change = ChangeRequest.objects.get(submitted_by=user)
         change.refresh_from_db()
         self.spec.refresh_from_db()
         self.assertEqual(change.status, ChangeRequest.Status.APPROVED)
-        self.assertEqual(change.reviewed_by, role_admin)
+        self.assertEqual(change.reviewed_by, user)
         self.assertEqual(self.spec.value_number, 250)
-        self.assertEqual(self.client.get(reverse("reviews:list")).status_code, 200)
+        self.assertTrue(AuditLog.objects.filter(actor=user, action="change.applied").exists())
 
-    def test_review_product_filter_is_a_searchable_autocomplete_field(self):
-        self.create_spec_change()
-        self.client.force_login(self.admin)
-        response = self.client.get(reverse("reviews:list"), {"product": self.product.pk})
-        self.assertContains(response, 'data-product-autocomplete')
-        self.assertContains(response, 'type="search"')
-        self.assertContains(response, 'name="product"')
-        self.assertContains(response, f'value="{self.product.pk}" data-product-value')
-        self.assertNotContains(response, 'id="review-product"')
+    def test_product_page_editor_updates_multiple_fields_with_audit_history(self):
+        self.client.force_login(self.contributor)
+        response = self.client.get(
+            reverse("changes:edit-product", args=[self.product.pk])
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Edit page content")
+        self.assertContains(response, 'name="product_notes"')
+        self.assertContains(response, f'name="spec_{self.spec.pk}"')
+        integer_input = str(response.context["form"][f"spec_{self.spec.pk}"])
+        self.assertIn('step="1"', integer_input)
+        self.assertIn('value="100"', integer_input)
+        self.assertNotIn('value="100.000"', integer_input)
 
-    def test_conflict_prevents_silent_overwrite(self):
-        change = self.create_spec_change()
-        self.spec.value_number = 150
-        self.spec.save()
-        self.client.force_login(self.admin)
+        post_data = {
+            name: (
+                response.context["form"][name].value()
+                if response.context["form"][name].value() is not None
+                else ""
+            )
+            for name in response.context["form"].fields
+        }
+        post_data["product_notes"] = "Updated on the product page"
+        post_data[f"spec_{self.spec.pk}"] = "275"
         response = self.client.post(
-            reverse("reviews:approve", args=[change.pk]),
-            follow=True,
+            reverse("changes:edit-product", args=[self.product.pk]),
+            post_data,
         )
-        self.assertContains(response, "The current value changed after this request was submitted")
-        change.refresh_from_db()
-        self.spec.refresh_from_db()
-        self.assertEqual(change.status, ChangeRequest.Status.PENDING)
-        self.assertEqual(self.spec.value_number, 150)
-        self.assertFalse(AuditLog.objects.filter(action="change_request.approved").exists())
 
-    def test_rejection_requires_comment_and_does_not_update_formal_data(self):
-        change = self.create_spec_change()
-        self.client.force_login(self.admin)
-        self.client.post(reverse("reviews:reject", args=[change.pk]), {})
-        change.refresh_from_db()
-        self.assertEqual(change.status, ChangeRequest.Status.PENDING)
-        self.client.post(
-            reverse("reviews:reject", args=[change.pk]),
-            {"review_comment": "Source is insufficient"},
-        )
-        change.refresh_from_db()
-        self.spec.refresh_from_db()
-        self.assertEqual(change.status, ChangeRequest.Status.REJECTED)
-        self.assertEqual(self.spec.value_number, 100)
-        self.assertTrue(AuditLog.objects.filter(action="change_request.rejected").exists())
-
-    def test_product_and_match_changes_use_same_approval_workflow(self):
-        product_change = ChangeRequest.objects.create(
-            request_type=ChangeRequest.RequestType.PRODUCT,
-            target_product=self.product,
-            field_name="notes",
-            old_value={"value": "Original notes"},
-            proposed_value={"value": "Corrected notes"},
-            reason="Update notes",
-            submitted_by=self.contributor,
-        )
-        match_change = ChangeRequest.objects.create(
-            request_type=ChangeRequest.RequestType.MATCH,
-            target_product=self.product,
-            target_match=self.match,
-            field_name="reason",
-            old_value={"value": "Original reason"},
-            proposed_value={"value": "Corrected reason"},
-            reason="Update match reasoning",
-            submitted_by=self.contributor,
-        )
-        self.client.force_login(self.admin)
-        self.client.post(reverse("reviews:approve", args=[product_change.pk]))
-        self.client.post(reverse("reviews:approve", args=[match_change.pk]))
+        self.assertRedirects(response, reverse("product-detail", args=[self.product.pk]))
         self.product.refresh_from_db()
-        self.match.refresh_from_db()
-        self.assertEqual(self.product.notes, "Corrected notes")
-        self.assertEqual(self.match.reason, "Corrected reason")
+        self.spec.refresh_from_db()
+        self.assertEqual(self.product.notes, "Updated on the product page")
+        self.assertEqual(self.spec.value_number, 275)
+        self.assertEqual(
+            ChangeRequest.objects.filter(submitted_by=self.contributor).count(),
+            2,
+        )
+        self.assertEqual(
+            AuditLog.objects.filter(actor=self.contributor, action="change.applied").count(),
+            2,
+        )
+
+    def test_product_page_editor_rejects_decimals_for_integer_specs(self):
+        self.client.force_login(self.contributor)
+        url = reverse("changes:edit-product", args=[self.product.pk])
+        response = self.client.get(url)
+        post_data = {
+            name: (
+                response.context["form"][name].value()
+                if response.context["form"][name].value() is not None
+                else ""
+            )
+            for name in response.context["form"].fields
+        }
+        post_data[f"spec_{self.spec.pk}"] = "275.5"
+
+        response = self.client.post(url, post_data)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Enter a whole number")
+        self.spec.refresh_from_db()
+        self.assertEqual(self.spec.value_number, 100)
+        self.assertFalse(ChangeRequest.objects.exists())
 
     def test_attachment_type_content_size_and_object_access_are_protected(self):
         self.client.force_login(self.contributor)
@@ -575,8 +550,6 @@ class ChangeWorkflowTests(TestCase):
         response.close()
         self.client.force_login(self.other_contributor)
         self.assertEqual(self.client.get(download_url).status_code, 403)
-        self.client.force_login(self.admin)
-        self.client.post(reverse("reviews:approve", args=[change.pk]))
         change.refresh_from_db()
         self.assertEqual(change.status, ChangeRequest.Status.APPROVED)
 
@@ -585,14 +558,3 @@ class ChangeWorkflowTests(TestCase):
         oversized.size = MAX_ATTACHMENT_SIZE + 1
         with self.assertRaises(ValidationError):
             validate_change_attachment(oversized)
-
-    def test_review_actions_are_post_only_and_completed_request_cannot_repeat(self):
-        change = self.create_spec_change()
-        self.client.force_login(self.admin)
-        approve_url = reverse("reviews:approve", args=[change.pk])
-        self.assertEqual(self.client.get(approve_url).status_code, 405)
-        self.client.post(approve_url)
-        self.client.post(approve_url)
-        self.assertEqual(
-            AuditLog.objects.filter(action="change_request.approved").count(), 1
-        )

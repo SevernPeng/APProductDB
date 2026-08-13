@@ -10,7 +10,6 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_GET, require_POST
 
-from accounts.permissions import can_review
 from catalog.datasheets import schedule_datasheet_ingestion
 from catalog.forms import DatasheetUploadForm, DatasheetURLForm
 from catalog.models import (
@@ -33,7 +32,7 @@ logger = logging.getLogger(__name__)
 @require_GET
 def home(request):
     published_products = Product.objects.filter(is_published=True)
-    pending_changes = ChangeRequest.objects.filter(status=ChangeRequest.Status.PENDING)
+    user_changes = ChangeRequest.objects.filter(submitted_by=request.user)
     return render(
         request,
         "core/home.html",
@@ -43,8 +42,7 @@ def home(request):
             "competitor_count": published_products.filter(brand__is_own_brand=False).count(),
             # Windows clocks can assign the same timestamp to rapid consecutive saves.
             "recent_products": published_products.select_related("brand").order_by("-updated_at", "-pk")[:5],
-            "pending_change_count": pending_changes.filter(submitted_by=request.user).count(),
-            "pending_review_count": pending_changes.count() if can_review(request.user) else None,
+            "change_count": user_changes.count(),
         },
     )
 

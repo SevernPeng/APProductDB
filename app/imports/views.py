@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import user_passes_test
 from django.http import FileResponse, Http404
 from django.shortcuts import get_object_or_404, redirect, render
 
+from accounts.permissions import is_root
 from audit.models import AuditLog
 from catalog.models import ProductType
 
@@ -13,10 +14,6 @@ from .forms import ImportUploadForm
 from .models import ImportJob
 from .services import ImportValidationError, execute_import_job, validate_import_job
 from .template_profiles import get_template_profile
-
-
-def _is_superuser(user):
-    return user.is_authenticated and user.is_superuser
 
 
 def _log_action(request, job, flag, message):
@@ -29,7 +26,7 @@ def _log_action(request, job, flag, message):
     )
 
 
-@user_passes_test(_is_superuser)
+@user_passes_test(is_root)
 def upload(request):
     if request.method == "POST":
         form = ImportUploadForm(request.POST, request.FILES)
@@ -83,7 +80,7 @@ def upload(request):
     )
 
 
-@user_passes_test(_is_superuser)
+@user_passes_test(is_root)
 def download_template(request, product_type_id):
     product_type = get_object_or_404(
         ProductType.objects.select_related("category"),
@@ -101,7 +98,7 @@ def download_template(request, product_type_id):
     return response
 
 
-@user_passes_test(_is_superuser)
+@user_passes_test(is_root)
 def detail(request, pk):
     job = get_object_or_404(ImportJob.objects.select_related("uploaded_by"), pk=pk)
     if request.method == "POST":
@@ -128,7 +125,7 @@ def detail(request, pk):
     return render(request, "imports/detail.html", {"job": job})
 
 
-@user_passes_test(_is_superuser)
+@user_passes_test(is_root)
 def source_file(request, pk):
     job = get_object_or_404(ImportJob, pk=pk)
     if not job.uploaded_file:
@@ -142,7 +139,7 @@ def source_file(request, pk):
     return response
 
 
-@user_passes_test(_is_superuser)
+@user_passes_test(is_root)
 def error_report(request, pk):
     job = get_object_or_404(ImportJob, pk=pk)
     if not job.error_report:

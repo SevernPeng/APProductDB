@@ -9,24 +9,16 @@ from .models import AccountProfile
 def account_role(user):
     if not user.is_authenticated:
         return None
-    if user.is_superuser:
+    if user.username == "root" and user.is_superuser:
         return AccountProfile.Role.ROOT
     try:
         return user.account_profile.role
     except AccountProfile.DoesNotExist:
-        return None
+        return AccountProfile.Role.USER
 
 
 def is_root(user):
     return account_role(user) == AccountProfile.Role.ROOT
-
-
-def is_admin(user):
-    return account_role(user) == AccountProfile.Role.ADMIN
-
-
-def can_review(user):
-    return account_role(user) in {AccountProfile.Role.ROOT, AccountProfile.Role.ADMIN}
 
 
 def root_required(view_func):
@@ -34,7 +26,7 @@ def root_required(view_func):
     @wraps(view_func)
     def wrapped(request, *args, **kwargs):
         if not is_root(request.user):
-            raise PermissionDenied("Only Root can manage account permissions.")
+            raise PermissionDenied("Only Root can manage accounts.")
         return view_func(request, *args, **kwargs)
 
     return wrapped

@@ -8,7 +8,6 @@ COMPANY_EMAIL_DOMAIN = "tp-link.com"
 class AccountProfile(models.Model):
     class Role(models.TextChoices):
         ROOT = "root", "Root"
-        ADMIN = "admin", "Admin"
         USER = "user", "User"
 
     user = models.OneToOneField(
@@ -23,6 +22,13 @@ class AccountProfile(models.Model):
 
     class Meta:
         ordering = ("role", "email", "user__username")
+        constraints = [
+            models.UniqueConstraint(
+                fields=("role",),
+                condition=models.Q(role="root"),
+                name="accounts_single_root_profile",
+            )
+        ]
 
     def clean(self):
         super().clean()
@@ -30,6 +36,8 @@ class AccountProfile(models.Model):
             self.email = self.email.strip().lower()
             if self.email.rsplit("@", 1)[-1] != COMPANY_EMAIL_DOMAIN:
                 raise ValidationError({"email": "Only @tp-link.com company email addresses are supported."})
+        if self.user.username == "root" and self.role != self.Role.ROOT:
+            raise ValidationError({"role": "The default root account must retain the Root role."})
         if self.role == self.Role.ROOT and self.user.username != "root":
             raise ValidationError({"role": "The Root role is reserved for the default root account."})
 

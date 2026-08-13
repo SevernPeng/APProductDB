@@ -418,6 +418,14 @@ class ProductSpec(TimestampedModel):
                 raise ValidationError(
                     f"{self.definition.display_name} requires a {expected_type} value."
                 )
+            if (
+                self.definition.data_type == SpecDefinition.DataType.INTEGER
+                and self.value_number is not None
+                and self.value_number != self.value_number.to_integral_value()
+            ):
+                raise ValidationError(
+                    f"{self.definition.display_name} requires a whole number."
+                )
 
     def save(self, *args, **kwargs):
         self.full_clean()

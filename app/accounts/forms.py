@@ -59,31 +59,10 @@ class RegistrationForm(forms.Form):
                 email=email,
                 password=self.cleaned_data["password1"],
             )
-            AccountProfile.objects.create(
+            AccountProfile.objects.update_or_create(
                 user=user,
-                email=email,
-                role=AccountProfile.Role.USER,
+                defaults={"email": email, "role": AccountProfile.Role.USER},
             )
         except IntegrityError as exc:
             raise ValidationError("This email is already registered. Please sign in.") from exc
         return user
-
-
-class RoleUpdateForm(forms.ModelForm):
-    class Meta:
-        model = AccountProfile
-        fields = ("role",)
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields["role"].choices = (
-            (AccountProfile.Role.ADMIN, "Admin"),
-            (AccountProfile.Role.USER, "User"),
-        )
-        self.fields["role"].widget.attrs["class"] = "form-select"
-
-    def clean_role(self):
-        role = self.cleaned_data["role"]
-        if role not in {AccountProfile.Role.ADMIN, AccountProfile.Role.USER}:
-            raise ValidationError("The role must be Admin or User.")
-        return role

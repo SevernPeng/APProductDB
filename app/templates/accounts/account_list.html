@@ -7,7 +7,7 @@
 <div class="card border-0 shadow-sm">
   <div class="table-responsive">
     <table class="table align-middle mb-0">
-      <thead><tr><th>Account</th><th>Email</th><th>Role</th><th>Status</th><th class="text-end">Permissions</th></tr></thead>
+      <thead><tr><th>Account</th><th>Email</th><th>Role</th><th>Status</th><th class="text-end">Actions</th></tr></thead>
       <tbody>
       {% for profile in profiles %}
         <tr>
@@ -16,16 +16,14 @@
           <td><span class="badge text-bg-secondary">{{ profile.get_role_display }}</span></td>
           <td>{% if profile.user.is_active %}Active{% else %}Disabled{% endif %}</td>
           <td class="text-end">
-            {% if profile.role != "root" %}
-              <form method="post" action="{% url 'accounts:update-role' profile.pk %}" class="d-inline-flex gap-2">
+            {% if profile.role == "root" %}
+              <span class="text-body-secondary">Protected</span>
+            {% else %}
+              <form method="post" action="{% url 'accounts:delete' profile.pk %}" class="d-inline" onsubmit="return confirm('Delete account {{ profile.user.username|escapejs }}? This cannot be undone.');">
                 {% csrf_token %}
-                <select name="role" class="form-select form-select-sm" aria-label="Select role">
-                  <option value="user"{% if profile.role == "user" %} selected{% endif %}>User</option>
-                  <option value="admin"{% if profile.role == "admin" %} selected{% endif %}>Admin</option>
-                </select>
-                <button class="btn btn-sm btn-primary" type="submit">Save</button>
+                <button class="btn btn-sm btn-outline-danger" type="submit">Delete</button>
               </form>
-            {% else %}<span class="text-body-secondary">Locked</span>{% endif %}
+            {% endif %}
           </td>
         </tr>
       {% empty %}<tr><td colspan="5" class="text-center text-body-secondary py-4">No accounts.</td></tr>{% endfor %}

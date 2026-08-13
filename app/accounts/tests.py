@@ -1,7 +1,11 @@
 from django.contrib.auth import get_user_model
-from django.contrib.auth.models import Group
 from django.test import TestCase
 from django.urls import reverse
+
+from audit.models import AuditLog
+from catalog.models import Brand, Category, Product
+from changes.models import ChangeRequest
+from imports.models import ImportJob
 
 
 class AuthenticationTests(TestCase):
@@ -9,7 +13,6 @@ class AuthenticationTests(TestCase):
         self.user = get_user_model().objects.create_user(
             username="viewer", password="a-strong-test-password"
         )
-        self.user.groups.add(Group.objects.get_or_create(name="Viewer")[0])
 
     def test_login_page_has_registration_link(self):
         response = self.client.get(reverse("login"))
@@ -31,9 +34,10 @@ class AuthenticationTests(TestCase):
 
 
 class GroupInitializationTests(TestCase):
-    def test_required_groups_exist(self):
-        self.assertTrue(Group.objects.filter(name="Viewer").exists())
-        self.assertTrue(Group.objects.filter(name="Contributor").exists())
+    def test_legacy_permission_groups_are_removed(self):
+        from django.contrib.auth.models import Group
+
+        self.assertFalse(Group.objects.filter(name__in=("Viewer", "Contributor")).exists())
 
 
 class AccountSystemTests(TestCase):
@@ -69,27 +73,90 @@ class AccountSystemTests(TestCase):
         user = get_user_model().objects.create_user(
             username="person@tp-link.com", email="person@tp-link.com", password="Good-Test-Pass-928!"
         )
-        from accounts.models import AccountProfile
-        AccountProfile.objects.create(user=user, email=user.email, role="user")
         response = self.client.post(
             reverse("login"),
             {"username": "PERSON@TP-LINK.COM", "password": "Good-Test-Pass-928!"},
         )
         self.assertRedirects(response, reverse("home"))
 
-    def test_only_root_can_promote_and_demote_accounts(self):
-        from accounts.models import AccountProfile
+    def test_all_non_root_accounts_are_users_and_only_root_can_list_them(self):
         user = get_user_model().objects.create_user(
             username="member@tp-link.com", email="member@tp-link.com"
         )
-        profile = AccountProfile.objects.create(user=user, email=user.email, role="user")
+        profile = user.account_profile
+        self.assertEqual(profile.role, "user")
+        self.assertFalse(user.is_staff)
+        self.assertFalse(user.is_superuser)
         self.client.force_login(user)
         self.assertEqual(self.client.get(reverse("accounts:list")).status_code, 403)
         root = get_user_model().objects.get(username="root")
         self.client.force_login(root)
-        self.client.post(reverse("accounts:update-role", args=[profile.pk]), {"role": "admin"})
-        profile.refresh_from_db()
-        self.assertEqual(profile.role, "admin")
-        self.client.post(reverse("accounts:update-role", args=[profile.pk]), {"role": "user"})
-        profile.refresh_from_db()
-        self.assertEqual(profile.role, "user")
+        response = self.client.get(reverse("accounts:list"))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "member@tp-link.com")
+        self.assertNotContains(response, "Admin")
+        self.assertContains(response, reverse("accounts:delete", args=[profile.pk]))
+
+    def test_root_can_delete_user_and_preserve_business_history(self):
+        user_model = get_user_model()
+        user = user_model.objects.create_user(
+            username="delete-me@tp-link.com",
+            email="delete-me@tp-link.com",
+        )
+        category = Category.objects.create(name="Access Point", slug="access-point")
+        brand = Brand.objects.create(name="TP-Link", slug="tp-link", is_own_brand=True)
+        product = Product.objects.create(brand=brand, category=category, model="EAP-delete")
+        change = ChangeRequest.objects.create(
+            request_type=ChangeRequest.RequestType.PRODUCT,
+            target_product=product,
+            field_name="notes",
+            old_value={"value": "old"},
+            proposed_value={"value": "new"},
+            reason="Historical change",
+            submitted_by=user,
+        )
+        job = ImportJob.objects.create(
+            uploaded_file="imports/source/history.xlsx",
+            uploaded_by=user,
+        )
+        root = user_model.objects.get(username="root")
+        self.client.force_login(root)
+
+        response = self.client.post(
+            reverse("accounts:delete", args=[user.account_profile.pk]),
+            REMOTE_ADDR="127.0.0.1",
+        )
+
+        self.assertRedirects(response, reverse("accounts:list"))
+        self.assertFalse(user_model.objects.filter(pk=user.pk).exists())
+        change.refresh_from_db()
+        job.refresh_from_db()
+        self.assertIsNone(change.submitted_by)
+        self.assertIsNone(job.uploaded_by)
+        audit = AuditLog.objects.get(action="account.deleted", object_id=str(user.pk))
+        self.assertEqual(audit.actor, root)
+        self.assertEqual(audit.before_data["username"], "delete-me@tp-link.com")
+        self.assertEqual(audit.ip_address, "127.0.0.1")
+
+    def test_root_account_cannot_be_deleted(self):
+        root = get_user_model().objects.get(username="root")
+        self.client.force_login(root)
+        response = self.client.post(
+            reverse("accounts:delete", args=[root.account_profile.pk]),
+            follow=True,
+        )
+        self.assertContains(response, "The root account cannot be deleted")
+        self.assertTrue(get_user_model().objects.filter(pk=root.pk).exists())
+        self.assertFalse(AuditLog.objects.filter(action="account.deleted").exists())
+
+    def test_user_cannot_delete_accounts_and_delete_requires_post(self):
+        user_model = get_user_model()
+        user = user_model.objects.create_user(username="member@tp-link.com")
+        target = user_model.objects.create_user(username="target@tp-link.com")
+        url = reverse("accounts:delete", args=[target.account_profile.pk])
+        self.client.force_login(user)
+        self.assertEqual(self.client.post(url).status_code, 403)
+        self.assertTrue(user_model.objects.filter(pk=target.pk).exists())
+        root = user_model.objects.get(username="root")
+        self.client.force_login(root)
+        self.assertEqual(self.client.get(url).status_code, 405)

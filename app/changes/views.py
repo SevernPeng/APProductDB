@@ -1,32 +1,27 @@
 from pathlib import Path
 
 from django.contrib import messages
-from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied, ValidationError
 from django.core.paginator import Paginator
 from django.db import transaction
 from django.http import FileResponse, Http404
 from django.shortcuts import get_object_or_404, redirect, render
-from django.views.decorators.http import require_GET, require_http_methods, require_POST
+from django.views.decorators.http import require_GET, require_http_methods
 
-from accounts.permissions import can_review
-from audit.models import AuditLog
+from accounts.permissions import is_root
 from catalog.models import Product
 from catalog.services import ensure_product_spec_placeholders
-from core.permissions import contributor_required, reviewer_required
+from core.permissions import contributor_required
 
-from .forms import ChangeSubmissionForm, MatchAddForm, ReviewDecisionForm
+from .forms import ChangeSubmissionForm, MatchAddForm, ProductPageEditForm
 from .models import ChangeRequest
 from .services import (
     MATCH_ADD_FIELD,
-    ApprovalConflict,
-    approve_change,
+    apply_change,
     build_target_options,
-    current_snapshot,
     display_snapshot,
     proposed_value_hint,
-    reject_change,
     request_ip,
     resolve_target,
     snapshot_for_selection,
@@ -46,24 +41,79 @@ def _change_queryset():
 def _submit_change(request, attributes):
     with transaction.atomic():
         change = ChangeRequest.objects.create(**attributes)
-        AuditLog.objects.create(
-            actor=request.user,
-            action="change_request.submitted",
-            object_type=change._meta.label,
-            object_id=str(change.pk),
-            object_repr=str(change),
-            before_data=change.old_value,
-            after_data=change.proposed_value,
-            ip_address=request_ip(request),
+        apply_change(
+            change.pk,
+            request.user,
+            "Applied automatically; approval is not required.",
+            request_ip(request),
         )
-        if can_review(request.user):
-            approve_change(
-                change.pk,
-                request.user,
-                "Automatically approved for Admin/Root.",
-                request_ip(request),
-            )
     return change
+
+
+@contributor_required
+@require_http_methods(["GET", "POST"])
+def edit_product_page(request, product_pk):
+    product = get_object_or_404(
+        Product.objects.select_related("brand", "category", "product_type"),
+        pk=product_pk,
+        is_published=True,
+    )
+    ensure_product_spec_placeholders(product)
+    form = ProductPageEditForm(
+        request.POST or None,
+        product=product,
+    )
+    if request.method == "POST" and form.is_valid():
+        try:
+            changed_values = form.changed_values()
+        except ValidationError as exc:
+            form.add_error(None, exc)
+        else:
+            with transaction.atomic():
+                for selection, old_value, proposed_value in changed_values:
+                    attributes = {
+                        "request_type": selection["request_type"],
+                        "target_product": product,
+                        "field_name": selection["field_name"],
+                        "old_value": old_value,
+                        "proposed_value": proposed_value,
+                        "reason": "Edited directly from the product page.",
+                        "submitted_by": request.user,
+                    }
+                    if selection["request_type"] == ChangeRequest.RequestType.SPEC:
+                        attributes["target_spec"] = selection["target"]
+                        attributes["source_url"] = (
+                            selection["target"].source_url or product.official_url
+                        )
+                    _submit_change(request, attributes)
+            if changed_values:
+                messages.success(
+                    request,
+                    f"Saved {len(changed_values)} change(s).",
+                )
+            else:
+                messages.info(request, "No changes were made.")
+            return redirect("product-detail", pk=product.pk)
+
+    grouped_fields = []
+    for item in form.edit_items:
+        if not grouped_fields or grouped_fields[-1]["name"] != item["group"]:
+            grouped_fields.append({"name": item["group"], "items": []})
+        grouped_fields[-1]["items"].append(
+            {
+                **item,
+                "field": form[item["name"]],
+            }
+        )
+    return render(
+        request,
+        "changes/edit_product.html",
+        {
+            "product": product,
+            "form": form,
+            "grouped_fields": grouped_fields,
+        },
+    )
 
 
 @contributor_required
@@ -127,10 +177,7 @@ def suggest_change(request, product_pk):
                     "submitted_by": request.user,
                 },
             )
-            if can_review(request.user):
-                messages.success(request, "Benchmark added and applied automatically.")
-            else:
-                messages.success(request, "Benchmark request submitted for review.")
+            messages.success(request, "Benchmark added and saved.")
             return redirect("changes:detail", pk=change.pk)
         form = ChangeSubmissionForm(selection=selection)
     elif request.method == "POST":
@@ -158,10 +205,7 @@ def suggest_change(request, product_pk):
                 attributes["target_match"] = target
                 attributes["target_product"] = target.our_product
             change = _submit_change(request, attributes)
-            if can_review(request.user):
-                messages.success(request, "Change submitted and applied automatically.")
-            else:
-                messages.success(request, "Change request submitted for review.")
+            messages.success(request, "Change saved successfully.")
             return redirect("changes:detail", pk=change.pk)
     else:
         form = ChangeSubmissionForm(selection=selection)
@@ -201,7 +245,7 @@ def my_changes(request):
 @require_GET
 def change_detail(request, pk):
     change = get_object_or_404(_change_queryset(), pk=pk)
-    if not can_review(request.user) and change.submitted_by_id != request.user.pk:
+    if not is_root(request.user) and change.submitted_by_id != request.user.pk:
         raise PermissionDenied
     return render(
         request,
@@ -218,7 +262,7 @@ def change_detail(request, pk):
 @require_GET
 def change_attachment(request, pk):
     change = get_object_or_404(ChangeRequest, pk=pk)
-    if not can_review(request.user) and change.submitted_by_id != request.user.pk:
+    if not is_root(request.user) and change.submitted_by_id != request.user.pk:
         raise PermissionDenied
     if not change.attachment:
         raise Http404
@@ -228,96 +272,3 @@ def change_attachment(request, pk):
         as_attachment=True,
         filename=f"change-{change.pk}-evidence{suffix}",
     )
-
-
-@reviewer_required
-@require_GET
-def review_list(request):
-    queryset = _change_queryset()
-    status = request.GET.get("status", ChangeRequest.Status.PENDING).strip()
-    submitter = request.GET.get("submitted_by", "").strip()
-    product = request.GET.get("product", "").strip()
-    if status in ChangeRequest.Status.values:
-        queryset = queryset.filter(status=status)
-    elif status:
-        status = ""
-    if submitter.isdigit():
-        queryset = queryset.filter(submitted_by_id=int(submitter))
-    if product.isdigit():
-        queryset = queryset.filter(target_product_id=int(product))
-    page_obj = Paginator(queryset, 25).get_page(request.GET.get("page"))
-    submitters = get_user_model().objects.filter(change_requests__isnull=False).distinct().order_by("username")
-    products = Product.objects.filter(change_requests__isnull=False).select_related("brand").distinct().order_by("brand__name", "model")
-    selected_product = products.filter(pk=int(product)).first() if product.isdigit() else None
-    return render(
-        request,
-        "changes/review_list.html",
-        {
-            "page_obj": page_obj,
-            "status": status,
-            "submitted_by": submitter,
-            "product": product,
-            "status_choices": ChangeRequest.Status.choices,
-            "submitters": submitters,
-            "products": products,
-            "selected_product": selected_product,
-        },
-    )
-
-
-@reviewer_required
-@require_GET
-def review_detail(request, pk):
-    change = get_object_or_404(_change_queryset(), pk=pk)
-    target = change.target_spec or change.target_match or change.target_product
-    return render(
-        request,
-        "changes/review_detail.html",
-        {
-            "change": change,
-            "old_display": display_snapshot(change.old_value),
-            "proposed_display": display_snapshot(change.proposed_value),
-            "current_display": display_snapshot(current_snapshot(change, target)),
-            "form": ReviewDecisionForm(),
-        },
-    )
-
-
-@reviewer_required
-@require_POST
-def review_approve(request, pk):
-    form = ReviewDecisionForm(request.POST)
-    if form.is_valid():
-        try:
-            approve_change(
-                pk,
-                request.user,
-                form.cleaned_data["review_comment"],
-                request_ip(request),
-            )
-        except ApprovalConflict as exc:
-            messages.error(request, str(exc))
-        except (ChangeRequest.DoesNotExist, ValidationError) as exc:
-            messages.error(request, str(exc))
-        else:
-            messages.success(request, "Request approved and data updated.")
-    return redirect("reviews:detail", pk=pk)
-
-
-@reviewer_required
-@require_POST
-def review_reject(request, pk):
-    form = ReviewDecisionForm(request.POST)
-    if form.is_valid():
-        try:
-            reject_change(
-                pk,
-                request.user,
-                form.cleaned_data["review_comment"],
-                request_ip(request),
-            )
-        except (ChangeRequest.DoesNotExist, ValidationError) as exc:
-            messages.error(request, str(exc))
-        else:
-            messages.success(request, "Request rejected.")
-    return redirect("reviews:detail", pk=pk)

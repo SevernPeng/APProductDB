@@ -7,11 +7,7 @@ from catalog.models import Brand, Category, Product, ProductSpec, SpecDefinition
 
 class CatalogAdminTests(TestCase):
     def setUp(self):
-        self.admin = get_user_model().objects.create_superuser(
-            username="catalog-admin",
-            email="admin@example.com",
-            password="admin-test-password",
-        )
+        self.admin = get_user_model().objects.get(username="root")
         self.client.force_login(self.admin)
         self.brand = Brand.objects.create(name="TP-Link", slug="tp-link", is_own_brand=True)
         self.category = Category.objects.create(name="Access Point", slug="access-point")
@@ -34,7 +30,7 @@ class CatalogAdminTests(TestCase):
             with self.subTest(url_name=url_name):
                 self.assertEqual(self.client.get(reverse(url_name)).status_code, 200)
 
-    def test_admin_can_create_product_and_tracks_actor(self):
+    def test_root_can_create_product_and_tracks_actor(self):
         response = self.client.post(
             reverse("admin:catalog_product_add"),
             {

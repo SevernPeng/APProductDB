@@ -3,30 +3,12 @@ from functools import wraps
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 
-from accounts.models import AccountProfile
-from accounts.permissions import account_role, can_review
-
-CATALOG_GROUPS = ("Viewer", "Contributor")
-
-
 def can_view_catalog(user):
-    return bool(
-        user.is_authenticated
-        and (
-            account_role(user) in AccountProfile.Role.values
-            or user.groups.filter(name__in=CATALOG_GROUPS).exists()
-        )
-    )
+    return bool(user.is_authenticated)
 
 
 def can_contribute(user):
-    return bool(
-        user.is_authenticated
-        and (
-            account_role(user) in AccountProfile.Role.values
-            or user.groups.filter(name="Contributor").exists()
-        )
-    )
+    return bool(user.is_authenticated)
 
 
 def catalog_access_required(view_func):
@@ -45,29 +27,7 @@ def contributor_required(view_func):
     @wraps(view_func)
     def wrapped(request, *args, **kwargs):
         if not can_contribute(request.user):
-            raise PermissionDenied("Your account cannot submit change requests.")
-        return view_func(request, *args, **kwargs)
-
-    return wrapped
-
-
-def superuser_required(view_func):
-    @login_required
-    @wraps(view_func)
-    def wrapped(request, *args, **kwargs):
-        if not request.user.is_superuser:
-            raise PermissionDenied("Only administrators can review change requests.")
-        return view_func(request, *args, **kwargs)
-
-    return wrapped
-
-
-def reviewer_required(view_func):
-    @login_required
-    @wraps(view_func)
-    def wrapped(request, *args, **kwargs):
-        if not can_review(request.user):
-            raise PermissionDenied("Only Admin or Root can review change requests.")
+            raise PermissionDenied("Your account cannot modify catalog data.")
         return view_func(request, *args, **kwargs)
 
     return wrapped

@@ -16,7 +16,7 @@ class ChangeRequest(models.Model):
 
     class Status(models.TextChoices):
         PENDING = "pending", "Pending"
-        APPROVED = "approved", "Approved"
+        APPROVED = "approved", "Applied"
         REJECTED = "rejected", "Rejected"
 
     request_type = models.CharField(max_length=20, choices=RequestType.choices)
@@ -59,7 +59,9 @@ class ChangeRequest(models.Model):
     )
     submitted_by = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.PROTECT,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
         related_name="change_requests",
     )
     submitted_at = models.DateTimeField(auto_now_add=True, db_index=True)

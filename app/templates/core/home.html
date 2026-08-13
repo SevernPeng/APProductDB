@@ -22,8 +22,7 @@
   <div class="col-6 col-lg-3"><div class="metric-card"><span>Total Products</span><strong>{{ product_count }}</strong></div></div>
   <div class="col-6 col-lg-3"><div class="metric-card"><span>TP-Link</span><strong>{{ own_brand_count }}</strong></div></div>
   <div class="col-6 col-lg-3"><div class="metric-card"><span>Competitors</span><strong>{{ competitor_count }}</strong></div></div>
-  <div class="col-6 col-lg-3"><div class="metric-card"><span>My Pending Changes</span><strong>{{ pending_change_count }}</strong></div></div>
-  {% if pending_review_count is not None %}<div class="col-6 col-lg-3"><div class="metric-card"><span>Pending Reviews</span><strong>{{ pending_review_count }}</strong></div></div>{% endif %}
+  <div class="col-6 col-lg-3"><div class="metric-card"><span>My Changes</span><strong>{{ change_count }}</strong></div></div>
 </div>
 
 <div class="card border-0 shadow-sm">
@@ -32,8 +31,7 @@
     <a class="list-group-item list-group-item-action" href="{% url 'product-list' %}">Products <small class="float-end">{{ product_count }} published</small></a>
     <a class="list-group-item list-group-item-action" href="{% url 'comparison:benchmark' %}">Benchmarks</a>
     <a class="list-group-item list-group-item-action" href="{% url 'comparison:compare' %}">Compare Products</a>
-    {% if can_contribute %}<a class="list-group-item list-group-item-action" href="{% url 'changes:mine' %}">My Change Requests <small class="float-end">{{ pending_change_count }} pending</small></a>{% endif %}
-    {% if can_review_changes %}<a class="list-group-item list-group-item-action" href="{% url 'reviews:list' %}">Review Changes <small class="float-end">{{ pending_review_count }} pending</small></a>{% endif %}
+    {% if can_contribute %}<a class="list-group-item list-group-item-action" href="{% url 'changes:mine' %}">My Change History <small class="float-end">{{ change_count }} records</small></a>{% endif %}
   </div>
 </div>
 

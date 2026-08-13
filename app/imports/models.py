@@ -55,7 +55,9 @@ class ImportJob(models.Model):
     summary = models.JSONField(default=dict, blank=True)
     uploaded_by = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.PROTECT,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
         related_name="import_jobs",
     )
     uploaded_at = models.DateTimeField(auto_now_add=True)

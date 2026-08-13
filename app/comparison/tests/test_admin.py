@@ -8,11 +8,7 @@ from comparison.models import ProductMatch
 
 class ProductMatchAdminTests(TestCase):
     def setUp(self):
-        self.admin = get_user_model().objects.create_superuser(
-            username="match-admin",
-            email="admin@example.com",
-            password="admin-test-password",
-        )
+        self.admin = get_user_model().objects.get(username="root")
         self.client.force_login(self.admin)
         category = Category.objects.create(name="Access Point", slug="access-point")
         own_brand = Brand.objects.create(name="TP-Link", slug="tp-link", is_own_brand=True)
@@ -30,7 +26,7 @@ class ProductMatchAdminTests(TestCase):
             ap_type=Product.APType.CEILING,
         )
 
-    def test_admin_can_create_match_and_tracks_actor(self):
+    def test_root_can_create_match_and_tracks_actor(self):
         response = self.client.post(
             reverse("admin:comparison_productmatch_add"),
             {

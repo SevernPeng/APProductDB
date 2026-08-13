@@ -17,8 +17,7 @@
           <a class="link-light" href="{% url 'product-list' %}">Products</a>
           <a class="link-light" href="{% url 'comparison:benchmark' %}">Benchmarks</a>
           <a class="link-light" href="{% url 'comparison:compare' %}">Compare</a>
-          {% if can_contribute %}<a class="link-light" href="{% url 'changes:mine' %}">My Requests</a>{% endif %}
-          {% if can_review_changes %}<a class="link-light" href="{% url 'reviews:list' %}">Review Changes</a>{% endif %}
+          {% if can_contribute %}<a class="link-light" href="{% url 'changes:mine' %}">My Changes</a>{% endif %}
           {% if user.is_superuser %}
             <a class="link-light" href="{% url 'imports:upload' %}">Excel Import</a>
           {% endif %}

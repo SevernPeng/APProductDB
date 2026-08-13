@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Edit {{ product.brand.name }} {{ product.model }} · APProductDB{% endblock %}
+
+{% block content %}
+<nav aria-label="Breadcrumb" class="mb-3">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item"><a href="{% url 'product-detail' product.pk %}">{{ product.brand.name }} {{ product.model }}</a></li>
+    <li class="breadcrumb-item active">Edit</li>
+  </ol>
+</nav>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h1 class="h3 mb-1">Edit page content</h1>
+    <p class="text-body-secondary mb-0">Change the fields below, then save once.</p>
+  </div>
+</div>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
+  {% for group in grouped_fields %}
+    <div class="card border-0 shadow-sm mb-3">
+      <div class="card-header bg-white fw-semibold">{{ group.name }}</div>
+      <div class="card-body">
+        <div class="row g-3">
+          {% for item in group.items %}
+            <div class="col-12 col-md-6">
+              <label class="form-label" for="{{ item.field.id_for_label }}">{{ item.field.label }}{% if item.unit %} ({{ item.unit }}){% endif %}</label>
+              {{ item.field }}
+              {% for error in item.field.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="d-flex gap-2 justify-content-end sticky-bottom bg-body-tertiary py-3">
+    <a class="btn btn-outline-secondary" href="{% url 'product-detail' product.pk %}">Cancel</a>
+    <button class="btn btn-primary" type="submit">Save changes</button>
+  </div>
+</form>
+{% endblock %}

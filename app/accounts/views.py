@@ -1,10 +1,13 @@
 from django.contrib import messages
 from django.contrib.auth import login
 from django.core.exceptions import ValidationError
+from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_http_methods, require_POST
 
-from .forms import RegistrationForm, RoleUpdateForm
+from audit.models import AuditLog
+
+from .forms import RegistrationForm
 from .models import AccountProfile
 from .permissions import root_required
 
@@ -34,15 +37,34 @@ def account_list(request):
 
 @root_required
 @require_POST
-def update_role(request, pk):
-    profile = get_object_or_404(AccountProfile.objects.select_related("user"), pk=pk)
-    if profile.role == AccountProfile.Role.ROOT or profile.user.is_superuser:
-        messages.error(request, "The default root account role cannot be changed.")
+def delete_account(request, pk):
+    profile = get_object_or_404(
+        AccountProfile.objects.select_related("user"),
+        pk=pk,
+    )
+    user = profile.user
+    if user.username == "root" or profile.role == AccountProfile.Role.ROOT:
+        messages.error(request, "The root account cannot be deleted.")
         return redirect("accounts:list")
-    form = RoleUpdateForm(request.POST, instance=profile)
-    if form.is_valid():
-        form.save()
-        messages.success(request, f"{profile.email} is now {profile.get_role_display()}.")
-    else:
-        messages.error(request, "Could not update the role.")
+
+    username = user.username
+    with transaction.atomic():
+        AuditLog.objects.create(
+            actor=request.user,
+            action="account.deleted",
+            object_type=user._meta.label,
+            object_id=str(user.pk),
+            object_repr=username,
+            before_data={
+                "username": username,
+                "email": user.email,
+                "role": profile.role,
+                "is_active": user.is_active,
+            },
+            after_data={"deleted": True},
+            ip_address=(request.META.get("REMOTE_ADDR") or None),
+        )
+        user.delete()
+
+    messages.success(request, f"Account {username} was deleted.")
     return redirect("accounts:list")

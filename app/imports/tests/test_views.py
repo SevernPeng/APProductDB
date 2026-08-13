@@ -19,11 +19,11 @@ class ImportViewTests(TestCase):
         self.override.enable()
         self.addCleanup(self.override.disable)
         self.addCleanup(self.media.cleanup)
-        self.admin = get_user_model().objects.create_superuser("admin", password="secret")
+        self.admin = get_user_model().objects.get(username="root")
         self.viewer = get_user_model().objects.create_user("viewer", password="secret")
         call_command("initialize_catalog", verbosity=0)
 
-    def test_only_superusers_can_open_import_page(self):
+    def test_only_root_can_open_import_page(self):
         self.client.force_login(self.viewer)
         response = self.client.get(reverse("imports:upload"))
         self.assertEqual(response.status_code, 302)
@@ -86,7 +86,7 @@ class ImportViewTests(TestCase):
         self.assertContains(response, "Only .xlsx files are supported")
         self.assertFalse(ImportJob.objects.exists())
 
-    def test_source_workbook_download_requires_superuser(self):
+    def test_source_workbook_download_requires_root(self):
         job = ImportJob.objects.create(
             uploaded_file=workbook_upload(),
             uploaded_by=self.admin,

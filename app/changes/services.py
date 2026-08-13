@@ -434,7 +434,10 @@ def _locked_target(change):
 def _apply_proposed(change, target, reviewer):
     proposed = change.proposed_value
     if change.request_type == ChangeRequest.RequestType.SPEC:
-        target.value_status = ProductSpec.ValueStatus.PUBLISHED
+        target.value_status = proposed.get(
+            "value_status",
+            ProductSpec.ValueStatus.PUBLISHED,
+        )
         target.value_text = proposed.get("value_text", "")
         number = proposed.get("value_number")
         target.value_number = Decimal(number) if number is not None else None
@@ -511,12 +514,12 @@ def _apply_match_add(change, reviewer):
 
 
 @transaction.atomic
-def approve_change(change_id, reviewer, review_comment, ip):
+def apply_change(change_id, actor, note, ip):
     change = ChangeRequest.objects.select_for_update().select_related(
         "target_product", "target_spec", "target_match", "submitted_by"
     ).get(pk=change_id)
     if change.status != ChangeRequest.Status.PENDING:
-        raise ValidationError("This request has already been reviewed.")
+        raise ValidationError("This change has already been applied.")
     if (
         change.request_type == ChangeRequest.RequestType.MATCH
         and change.field_name == MATCH_ADD_FIELD
@@ -527,20 +530,20 @@ def approve_change(change_id, reviewer, review_comment, ip):
             raise ApprovalConflict(
                 "This benchmark changed after the request was submitted. Submit a new request."
             )
-        match = _apply_match_add(change, reviewer)
+        match = _apply_match_add(change, actor)
         after = {
             "exists": True,
             "match_id": match.pk,
             "competitor_product_id": match.competitor_product_id,
         }
         change.status = ChangeRequest.Status.APPROVED
-        change.reviewed_by = reviewer
+        change.reviewed_by = actor
         change.reviewed_at = timezone.now()
-        change.review_comment = review_comment.strip()
+        change.review_comment = note.strip()
         change.save()
         AuditLog.objects.create(
-            actor=reviewer,
-            action="change_request.approved",
+            actor=actor,
+            action="change.applied",
             object_type=match._meta.label,
             object_id=str(match.pk),
             object_repr=str(match),
@@ -553,47 +556,21 @@ def approve_change(change_id, reviewer, review_comment, ip):
     before = current_snapshot(change, target)
     if before != change.old_value:
         raise ApprovalConflict("The current value changed after this request was submitted. Submit a new request.")
-    _apply_proposed(change, target, reviewer)
+    _apply_proposed(change, target, actor)
     after = current_snapshot(change, target)
     change.status = ChangeRequest.Status.APPROVED
-    change.reviewed_by = reviewer
+    change.reviewed_by = actor
     change.reviewed_at = timezone.now()
-    change.review_comment = review_comment.strip()
+    change.review_comment = note.strip()
     change.save()
     AuditLog.objects.create(
-        actor=reviewer,
-        action="change_request.approved",
+        actor=actor,
+        action="change.applied",
         object_type=target._meta.label,
         object_id=str(target.pk),
         object_repr=str(target),
         before_data=before,
         after_data=after,
-        ip_address=ip,
-    )
-    return change
-
-
-@transaction.atomic
-def reject_change(change_id, reviewer, review_comment, ip):
-    comment = review_comment.strip()
-    if not comment:
-        raise ValidationError("A review comment is required when rejecting a request.")
-    change = ChangeRequest.objects.select_for_update().get(pk=change_id)
-    if change.status != ChangeRequest.Status.PENDING:
-        raise ValidationError("This request has already been reviewed.")
-    change.status = ChangeRequest.Status.REJECTED
-    change.reviewed_by = reviewer
-    change.reviewed_at = timezone.now()
-    change.review_comment = comment
-    change.save()
-    AuditLog.objects.create(
-        actor=reviewer,
-        action="change_request.rejected",
-        object_type=change._meta.label,
-        object_id=str(change.pk),
-        object_repr=str(change),
-        before_data={"status": ChangeRequest.Status.PENDING},
-        after_data={"status": ChangeRequest.Status.REJECTED, "comment": comment},
         ip_address=ip,
     )
     return change

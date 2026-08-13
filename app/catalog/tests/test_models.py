@@ -126,6 +126,21 @@ class CatalogModelTests(TestCase):
         )
         self.assertEqual(spec.display_value, "0 Mbps")
 
+    def test_integer_spec_rejects_fractional_value(self):
+        product = self.make_product()
+        definition = SpecDefinition.objects.create(
+            code="total_spatial_streams",
+            display_name="Total Spatial Streams",
+            group="Wireless",
+            data_type=SpecDefinition.DataType.INTEGER,
+        )
+        with self.assertRaisesMessage(ValidationError, "requires a whole number"):
+            ProductSpec.objects.create(
+                product=product,
+                definition=definition,
+                value_number=Decimal("6.5"),
+            )
+
     def test_non_published_status_rejects_typed_value(self):
         product = self.make_product()
         definition = SpecDefinition.objects.create(

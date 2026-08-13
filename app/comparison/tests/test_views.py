@@ -127,7 +127,7 @@ class ComparisonViewTests(TestCase):
             query += f"&{name}={value}"
         return reverse("comparison:compare") + "?" + query
 
-    def test_pages_require_login_and_catalog_role(self):
+    def test_pages_require_login_and_allow_every_account(self):
         urls = (
             reverse("comparison:benchmark"),
             reverse("comparison:compare"),
@@ -137,7 +137,7 @@ class ComparisonViewTests(TestCase):
             self.assertEqual(self.client.get(url).status_code, 302)
         self.client.force_login(self.no_role_user)
         for url in urls:
-            self.assertEqual(self.client.get(url).status_code, 403)
+            self.assertEqual(self.client.get(url).status_code, 200)
         self.client.force_login(self.viewer)
         for url in urls:
             self.assertEqual(self.client.get(url).status_code, 200)

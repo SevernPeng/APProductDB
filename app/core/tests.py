@@ -41,13 +41,14 @@ class HomeTests(TestCase):
         self.assertContains(response, 'name="q"')
         self.assertNotContains(response, "Pending Reviews")
 
-    def test_superuser_sees_sitewide_pending_review_metric(self):
+    def test_non_root_cannot_become_superuser(self):
         self.user.is_staff = True
         self.user.is_superuser = True
         self.user.save()
-        self.client.force_login(self.user)
-        response = self.client.get(reverse("home"))
-        self.assertContains(response, "Pending Reviews")
+        self.user.refresh_from_db()
+        self.assertFalse(self.user.is_staff)
+        self.assertFalse(self.user.is_superuser)
+        self.assertEqual(self.user.account_profile.role, "user")
 
     def test_home_counts_published_own_and_competitor_products(self):
         category = Category.objects.create(name="Access Point", slug="access-point")
@@ -323,13 +324,13 @@ class ProductDetailAndPermissionTests(TestCase):
     def detail_url(self, product=None):
         return reverse("product-detail", args=((product or self.product).pk,))
 
-    def test_anonymous_user_is_redirected_and_unassigned_user_gets_403(self):
+    def test_anonymous_user_is_redirected_and_any_account_gets_access(self):
         response = self.client.get(self.detail_url())
         self.assertRedirects(response, f'{reverse("login")}?next={self.detail_url()}')
         self.client.force_login(self.no_role_user)
-        self.assertEqual(self.client.get(self.detail_url()).status_code, 403)
-        self.assertEqual(self.client.get(reverse("product-list")).status_code, 403)
-        self.assertEqual(self.client.get(reverse("home")).status_code, 403)
+        self.assertEqual(self.client.get(self.detail_url()).status_code, 200)
+        self.assertEqual(self.client.get(reverse("product-list")).status_code, 200)
+        self.assertEqual(self.client.get(reverse("home")).status_code, 200)
 
     def test_viewer_contributor_and_superuser_can_view_published_product(self):
         for user in (self.viewer, self.contributor, self.superuser):
@@ -413,6 +414,8 @@ class ProductDetailAndPermissionTests(TestCase):
         response = self.client.get(self.detail_url())
         self.assertContains(response, "Ubiquiti U7-TEST")
         self.assertNotContains(response, "U7-HIDDEN")
+        self.assertContains(response, "spec-card order-2")
+        self.assertContains(response, "mb-3 order-1")
         self.assertContains(self.client.get(self.detail_url(competitor)), "TP-Link EAP-ZERO")
 
     def test_unpublished_product_is_not_exposed_and_query_routes_are_read_only(self):
@@ -439,6 +442,12 @@ class ProductDetailAndPermissionTests(TestCase):
         )
         self.assertNotContains(response, 'type="file"')
         self.assertNotContains(response, "Processing History")
+        self.assertContains(
+            response,
+            reverse("changes:edit-product", args=(self.product.pk,)),
+        )
+        self.assertContains(response, ">Edit</a>", html=False)
+        self.assertNotContains(response, "Suggest a Change")
 
     def test_datasheet_page_offers_pdf_and_url_inputs(self):
         self.client.force_login(self.contributor)
