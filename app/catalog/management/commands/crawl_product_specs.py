@@ -70,12 +70,13 @@ SITEMAP_HINTS = {
 SPEC_METADATA = {
     "supported_bands": ("Supported Wireless Bands", "Wireless", "text", "", "none", "p0"),
     "total_spatial_streams": ("Total Spatial Streams", "Wireless", "integer", "", "higher", "p0"),
-    "rate_2g_mbps": ("2.4 GHz Max Rate", "Performance", "integer", "Mbps", "higher", "p0"),
-    "rate_5g_mbps": ("5 GHz Max Rate", "Performance", "integer", "Mbps", "higher", "p0"),
-    "rate_6g_mbps": ("6 GHz Max Rate", "Performance", "integer", "Mbps", "higher", "p0"),
+    "rate_2g_mbps": ("2.4 GHz Max Rate", "Performance", "decimal", "Mbps", "higher", "p0"),
+    "rate_5g_mbps": ("5 GHz Max Rate", "Performance", "decimal", "Mbps", "higher", "p0"),
+    "rate_6g_mbps": ("6 GHz Max Rate", "Performance", "decimal", "Mbps", "higher", "p0"),
     "max_channel_width_mhz": ("Max Channel Width", "Wireless", "integer", "MHz", "higher", "p0"),
     "ethernet_interfaces": ("Ethernet Interfaces", "Interfaces", "text", "", "none", "p0"),
     "poe_input": ("PoE Input", "Power", "text", "", "equal", "p0"),
+    "power_method": ("Power Method", "Power", "text", "", "equal", "p0"),
     "max_clients": ("Max Clients", "Capacity", "integer", "", "higher", "p0"),
     "ip_rating": ("IP Rating", "Physical", "text", "", "equal", "p0"),
     "switching_capacity_gbps": ("Switching Capacity", "Performance", "decimal", "Gbps", "higher", "p0"),
@@ -351,7 +352,8 @@ def speed_to_mbps(value, unit):
     if not cleaned or cleaned == ".":
         return None
     number = float(cleaned)
-    return int(round(number * 1000)) if unit.casefold().startswith("g") else int(round(number))
+    converted = number * 1000 if unit.casefold().startswith("g") else number
+    return int(converted) if converted.is_integer() else round(converted, 3)
 
 
 def clean_labeled_value(value, limit=350):
@@ -524,7 +526,8 @@ def extract_specs(text, category_slug):
         poe_standards = sorted(set(re.findall(r"802\.3(?:af|at|bt)", compact, re.IGNORECASE)))
         if poe_standards:
             value = " / ".join(item.lower().replace("802.3", "802.3") for item in poe_standards)
-            results["poe_input"] = ("text", value, value)
+            power_code = "power_method" if category_slug == "access-point" else "poe_input"
+            results[power_code] = ("text", f"PoE ({value})", value)
         clients_match = first_match([
             r"(\d{2,5})\+?\s+(?:Concurrent Clients|Connected Devices|Connected Clients)",
             r"Concurrent Clients\s*[:|]?\s*(\d{2,5})\+?",
@@ -545,6 +548,20 @@ def extract_specs(text, category_slug):
         )
         if re.search(r"RJ-?45|Ethernet|GbE|Gigabit|Mbps|Gbps|\b\d+(?:\.\d+)?G\b", interface_value, re.IGNORECASE):
             add_text_result(results, "ethernet_interfaces", interface_value)
+        uplink_value = labeled_value(text, ("Uplink Interface", "Uplink Port", "Uplink"))
+        if uplink_value:
+            existing_interface = results.get("ethernet_interfaces", (None, "", ""))[1]
+            combined_interface = (
+                f"{existing_interface}; Uplink: {uplink_value}"
+                if existing_interface and uplink_value.casefold() not in str(existing_interface).casefold()
+                else existing_interface or f"Uplink: {uplink_value}"
+            )
+            results["ethernet_interfaces"] = ("text", combined_interface, combined_interface)
+        add_text_result(
+            results,
+            "power_method",
+            labeled_value(text, ("Power Method", "Power Supply Method", "Power Mode")),
+        )
         add_text_result(results, "antenna_type", labeled_value(text, ("Antenna Type", "Antenna")))
         add_text_result(results, "beamwidth", labeled_value(text, ("Antenna Beamwidth", "Beamwidth")))
         add_text_result(results, "bridge_modes", labeled_value(text, ("Operating Modes", "Operation Mode", "Wireless Modes", "Bridge Modes")))
@@ -717,16 +734,111 @@ def extract_specs(text, category_slug):
         add_number_result(results, "vpn_tunnels", labeled_number(text, ("VPN Tunnels", "IPsec VPN Tunnels", "Concurrent VPN Tunnels"), integer=True))
         add_boolean_result(results, "wan_load_balancing", compact, (r"\b(?:Multi-?WAN )?Load Balanc(?:e|ing)\b",))
 
+    if category_slug == "accessories":
+        interface = labeled_value(
+            text,
+            ("Transceiver Form Factor", "Form Factor", "Interface Type", "Interface"),
+        )
+        if not interface:
+            interface_match = re.search(
+                r"\b(QSFP28|QSFP\+|SFP28|SFP\+|SFP|RJ-?45|USB-C|LC duplex|MPO|MTP)\b",
+                compact,
+                re.I,
+            )
+            interface = interface_match.group(1) if interface_match else ""
+        add_text_result(results, "accessory_interface_type", interface)
+
+        connector = labeled_value(text, ("Connector Type", "Connector"))
+        if not connector:
+            connector_match = re.search(r"\b(LC(?: duplex)?|MPO-?12|MPO|MTP|RJ-?45|SC/APC|SC/UPC)\b", compact, re.I)
+            connector = connector_match.group(1) if connector_match else ""
+        add_text_result(results, "accessory_connector_type", connector)
+
+        rate_match = first_match(
+            (
+                r"(?:Maximum |Max\.? )?(?:Data|Transmission|Line) Rate\s*[:|]?\s*(\d+(?:\.\d+)?)\s*(Gbps|Mbps)",
+                r"\b(1|2\.5|5|10|25|40|50|100|200|400)\s*(G(?:bps)?)\b[^\n]{0,60}(?:SFP|QSFP|Ethernet|transceiver)",
+            ),
+            compact,
+            flags=re.I,
+        )
+        if rate_match:
+            unit = rate_match.group(2)
+            rate_gbps = float(rate_match.group(1)) / 1000 if unit.casefold().startswith("m") else float(rate_match.group(1))
+            add_number_result(results, "accessory_data_rate_gbps", rate_gbps, rate_match.group(0))
+
+        wavelength = first_match(
+            (r"(?:Wavelength|Tx/Rx Wavelength)\s*[:|]?\s*(\d{3,4})\s*nm", r"\b(850|1310|1490|1550)\s*nm\b"),
+            compact,
+            flags=re.I,
+        )
+        if wavelength:
+            add_number_result(results, "accessory_wavelength_nm", int(wavelength.group(1)), wavelength.group(0))
+
+        fiber_match = re.search(r"\b(Single[- ]?mode|Multi[- ]?mode|SMF|MMF)\b", compact, re.I)
+        if fiber_match:
+            fiber_value = "Single-mode" if fiber_match.group(1).casefold() in {"single-mode", "single mode", "smf"} else "Multi-mode"
+            add_text_result(results, "accessory_fiber_mode", fiber_value, fiber_match.group(0))
+
+        distance = first_match(
+            (
+                r"(?:Maximum |Max\.? )?(?:Transmission )?Distance\s*[:|]?\s*(\d+(?:\.\d+)?)\s*(km|m)\b",
+                r"(?:Reach|Range)\s*[:|]?\s*(?:up to\s*)?(\d+(?:\.\d+)?)\s*(km|m)\b",
+            ),
+            compact,
+            flags=re.I,
+        )
+        if distance:
+            distance_km = float(distance.group(1)) / 1000 if distance.group(2).casefold() == "m" else float(distance.group(1))
+            add_number_result(results, "accessory_max_distance_km", distance_km, distance.group(0))
+
+        cable_length = first_match(
+            (r"Cable Length\s*[:|]?\s*(\d+(?:\.\d+)?)\s*(m|cm|ft)\b",),
+            compact,
+            flags=re.I,
+        )
+        if cable_length:
+            length = float(cable_length.group(1))
+            unit = cable_length.group(2).casefold()
+            if unit == "cm":
+                length /= 100
+            elif unit == "ft":
+                length *= 0.3048
+            add_number_result(results, "accessory_cable_length_m", round(length, 3), cable_length.group(0))
+
+        poe_standards = sorted(set(item.casefold() for item in re.findall(r"802\.3(?:af|at|bt)", compact, re.I)))
+        if poe_standards:
+            add_text_result(results, "accessory_poe_standard", " / ".join(poe_standards))
+        add_text_result(results, "accessory_input_power", labeled_value(text, ("Input Power", "Input Voltage", "AC Input")))
+        add_text_result(results, "accessory_output_power", labeled_value(text, ("Output Power", "Output Voltage", "DC Output")))
+        output_w = labeled_number(text, ("Maximum Output Power", "Max. Output Power", "Output Power"), r"W")
+        add_number_result(results, "accessory_power_w", output_w)
+        add_text_result(results, "accessory_compatibility", labeled_value(text, ("Compatible Products", "Compatibility", "Compatible With")))
+        add_text_result(results, "accessory_mounting_type", labeled_value(text, ("Mounting Type", "Mounting", "Installation")))
+        rack_units = labeled_number(text, ("Rack Units", "Rack Height", "Rack Space"), r"U", integer=False)
+        add_number_result(results, "accessory_rack_units", rack_units)
+        antenna_gain = labeled_number(text, ("Antenna Gain", "Peak Gain", "Gain"), r"dBi", integer=False)
+        add_number_result(results, "accessory_antenna_gain_dbi", antenna_gain)
+        add_text_result(results, "accessory_frequency_range", labeled_value(text, ("Frequency Range", "Operating Frequency", "Frequency")))
+
     return results
 
 
 def crawl_product(payload):
-    product_id, brand, model, category_slug, official_url = payload
+    if len(payload) == 6:
+        product_id, brand, model, category_slug, official_url, datasheet_url = payload
+    else:
+        product_id, brand, model, category_slug, official_url = payload
+        datasheet_url = ""
     domains = OFFICIAL_DOMAINS.get(brand)
     if not domains:
         return {"product_id": product_id, "status": "unsupported_brand", "brand": brand, "model": model}
     try:
-        page_url = official_url if official_url and host_is_allowed(official_url, domains) else search_official_page(brand, model, domains)
+        page_url = (
+            official_url if official_url and host_is_allowed(official_url, domains)
+            else datasheet_url if datasheet_url and host_is_allowed(datasheet_url, domains)
+            else search_official_page(brand, model, domains)
+        )
         if not page_url:
             return {"product_id": product_id, "status": "not_found", "brand": brand, "model": model}
         final_url, content_type, data = fetch_url(page_url)
@@ -737,8 +849,22 @@ def crawl_product(payload):
             return {"product_id": product_id, "status": "unsupported_content", "brand": brand, "model": model, "url": final_url}
         if is_pdf and not data.lstrip().startswith(b"%PDF"):
             is_pdf = False
-        text_parts = [pdf_to_text(data) if is_pdf else html_to_text(data)]
+        page_text = pdf_to_text(data) if is_pdf else html_to_text(data)
+        documents = [(final_url, is_pdf, page_text)]
         source_urls = [final_url]
+        if datasheet_url and datasheet_url != final_url and host_is_allowed(datasheet_url, domains):
+            try:
+                datasheet_final_url, datasheet_type, datasheet_data = fetch_url(
+                    datasheet_url,
+                    timeout=30,
+                    max_bytes=12_000_000,
+                )
+                datasheet_is_pdf = "pdf" in datasheet_type.casefold() or datasheet_final_url.casefold().split("?", 1)[0].endswith(".pdf")
+                if datasheet_is_pdf and datasheet_data.lstrip().startswith(b"%PDF"):
+                    documents.append((datasheet_final_url, True, pdf_to_text(datasheet_data)))
+                    source_urls.append(datasheet_final_url)
+            except Exception:
+                pass
         if not is_pdf:
             for document_url in linked_official_documents(final_url, data, domains, model):
                 try:
@@ -752,17 +878,25 @@ def crawl_product(payload):
                         document_is_pdf = False
                     if not host_is_allowed(document_final_url, domains):
                         continue
-                    text_parts.append(pdf_to_text(document_data) if document_is_pdf else html_to_text(document_data))
+                    document_text = pdf_to_text(document_data) if document_is_pdf else html_to_text(document_data)
+                    documents.append((document_final_url, document_is_pdf, document_text))
                     source_urls.append(document_final_url)
                 except Exception:
                     continue
-        text = "\n".join(text_parts)
         title_match = None if is_pdf else re.search(r"<title[^>]*>(.*?)</title>", data.decode("utf-8", errors="ignore"), re.IGNORECASE | re.DOTALL)
         title = html.unescape(re.sub(r"<[^>]+>", " ", title_match.group(1))).strip() if title_match else f"{brand} {model} official datasheet"
-        model_evidence = text if is_pdf else f"{final_url}\n{title}"
+        model_evidence = page_text if is_pdf else f"{final_url}\n{title}"
         if not model_token_present(model, model_evidence):
             return {"product_id": product_id, "status": "model_not_on_page", "brand": brand, "model": model, "url": final_url}
-        specs = extract_specs(text, category_slug)
+        specs = {}
+        spec_sources = {}
+        # Product-page values are the fallback. Official linked PDFs are processed
+        # afterwards and take precedence field by field.
+        for document_url, document_is_pdf, document_text in sorted(documents, key=lambda item: item[1]):
+            document_specs = extract_specs(document_text, category_slug)
+            for code, value in document_specs.items():
+                specs[code] = value
+                spec_sources[code] = document_url
         return {
             "product_id": product_id,
             "status": "ok" if specs else "page_found_no_specs",
@@ -771,6 +905,7 @@ def crawl_product(payload):
             "url": final_url,
             "source_urls": source_urls,
             "evidence_url": source_urls[-1],
+            "spec_sources": spec_sources,
             "title": title[:250],
             "specs": specs,
         }
@@ -785,6 +920,7 @@ class Command(BaseCommand):
         parser.add_argument("--brand", action="append", dest="brands")
         parser.add_argument("--model", action="append", dest="models")
         parser.add_argument("--region", action="append", dest="regions")
+        parser.add_argument("--category", action="append", dest="categories")
         parser.add_argument("--limit", type=int)
         parser.add_argument("--workers", type=int, default=6)
         parser.add_argument("--dry-run", action="store_true")
@@ -802,6 +938,8 @@ class Command(BaseCommand):
             queryset = queryset.filter(region__in=options["regions"])
         if options["brands"]:
             queryset = queryset.filter(brand__name__in=options["brands"])
+        if options["categories"]:
+            queryset = queryset.filter(category__slug__in=options["categories"])
         if options["models"]:
             queryset = queryset.filter(model__in=options["models"])
         if options["missing_only"]:
@@ -813,7 +951,10 @@ class Command(BaseCommand):
         if not products:
             raise CommandError("No products matched the crawl selection.")
 
-        payloads = [(p.pk, p.brand.name, p.model, p.category.slug, p.official_url) for p in products]
+        payloads = [
+            (p.pk, p.brand.name, p.model, p.category.slug, p.official_url, p.datasheet_url)
+            for p in products
+        ]
         for brand in sorted({payload[1] for payload in payloads}):
             domains = OFFICIAL_DOMAINS.get(brand)
             if domains:
@@ -835,20 +976,6 @@ class Command(BaseCommand):
             if result["status"] not in {"ok", "page_found_no_specs"}:
                 continue
             product = Product.objects.select_related("brand", "category").get(pk=result["product_id"])
-            evidence_url = result.get("evidence_url") or result["url"]
-            is_datasheet = evidence_url.casefold().split("?", 1)[0].endswith(".pdf") or "datasheet" in evidence_url.casefold()
-            source, _ = SourceDocument.objects.update_or_create(
-                url=evidence_url,
-                document_version="",
-                defaults={
-                    "brand": product.brand,
-                    "document_type": SourceDocument.DocumentType.DATASHEET if is_datasheet else SourceDocument.DocumentType.PRODUCT_PAGE,
-                    "title": result["title"] or f"{product.brand.name} {product.model}",
-                    "region": product.region,
-                    "accessed_date": verified_date,
-                    "active": True,
-                },
-            )
             if not product.official_url and len(result["url"]) <= 200:
                 product.official_url = result["url"]
                 product.save(update_fields=("official_url", "updated_at"))
@@ -866,6 +993,21 @@ class Command(BaseCommand):
                 )
 
             for code, (value_kind, value, raw_value) in result["specs"].items():
+                evidence_url = result.get("spec_sources", {}).get(code) or result.get("evidence_url") or result["url"]
+                is_datasheet = evidence_url.casefold().split("?", 1)[0].endswith(".pdf") or "datasheet" in evidence_url.casefold()
+                source, _ = SourceDocument.objects.update_or_create(
+                    url=evidence_url,
+                    document_version="",
+                    defaults={
+                        "brand": product.brand,
+                        "product": product,
+                        "document_type": SourceDocument.DocumentType.DATASHEET if is_datasheet else SourceDocument.DocumentType.PRODUCT_PAGE,
+                        "title": result["title"] or f"{product.brand.name} {product.model}",
+                        "region": product.region,
+                        "accessed_date": verified_date,
+                        "active": True,
+                    },
+                )
                 definition = SpecDefinition.objects.filter(code=code).first()
                 if definition:
                     display_name = definition.display_name
@@ -904,6 +1046,12 @@ class Command(BaseCommand):
                 if existing and existing.value_status == ProductSpec.ValueStatus.PUBLISHED and existing.display_value != "Unknown":
                     retained_specs += 1
                     spec = existing
+                    if is_datasheet:
+                        spec.source_url = evidence_url if len(evidence_url) <= 200 else ""
+                        spec.source_note = "Verified against the official manufacturer datasheet PDF."
+                        spec.raw_value = str(raw_value)[:1000]
+                        spec.verified_date = verified_date
+                        spec.save(update_fields=("source_url", "source_note", "raw_value", "verified_date", "updated_at"))
                 else:
                     defaults = {
                         "value_status": ProductSpec.ValueStatus.PUBLISHED,
@@ -914,7 +1062,11 @@ class Command(BaseCommand):
                         "unit": unit,
                         "raw_value": str(raw_value)[:1000],
                         "source_url": evidence_url if len(evidence_url) <= 200 else "",
-                        "source_note": "Automated extraction from official product page.",
+                        "source_note": (
+                            "Automated extraction from official manufacturer datasheet PDF."
+                            if is_datasheet else
+                            "Automated extraction from official product page."
+                        ),
                         "verified_date": verified_date,
                     }
                     if value_kind == "text":

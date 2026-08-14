@@ -170,6 +170,20 @@ class ComparisonViewTests(TestCase):
         self.assertNotContains(response, '<select class="form-select"')
         self.assertNotContains(response, "U7-Pro")
 
+    def test_view_benchmarks_hides_search_results_and_shows_selected_product(self):
+        self.client.force_login(self.viewer)
+        response = self.client.get(
+            reverse("comparison:benchmark"),
+            {"q": "EAP772", "product": self.eap772.pk},
+        )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertFalse(response.context["show_search_results"])
+        self.assertEqual(response.context["selected_product"], self.eap772)
+        self.assertNotContains(response, "Search Results")
+        self.assertContains(response, "U7-Pro")
+        self.assertContains(response, "View Product")
+
     def test_compare_displays_two_to_four_products_and_missing_states(self):
         self.client.force_login(self.viewer)
         response = self.client.get(

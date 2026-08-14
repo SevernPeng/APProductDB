@@ -54,9 +54,11 @@ def benchmark(request):
         is_published=True, brand__is_own_brand=True
     ).select_related("brand").order_by("model", "region", "hardware_version")
     query = request.GET.get("q", "").strip()
+    selected_id = request.GET.get("product", "").strip()
     search_results = []
     search_result_count = 0
-    if query:
+    show_search_results = bool(query and not selected_id)
+    if show_search_results:
         normalized_query = normalize_model_key(query)
         if normalized_query:
             matching_products = own_products.filter(
@@ -65,7 +67,6 @@ def benchmark(request):
             search_result_count = matching_products.count()
             search_results = list(matching_products[:BENCHMARK_SEARCH_LIMIT])
 
-    selected_id = request.GET.get("product", "").strip()
     if selected_id:
         selected_product = get_object_or_404(own_products, pk=selected_id)
     elif query:
@@ -115,6 +116,7 @@ def benchmark(request):
             "search_results": search_results,
             "search_result_count": search_result_count,
             "search_limit": BENCHMARK_SEARCH_LIMIT,
+            "show_search_results": show_search_results,
             "selected_product": selected_product,
             "matches": matches,
             "compare_all_url": compare_all_url,

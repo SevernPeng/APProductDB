@@ -33,6 +33,8 @@ class InitializeCatalogCommandTests(TestCase):
             sum(len(items) for items in PRODUCT_TYPE_DEFINITIONS.values()),
         )
         self.assertTrue(SpecDefinition.objects.get(code="supported_bands").is_core)
+        self.assertTrue(SpecDefinition.objects.get(code="power_method").is_core)
+        self.assertFalse(SpecDefinition.objects.filter(code="uplink_interface").exists())
         self.assertEqual(
             Category.objects.get(name="Managed Switch").parent.name,
             "Switching",

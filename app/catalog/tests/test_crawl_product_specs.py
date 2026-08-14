@@ -1,6 +1,7 @@
 from django.test import SimpleTestCase
+from unittest.mock import patch
 
-from catalog.management.commands.crawl_product_specs import extract_specs, model_token_present
+from catalog.management.commands.crawl_product_specs import crawl_product, extract_specs, model_token_present
 
 
 class ExtractSpecsTests(SimpleTestCase):
@@ -69,6 +70,16 @@ class ExtractSpecsTests(SimpleTestCase):
         self.assertTrue(specs["mesh_support"][1])
         self.assertIn("802.11r", specs["fast_roaming"][1])
 
+    def test_access_point_merges_uplink_into_ethernet_and_extracts_power_method(self):
+        specs = extract_specs(
+            "Uplink: GbE\nPower Method: PoE\n2.4 GHz: Up to 574 Mbps",
+            "access-point",
+        )
+
+        self.assertEqual(specs["ethernet_interfaces"][1], "Uplink: GbE")
+        self.assertEqual(specs["power_method"][1], "PoE")
+        self.assertNotIn("uplink_interface", specs)
+
     def test_switch_extracts_extended_template_fields(self):
         text = """
         24 PoE+ ports
@@ -112,6 +123,38 @@ class ExtractSpecsTests(SimpleTestCase):
         self.assertEqual(specs["vpn_tunnels"][1], 100)
         self.assertTrue(specs["wan_load_balancing"][1])
 
+    def test_accessory_extracts_optical_and_cable_specs(self):
+        text = """
+        Form Factor: SFP+
+        Connector Type: LC duplex
+        Maximum Data Rate: 10 Gbps
+        Wavelength: 1310 nm
+        Fiber Mode: Single-mode fiber (SMF)
+        Maximum Transmission Distance: 10 km
+        """
+
+        specs = extract_specs(text, "accessories")
+
+        self.assertEqual(specs["accessory_interface_type"][1], "SFP+")
+        self.assertEqual(specs["accessory_connector_type"][1], "LC duplex")
+        self.assertEqual(specs["accessory_data_rate_gbps"][1], 10)
+        self.assertEqual(specs["accessory_wavelength_nm"][1], 1310)
+        self.assertEqual(specs["accessory_fiber_mode"][1], "Single-mode")
+        self.assertEqual(specs["accessory_max_distance_km"][1], 10)
+
+    def test_accessory_extracts_poe_power_specs(self):
+        text = """
+        Input Power: 100-240 V AC, 50/60 Hz
+        Output Power: 54 V DC, maximum 60 W
+        IEEE 802.3af/at/bt
+        """
+
+        specs = extract_specs(text, "accessories")
+
+        self.assertIn("802.3af", specs["accessory_poe_standard"][1])
+        self.assertIn("100-240 V AC", specs["accessory_input_power"][1])
+        self.assertIn("54 V DC", specs["accessory_output_power"][1])
+
     def test_switch_does_not_treat_per_port_watts_as_port_count(self):
         specs = extract_specs(
             "Maximum PoE power: 30W for each PoE port\nPacket Buffer Memory: 4 Mb",
@@ -132,3 +175,21 @@ class ExtractSpecsTests(SimpleTestCase):
     def test_model_token_does_not_accept_longer_sibling_model(self):
         self.assertTrue(model_token_present("ER605", "TP-Link ER605 | Omada Gateway"))
         self.assertFalse(model_token_present("ER605", "TP-Link ER605W | Omada Gateway"))
+
+    @patch("catalog.management.commands.crawl_product_specs.pdf_to_text")
+    @patch("catalog.management.commands.crawl_product_specs.linked_official_documents")
+    @patch("catalog.management.commands.crawl_product_specs.fetch_url")
+    def test_official_datasheet_values_take_priority_per_field(self, fetch_url, linked_documents, pdf_to_text):
+        page_url = "https://techspecs.ui.com/unifi/wifi/u6-plus"
+        pdf_url = "https://dl.ui.com/ds/u6%2B_ds.pdf"
+        fetch_url.side_effect = [
+            (page_url, "text/html", b"<title>Ubiquiti U6+</title>2.4 GHz: Up to 300 Mbps"),
+            (pdf_url, "application/pdf", b"%PDF-fake"),
+        ]
+        linked_documents.return_value = [pdf_url]
+        pdf_to_text.return_value = "U6+ 2.4 GHz: Up to 573.5 Mbps"
+
+        result = crawl_product((1, "Ubiquiti", "U6+", "access-point", page_url))
+
+        self.assertEqual(result["specs"]["rate_2g_mbps"][1], 573.5)
+        self.assertEqual(result["spec_sources"]["rate_2g_mbps"], pdf_url)

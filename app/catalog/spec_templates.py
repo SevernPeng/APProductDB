@@ -21,9 +21,9 @@ SPEC_DEFINITIONS = {
     "mimo_2g": spec("2.4 GHz MIMO", "Wireless", category="access-point"),
     "mimo_5g": spec("5 GHz MIMO", "Wireless", category="access-point"),
     "mimo_6g": spec("6 GHz MIMO", "Wireless", category="access-point"),
-    "rate_2g_mbps": spec("2.4 GHz Max Rate", "Performance", "integer", "Mbps", filterable=True, direction="higher", category="access-point"),
-    "rate_5g_mbps": spec("5 GHz Max Rate", "Performance", "integer", "Mbps", filterable=True, direction="higher", category="access-point"),
-    "rate_6g_mbps": spec("6 GHz Max Rate", "Performance", "integer", "Mbps", filterable=True, direction="higher", category="access-point"),
+    "rate_2g_mbps": spec("2.4 GHz Max Rate", "Performance", "decimal", "Mbps", filterable=True, direction="higher", category="access-point"),
+    "rate_5g_mbps": spec("5 GHz Max Rate", "Performance", "decimal", "Mbps", filterable=True, direction="higher", category="access-point"),
+    "rate_6g_mbps": spec("6 GHz Max Rate", "Performance", "decimal", "Mbps", filterable=True, direction="higher", category="access-point"),
     "max_channel_width_mhz": spec("Max Channel Width", "Wireless", "integer", "MHz", filterable=True, direction="higher", category="access-point"),
     "antenna_type": spec("Antenna Type", "Wireless", category="access-point"),
     "antenna_gain_dbi": spec("Antenna Gain", "Wireless", unit="dBi", direction="higher", category="access-point"),
@@ -39,7 +39,8 @@ SPEC_DEFINITIONS = {
     "lan_interfaces": spec("LAN Interfaces", "Interfaces", category="gateway"),
     "uplink_interfaces": spec("Uplink / SFP Interfaces", "Interfaces", category="managed-switches"),
     "usb_interfaces": spec("USB Interfaces", "Interfaces", category="gateway"),
-    "poe_input": spec("PoE Input", "Power", category="access-point"),
+    "poe_input": spec("PoE Input", "Power", category="wireless-bridge"),
+    "power_method": spec("Power Method", "Power", category="access-point"),
     "poe_output": spec("PoE Output", "Power", category="access-point"),
     "poe_standard": spec("Supported PoE Standards", "PoE", filterable=True, category="managed-switches"),
     "poe_ports": spec("PoE-Capable Ports", "PoE", "integer", direction="higher", category="managed-switches"),
@@ -182,7 +183,7 @@ TEMPLATES = (
         "fields": fields(
             "supported_bands", "total_spatial_streams", "mimo_2g", "mimo_5g", "mimo_6g",
             "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps", "max_channel_width_mhz",
-            "ethernet_interfaces", "poe_input", "max_clients",
+            "ethernet_interfaces", "power_method", "max_clients",
         ) + [
             ("antenna_type", "p1"), ("antenna_gain_dbi", "p1"), ("max_ssids", "p1"),
             ("centralized_management", "p1"), ("mesh_support", "p1"), ("fast_roaming", "p1"),
@@ -196,7 +197,7 @@ TEMPLATES = (
         "description": "Outdoor access points with weather, range and surge characteristics.",
         "fields": fields(
             "supported_bands", "total_spatial_streams", "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps",
-            "max_channel_width_mhz", "ethernet_interfaces", "poe_input", "max_clients", "ip_rating",
+            "max_channel_width_mhz", "ethernet_interfaces", "power_method", "max_clients", "ip_rating",
             "antenna_type", "antenna_gain_dbi", "wireless_range", "lightning_protection_kv",
         ) + [
             ("centralized_management", "p1"), ("mesh_support", "p1"),
@@ -210,7 +211,7 @@ TEMPLATES = (
         "description": "Wall-plate access points with downlink and PoE passthrough characteristics.",
         "fields": fields(
             "supported_bands", "total_spatial_streams", "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps",
-            "ethernet_interfaces", "poe_input", "poe_output", "max_clients",
+            "ethernet_interfaces", "power_method", "poe_output", "max_clients",
         ) + [
             ("mimo_2g", "p1"), ("mimo_5g", "p1"), ("mimo_6g", "p1"),
             ("max_channel_width_mhz", "p1"), ("max_ssids", "p1"),
@@ -300,7 +301,7 @@ AP_CORE_FIELDS = fields(
     "rate_6g_mbps",
     "max_channel_width_mhz",
     "ethernet_interfaces",
-    "poe_input",
+    "power_method",
     "max_clients",
 )
 

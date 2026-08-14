@@ -25,6 +25,18 @@ class ProductTypeTemplateTests(TestCase):
         self.assertIn("poe_budget_w", managed_codes)
         self.assertNotIn("supported_bands", managed_codes)
 
+    def test_access_point_templates_use_one_interface_and_one_power_method_field(self):
+        category = Category.objects.get(slug="access-point")
+        for form_factor in ("", "ceiling", "wall", "wall_plate", "outdoor", "desktop"):
+            codes = {
+                item.spec_definition.code
+                for item in template_fields(category, form_factor)
+            }
+            self.assertIn("ethernet_interfaces", codes)
+            self.assertIn("power_method", codes)
+            self.assertNotIn("uplink_interface", codes)
+            self.assertNotIn("poe_input", codes)
+
     def test_managed_switch_comparison_does_not_show_ap_fields(self):
         brand = Brand.objects.get(name="TP-Link")
         category = Category.objects.get(slug="managed-switches")
