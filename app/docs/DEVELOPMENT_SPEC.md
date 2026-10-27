@@ -5,6 +5,8 @@
 项目阶段：内部 MVP  
 目标读者：项目负责人、Codex、后续维护开发人员
 
+> 本文保留初始 MVP 设计背景，部分范围已随开发演进。当前安装、路径、网络与运行命令以[仓库 README](../../README.md)、[环境指南](ENVIRONMENT_SETUP.md)、[部署指南](DEPLOYMENT.md)及[恢复手册](RESTORE.md)为准，不把历史设计示例作为本机配置。
+
 ---
 
 ## 1. 项目背景
@@ -104,87 +106,13 @@ MVP 必须跑通以下闭环：
 
 ## 6. 开发环境准备
 
-### 6.1 Windows 软件
+安装、虚拟环境、依赖、配置生成、数据库初始化和首次登录步骤统一维护在[本地环境与首次启动](ENVIRONMENT_SETUP.md)。
 
-安装：
-
-1. Git for Windows；
-2. Python 3.12 或 3.13 64-bit；
-3. VS Code；
-4. VS Code Python 扩展；
-5. 可选：DB Browser for SQLite；
-6. 可选：Microsoft Edge 或 Chrome，用于测试。
-
-安装 Python 时勾选 `Add Python to PATH`。
-
-### 6.2 推荐工程路径
-
-不要把运行中的项目和 SQLite 数据库放在 OneDrive 实时同步目录中。
-
-建议路径：
-
-```text
-C:\APProductDB\
-├── app\
-├── data\
-├── media\
-├── logs\
-└── backups\
-```
-
-其中：
-
-- `app`：源代码；
-- `data`：SQLite 数据库；
-- `media`：上传附件和产品图片；
-- `logs`：运行和错误日志；
-- `backups`：备份副本。
-
-### 6.3 Python 虚拟环境
-
-```powershell
-cd C:\APProductDB\app
-py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-```
-
-建议初始依赖：
-
-```text
-Django>=5.2,<5.3
-waitress>=3,<4
-whitenoise>=6,<7
-openpyxl>=3.1,<4
-Pillow>=11,<12
-python-dotenv>=1,<2
-```
-
-如果引入 pytest：
-
-```text
-pytest>=8,<9
-pytest-django>=4,<5
-```
-
-所有依赖写入 `requirements.txt`，不得依赖开发电脑中的全局包。
-
-### 6.4 环境变量
-
-开发和生产配置使用 `.env`，不得把密钥提交到 Git。
-
-```text
-DJANGO_SECRET_KEY=<随机长字符串>
-DJANGO_DEBUG=False
-DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost,192.168.1.100
-DJANGO_CSRF_TRUSTED_ORIGINS=http://192.168.1.100:8000
-DATABASE_PATH=C:\APProductDB\data\ap_products.sqlite3
-MEDIA_ROOT=C:\APProductDB\media
-LOG_DIR=C:\APProductDB\logs
-BACKUP_DIR=C:\APProductDB\backups
-```
-
-`.env.example` 应提交到 Git，但不得包含真实密钥。
+- 普通本机部署允许任意本地可写目录，不要求固定盘符。
+- 使用 `scripts/create_env.py` 按当前目录生成路径与随机密钥，不复制其他电脑的 `.env`。
+- 依赖以 `app/requirements.txt`、`app/requirements-dev.txt` 为准。
+- 所有运行数据路径必须位于实际数据根目录内，不进入 Git，也不实时同步运行中的 SQLite。
+- 当前 Windows 自动运行脚本另有 `D:/APProductDB` 布局限制，见部署指南。
 
 ---
 
@@ -962,62 +890,13 @@ backup.log
 
 ## 16. Windows 部署
 
-### 16.1 网络
+当前可执行步骤统一维护在[局域网部署与 Windows 运行](DEPLOYMENT.md)，避免本设计文档维护另一套地址和命令。
 
-- 为办公电脑设置 DHCP Reservation 或固定局域网 IP；
-- 示例地址：`192.168.1.100`；
-- 同事通过 `http://192.168.1.100:8000` 访问；
-- Windows 防火墙只允许公司局域网网段访问 TCP 8000；
-- 不开放到公网。
-
-### 16.2 Django 生产配置
-
-```powershell
-cd C:\APProductDB\app
-.\.venv\Scripts\Activate.ps1
-python manage.py check --deploy
-python manage.py migrate
-python manage.py collectstatic --noinput
-waitress-serve --listen=0.0.0.0:8000 config.wsgi:application
-```
-
-不要使用 `python manage.py runserver` 作为正式服务。
-
-### 16.3 启动脚本
-
-`scripts/start_server.ps1` 应：
-
-1. 切换到项目目录；
-2. 激活虚拟环境或直接调用虚拟环境 Python；
-3. 创建日志目录；
-4. 启动 Waitress；
-5. 把 stdout/stderr 写入日志；
-6. 返回非零退出码时留下错误记录。
-
-### 16.4 Windows Task Scheduler
-
-创建任务：
-
-1. `APProductDB-Server`
-   - 触发：电脑启动时；
-   - 操作：执行 start_server.ps1；
-   - 用户未登录时也运行；
-   - 失败后每 5 分钟重试，最多 3 次。
-2. `APProductDB-Backup`
-   - 触发：每天固定时间；
-   - 操作：执行 backup.ps1。
-3. `APProductDB-HealthCheck`
-   - 触发：每 15 分钟；
-   - 请求 `/health/`；
-   - 失败时写日志；MVP 不强制自动重启。
-
-### 16.5 电源设置
-
-- 接通电源时不自动睡眠；
-- 笔记本合盖不睡眠；
-- 优先使用有线网络；
-- Windows 更新重启后服务应自动启动；
-- 如公司允许，配置 BIOS 断电恢复后自动开机。
+- 本机使用 `127.0.0.1`；其他电脑使用服务器实际局域网地址。
+- 从服务器当前网卡读取 IPv4 和前缀长度，计算真实 CIDR，不预设 IP 或网段。
+- 按实际访问地址配置主机白名单、CSRF 来源、防火墙及浏览器 URL；地址变化后重新配置并重启。
+- 持续服务使用 Waitress；Windows 自动任务脚本的目录、电源、权限和端口限制以部署指南为准。
+- 不配置公网端口转发；备份和健康检查需验证实际运行结果。
 
 ---
 
@@ -1025,7 +904,7 @@ waitress-serve --listen=0.0.0.0:8000 config.wsgi:application
 
 ### 17.1 SQLite 配置
 
-- 数据库文件放在 `C:\APProductDB\data`；
+- 数据库文件放在配置的 `DATABASE_PATH`（默认仓库根目录下的 `data/ap_products.sqlite3`）；
 - 不放在 Git；
 - 不让 OneDrive 直接同步运行中的数据库；
 - 可启用合理的 SQLite timeout；
@@ -1049,16 +928,16 @@ waitress-serve --listen=0.0.0.0:8000 config.wsgi:application
 建议实现：
 
 ```text
-python manage.py backup_database --output <path>
+python manage.py backup_database --no-prune
 ```
 
-备份目录：
+备份目录（占位符仅表示结构，执行步骤见[恢复手册](RESTORE.md)）：
 
 ```text
-C:\APProductDB\backups\2026-07-18_230000\
+<BACKUP_DIR>/<实际备份时间戳>/
 ├── ap_products.sqlite3
 ├── media.zip
-├── environment.txt
+├── environment.env
 └── manifest.json
 ```
 

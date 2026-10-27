@@ -1,13 +1,16 @@
-# APProductDB application
+# APProductDB 应用目录
 
-这里是 APProductDB 的 Django 应用目录。仓库级说明见上一级 `README.md`。
+这是 Django 应用目录，包含 `manage.py`、依赖清单、配置、业务模块与运行脚本。仓库根目录在本目录的上一级。
 
-主要命令：
+- 首次使用：按[仓库 README](../README.md)或[完整环境初始化指南](docs/ENVIRONMENT_SETUP.md)安装。
+- 局域网访问、IP/网段配置、Windows 计划任务：[部署指南](docs/DEPLOYMENT.md)。
+- 备份、恢复与换电脑迁移：[恢复手册](docs/RESTORE.md)。
+- 代码结构：[架构](docs/ARCHITECTURE.md)、[数据库](docs/DATABASE_SCHEMA.md)。
+
+已有环境时，在本目录运行以下命令启动本机服务：
 
 ```powershell
-python manage.py check
-python manage.py test
-python manage.py runserver 127.0.0.1:8000
+& .\.venv\Scripts\waitress-serve.exe --listen=127.0.0.1:8000 config.wsgi:application
 ```
 
-领域边界见 `docs/ARCHITECTURE.md`，部署见 `docs/DEPLOYMENT.md`，恢复见 `docs/RESTORE.md`。
+访问 `http://127.0.0.1:8000/accounts/login/`。不要把这个地址发给其他电脑使用；局域网共享需要按部署指南配置实际服务器地址。
