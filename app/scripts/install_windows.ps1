@@ -27,8 +27,12 @@ function Protect-DataTree([string]$Path) {
     & icacls.exe $children /inheritance:r /grant:r "*$($currentSid):F" '*S-1-5-18:F' '*S-1-5-32-544:F' /T /C | Out-Null
     if ($LASTEXITCODE -notin @(0, 3)) { throw "Failed to protect existing data files: $Path" }
 }
-foreach ($directory in @('data','media','backups','logs','restore-tests')) {
+foreach ($directory in @('data','media')) {
     Protect-DataTree (Join-Path $DataRoot $directory)
+}
+$RuntimeRoot = Join-Path $DataRoot 'runtime'
+foreach ($directory in @('backups','logs','restore-tests')) {
+    Protect-DataTree (Join-Path $RuntimeRoot $directory)
 }
 $environmentFile = Join-Path $ProjectDir '.env'
 & icacls.exe $environmentFile /inheritance:r /grant:r "*$($currentSid):F" '*S-1-5-18:F' '*S-1-5-32-544:F' | Out-Null

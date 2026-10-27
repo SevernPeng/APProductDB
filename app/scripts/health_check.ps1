@@ -10,7 +10,7 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $ProjectDir = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $DataRoot = (Resolve-Path (Join-Path $ProjectDir '..')).Path
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $LogFile = Join-Path $LogDir 'health-check.log'
 New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 try {

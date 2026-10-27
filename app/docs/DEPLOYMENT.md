@@ -136,7 +136,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 | `APProductDB-HealthCheck` | 每 5 分钟检查健康状态，失败自动重启并验证 |
 | `APProductDB-LAN-8000` | 仅放行指定来源网段的 TCP 8000 |
 
-任务以执行安装的 Windows 账户运行，使用 S4U、最高权限；数据权限收紧为该账户、SYSTEM 与本机 Administrators。服务账户应能访问本地源码与数据。备份和抓价日志在根目录的 `logs` 下；价格任务使用 `syscom-prices.log`。仅浏览本地数据无需先配置外部价格同步或 Ollama；对应可选功能需要另外准备服务/账户。
+任务以执行安装的 Windows 账户运行，使用 S4U、最高权限；数据权限收紧为该账户、SYSTEM 与本机 Administrators。服务账户应能访问本地源码与数据。备份和抓价日志在 `runtime\logs` 下；价格任务使用 `syscom-prices.log`。仅浏览本地数据无需先配置外部价格同步或 Ollama；对应可选功能需要另外准备服务/账户。
 
 关闭前台服务后启动任务：
 
@@ -146,7 +146,7 @@ Get-ScheduledTaskInfo -TaskName APProductDB-Server
 Invoke-RestMethod http://127.0.0.1:8000/health/
 ```
 
-启动是异步的，如暂未就绪，稍后再验证并查看 `D:\APProductDB\logs\waitress-runtime.log`。长期运行任务的结果可能为“正在运行”，不能仅用结果是否为 0 判断 Web 服务是否正常。
+启动是异步的，如暂未就绪，稍后再验证并查看 `D:\APProductDB\runtime\logs\waitress-runtime.log`。长期运行任务的结果可能为“正在运行”，不能仅用结果是否为 0 判断 Web 服务是否正常。
 
 日常操作：
 

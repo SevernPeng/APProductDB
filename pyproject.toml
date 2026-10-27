@@ -4,6 +4,7 @@ python_files = ["test_*.py", "tests.py"]
 testpaths = ["app"]
 pythonpath = ["app"]
 addopts = "--strict-markers"
+cache_dir = "runtime/cache/pytest"
 filterwarnings = [
     "ignore:The default scheme will be changed from 'http' to 'https'.*:django.utils.deprecation.RemovedInDjango60Warning",
 ]
@@ -11,6 +12,7 @@ filterwarnings = [
 [tool.ruff]
 target-version = "py311"
 line-length = 100
+cache-dir = "runtime/cache/ruff"
 extend-exclude = ["app/*/migrations", "datasets"]
 
 [tool.ruff.lint]

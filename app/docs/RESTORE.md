@@ -9,7 +9,7 @@
 & .\.venv\Scripts\python.exe manage.py test_restore --backup latest
 ```
 
-第一条备份数据库、附件、环境配置与版本信息，`--no-prune` 保留已有备份；日常自动备份使用自身保留策略。第二条在数据根目录的 `restore-tests` 下隔离校验，不覆盖当前数据库；成功后输出报告位置。每月至少演练一次。
+第一条备份数据库、附件、环境配置与版本信息，`--no-prune` 保留已有备份；日常自动备份使用自身保留策略。第二条在 `runtime\restore-tests` 下隔离校验，不覆盖当前数据库；成功后输出报告位置。每月至少演练一次。
 
 备份位于配置的 `BACKUP_DIR` 下，以时间戳命名。保留完整目录中的数据库、`media.zip`、`environment.env`、`manifest.json` 及其余文件；不要只复制 SQLite 文件。备份含密钥与业务数据，应限制访问并复制到另一块磁盘或批准的安全存储。
 
@@ -18,24 +18,25 @@
 查看当前实际配置：
 
 ```powershell
-& .\.venv\Scripts\python.exe manage.py shell -c "from django.conf import settings as s; print('ROOT:', s.RUNTIME_DATA_ROOT); print('DATABASE:', s.DATABASES['default']['NAME']); print('MEDIA:', s.MEDIA_ROOT); print('BACKUPS:', s.BACKUP_DIR)"
+& .\.venv\Scripts\python.exe manage.py shell -c "from django.conf import settings as s; print('DATA ROOT:', s.RUNTIME_DATA_ROOT); print('RUNTIME ROOT:', s.RUNTIME_ROOT); print('DATABASE:', s.DATABASES['default']['NAME']); print('MEDIA:', s.MEDIA_ROOT); print('BACKUPS:', s.BACKUP_DIR)"
 ```
 
-下面恢复命令适用于数据库为 `数据根目录\data\ap_products.sqlite3`、附件为 `数据根目录\media`、备份为 `数据根目录\backups` 的标准布局。如果上述输出使用自定义位置，先按实际位置调整命令，不能盲目执行。数据必须位于 `AP_PRODUCT_DATA_ROOT` 内。
+下面恢复命令适用于数据库为 `数据根目录\data\ap_products.sqlite3`、附件为 `数据根目录\media`、备份为 `数据根目录\runtime\backups` 的标准布局。如果上述输出使用自定义位置，先按实际位置调整命令，不能盲目执行。数据库和附件必须位于 `AP_PRODUCT_DATA_ROOT` 内，生成文件必须位于 `AP_PRODUCT_RUNTIME_ROOT` 内。
 
 在当前 PowerShell 中输入刚确认的实际数据根目录，并选择完整备份目录名：
 
 ```powershell
 $DataRoot = (Resolve-Path -LiteralPath (Read-Host '请输入实际数据根目录绝对路径')).Path
+$RuntimeRoot = Join-Path $DataRoot 'runtime'
 $BackupName = Read-Host '请输入 backups 下实际备份目录名（YYYY-MM-DD_HHMMSS）'
 if ($BackupName -notmatch '^\d{4}-\d{2}-\d{2}_\d{6}$') { throw '备份目录名格式错误' }
-$BackupPath = Join-Path (Join-Path $DataRoot 'backups') $BackupName
+$BackupPath = Join-Path (Join-Path $RuntimeRoot 'backups') $BackupName
 Get-Item -LiteralPath $BackupPath
 & .\.venv\Scripts\python.exe manage.py test_restore --backup $BackupName
 if ($LASTEXITCODE -ne 0) { throw '备份验证失败，停止恢复' }
 ```
 
-必须看到成功提示，并确认 `restore-tests\reports` 下报告状态为 `passed`。不要使用文档里的历史日期代替实际备份名称。
+必须看到成功提示，并确认 `runtime\restore-tests\reports` 下报告状态为 `passed`。不要使用文档里的历史日期代替实际备份名称。
 
 ## 3. 停止所有写入与自动重启
 
@@ -64,7 +65,7 @@ Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue
 $DatabaseDir = Join-Path $DataRoot 'data'
 $DatabasePath = Join-Path $DatabaseDir 'ap_products.sqlite3'
 $MediaPath = Join-Path $DataRoot 'media'
-$Quarantine = Join-Path (Join-Path $DataRoot 'recovery-quarantine') (Get-Date -Format 'yyyyMMdd-HHmmss-fff')
+$Quarantine = Join-Path (Join-Path $RuntimeRoot 'recovery-quarantine') (Get-Date -Format 'yyyyMMdd-HHmmss-fff')
 $RootPrefix = $DataRoot.TrimEnd('\') + '\'
 foreach ($Candidate in @($BackupPath,$DatabaseDir,$DatabasePath,$MediaPath,$Quarantine)) {
     $FullPath = [System.IO.Path]::GetFullPath($Candidate)

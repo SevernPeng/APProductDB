@@ -48,13 +48,18 @@ APProductDB/             # 克隆或解压后的仓库根目录
 ├── datasets/           # 规格识别基准数据
 ├── data/               # 默认 SQLite 数据库，首次运行时创建
 ├── media/              # 上传文件
-├── staticfiles/        # collectstatic 输出
-├── logs/               # 日志
-├── backups/            # 备份
+├── runtime/            # 不进入 Git 的运行文件
+│   ├── backups/        # 一致性备份
+│   ├── cache/          # 测试和检查缓存
+│   ├── logs/           # 应用及计划任务日志
+│   ├── output/         # 临时生成与人工检查输出
+│   ├── restore-tests/  # 隔离恢复测试
+│   ├── staticfiles/    # collectstatic 输出
+│   └── tmp/            # 临时下载与处理中间文件
 └── pyproject.toml      # 测试、静态检查配置
 ```
 
-数据库、上传文件、日志、备份、密钥均不进入 Git。迁移源码不会自动迁移业务数据。
+`runtime/` 整体不进入 Git；其中内容可按用途清理，但备份应遵循保留策略。数据库、上传文件和密钥同样不进入 Git。迁移源码不会自动迁移业务数据。
 
 ## 开发检查
 

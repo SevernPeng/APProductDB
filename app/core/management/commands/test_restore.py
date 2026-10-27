@@ -22,7 +22,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         backup_root = Path(settings.BACKUP_DIR).resolve()
         backup = self._select_backup(backup_root, options["backup"])
-        restore_root = Path(settings.RUNTIME_DATA_ROOT).resolve() / "restore-tests"
+        restore_root = Path(settings.RESTORE_TEST_DIR).resolve()
         restore_root.mkdir(parents=True, exist_ok=True)
         workspace = restore_root / f"restore-{uuid.uuid4().hex}"
         workspace.mkdir()

@@ -14,6 +14,7 @@ def main():
     if host.version != 4 or not host.is_private:
         raise SystemExit("--host must be a private IPv4 address.")
     data_root = Path(args.data_root).resolve()
+    runtime_root = data_root / "runtime"
     if os.name == "nt" and data_root.drive.upper() != "D:":
         raise SystemExit("All APProductDB runtime data must remain on D:.")
 
@@ -26,12 +27,14 @@ def main():
         "DJANGO_ALLOWED_HOSTS": f"127.0.0.1,localhost,{host}",
         "DJANGO_CSRF_TRUSTED_ORIGINS": f"http://{host}:8000",
         "AP_PRODUCT_DATA_ROOT": str(data_root),
+        "AP_PRODUCT_RUNTIME_ROOT": str(runtime_root),
         "AP_PRODUCT_REQUIRE_D_DRIVE": "True",
         "DATABASE_PATH": str(data_root / "data" / "ap_products.sqlite3"),
         "MEDIA_ROOT": str(data_root / "media"),
-        "STATIC_ROOT": str(data_root / "staticfiles"),
-        "LOG_DIR": str(data_root / "logs"),
-        "BACKUP_DIR": str(data_root / "backups"),
+        "STATIC_ROOT": str(runtime_root / "staticfiles"),
+        "LOG_DIR": str(runtime_root / "logs"),
+        "BACKUP_DIR": str(runtime_root / "backups"),
+        "RESTORE_TEST_DIR": str(runtime_root / "restore-tests"),
     }
     lines = env_path.read_text(encoding="utf-8").splitlines()
     found = set()
@@ -50,8 +53,10 @@ def main():
     temporary = env_path.with_suffix(".env.tmp")
     temporary.write_text("\n".join(output) + "\n", encoding="utf-8")
     temporary.replace(env_path)
-    for directory in ("data", "media", "staticfiles", "logs", "backups", "restore-tests"):
+    for directory in ("data", "media"):
         (data_root / directory).mkdir(parents=True, exist_ok=True)
+    for directory in ("staticfiles", "logs", "backups", "restore-tests", "tmp", "output", "cache"):
+        (runtime_root / directory).mkdir(parents=True, exist_ok=True)
     print(f"Configured runtime host {host}; all data paths are under {data_root}.")
 
 

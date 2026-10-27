@@ -11,6 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ROOT = BASE_DIR.parent
 load_dotenv(BASE_DIR / ".env")
 RUNTIME_DATA_ROOT = Path(os.getenv("AP_PRODUCT_DATA_ROOT", PROJECT_ROOT)).resolve()
+RUNTIME_ROOT = Path(
+    os.getenv("AP_PRODUCT_RUNTIME_ROOT", RUNTIME_DATA_ROOT / "runtime")
+).resolve()
 IS_TESTING = "test" in sys.argv or any("pytest" in arg.lower() for arg in sys.argv)
 
 
@@ -97,7 +100,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = "/static/"
-STATIC_ROOT = Path(os.getenv("STATIC_ROOT", PROJECT_ROOT / "staticfiles"))
+STATIC_ROOT = Path(os.getenv("STATIC_ROOT", RUNTIME_ROOT / "staticfiles"))
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STORAGES = {
     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
@@ -112,23 +115,39 @@ STORAGES = {
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = Path(os.getenv("MEDIA_ROOT", PROJECT_ROOT / "media"))
-BACKUP_DIR = Path(os.getenv("BACKUP_DIR", PROJECT_ROOT / "backups"))
-LOG_DIR = Path(os.getenv("LOG_DIR", PROJECT_ROOT / "logs"))
+BACKUP_DIR = Path(os.getenv("BACKUP_DIR", RUNTIME_ROOT / "backups"))
+LOG_DIR = Path(os.getenv("LOG_DIR", RUNTIME_ROOT / "logs"))
+RESTORE_TEST_DIR = Path(os.getenv("RESTORE_TEST_DIR", RUNTIME_ROOT / "restore-tests"))
 REQUIRE_D_DRIVE = env_bool("AP_PRODUCT_REQUIRE_D_DRIVE", False)
 if REQUIRE_D_DRIVE and os.name == "nt" and not IS_TESTING and RUNTIME_DATA_ROOT.drive.upper() != "D:":
     raise ImproperlyConfigured("AP_PRODUCT_DATA_ROOT must be located on the D: drive.")
-for runtime_name, runtime_path in {
+for data_name, data_path in {
     "database": DATABASES["default"]["NAME"],
     "media": MEDIA_ROOT,
+}.items():
+    try:
+        Path(data_path).resolve().relative_to(RUNTIME_DATA_ROOT)
+    except ValueError as exc:
+        raise ImproperlyConfigured(
+            f"The {data_name} path must stay under {RUNTIME_DATA_ROOT}."
+        ) from exc
+try:
+    RUNTIME_ROOT.relative_to(RUNTIME_DATA_ROOT)
+except ValueError as exc:
+    raise ImproperlyConfigured(
+        f"AP_PRODUCT_RUNTIME_ROOT must stay under {RUNTIME_DATA_ROOT}."
+    ) from exc
+for runtime_name, runtime_path in {
     "static": STATIC_ROOT,
     "logs": LOG_DIR,
     "backups": BACKUP_DIR,
+    "restore tests": RESTORE_TEST_DIR,
 }.items():
     try:
-        Path(runtime_path).resolve().relative_to(RUNTIME_DATA_ROOT)
+        Path(runtime_path).resolve().relative_to(RUNTIME_ROOT)
     except ValueError as exc:
         raise ImproperlyConfigured(
-            f"The {runtime_name} path must stay under {RUNTIME_DATA_ROOT}."
+            f"The {runtime_name} path must stay under {RUNTIME_ROOT}."
         ) from exc
 if not IS_TESTING:
     for runtime_directory in {
@@ -137,6 +156,7 @@ if not IS_TESTING:
         STATIC_ROOT,
         LOG_DIR,
         BACKUP_DIR,
+        RESTORE_TEST_DIR,
     }:
         runtime_directory.mkdir(parents=True, exist_ok=True)
 

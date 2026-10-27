@@ -16,7 +16,7 @@ if (-not $DataRoot.StartsWith('D:\APProductDB', [System.StringComparison]::Ordin
 }
 
 $Ollama = Join-Path $DataRoot 'tools\ollama\ollama.exe'
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $RestartLog = Join-Path $LogDir 'restart-ollama.log'
 if (-not (Test-Path -LiteralPath $Ollama)) {
     throw "Ollama executable not found: $Ollama"
@@ -121,4 +121,4 @@ do {
     Start-Sleep -Seconds 1
 } while ((Get-Date) -lt $healthDeadline)
 
-throw "Ollama did not become healthy within $StartupTimeoutSeconds seconds. Check D:\APProductDB\logs\ollama-runtime.log."
+throw "Ollama did not become healthy within $StartupTimeoutSeconds seconds. Check D:\APProductDB\runtime\logs\ollama-runtime.log."

@@ -11,7 +11,7 @@ if (-not $DataRoot.StartsWith('D:\APProductDB', [System.StringComparison]::Ordin
     throw "APProductDB must run from D:\APProductDB. Resolved: $DataRoot"
 }
 $Waitress = Join-Path $ProjectDir '.venv\Scripts\waitress-serve.exe'
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $RuntimeLog = Join-Path $LogDir 'waitress-runtime.log'
 if (-not (Test-Path -LiteralPath $Waitress)) { throw "Waitress executable not found: $Waitress" }
 New-Item -ItemType Directory -Path $LogDir -Force | Out-Null

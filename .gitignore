@@ -32,10 +32,19 @@ test-logs/
 .test-runtime/
 .work/
 outputs/
+output/
 models/
 tools/
 scratch/
 app/import_samples/
+
+# Centralized generated runtime state: logs, backups, collected static files,
+# restore-test workspaces, caches, temporary downloads, and generated output.
+runtime/
+
+# One-off research downloads and extraction helpers
+/.tmp_*
+/app/tmp_*.pdf
 
 # Generated inspection artifacts
 *.inspect.ndjson

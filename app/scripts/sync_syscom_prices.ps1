@@ -10,7 +10,7 @@ if (-not $DataRoot.StartsWith('D:\APProductDB', [System.StringComparison]::Ordin
 }
 $Python = Join-Path $ProjectDir '.venv\Scripts\python.exe'
 $CredentialFile = Join-Path $DataRoot 'credentials\syscom.xml'
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $LogFile = Join-Path $LogDir 'syscom-prices.log'
 $SuccessMarker = Join-Path $DataRoot 'data\syscom-price-last-success.txt'
 if (-not (Test-Path -LiteralPath $CredentialFile)) { throw "Credential file not found: $CredentialFile" }

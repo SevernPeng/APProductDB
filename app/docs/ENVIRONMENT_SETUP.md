@@ -34,7 +34,7 @@ py -3 -m venv .venv
 & .\.venv\Scripts\python.exe scripts\create_env.py
 ```
 
-脚本创建 `app/.env`，生成随机密钥，将数据目录设置为当前仓库根目录下的 `data`、`media`、`staticfiles`、`logs`、`backups`。已有 `.env` 时只提示并退出，不会更新旧地址或旧路径。
+脚本创建 `app/.env`，生成随机密钥。数据库和附件分别放在仓库根目录的 `data`、`media`；日志、备份、静态构建、恢复测试、缓存、临时文件和输出统一放在 `runtime`。已有 `.env` 时只提示并退出，不会更新旧地址或旧路径。
 
 如果使用他人交付的目录，先检查是否带有旧 `.env`。有业务数据时先备份；不要直接覆盖配置或重新初始化数据库。全新安装不应使用他人的密钥。
 
@@ -47,8 +47,10 @@ py -3 -m venv .venv
 | `DJANGO_TIME_ZONE` | 默认 `America/Mexico_City`，按业务需要修改为时区名称 |
 | `AP_PRODUCT_REQUIRE_D_DRIVE` | 默认 `False`，允许在其他盘符运行 |
 | `AP_PRODUCT_DATA_ROOT` | 未设置时为仓库根目录；所有运行数据路径必须位于此目录内 |
+| `AP_PRODUCT_RUNTIME_ROOT` | 可重新生成或定期清理的运行文件根目录，默认是 `AP_PRODUCT_DATA_ROOT/runtime` |
 | `DATABASE_PATH` | SQLite 文件的绝对路径 |
-| `MEDIA_ROOT`、`STATIC_ROOT`、`LOG_DIR`、`BACKUP_DIR` | 对应目录的绝对路径 |
+| `MEDIA_ROOT` | 上传附件目录，属于业务数据，不应当作临时文件清理 |
+| `STATIC_ROOT`、`LOG_DIR`、`BACKUP_DIR`、`RESTORE_TEST_DIR` | 必须位于 `AP_PRODUCT_RUNTIME_ROOT` 下的对应目录 |
 
 `.env.example` 仅用于查阅配置项。推荐通过脚本生成 `.env`，不要直接复制示例中的路径。系统或终端中已有的同名环境变量优先于 `.env`；修改配置后需停止并重新启动服务。
 

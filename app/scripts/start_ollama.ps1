@@ -14,7 +14,7 @@ if (-not $DataRoot.StartsWith('D:\APProductDB', [System.StringComparison]::Ordin
 
 $Ollama = Join-Path $DataRoot 'tools\ollama\ollama.exe'
 $ModelDir = Join-Path $DataRoot 'models\ollama'
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $RuntimeLog = Join-Path $LogDir 'ollama-runtime.log'
 if (-not (Test-Path -LiteralPath $Ollama)) {
     throw "Ollama executable not found: $Ollama"

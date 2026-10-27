@@ -17,7 +17,7 @@ if (-not $DataRoot.StartsWith('D:\APProductDB', [System.StringComparison]::Ordin
 }
 
 $Waitress = Join-Path $ProjectDir '.venv\Scripts\waitress-serve.exe'
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $RestartLog = Join-Path $LogDir 'restart-server.log'
 if (-not (Test-Path -LiteralPath $Waitress)) {
     throw "Waitress executable not found: $Waitress"

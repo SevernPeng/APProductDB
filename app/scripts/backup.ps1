@@ -7,7 +7,7 @@ $ProjectDir = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $DataRoot = (Resolve-Path (Join-Path $ProjectDir '..')).Path
 if (-not $DataRoot.StartsWith('D:\APProductDB', [System.StringComparison]::OrdinalIgnoreCase)) { throw 'Runtime data must remain on D:.' }
 $Python = Join-Path $ProjectDir '.venv\Scripts\python.exe'
-$LogDir = Join-Path $DataRoot 'logs'
+$LogDir = Join-Path $DataRoot 'runtime\logs'
 $LogFile = Join-Path $LogDir 'backup.log'
 New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 if ((Test-Path -LiteralPath $LogFile) -and (Get-Item -LiteralPath $LogFile).Length -ge 10MB) {
