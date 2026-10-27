@@ -1,0 +1,887 @@
+{
+  "stats": {
+    "error": 3,
+    "not_found": 28,
+    "ok": 7,
+    "page_found_no_specs": 16
+  },
+  "results": [
+    {
+      "product_id": 215,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "AirEngine 5562-17W",
+      "url": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+      "source_urls": [
+        "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf"
+      ],
+      "evidence_url": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "max_power_consumption_w": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "max_channel_width_mhz": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "power_method": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "antenna_gain_dbi": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "max_ssids": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "fast_roaming": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf",
+        "wireless_security": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/indoor-access-points-airengine-5562-17w-pdf-en.pdf"
+      },
+      "title": "Huawei AirEngine 5562-17W official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0° C to +40° C",
+          "Operating temperature 0° C to +40° C"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.0,
+          "Maximum power consumption 15 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 2.5 dBi",
+          "Antenna gain 2.4 GHz: 2.5 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          16,
+          "16"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "wireless_security": [
+          "text",
+          "standards",
+          "standards"
+        ]
+      }
+    },
+    {
+      "product_id": 93,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "AirEngine 5760-51",
+      "url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+      "source_urls": [
+        "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf"
+      ],
+      "evidence_url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "operating_temperature_c": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "max_channel_width_mhz": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "power_method": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "antenna_gain_dbi": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "max_ssids": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "fast_roaming": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf",
+        "wireless_security": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/f857046ba4844cb0aa6eb510c3b61e83/M3T1A590N1104878761918931174/Huawei%20AirEngine%205760-51%20Access%20Point%20Datasheet.pdf"
+      },
+      "title": "Huawei AirEngine 5760-51 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "220 x 51mm",
+          "220 x 51mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-10°C to +50°C",
+          "Operating temperature -10°C to +50°C"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at / 802.3bt)",
+          "PoE (802.3at / 802.3bt)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4GHz: 4.5dBi",
+          "Antenna gain 2.4GHz: 4.5dBi"
+        ],
+        "max_ssids": [
+          "number",
+          16,
+          "16"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "wireless_security": [
+          "text",
+          "standards",
+          "standards"
+        ]
+      }
+    },
+    {
+      "product_id": 151,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "AirEngine 5761-11",
+      "url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+      "source_urls": [
+        "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf"
+      ],
+      "evidence_url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "max_power_consumption_w": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "power_method": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "antenna_gain_dbi": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "max_ssids": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "mimo_5g": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "total_spatial_streams": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "fast_roaming": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf",
+        "wireless_security": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/51d9432033204ad39eea5833f73b076f/M3T1A590N1062663963011997993/Huawei%20AirEngine%205761-11%20Access%20Point%20Datasheet.pdf"
+      },
+      "title": "Huawei AirEngine 5761-11 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-10℃ to +50℃",
+          "Operating temperature -10℃ to +50℃"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.3,
+          "power consumption ⚫ 15.3 W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 4 dBi",
+          "Antenna gain 2.4 GHz: 4 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          16,
+          "16"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2 MIMO",
+          "5 GHz (2x2 MIMO"
+        ],
+        "total_spatial_streams": [
+          "number",
+          2,
+          "Sum of per-radio MIMO streams"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "wireless_security": [
+          "text",
+          "standards",
+          "standards"
+        ]
+      }
+    },
+    {
+      "product_id": 229,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5761-12W"
+    },
+    {
+      "product_id": 105,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5761-21"
+    },
+    {
+      "product_id": 115,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5761-21E"
+    },
+    {
+      "product_id": 1294,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5761R-11"
+    },
+    {
+      "product_id": 1291,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5761R-11E"
+    },
+    {
+      "product_id": 1260,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5762-10"
+    },
+    {
+      "product_id": 230,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5762-11W"
+    },
+    {
+      "product_id": 1261,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5762-12"
+    },
+    {
+      "product_id": 220,
+      "status": "error",
+      "brand": "Huawei",
+      "model": "AirEngine 5762-12SW",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "product_id": 219,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "AirEngine 5762-13W",
+      "url": "https://support.huawei.com/supportindex/",
+      "source_urls": [
+        "https://support.huawei.com/supportindex/"
+      ],
+      "evidence_url": "https://support.huawei.com/supportindex/",
+      "spec_sources": {},
+      "title": "Huawei AirEngine 5762-13W official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 137,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "AirEngine 5762C-10",
+      "url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+      "source_urls": [
+        "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf"
+      ],
+      "evidence_url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+        "max_channel_width_mhz": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+        "power_method": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+        "antenna_gain_dbi": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+        "max_ssids": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+        "fast_roaming": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf",
+        "wireless_security": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/d8f53d342acf4c7a864ffaec67d0ee95/M3T1A590N1068233258347155609/Huawei%20AirEngine%205762C-10-V2%20Access%20Point%20Datasheet.pdf"
+      },
+      "title": "Huawei AirEngine 5762C-10 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          9.4,
+          "power consumption ● 9.4 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "Antenna gain 2.4 GHz: 4 dBi",
+          "antenna \nAntenna gain 2.4 GHz: 4 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "wireless_security": [
+          "text",
+          "features",
+          "features"
+        ]
+      }
+    },
+    {
+      "product_id": 80,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "AirEngine 5773-21",
+      "url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+      "source_urls": [
+        "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf"
+      ],
+      "evidence_url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "operating_temperature_c": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "max_power_consumption_w": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "max_channel_width_mhz": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "power_method": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "antenna_gain_dbi": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "max_ssids": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "centralized_management": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "mesh_support": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "fast_roaming": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf",
+        "wireless_security": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/3dc3aa631b0e45cd8ad944f9ad9d35d1/M3T1A590N1186036079629922379/Huawei%20AirEngine%205773-21%20Access%20Point%20Datasheet.pdf"
+      },
+      "title": "Huawei AirEngine 5773-21 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "180 x 45mm",
+          "180 x 45mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-10°C to +50°C",
+          "Operating temperature -10°C to +50°C"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          13.3,
+          "Maximum power consumption 13.3 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 4 dBi",
+          "Antenna gain 2.4 GHz: 4 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          15,
+          "15"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "MESH"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-SAE",
+          "WPA3-SAE"
+        ]
+      }
+    },
+    {
+      "product_id": 1276,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5773-23HW"
+    },
+    {
+      "product_id": 1287,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5773I-21"
+    },
+    {
+      "product_id": 1245,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 5776-57T"
+    },
+    {
+      "product_id": 57,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "AirEngine 6576-57T",
+      "url": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+      "source_urls": [
+        "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf"
+      ],
+      "evidence_url": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+        "max_power_consumption_w": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+        "max_channel_width_mhz": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+        "power_method": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+        "max_ssids": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+        "fast_roaming": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf",
+        "wireless_security": "https://carrier.huawei.com/~/media/cnbgv2/download/products/networks/wlan/huawei-airengine-6576-57t-access-point-datasheet-pdf-en.pdf"
+      },
+      "title": "Huawei AirEngine 6576-57T official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "–10° C to +50° C (14° F to 122° F)",
+          "Operating temperature –10° C to +50° C (14° F to 122° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          21.1,
+          "power consumption  21.1 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "max_ssids": [
+          "number",
+          6576,
+          "6576"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "wireless_security": [
+          "text",
+          "standards",
+          "standards"
+        ]
+      }
+    },
+    {
+      "product_id": 270,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 6760R-51"
+    },
+    {
+      "product_id": 285,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 6760R-51E"
+    },
+    {
+      "product_id": 42,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 8776-X7ET-T"
+    },
+    {
+      "product_id": 41,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "AirEngine 8776-X7T-T"
+    },
+    {
+      "product_id": 416,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "CE6863H-48S6CQ",
+      "url": "https://support.huawei.com/enterprise/en/switches/ce6863h-48s6cq-pid-252551439?offeringId=252837181",
+      "source_urls": [
+        "https://support.huawei.com/enterprise/en/switches/ce6863h-48s6cq-pid-252551439?offeringId=252837181"
+      ],
+      "evidence_url": "https://support.huawei.com/enterprise/en/switches/ce6863h-48s6cq-pid-252551439?offeringId=252837181",
+      "spec_sources": {},
+      "title": "Huawei CE6863H-48S6CQ official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 541,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S310-24P4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-24P4X-pid-C00000018130/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-24P4X-pid-C00000018130/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-24P4X-pid-C00000018130/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 564,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S310-24ST4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-24ST4X-pid-C00000020837/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-24ST4X-pid-C00000020837/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-24ST4X-pid-C00000020837/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 533,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S310-24T4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S31024T4X-pid-C00000018127/web3d",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S31024T4X-pid-C00000018127/web3d"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S31024T4X-pid-C00000018127/web3d",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) 3D Model",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 558,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S310-48P4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S31048P4X-pid-C00000018139/web3d",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S31048P4X-pid-C00000018139/web3d"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S31048P4X-pid-C00000018139/web3d",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) 3D Model",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 549,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S310-48T4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-48T4X-pid-C00000018133/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-48T4X-pid-C00000018133/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S310-48T4X-pid-C00000018133/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 456,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "S5731-S24N4X2Q"
+    },
+    {
+      "product_id": 485,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5731-S24P4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/s5731-s24p4x-pid-250539019/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/s5731-s24p4x-pid-250539019/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/s5731-s24p4x-pid-250539019/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 495,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5731-S24T4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5731-S24T4X-pid-250539003/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5731-S24T4X-pid-250539003/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5731-S24T4X-pid-250539003/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 451,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "S5731-S24UN4X2Q"
+    },
+    {
+      "product_id": 465,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5731-S48P4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5731-S48P4X-pid-250539051/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5731-S48P4X-pid-250539051/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5731-S48P4X-pid-250539051/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 475,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5731-S48T4X",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5731-s48t4x-pid-250539035/mib",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5731-s48t4x-pid-250539035/mib"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5731-s48t4x-pid-250539035/mib",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) MIB Query",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 453,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5735-L24PN4XE-A-V2",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5735-l24pn4xe-a-v2-pid-C00000020503/commands",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5735-l24pn4xe-a-v2-pid-C00000020503/commands"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5735-l24pn4xe-a-v2-pid-C00000020503/commands",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Commands Query",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 445,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5735-L48LPN4XE-A-V2",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5735-l48lpn4xe-a-v2-pid-C00000020506/mib",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5735-l48lpn4xe-a-v2-pid-C00000020506/mib"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s5735-l48lpn4xe-a-v2-pid-C00000020506/mib",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) MIB Query",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 452,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "S5735-S24PN4XE-V2"
+    },
+    {
+      "product_id": 496,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5735-S24T4XE-C-V2",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5735-S24T4XE-C-V2-supported-Cable-pid-C00000020518/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5735-S24T4XE-C-V2-supported-Cable-pid-C00000020518/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/S5735-S24T4XE-C-V2-supported-Cable-pid-C00000020518/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 444,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "S5735-S48PN4XE-V2"
+    },
+    {
+      "product_id": 457,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S5755-H24N4Y-A",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/cloudengine-s5755-h24n4y-a-pid-C00000018229/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/cloudengine-s5755-h24n4y-a-pid-C00000018229/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/Switches/cloudengine-s5755-h24n4y-a-pid-C00000018229/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 447,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "S5755-H48N4Y-A"
+    },
+    {
+      "product_id": 422,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "S6730-H28Y4C"
+    },
+    {
+      "product_id": 431,
+      "status": "page_found_no_specs",
+      "brand": "Huawei",
+      "model": "S6730-H48X6C-V2",
+      "url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s6730-h48x6c-v2-pid-C00000008171/hardwarecenter",
+      "source_urls": [
+        "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s6730-h48x6c-v2-pid-C00000008171/hardwarecenter"
+      ],
+      "evidence_url": "https://info.support.huawei.com/info-finder/search-center/en/enterprise/switch/cloudengine-s6730-h48x6c-v2-pid-C00000008171/hardwarecenter",
+      "spec_sources": {},
+      "title": "Info-Finder (Online Tools) Hardware Center",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 408,
+      "status": "ok",
+      "brand": "Huawei",
+      "model": "S6750-H36C",
+      "url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/b1585186822846fab0926fee2de57cfc/M3T1A590N1126529610088869896/Huawei%20CloudEngine%20Switches%20Product%20Life%20Cycle.pdf",
+      "source_urls": [
+        "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/b1585186822846fab0926fee2de57cfc/M3T1A590N1126529610088869896/Huawei%20CloudEngine%20Switches%20Product%20Life%20Cycle.pdf"
+      ],
+      "evidence_url": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/b1585186822846fab0926fee2de57cfc/M3T1A590N1126529610088869896/Huawei%20CloudEngine%20Switches%20Product%20Life%20Cycle.pdf",
+      "spec_sources": {
+        "fanless": "https://e-file.huawei.com/marketingcloud/pep/asset/20000001/Material/b1585186822846fab0926fee2de57cfc/M3T1A590N1126529610088869896/Huawei%20CloudEngine%20Switches%20Product%20Life%20Cycle.pdf"
+      },
+      "title": "Huawei S6750-H36C official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ]
+      }
+    },
+    {
+      "product_id": 216,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP266"
+    },
+    {
+      "product_id": 204,
+      "status": "error",
+      "brand": "Huawei",
+      "model": "eKit AP271H-P",
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+    },
+    {
+      "product_id": 164,
+      "status": "error",
+      "brand": "Huawei",
+      "model": "eKit AP361",
+      "error": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。"
+    },
+    {
+      "product_id": 138,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP362"
+    },
+    {
+      "product_id": 125,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP362E"
+    },
+    {
+      "product_id": 81,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP371"
+    },
+    {
+      "product_id": 76,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP572"
+    },
+    {
+      "product_id": 306,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP761"
+    },
+    {
+      "product_id": 260,
+      "status": "not_found",
+      "brand": "Huawei",
+      "model": "eKit AP771"
+    }
+  ]
+}

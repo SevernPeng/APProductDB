@@ -18,4 +18,18 @@ Set-Location -LiteralPath $ProjectDir
 & $Python manage.py backup_database *>> $LogFile
 $exitCode = $LASTEXITCODE
 "$(Get-Date -Format o) Backup finished with code $exitCode" | Out-File -LiteralPath $LogFile -Append -Encoding utf8
+if ($exitCode -eq 0) {
+    $priceMarker = Join-Path $DataRoot 'data\syscom-price-last-success.txt'
+    $priceScript = Join-Path $ProjectDir 'scripts\sync_syscom_prices.ps1'
+    $priceDue = -not (Test-Path -LiteralPath $priceMarker)
+    if (-not $priceDue) {
+        $priceDue = (Get-Item -LiteralPath $priceMarker).LastWriteTime -le (Get-Date).AddDays(-7)
+    }
+    if ($priceDue) {
+        "$(Get-Date -Format o) SYSCOM price sync fallback is due" | Out-File -LiteralPath $LogFile -Append -Encoding utf8
+        & $priceScript
+        $priceExitCode = $LASTEXITCODE
+        "$(Get-Date -Format o) SYSCOM price sync fallback finished with code $priceExitCode" | Out-File -LiteralPath $LogFile -Append -Encoding utf8
+    }
+}
 exit $exitCode

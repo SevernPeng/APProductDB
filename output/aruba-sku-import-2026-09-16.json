@@ -1,0 +1,517 @@
+{
+  "stats": {
+    "ok": 15
+  },
+  "results": [
+    {
+      "product_id": 481,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "6200F (JL725A)",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-class4-poe-4sfp-370w-switch/p/jl725a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-class4-poe-4sfp-370w-switch/p/jl725a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-class4-poe-4sfp-370w-switch/p/jl725a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-class4-poe-4sfp-370w-switch/p/jl725a",
+        "poe_standard": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-class4-poe-4sfp-370w-switch/p/jl725a",
+        "max_poe_per_port_w": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-class4-poe-4sfp-370w-switch/p/jl725a"
+      },
+      "title": "HPE Aruba Networking CX 6200F 24G Class4 PoE 4SFP+ 370W Switch | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011995?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "24G Class4 PoE 4SFP+",
+          "24G Class4 PoE 4SFP+"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3at",
+          "802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          60.0,
+          "60.0"
+        ]
+      }
+    },
+    {
+      "product_id": 471,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "6200F (JL726A)",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-4sfp-switch/p/jl726a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-4sfp-switch/p/jl726a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-4sfp-switch/p/jl726a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-4sfp-switch/p/jl726a",
+        "poe_standard": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-4sfp-switch/p/jl726a",
+        "max_poe_per_port_w": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-4sfp-switch/p/jl726a"
+      },
+      "title": "Buy HPE Aruba Networking CX 6200F 48G 4SFP Switch | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00006392?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "48G 4SFP",
+          "48G 4SFP"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3at",
+          "802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          60.0,
+          "60.0"
+        ]
+      }
+    },
+    {
+      "product_id": 460,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "6200F (JL728A)",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-class4-poe-4sfp-740w-switch/p/jl728a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-class4-poe-4sfp-740w-switch/p/jl728a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-class4-poe-4sfp-740w-switch/p/jl728a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-class4-poe-4sfp-740w-switch/p/jl728a",
+        "poe_standard": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-class4-poe-4sfp-740w-switch/p/jl728a",
+        "max_poe_per_port_w": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-48g-class4-poe-4sfp-740w-switch/p/jl728a"
+      },
+      "title": "HPE Aruba Networking 6200F 48G 4SFP+ 740W Switch (JL728A) | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011995?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "48G 4SFP+",
+          "48G 4SFP+"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3at",
+          "802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          60.0,
+          "60.0"
+        ]
+      }
+    },
+    {
+      "product_id": 491,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "6200F 24G 4SFP+ Switch (JL724A)",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-4sfp-switch/p/jl724a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-4sfp-switch/p/jl724a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-4sfp-switch/p/jl724a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-4sfp-switch/p/jl724a",
+        "poe_standard": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-4sfp-switch/p/jl724a",
+        "max_poe_per_port_w": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6200f-24g-4sfp-switch/p/jl724a"
+      },
+      "title": "HPE Aruba Networking CX 6200F 24G 4SFP+ Switch | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011995?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "24G 4SFP+",
+          "24G 4SFP+"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3at",
+          "802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          60.0,
+          "60.0"
+        ]
+      }
+    },
+    {
+      "product_id": 434,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "6300M 24SFP+ 4SFP56 Switch (JL658A)",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6300m-24%e2%80%91port-sfp-4%e2%80%91port-sfp56-switch/p/jl658a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6300m-24%e2%80%91port-sfp-4%e2%80%91port-sfp56-switch/p/jl658a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6300m-24%e2%80%91port-sfp-4%e2%80%91port-sfp56-switch/p/jl658a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6300m-24%e2%80%91port-sfp-4%e2%80%91port-sfp56-switch/p/jl658a",
+        "poe_standard": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-6300m-24%e2%80%91port-sfp-4%e2%80%91port-sfp56-switch/p/jl658a"
+      },
+      "title": "HPE Aruba Networking CX 6300M 24P SFP+ & 4P SFP56 Switch | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00005936?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "10GbE) and 1GbE fiber, support",
+          "10GbE) and 1GbE fiber, support"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3bt",
+          "802.3bt"
+        ]
+      }
+    },
+    {
+      "product_id": 427,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "CX 8320 JL479A",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8320-48p-10g-sfp-sfp-6p-40g-qsfp-x472-5-fans-2-power-supply-switch-bundle/p/jl479a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8320-48p-10g-sfp-sfp-6p-40g-qsfp-x472-5-fans-2-power-supply-switch-bundle/p/jl479a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8320-48p-10g-sfp-sfp-6p-40g-qsfp-x472-5-fans-2-power-supply-switch-bundle/p/jl479a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8320-48p-10g-sfp-sfp-6p-40g-qsfp-x472-5-fans-2-power-supply-switch-bundle/p/jl479a"
+      },
+      "title": "HPE Aruba Networking CX 8320 48p 10G Power Supply Switch Bundle | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00004664?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "10G SFP/SFP+ 6p 40G QSFP+",
+          "10G SFP/SFP+ 6p 40G QSFP+"
+        ]
+      }
+    },
+    {
+      "product_id": 404,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "CX 8325-32C JL636A",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9132c-32%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl636a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9132c-32%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl636a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9132c-32%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl636a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9132c-32%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl636a"
+      },
+      "title": "HPE Aruba Networking CX 8325‑32C 32‑port 100G QSFP+/QSFP28 Switch | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00006818?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "100G QSFP+/QSFP",
+          "100G QSFP+/QSFP"
+        ]
+      }
+    },
+    {
+      "product_id": 412,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "CX 8325-48Y8C JL635A",
+      "url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9148y8c-48%e2%80%91port-25g-sfp-sfp-sfp28-8%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl635a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9148y8c-48%e2%80%91port-25g-sfp-sfp-sfp28-8%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl635a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9148y8c-48%e2%80%91port-25g-sfp-sfp-sfp28-8%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl635a",
+      "spec_sources": {
+        "ethernet_interfaces": "https://buy.hpe.com/us/en/networking/switches/fixed-port-l3-managed-ethernet-switches/hpe-aruba-networking-cx-8325%e2%80%9148y8c-48%e2%80%91port-25g-sfp-sfp-sfp28-8%e2%80%91port-100g-qsfp-qsfp28-switch/p/jl635a"
+      },
+      "title": "HPE Aruba Networking CX 8325‑48Y8C 48‑port 25G SFP/SFP+/SFP28 and 8‑port 100G QSFP+/QSFP28 Switch | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00004136?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "25G SFP/SFP+/SFP28 and 8‑port 100G QSFP+/QSFP",
+          "25G SFP/SFP+/SFP28 and 8‑port 100G QSFP+/QSFP"
+        ]
+      }
+    },
+    {
+      "product_id": 1117,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "J4858D",
+      "url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d",
+      "spec_sources": {
+        "accessory_interface_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d",
+        "accessory_connector_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d",
+        "accessory_data_rate_gbps": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d",
+        "accessory_fiber_mode": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d",
+        "accessory_input_power": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-1g-sfp-lc-sx-500m-om2-mmf-transceiver/p/j4858d"
+      },
+      "title": "HPE Aruba Networking 1G SFP LC SX 500m OM2 MMF Transceiver J4858D | HPE Store",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          1.0,
+          "1G SFP LC SX 500m OM2 MMF Transceiver"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "MMF"
+        ],
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    },
+    {
+      "product_id": 1108,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "J8177D",
+      "url": "https://buy.hpe.com/us/en/p/j8177d",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/p/j8177d"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/p/j8177d",
+      "spec_sources": {
+        "accessory_input_power": "https://buy.hpe.com/us/en/p/j8177d"
+      },
+      "title": "Search | HPE Store",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    },
+    {
+      "product_id": 1090,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "J9151E",
+      "url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e",
+      "spec_sources": {
+        "accessory_interface_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e",
+        "accessory_connector_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e",
+        "accessory_data_rate_gbps": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e",
+        "accessory_fiber_mode": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e",
+        "accessory_input_power": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-lc-lr-10km-smf-transceiver/p/j9151e"
+      },
+      "title": "HPE Aruba Networking 10G SFP+ LC LR 10km SMF Transceiver | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00013129?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP+ LC LR 10km SMF Transceiver"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "SMF"
+        ],
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    },
+    {
+      "product_id": 1179,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "J9281D",
+      "url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-1m-direct-attach-copper-cable/p/j9281d",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-1m-direct-attach-copper-cable/p/j9281d"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-1m-direct-attach-copper-cable/p/j9281d",
+      "spec_sources": {
+        "accessory_interface_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-1m-direct-attach-copper-cable/p/j9281d",
+        "accessory_data_rate_gbps": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-1m-direct-attach-copper-cable/p/j9281d",
+        "accessory_input_power": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-1m-direct-attach-copper-cable/p/j9281d"
+      },
+      "title": "HPE Aruba Networking 10G SFP+ to SFP+ 1m DAC Cable J9281D | HPE Store",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP+ to SFP"
+        ],
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    },
+    {
+      "product_id": 1171,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "J9283D",
+      "url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-3m-direct-attach-copper-cable/p/j9283d",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-3m-direct-attach-copper-cable/p/j9283d"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-3m-direct-attach-copper-cable/p/j9283d",
+      "spec_sources": {
+        "accessory_interface_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-3m-direct-attach-copper-cable/p/j9283d",
+        "accessory_data_rate_gbps": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-3m-direct-attach-copper-cable/p/j9283d",
+        "accessory_input_power": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-10g-sfp-to-sfp-3m-direct-attach-copper-cable/p/j9283d"
+      },
+      "title": "HPE Aruba Networking 10G SFP+ to SFP+ 3m DAC Cable | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011647?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP+ to SFP"
+        ],
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    },
+    {
+      "product_id": 1063,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "JL486A",
+      "url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a",
+      "spec_sources": {
+        "accessory_interface_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a",
+        "accessory_connector_type": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a",
+        "accessory_data_rate_gbps": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a",
+        "accessory_fiber_mode": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a",
+        "accessory_input_power": "https://buy.hpe.com/us/en/options/transceiver-options/networking-transceiver-options/hpe-aruba-networking-25g-sfp28-lc-lr-10km-smf-transceiver/p/jl486a"
+      },
+      "title": "HPE Aruba Networking 25G SFP28 LC LR 10km SMF Transceiver | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00013129?$product$#.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP28",
+          "SFP28"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25G SFP28 LC LR 10km SMF Transceiver"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "SMF"
+        ],
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    },
+    {
+      "product_id": 1070,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "JL563A",
+      "url": "https://buy.hpe.com/us/en/p/jl563a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/p/jl563a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/p/jl563a",
+      "spec_sources": {
+        "accessory_input_power": "https://buy.hpe.com/us/en/p/jl563a"
+      },
+      "title": "Search | HPE Store",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_input_power": [
+          "text",
+          "previous",
+          "previous"
+        ]
+      }
+    }
+  ]
+}

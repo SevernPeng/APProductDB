@@ -1,0 +1,900 @@
+{
+  "stats": {
+    "ok": 12
+  },
+  "results": [
+    {
+      "product_id": 375,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "DH-PFM886-15",
+      "url": "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf",
+      "source_urls": [
+        "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf",
+        "wireless_range": "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf",
+        "wireless_security": "https://www.dahuasecurity.com/asset/upload/product/20180525/DH-PFM886-15_Datasheet.pdf"
+      },
+      "title": "Dahua DH-PFM886-15 official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          25.0,
+          "Power Consumption ≤25W"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "23dBi",
+          "Antenna 23dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "4920~6100M",
+          "range: 4920~6100M"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 396,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "DH-PFWB5-90ac",
+      "url": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+      "source_urls": [
+        "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf"
+      ],
+      "evidence_url": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "max_power_consumption_w": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "antenna_gain_dbi": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "wireless_range": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "antenna_type": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "mimo_5g": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "total_spatial_streams": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf",
+        "wireless_security": "https://www.dahuasecurity.com/asset/upload/product/20180803/DH-PFWB5-90ac_Datasheet_20180803.pdf"
+      },
+      "title": "Dahua DH-PFWB5-90ac official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-30°C ~ +70°C",
+          "Operating Temperature -30°C ~ +70°C"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          10.0,
+          "Power Consumption (max) 10W"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "Gain 18dBi",
+          "antenna \nGain 18dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "0-5km",
+          "Transmission Distance 0-5km"
+        ],
+        "antenna_type": [
+          "text",
+          "Type Integrated directional panel antenna",
+          "Type Integrated directional panel antenna"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz (2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          2,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2",
+          "WPA2"
+        ]
+      }
+    },
+    {
+      "product_id": 1199,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "IS4210-8GT-120",
+      "url": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/IS4210-8GT-120",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/IS4210-8GT-120",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/65447/drawings/IS4210-8GT-120_PORT.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/13447/drawings/PFS4210-8GT-DP_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/13447/drawings/PFS4210-8GT-DP_DIMENSIONS.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/IS4210-8GT-120",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "switching_capacity_gbps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "packet_forwarding_rate_mpps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "poe_standard": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "poe_ports": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "link_aggregation": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/IS4210-8GT-120",
+        "igmp_snooping": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/IS4210-8GT-120",
+        "ethernet_interfaces": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "max_poe_per_port_w": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf",
+        "redundant_power": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/IS4210-8GT-120_datasheet_20240726.pdf"
+      },
+      "title": "IS4210-8GT-120 - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/uploads/image/20230203/IS4210-8GT-120_1_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "–40 °C to +75 °C (–40 °F to +167 °F)",
+          "Operating Temperature \n \n –40 °C to +75 °C (–40 °F to +167 °F) "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          90.0,
+          "power consumption rate of 90W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          20.0,
+          "Switching Capacity 20 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          14.88,
+          "Packet Forwarding Rate 14.88 Mpps"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8-Port PoE"
+        ],
+        "link_aggregation": [
+          "text",
+          "Static link aggregation; LACP",
+          "Static link aggregation; LACP"
+        ],
+        "igmp_snooping": [
+          "text",
+          "DHCP Function",
+          "DHCP Function"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "9-10: 2 ×SFP 1000 Mbps",
+          "9-10: 2 ×SFP 1000 Mbps"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          90.0,
+          "90.0"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 393,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFM885-I",
+      "url": "https://www.dahuasecurity.com/in/products/transmission/wireless-devices/other-wireless-bridge/pfm885-i",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/transmission/wireless-devices/other-wireless-bridge/pfm885-i",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/49757/datasheet/PFM885-I_datasheet.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/49757/datasheet/PFM885-I_datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/49757/datasheet/PFM885-I_datasheet.pdf",
+        "antenna_gain_dbi": "https://materialfile.dahuasecurity.com/uploads/cpq/49757/datasheet/PFM885-I_datasheet.pdf",
+        "wireless_range": "https://materialfile.dahuasecurity.com/uploads/cpq/49757/datasheet/PFM885-I_datasheet.pdf",
+        "ethernet_interfaces": "https://www.dahuasecurity.com/in/products/transmission/wireless-devices/other-wireless-bridge/pfm885-i",
+        "antenna_type": "https://www.dahuasecurity.com/in/products/transmission/wireless-devices/other-wireless-bridge/pfm885-i",
+        "wireless_security": "https://materialfile.dahuasecurity.com/uploads/cpq/49757/datasheet/PFM885-I_datasheet.pdf"
+      },
+      "title": "PFM885-I - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/upfiles/PFM885-I_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          8.0,
+          "Power Consumption Max. 8W"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "Internal antenna: gain 6dBi",
+          "Antenna Internal antenna: gain 6dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "2312~2732M",
+          "range: 2312~2732M"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "2*LAN RJ45",
+          "2*LAN RJ45"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal antenna: gain 6dBi",
+          "Internal antenna: gain 6dBi"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2",
+          "WPA2"
+        ]
+      }
+    },
+    {
+      "product_id": 1331,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFM886-15",
+      "url": "https://www.dahuasecurity.com/uk/products/discontinued-products/transmission/pfm886-15",
+      "source_urls": [
+        "https://www.dahuasecurity.com/uk/products/discontinued-products/transmission/pfm886-15",
+        "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf",
+      "spec_sources": {
+        "ip_rating": "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf",
+        "antenna_gain_dbi": "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf",
+        "wireless_range": "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf",
+        "ethernet_interfaces": "https://www.dahuasecurity.com/uk/products/discontinued-products/transmission/pfm886-15",
+        "antenna_type": "https://www.dahuasecurity.com/uk/products/discontinued-products/transmission/pfm886-15",
+        "wireless_security": "https://materialfile.dahuasecurity.com/uploads/soft/20181113/DH-PFM886-15_Datasheet.pdf"
+      },
+      "title": "PFM886-15 - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/product/20180525/PFM886-15_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          25.0,
+          "Power Consumption ≤25W"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "23dBi",
+          "Antenna 23dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "4920~6100M",
+          "range: 4920~6100M"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1×10/100M/1000MBase-TX (Cat. 5/5E, RJ-45)",
+          "1×10/100M/1000MBase-TX (Cat. 5/5E, RJ-45)"
+        ],
+        "antenna_type": [
+          "text",
+          "23dBi",
+          "23dBi"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 924,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFS3009-8ET-65",
+      "url": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Desktop-PoE-Switch/PFS3009-8ET-65",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Desktop-PoE-Switch/PFS3009-8ET-65",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+        "switching_capacity_gbps": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+        "packet_forwarding_rate_mpps": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+        "poe_standard": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+        "poe_ports": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+        "packet_buffer_mb": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf",
+        "management_type": "https://materialfile.dahuasecurity.com/uploads/cpq/28907/datasheet/Datasheet_PFS3009-8ET-65.pdf"
+      },
+      "title": "PFS3009-8ET-65 - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/uploads/image/20191104/PFS3009-8ET-65_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          30.0,
+          "Power Consumption Each power ≤30W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          1.8,
+          "Switching Capacity 1.8Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          1.339,
+          "Packet Forwarding Rate 1.339Mpps"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8 PoE ports"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          0.125,
+          "Packet Buffer Memory 1Mb"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ]
+      }
+    },
+    {
+      "product_id": 807,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFS3010-8ET-65",
+      "url": "https://www.dahuasecurity.com/uk/products/Transmission/PoE-Switches/Desktop-PoE-Switch/PFS3010-8ET-65",
+      "source_urls": [
+        "https://www.dahuasecurity.com/uk/products/Transmission/PoE-Switches/Desktop-PoE-Switch/PFS3010-8ET-65",
+        "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/22827/drawings/PFS3010-8ET-65_PORT.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/22827/drawings/PFS3010-8ET-65_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/22827/drawings/PFS3010-8ET-65_DIMENSIONS.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "switching_capacity_gbps": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "packet_forwarding_rate_mpps": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "poe_standard": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "poe_ports": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "jumbo_frame_bytes": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf",
+        "management_type": "https://www.dahuasecurity.com/uk/products/Transmission/PoE-Switches/Desktop-PoE-Switch/PFS3010-8ET-65",
+        "uplink_interfaces": "https://materialfile.dahuasecurity.com/uploads/soft/20200708/DH-PFS3010-8ET-65_datasheet.pdf"
+      },
+      "title": "PFS3010-8ET-65 - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/uploads/image/20200708/PFS3010-8ET-65_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-10°C to +55°C",
+          "Operating Temperature: -10°C to +55°C"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.0,
+          "Power Consumption Idling: 1.0W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          2.0,
+          "Switching Capacity 2.0 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          1.49,
+          "Packet Forwarding Rate 1.49 Mpps"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8 PoE ports"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          2048,
+          "Jumbo Frame 2048 byte"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "uplink_interfaces": [
+          "text",
+          "· Support 802.3af and 802.3at standards",
+          "· Support 802.3af and 802.3at standards"
+        ]
+      }
+    },
+    {
+      "product_id": 1208,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFS4207-4GT-DP",
+      "url": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/PFS4207-4GT-DP",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/PFS4207-4GT-DP",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/13437/drawings/PFS4207-4GT-DP_PORT.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/13437/drawings/PFS4207-4GT-DP_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/13437/drawings/PFS4207-4GT-DP_DIMENSIONS.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "lightning_protection_kv": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "switching_capacity_gbps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "packet_forwarding_rate_mpps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "poe_standard": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "poe_ports": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "jumbo_frame_bytes": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "qos_support": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "link_aggregation": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/PFS4207-4GT-DP",
+        "port_mirroring": "https://www.dahuasecurity.com/in/products/Transmission/PoE-Switches/Industrial-PoE-Switch/PFS4207-4GT-DP",
+        "max_poe_per_port_w": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "acl_security": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf",
+        "redundant_power": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/PFS4207-4GT-DP_datasheet_20240115.pdf"
+      },
+      "title": "PFS4207-4GT-DP - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-40 °C to +75 °C",
+          "Operating Temperature\nSupports working in temperatures between -40 °C to +75 °C. It has "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          90.0,
+          "power consumption rate of 90W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "8 kV",
+          "8 kV Lightning Protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          14.0,
+          "Switching Capacity 14 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          10.42,
+          "Packet Forwarding Rate 10.42 Mpps"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          4,
+          "4-port PoE"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9000,
+          "Jumbo Frame 9,000 bytes"
+        ],
+        "qos_support": [
+          "text",
+          "CoS/DPL based QoS",
+          "CoS/DPL based QoS"
+        ],
+        "link_aggregation": [
+          "text",
+          "Static link aggregation; LACP",
+          "Static link aggregation; LACP"
+        ],
+        "port_mirroring": [
+          "text",
+          "Multiple-to-one port mirroring",
+          "Multiple-to-one port mirroring"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          90.0,
+          "90.0"
+        ],
+        "acl_security": [
+          "text",
+          "802.1x",
+          "802.1x"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "Redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 899,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFT1500",
+      "url": "https://www.dahuasecurity.com/in/products/transmission/accessories/poe-extender/pft1500",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/transmission/accessories/poe-extender/pft1500",
+        "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/27867/drawings/PFT1500_PORT.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/27867/drawings/PFT1500_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/27867/drawings/PFT1500_DIMENSIONS.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "switching_capacity_gbps": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "packet_forwarding_rate_mpps": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "poe_standard": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "poe_ports": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "installation": "https://www.dahuasecurity.com/in/products/transmission/accessories/poe-extender/pft1500",
+        "management_type": "https://www.dahuasecurity.com/in/products/transmission/accessories/poe-extender/pft1500",
+        "flow_control": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "fanless": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf",
+        "ethernet_interfaces": "https://materialfile.dahuasecurity.com/uploads/soft/20211118/DH-PFT1500_datasheet_20211118.pdf"
+      },
+      "title": "PFT1500 - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "–30 °C to +65 °C",
+          "Operating Temperature\nSupports working at ambient temperatures of –30 °C to +65 °C, and has "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          5.0,
+          "Power Consumption Idling: 5 W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          2.8,
+          "Switching Capacity 2.8 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          2.08,
+          "Packet Forwarding Rate 2.08 Mpps"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          5,
+          "5-Port PoE"
+        ],
+        "installation": [
+          "text",
+          "Desk Mount Guide Rail Mount",
+          "Desk Mount Guide Rail Mount"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "flow_control": [
+          "text",
+          "802.3X Flow Control",
+          "802.3X Flow Control"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1-4: 4*RJ45 10/100 Mbps",
+          "1-4: 4*RJ45 10/100 Mbps"
+        ]
+      }
+    },
+    {
+      "product_id": 1337,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "PFWB5-90ac",
+      "url": "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/V-Radio-Wireless-Bridge/PFWB5-90ac",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/V-Radio-Wireless-Bridge/PFWB5-90ac",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/50757/drawings/PFWB5-90ac_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/drawings/PFWB5-90ac_DIMENSIONS.pdf",
+      "spec_sources": {
+        "ip_rating": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf",
+        "operating_temperature_c": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf",
+        "wireless_range": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf",
+        "poe_output": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf",
+        "wireless_security": "https://materialfile.dahuasecurity.com/uploads/cpq/50757/datasheet/DH-PFWB5-90ac_datasheet_20260618_English.pdf"
+      },
+      "title": "PFWB5-90ac - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/product/20180803/DH-PFWB5-90ac_Image1_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "(–30 °C to +70 °C)",
+          "Operating Temperature (–30 °C to +70 °C)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          10.0,
+          "Power Consumption Full load: 10 W"
+        ],
+        "wireless_range": [
+          "text",
+          "reaches up to 5 km",
+          "transmission distance reaches up to 5 km"
+        ],
+        "poe_output": [
+          "text",
+          "NA",
+          "NA"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-Personal",
+          "WPA2-Personal"
+        ]
+      }
+    },
+    {
+      "product_id": 1333,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "WBC5-30AC-05P",
+      "url": "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/WBC-Series-Wireless-Bridge/WBC5-30AC-05P",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/WBC-Series-Wireless-Bridge/WBC5-30AC-05P",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/83124/drawings/WBK5-30AC-05P_PORT.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/83124/drawings/WBK5-30AC-05P_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/83124/drawings/WBK5-30AC-05P_DIMENSIONS.pdf",
+      "spec_sources": {
+        "ip_rating": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "rate_2g_mbps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "rate_5g_mbps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "supported_bands": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "poe_input": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "wireless_range": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "antenna_type": "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/WBC-Series-Wireless-Bridge/WBC5-30AC-05P",
+        "poe_output": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "centralized_management": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "wireless_security": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "operating_temperature_c": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf",
+        "lightning_protection_kv": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-30AC-05P_datasheet_20251028.pdf"
+      },
+      "title": "WBC5-30AC-05P - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_20_10892/ProductImage/1_0_01_20_10892_97560269_crop_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          300,
+          "2.4 GHz:300 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          867,
+          "5 GHz:867 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "poe_input": [
+          "text",
+          "PoE (802.3af)",
+          "802.3af"
+        ],
+        "wireless_range": [
+          "text",
+          "reaches up to 5 km",
+          "transmission distance reaches up to 5 km"
+        ],
+        "antenna_type": [
+          "text",
+          "{v.name} -->",
+          "{v.name} -->"
+        ],
+        "poe_output": [
+          "text",
+          "802.3af(15W)",
+          "802.3af(15W)"
+        ],
+        "centralized_management": [
+          "text",
+          "DHCP/Static IP configuration",
+          "DHCP/Static IP configuration"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2",
+          "WPA2"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "–30 °C to +65 °C (–22 °F to +149 °F).",
+          "operating temperature: –30 °C to +65 °C (–22 °F to +149 °F)."
+        ],
+        "max_power_consumption_w": [
+          "number",
+          30.0,
+          "Power Consumption < 30 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "8 kV",
+          "8 kV Lightning Protection"
+        ]
+      }
+    },
+    {
+      "product_id": 381,
+      "status": "ok",
+      "brand": "Dahua",
+      "model": "WBC5-90AC-01P",
+      "url": "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/WBC-Series-Wireless-Bridge/WBC5-90AC-01P",
+      "source_urls": [
+        "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/WBC-Series-Wireless-Bridge/WBC5-90AC-01P",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/83124/drawings/WBK5-30AC-05P_PORT.pdf",
+        "https://materialfile.dahuasecurity.com/uploads/cpq/83124/drawings/WBK5-30AC-05P_DIMENSIONS.pdf"
+      ],
+      "evidence_url": "https://materialfile.dahuasecurity.com/uploads/cpq/83124/drawings/WBK5-30AC-05P_DIMENSIONS.pdf",
+      "spec_sources": {
+        "ip_rating": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "lightning_protection_kv": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "rate_2g_mbps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "rate_5g_mbps": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "supported_bands": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "poe_input": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "wireless_range": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "antenna_type": "https://www.dahuasecurity.com/in/products/Transmission/Wireless-Devices/WBC-Series-Wireless-Bridge/WBC5-90AC-01P",
+        "poe_output": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "centralized_management": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "wireless_security": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "operating_temperature_c": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf",
+        "max_power_consumption_w": "https://materialfile.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/datasheetzipfiles/DH-WBC5-90AC-01P_datasheet_20251028.pdf"
+      },
+      "title": "WBC5-90AC-01P - Zhejiang Dahua Technology Co., Ltd.",
+      "image_url": "https://material.dahuasecurity.com/uploads/cpq/prm-os-srv-res/smart/formal/Product/HQ/1_0_01_20_11208/ProductImage/1_0_01_20_11208_97560269_crop_thumb.png",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "8 kV",
+          "8 kV Lightning Protection"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          300,
+          "2.4 GHz:300 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          867,
+          "5 GHz:867 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "poe_input": [
+          "text",
+          "PoE (802.3af)",
+          "802.3af"
+        ],
+        "wireless_range": [
+          "text",
+          "reaches up to 1 km",
+          "transmission distance reaches up to 1 km"
+        ],
+        "antenna_type": [
+          "text",
+          "{v.name} -->",
+          "{v.name} -->"
+        ],
+        "poe_output": [
+          "text",
+          "802.3af(15W)",
+          "802.3af(15W)"
+        ],
+        "centralized_management": [
+          "text",
+          "DHCP/Static IP configuration",
+          "DHCP/Static IP configuration"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2",
+          "WPA2"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "–30 °C to +65 °C (–22 °F to +149 °F).",
+          "operating temperature: –30 °C to +65 °C (–22 °F to +149 °F)."
+        ],
+        "max_power_consumption_w": [
+          "number",
+          30.0,
+          "Power Consumption < 30 W"
+        ]
+      }
+    }
+  ]
+}

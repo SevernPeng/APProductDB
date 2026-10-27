@@ -5,12 +5,30 @@ from django.core.management import call_command
 from django.test import TestCase
 from openpyxl import Workbook
 
-from catalog.management.commands.import_benchmark_matrix import SHEET_CONFIG, split_models
+from catalog.management.commands.import_benchmark_matrix import (
+    SHEET_CONFIG,
+    normalize_brand,
+    parse_model,
+    split_models,
+)
 from catalog.models import Category, Product
 from comparison.models import BenchmarkCase, ProductMatch
 
 
 class ImportBenchmarkMatrixTests(TestCase):
+    def test_updated_workbook_brand_headers(self):
+        for header, expected in [("ruijie", "Ruijie"), ("reyee", "Reyee"),
+                                 ("Draytek", "DrayTek"), ("Instan On", "Instant On")]:
+            self.assertEqual(normalize_brand(header, "MODEL"), (expected, "MODEL"))
+        self.assertEqual(normalize_brand("Others", "Grandstream GWN7831"),
+                         ("Grandstream", "GWN7831"))
+
+    def test_parse_model_extracts_bare_dotted_hardware_version(self):
+        self.assertEqual(
+            parse_model("EAP115-Bridge KIT 3.0"),
+            ("EAP115-Bridge KIT", "V3.0", Product.LifecycleStatus.ACTIVE),
+        )
+
     def test_split_models_preserves_vendor_suffixes(self):
         self.assertEqual(split_models("—"), [])
         self.assertEqual(split_models("–"), [])
@@ -62,7 +80,7 @@ class ImportBenchmarkMatrixTests(TestCase):
         self.assertEqual(BenchmarkCase.objects.count(), len(SHEET_CONFIG))
         self.assertEqual(ProductMatch.objects.count(), len(SHEET_CONFIG) * 4)
         access_point = Product.objects.get(model="EAP100")
-        self.assertEqual(access_point.lifecycle_status, Product.LifecycleStatus.DISCONTINUED)
+        self.assertEqual(access_point.lifecycle_status, Product.LifecycleStatus.EOL)
         self.assertEqual(access_point.region, "US")
         self.assertFalse(
             Product.objects.filter(category__slug="gateway").exclude(region="UN").exists()

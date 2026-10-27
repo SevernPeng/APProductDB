@@ -5,7 +5,7 @@ from pathlib import Path
 from django.core.exceptions import ImproperlyConfigured
 from dotenv import load_dotenv
 
-from config.env import env_bool, env_float, env_int, env_list
+from config.env import env_bool, env_int, env_list
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_ROOT = BASE_DIR.parent
@@ -157,44 +157,6 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = SECURE_HSTS_SECONDS > 0
 SECURE_HSTS_PRELOAD = SECURE_HSTS_SECONDS > 0
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-DATASHEET_AUTO_INGEST = env_bool("DATASHEET_AUTO_INGEST", not IS_TESTING)
-DATASHEET_MAX_BYTES = env_int("DATASHEET_MAX_BYTES", 25 * 1024 * 1024, minimum=1)
-AI_DATASHEET_ENABLED = env_bool("AI_DATASHEET_ENABLED", False)
-AI_DATASHEET_BASE_URL = os.getenv(
-    "AI_DATASHEET_BASE_URL",
-    "http://127.0.0.1:11434/",
-).strip()
-AI_DATASHEET_MODEL = os.getenv("AI_DATASHEET_MODEL", "qwen3-vl:4b").strip()
-AI_DATASHEET_TEXT_MODEL = os.getenv(
-    "AI_DATASHEET_TEXT_MODEL", "qwen3:1.7b"
-).strip()
-AI_DATASHEET_VISION_MODEL = os.getenv(
-    "AI_DATASHEET_VISION_MODEL", "qwen3-vl:2b-instruct"
-).strip()
-AI_DATASHEET_TIMEOUT = env_int("AI_DATASHEET_TIMEOUT", 1800, minimum=1)
-AI_DATASHEET_MIN_CONFIDENCE = env_float(
-    "AI_DATASHEET_MIN_CONFIDENCE", 0.72, minimum=0, maximum=1
-)
-AI_DATASHEET_CONTEXT_LENGTH = env_int("AI_DATASHEET_CONTEXT_LENGTH", 16384, minimum=1024)
-AI_DATASHEET_KEEP_ALIVE = os.getenv("AI_DATASHEET_KEEP_ALIVE", "5m").strip()
-AI_DATASHEET_OCR_THRESHOLD = env_int("AI_DATASHEET_OCR_THRESHOLD", 500, minimum=0)
-AI_DATASHEET_MAX_TEXT_CHARS = env_int("AI_DATASHEET_MAX_TEXT_CHARS", 40000, minimum=1000)
-AI_DATASHEET_TEXT_PAGE_LIMIT = env_int("AI_DATASHEET_TEXT_PAGE_LIMIT", 5, minimum=1)
-AI_DATASHEET_EVIDENCE_PAGE_LIMIT = env_int(
-    "AI_DATASHEET_EVIDENCE_PAGE_LIMIT", 12, minimum=1
-)
-AI_DATASHEET_HEAD_PAGES = env_int("AI_DATASHEET_HEAD_PAGES", 2, minimum=0)
-AI_DATASHEET_MAX_VISION_PAGES = env_int("AI_DATASHEET_MAX_VISION_PAGES", 40, minimum=1)
-AI_DATASHEET_VISION_PAGE_LIMIT = env_int("AI_DATASHEET_VISION_PAGE_LIMIT", 4, minimum=1)
-AI_DATASHEET_RENDER_DPI = env_int("AI_DATASHEET_RENDER_DPI", 96, minimum=72)
-AI_DATASHEET_MAX_OUTPUT_TOKENS = env_int(
-    "AI_DATASHEET_MAX_OUTPUT_TOKENS", 3072, minimum=128
-)
-AI_DATASHEET_RULE_SKIP_RATIO = env_float(
-    "AI_DATASHEET_RULE_SKIP_RATIO", 0.85, minimum=0, maximum=1
-)
-AI_DATASHEET_WORKERS = env_int("AI_DATASHEET_WORKERS", 1, minimum=1)
 
 LOGGING = {
     "version": 1,

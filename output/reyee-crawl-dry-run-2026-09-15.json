@@ -1,0 +1,3040 @@
+{
+  "stats": {
+    "error": 1,
+    "not_found": 25,
+    "ok": 37,
+    "page_found_no_specs": 33
+  },
+  "results": [
+    {
+      "product_id": 1131,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "GE-SFP-LX20-SM1310-BIDI",
+      "url": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+      "source_urls": [
+        "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi"
+      ],
+      "evidence_url": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "max_power_consumption_w": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "accessory_interface_type": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "accessory_connector_type": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "accessory_data_rate_gbps": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "accessory_wavelength_nm": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "accessory_fiber_mode": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi",
+        "accessory_max_distance_km": "https://www.ruijie.com/de-de/products/switches/accessories/ge-sfp-lx20-sm1310-bidi"
+      },
+      "title": "Accessories GE-SFP-LX20-SM1310-BIDI 1000BASE-LX SFP 1310nm-TX/1550nm-RX 20-km DDM Simplex LC SMF Transceiver Module",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 70°C (32°F to 158°F)",
+          "Operating temperature \n \n \n 0°C to 70°C (32°F to 158°F) "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.5,
+          "Max. power consumption 1.5 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Duplex LC",
+          "Duplex LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          1.25,
+          "Data rate 1.25 Gbps"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "Wavelength 1310 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "SMF"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          0.55,
+          "Reach 550 m"
+        ]
+      }
+    },
+    {
+      "product_id": 1137,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "GE-SFP-LX20-SM1550-BIDI",
+      "url": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+      "source_urls": [
+        "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi"
+      ],
+      "evidence_url": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "max_power_consumption_w": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "accessory_interface_type": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "accessory_connector_type": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "accessory_data_rate_gbps": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "accessory_wavelength_nm": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "accessory_fiber_mode": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi",
+        "accessory_max_distance_km": "https://www.ruijie.com/pt-br/products/switches/accessories/ge-sfp-lx20-sm1550-bidi"
+      },
+      "title": "Accessories GE-SFP-LX20-SM1550-BIDI 1000BASE-LX SFP 1550nm-TX/1310nm-RX 20-km DDM Simplex LC SMF Transceiver Module",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 70°C (32°F to 158°F)",
+          "Operating temperature \n \n \n 0°C to 70°C (32°F to 158°F) "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.5,
+          "Max. power consumption 1.5 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Duplex LC",
+          "Duplex LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          1.25,
+          "Data rate 1.25 Gbps"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "Wavelength 1310 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "SMF"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          0.55,
+          "Reach 550 m"
+        ]
+      }
+    },
+    {
+      "product_id": 1114,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "MINI-GBIC-SX-MM850",
+      "url": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "max_power_consumption_w": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_interface_type": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_connector_type": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_data_rate_gbps": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_wavelength_nm": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_fiber_mode": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_max_distance_km": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850",
+        "accessory_mounting_type": "https://www.ruijie.com/en-global/products/switches/accessories/mini-gbic-sx-mm850"
+      },
+      "title": "Accessories MINI-GBIC-SX-MM850 1000BASE-SX SFP 850-nm 550-m DDM Duplex LC MMF Optical Transceiver Module",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 70°C (32°F to 158°F)",
+          "Operating temperature \n \n \n 0°C to 70°C (32°F to 158°F) "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.5,
+          "Max. power consumption 1.5 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Duplex LC",
+          "Duplex LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          1.25,
+          "Data rate 1.25 Gbps"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "Wavelength 1310 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "MMF"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          0.55,
+          "Reach 550 m"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 1123,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "Mini-GBIC-LX-SM1310",
+      "url": "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/",
+      "source_urls": [
+        "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/",
+      "spec_sources": {
+        "accessory_interface_type": "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/",
+        "accessory_connector_type": "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/",
+        "accessory_data_rate_gbps": "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/",
+        "accessory_fiber_mode": "https://reyee.ruijie.com/th-th/products/reyee-switch/accessories/ruijie-mini-gbic-lx-sm1310/"
+      },
+      "title": "MINI-GBIC-LX-SM1310 1000BASE-SX SFP 1310-nm 10-km DDM Duplex LC SMF Optical Transceiver Module - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          1.0,
+          "1G ขึ้นไปแบบคงที่ RG-NBS5100-24GT4SFP RG-NBS5100-24GT4SFP"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "SMF"
+        ]
+      }
+    },
+    {
+      "product_id": 551,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG NBS5200-48GT4XS",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs5200-48gt4xs-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs5200-48gt4xs-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "lightning_protection_kv": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "switching_capacity_gbps": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "poe_ports": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "vlan_support": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "link_aggregation": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "igmp_snooping": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/",
+        "installation": "https://reyee.ruijie.com/en-global/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs/"
+      },
+      "title": "RG-NBS5200-48GT4XS, 48-port Gigabit Layer 3 Non-PoE Switch, 4 SFP+ Uplink - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to +50°C (32°F to 122°F)",
+          "Operating temperature \n \n 0°C to +50°C (32°F to 122°F)"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6KV surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          176.0,
+          "Switching Capacity 176 Gbps"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8 PoE++ Ports"
+        ],
+        "vlan_support": [
+          "text",
+          "Multiple Security Policies Protect Your Network",
+          "Multiple Security Policies Protect Your Network"
+        ],
+        "link_aggregation": [
+          "text",
+          "IGMP Snooping",
+          "IGMP Snooping"
+        ],
+        "igmp_snooping": [
+          "text",
+          "VLAN",
+          "VLAN"
+        ],
+        "installation": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 377,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-AirMetro460F",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-airmetro460f-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-airmetro460f-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-airmetro460f-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-airmetro460f-datasheet/",
+      "spec_sources": {
+        "supported_bands": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "centralized_management": "https://reyee.ruijie.com/en-global/resources/preview/rg-airmetro460f-datasheet/",
+        "mesh_support": "https://reyee.ruijie.com/en-global/resources/preview/rg-airmetro460f-datasheet/",
+        "ip_rating": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "antenna_gain_dbi": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "ethernet_interfaces": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "antenna_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "max_ssids": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "mimo_2g": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "mimo_5g": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "total_spatial_streams": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf",
+        "wireless_security": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/9/7/RG-AirMetro460F_Datasheet_Official_2026-09-07.pdf"
+      },
+      "title": "RG-AirMetro460F Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "centralized_management": [
+          "text",
+          "View all products",
+          "View all products"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "–40°C to +70°C (–40°F to +158°F)",
+          "Operating temperature –40°C to +70°C (–40°F to +158°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          9.0,
+          "Maximum power consumption 9 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge Protection"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "(2.4 GHz) 3 dBi",
+          "Antenna gain (2.4 GHz) 3 dBi"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x Ethernet port",
+          "1 x Ethernet port"
+        ],
+        "antenna_type": [
+          "text",
+          "Antenna",
+          "Antenna"
+        ],
+        "max_ssids": [
+          "number",
+          2,
+          "2"
+        ],
+        "mimo_2g": [
+          "text",
+          "1 x 1",
+          "2.4 GHz: 1 x 1"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 x 2",
+          "5 GHz: 2 x 2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          3,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "Broadcast storm control Yes",
+          "Broadcast storm control Yes"
+        ]
+      }
+    },
+    {
+      "product_id": 376,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-AirMetro460G",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+      "spec_sources": {
+        "ip_rating": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "operating_temperature_c": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "lightning_protection_kv": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "supported_bands": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "ethernet_interfaces": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "antenna_type": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "mimo_2g": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "mimo_5g": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "total_spatial_streams": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "centralized_management": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/",
+        "mesh_support": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/airmetro-series/rg-airmetro460g/"
+      },
+      "title": "RG-AirMetro460G, CPE of RG-AirMetro Series Wireless Bridges - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "–40°C to +70°C (–40°F to +158°F)",
+          "Operating temperature \n \n –40°C to +70°C (–40°F to +158°F)"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge Protection"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 10/100/1000 Mbps Port",
+          "1 x 10/100/1000 Mbps Port"
+        ],
+        "antenna_type": [
+          "text",
+          "Antenna horizontal orientation",
+          "Antenna horizontal orientation"
+        ],
+        "mimo_2g": [
+          "text",
+          "1 x 1",
+          "2.4 GHz, 1 spatial stream: 1 x 1"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 x 2",
+          "5 GHz, 2 spatial streams: 2 x 2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          3,
+          "Sum of per-radio MIMO streams"
+        ],
+        "centralized_management": [
+          "text",
+          "View all products",
+          "View all products"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ]
+      }
+    },
+    {
+      "product_id": 397,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-AirMetro550G-B",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/eudoc-rg-airmetro550g-b/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/eudoc-rg-airmetro550g-b/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/eudoc-rg-airmetro550g-b/",
+      "spec_sources": {
+        "supported_bands": "https://reyee.ruijie.com/en-global/resources/preview/eudoc-rg-airmetro550g-b/",
+        "centralized_management": "https://reyee.ruijie.com/en-global/resources/preview/eudoc-rg-airmetro550g-b/",
+        "mesh_support": "https://reyee.ruijie.com/en-global/resources/preview/eudoc-rg-airmetro550g-b/"
+      },
+      "title": "EU DOC _ RG-AirMetro550G-B - Ruijie Reyee - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "centralized_management": [
+          "text",
+          "View all products",
+          "View all products"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ]
+      }
+    },
+    {
+      "product_id": 439,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-CS86-20XS4VS2QXS-D",
+      "url": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+        "max_power_consumption_w": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+        "lightning_protection_kv": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+        "switching_capacity_gbps": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+        "packet_forwarding_rate_mpps": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+        "poe_ports": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d",
+        "installation": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-cs86-20xs4vs2qxs-d"
+      },
+      "title": "RG-CS86-20XS4VS2QXS-D, 20-Port 10/2.5GE(SFP+), Layer 3 Ruijie Core/Aggregation Switch with Cloud Management, 4-Port 25/10GE(SFP28), 2-Port 40GE",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 50°C (32°F to 122°F)",
+          "Operating temperature: 0°C to 50°C (32°F to 122°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          85.0,
+          "Maximum power consumption 85 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "15 kV",
+          "15kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          760.0,
+          "Switching capacity 760 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          570.0,
+          "Packet forwarding rate 570 Mpps"
+        ],
+        "poe_ports": [
+          "number",
+          45,
+          "45 PoE+ ports"
+        ],
+        "installation": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 1318,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-EG105G"
+    },
+    {
+      "product_id": 351,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-EG105GW",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "concurrent_sessions": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "lan_interfaces": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "sd_wan": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "vpn_protocols": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "wan_interfaces": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "wan_load_balancing": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "router_wifi_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf",
+        "router_supported_bands": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/3/2/RG-EG105GW%28T%29_Datasheet_Official_2026-03-02.pdf"
+      },
+      "title": "Reyee RG-EG105GW official datasheet",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0° C to 40° C (32° F to 104° F)",
+          "Operating temperature 0° C to 40° C (32° F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.0,
+          "Maximum power consumption 15 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "concurrent_sessions": [
+          "number",
+          12000,
+          "concurrent sessions 12000"
+        ],
+        "lan_interfaces": [
+          "text",
+          "Yes",
+          "Yes"
+        ],
+        "sd_wan": [
+          "text",
+          "SD-WAN Yes",
+          "SD-WAN Yes"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec VPN Yes",
+          "IPsec VPN Yes"
+        ],
+        "wan_interfaces": [
+          "text",
+          "WAN ports",
+          "WAN ports"
+        ],
+        "wan_load_balancing": [
+          "boolean",
+          true,
+          "Load balancing"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 5",
+          "Wi-Fi 5"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ]
+      }
+    },
+    {
+      "product_id": 1324,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-EG105GW(T)"
+    },
+    {
+      "product_id": 348,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-EG105GW-X",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf",
+      "spec_sources": {},
+      "title": "Reyee RG-EG105GW-X official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1304,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-EG1510XS"
+    },
+    {
+      "product_id": 1315,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-EG209GS"
+    },
+    {
+      "product_id": 341,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-EG210G-E",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/",
+      "spec_sources": {
+        "cellular_standard": "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/",
+        "router_wifi_standard": "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/",
+        "router_supported_bands": "https://reyee.ruijie.com/en-global/resources/preview/rg-eg210g-e-datasheet/",
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "concurrent_sessions": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "lan_interfaces": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "sd_wan": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "vpn_protocols": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "wan_interfaces": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf",
+        "wan_load_balancing": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/11/21/RG-EG210G-E_Datasheet_Official_2025-11-21.pdf"
+      },
+      "title": "RG-EG210G-E Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "cellular_standard": [
+          "text",
+          "4G",
+          "4G"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 7",
+          "Wi-Fi 7"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0° C to 40° C (32° F to 104° F)",
+          "Operating temperature 0° C to 40° C (32° F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          9.0,
+          "Maximum power consumption 9 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "concurrent_sessions": [
+          "number",
+          60000,
+          "concurrent sessions 60000"
+        ],
+        "lan_interfaces": [
+          "text",
+          "Yes",
+          "Yes"
+        ],
+        "sd_wan": [
+          "text",
+          "SD-WAN No",
+          "SD-WAN No"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec VPN Yes",
+          "IPsec VPN Yes"
+        ],
+        "wan_interfaces": [
+          "text",
+          "WAN ports",
+          "WAN ports"
+        ],
+        "wan_load_balancing": [
+          "boolean",
+          true,
+          "load balancing"
+        ]
+      }
+    },
+    {
+      "product_id": 1309,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-EG406XS"
+    },
+    {
+      "product_id": 1308,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-EG710XS"
+    },
+    {
+      "product_id": 932,
+      "status": "error",
+      "brand": "Reyee",
+      "model": "RG-ES106D-P",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "product_id": 839,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES109G-LP-L",
+      "url": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/",
+      "source_urls": [
+        "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/"
+      ],
+      "evidence_url": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/",
+      "spec_sources": {
+        "poe_budget_w": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/",
+        "poe_standard": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/",
+        "poe_ports": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/",
+        "management_type": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/",
+        "port_isolation": "https://www.ruijie.com/vi-vn/products/reyee-switch/ES100-Series-Unmanaged-Switch/RG-ES109G-LP-L/"
+      },
+      "title": "RG-ES109G-LP-L",
+      "wifi_standard": "",
+      "specs": {
+        "poe_budget_w": [
+          "number",
+          370.0,
+          "PoE power budget: 370W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8-port Gigabit PoE"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "port_isolation": [
+          "boolean",
+          true,
+          "port isolation"
+        ]
+      }
+    },
+    {
+      "product_id": 809,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES110D-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es110d-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es110d-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es110d-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es110d-p-datasheet/",
+      "spec_sources": {
+        "management_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf",
+        "port_isolation": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110D-P_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES110D-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0°C to 45°C (32°F to 113° F)",
+          "Operating temperature 0°C to 45°C (32°F to 113° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          8.0,
+          "Maximum power consumption 8 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          5.6,
+          "Switching capacity 5.6 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          110.0,
+          "PoE budget 110 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "port_isolation": [
+          "boolean",
+          true,
+          "Port Isolation"
+        ]
+      }
+    },
+    {
+      "product_id": 843,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES110GDS-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es110gds-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es110gds-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es110gds-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es110gds-p-datasheet/",
+      "spec_sources": {
+        "management_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf",
+        "port_isolation": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES110GDS-P_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES110GDS-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0°C to 45°C (32°F to 113° F)",
+          "Operating temperature 0°C to 45°C (32°F to 113° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          22.0,
+          "Maximum power consumption 22 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          20.0,
+          "Switching capacity 20 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "PoE budget 120 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "port_isolation": [
+          "boolean",
+          true,
+          "Port Isolation"
+        ]
+      }
+    },
+    {
+      "product_id": 833,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES118GS-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es118gs-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es118gs-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es118gs-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es118gs-p-datasheet/",
+      "spec_sources": {
+        "management_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf",
+        "port_isolation": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118GS-P_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES118GS-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0°C to 45°C (32°F to 113° F)",
+          "Operating temperature 0°C to 45°C (32°F to 113° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          50.0,
+          "Maximum power consumption 50 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          36.0,
+          "Switching capacity 36 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          247.0,
+          "PoE budget 247 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "port_isolation": [
+          "boolean",
+          true,
+          "Port Isolation"
+        ]
+      }
+    },
+    {
+      "product_id": 816,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES118S-LP",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es118s-lp-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es118s-lp-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es118s-lp-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es118s-lp-datasheet/",
+      "spec_sources": {
+        "management_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf",
+        "port_isolation": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES118S-LP_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES118S-LP Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0°C to 45°C (32°F to 113° F)",
+          "Operating temperature 0°C to 45°C (32°F to 113° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          13.0,
+          "Maximum power consumption 13 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          7.2,
+          "Switching capacity 7.2 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "PoE budget 120 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "port_isolation": [
+          "boolean",
+          true,
+          "Port Isolation"
+        ]
+      }
+    },
+    {
+      "product_id": 778,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES205GC",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-v2-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-v2-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/6/10/RG-ES205GC-V2_Datasheet_Official_2026-06-10.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-v2-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-v2-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/6/10/RG-ES205GC-V2_Datasheet_Official_2026-06-10.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/6/10/RG-ES205GC-V2_Datasheet_Official_2026-06-10.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/6/10/RG-ES205GC-V2_Datasheet_Official_2026-06-10.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/6/10/RG-ES205GC-V2_Datasheet_Official_2026-06-10.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/6/10/RG-ES205GC-V2_Datasheet_Official_2026-06-10.pdf"
+      },
+      "title": "RG-ES205GC-V2 Datasheet Official",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to +40°C (32° F to 104°F)",
+          "Operating temperature 0°C to +40°C (32° F to 104°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          2.5,
+          "Maximum power consumption 2.5 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          10.0,
+          "Switching capacity 10 Gbps"
+        ]
+      }
+    },
+    {
+      "product_id": 742,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES205GC-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es205gc-p-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/15/RG-ES205GC-P_Datasheet_Official_2026-05-15.pdf"
+      },
+      "title": "RG-ES205GC-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C (32°F to 104° F)",
+          "Operating temperature 0°C to 40°C (32°F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          5.0,
+          "Maximum power consumption 5 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "4 kV",
+          "4 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          10.0,
+          "Switching capacity 10 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          54.0,
+          "PoE budget 54 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          4,
+          "4 PoE+ ports"
+        ]
+      }
+    },
+    {
+      "product_id": 748,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES206GC-P",
+      "url": "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es206gc-p-datasheet/",
+      "source_urls": [
+        "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es206gc-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es206gc-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es206gc-p-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES206GC-P_Datasheet_Official_2025-09-28.pdf"
+      },
+      "title": "RG-ES206GC-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0° C to 40° C (32° F to 104° F)",
+          "Operating temperature 0° C to 40° C (32° F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          6.0,
+          "Maximum power consumption 6 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "4 kV",
+          "4 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching capacity 12 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          54.0,
+          "PoE budget 54 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          4,
+          "4 PoE+ ports"
+        ]
+      }
+    },
+    {
+      "product_id": 749,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES206GS-P",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/10/24/RG-ES206GS-P_Datasheet_Official_2025-10-24.pdf"
+      },
+      "title": "Reyee RG-ES206GS-P official datasheet",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0° C to 40° C (32° F to 104° F)",
+          "Operating temperature 0° C to 40° C (32° F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          6.0,
+          "Maximum power consumption 6 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching capacity 12 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          54.0,
+          "PoE budget 54 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          4,
+          "4 PoE+ Ports"
+        ]
+      }
+    },
+    {
+      "product_id": 1340,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-ES206MG-P"
+    },
+    {
+      "product_id": 785,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES208GC",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es208gc-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es208gc-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES208GC_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es208gc-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es208gc-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES208GC_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES208GC_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES208GC_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES208GC_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES208GC_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES208GC Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C (32°F to 104° F)",
+          "Operating temperature 0°C to 40°C (32°F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          5.0,
+          "Maximum power consumption 5 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "4 kV",
+          "4 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          16.0,
+          "Switching capacity 16 Gbps"
+        ]
+      }
+    },
+    {
+      "product_id": 756,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES209GC-P",
+      "url": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+      "source_urls": [
+        "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es209gc-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es209gc-p-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+        "switching_capacity_gbps": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+        "poe_budget_w": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+        "poe_standard": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+        "poe_ports": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/",
+        "installation": "https://reyee.ruijie.com/it-it/products/reyee-switch/smart-cctv-switch/es209gc-p/"
+      },
+      "title": "RG-ES209GC-P, 9-Port Gigabit Smart Cloud Managed PoE Switch - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C (32°F to 104°F)",
+          "Operating temperature \n \n 0°C to 40°C (32°F to 104°F)"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          18.0,
+          "Switching capacity 18 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "PoE budget 120 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8 Port PoE"
+        ],
+        "installation": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 1341,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-ES209MG-P"
+    },
+    {
+      "product_id": 755,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES210GS-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es210gs-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es210gs-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es210gs-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es210gs-p-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES210GS-P_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES210GS-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C (32°F to 104° F)",
+          "Operating temperature 0°C to 40°C (32°F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          10.0,
+          "Maximum power consumption 10 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          20.0,
+          "Switching capacity 20 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "PoE budget 120 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8 PoE+ ports"
+        ]
+      }
+    },
+    {
+      "product_id": 791,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES216GC",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es216gc-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es216gc-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES216GC_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es216gc-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es216gc-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES216GC_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES216GC_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES216GC_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES216GC_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES216GC_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES216GC Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 50°C (32°F to 122° F)",
+          "Operating temperature 0°C to 50°C (32°F to 122° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          12.0,
+          "Maximum power consumption 12 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          32.0,
+          "Switching capacity 32 Gbps"
+        ]
+      }
+    },
+    {
+      "product_id": 763,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES218GC-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es218gc-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es218gc-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es218gc-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es218gc-p-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES218GC-P_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES218GC-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C (32°F to 104° F)",
+          "Operating temperature 0°C to 40°C (32°F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.0,
+          "Maximum power consumption 15 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "4 kV",
+          "4 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          36.0,
+          "Switching capacity 36 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          240.0,
+          "PoE budget 240 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          16,
+          "16 PoE+ ports"
+        ]
+      }
+    },
+    {
+      "product_id": 762,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES220GS-P",
+      "url": "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es220gs-p-datasheet/",
+      "source_urls": [
+        "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es220gs-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es220gs-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-es220gs-p-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-ES220GS-P_Datasheet_Official_2025-09-28.pdf"
+      },
+      "title": "RG-ES220GS-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0° C to 40° C (32° F to 104° F)",
+          "Operating temperature 0° C to 40° C (32° F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.0,
+          "Maximum power consumption 15 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          40.0,
+          "Switching capacity 40 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          250.0,
+          "PoE budget 250 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          16,
+          "16 PoE+ Ports"
+        ]
+      }
+    },
+    {
+      "product_id": 795,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES224GC",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es224gc-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es224gc-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES224GC_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es224gc-datasheet",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es224gc-datasheet/${data.avatar}"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es224gc-datasheet/${data.avatar}",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES224GC_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES224GC_Datasheet_Official_2026-05-13.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES224GC_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES224GC_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES224GC_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES224GC Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 50°C (32°F to 122° F)",
+          "Operating temperature 0°C to 50°C (32°F to 122° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          14.0,
+          "Maximum power consumption 14 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          48.0,
+          "Switching capacity 48 Gbps"
+        ]
+      }
+    },
+    {
+      "product_id": 771,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-ES226GC-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es226gc-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es226gc-p-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es226gc-p-datasheet",
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es226gc-p-datasheet/${data.avatar}"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es226gc-p-datasheet/${data.avatar}",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_budget_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2026/5/13/RG-ES226GC-P_Datasheet_Official_2026-05-13.pdf"
+      },
+      "title": "RG-ES226GC-P Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C (32°F to 104° F)",
+          "Operating temperature 0°C to 40°C (32°F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          25.0,
+          "Maximum power consumption 25 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "4 kV",
+          "4 kV Surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          52.0,
+          "Switching capacity 52 Gbps"
+        ],
+        "poe_budget_w": [
+          "number",
+          370.0,
+          "PoE budget 370 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          24,
+          "24 PoE+ Ports"
+        ]
+      }
+    },
+    {
+      "product_id": 1344,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-ES228GS-LP",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es228gs-lp-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-es228gs-lp-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-es228gs-lp-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-ES228GS-LP official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 770,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-ES228GS-P",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-switch/smart-cctv-switch/rg-es228gs-p-v2/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-switch/smart-cctv-switch/rg-es228gs-p-v2/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-switch/smart-cctv-switch/rg-es228gs-p-v2/",
+      "spec_sources": {},
+      "title": "Reyee RG-ES228GS-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 394,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-EST100-E",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf",
+      "spec_sources": {},
+      "title": "Reyee RG-EST100-E official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 387,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-EST310",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/est-series/rg-est310v2/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/est-series/rg-est310v2/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/est-series/rg-est310v2/",
+      "spec_sources": {},
+      "title": "Reyee RG-EST310 official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 382,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-EST350",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/est-series/rg-est350v2/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/est-series/rg-est350v2/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless-bridge/est-series/rg-est350v2/",
+      "spec_sources": {},
+      "title": "Reyee RG-EST350 official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 401,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-EST350G",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-est350g-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-est350g-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-est350g-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-EST350G official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 398,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-EST450G",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-est450g-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-est450g-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-est450g-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-EST450G official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 210,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-MAP852",
+      "url": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+      "source_urls": [
+        "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "https://www.ruijie.com/en-global/resources/preview/RG-MAP852-SF-S/"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/resources/preview/RG-MAP852-SF-S/",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "max_power_consumption_w": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "supported_bands": "https://www.ruijie.com/en-global/resources/preview/RG-MAP852-SF-S/",
+        "power_method": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "antenna_gain_dbi": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "wireless_range": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "ethernet_interfaces": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "antenna_type": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "max_ssids": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "mimo_2g": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "mimo_5g": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "total_spatial_streams": "https://www.ruijie.com/pt-br/products/wireless/scenario-based-wireless/rg-map852-sf-s",
+        "centralized_management": "https://www.ruijie.com/en-global/resources/preview/RG-MAP852-SF-S/",
+        "wireless_security": "https://www.ruijie.com/en-global/resources/preview/RG-MAP852-SF-S/"
+      },
+      "title": "Scenario-Based Wireless RG-MAP852-SF-S, Optical i-Share+ Solution Basic Micro AP, Wi-Fi 6 Dual-Radio 1.775 Gbps",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "–10°C to +40°C (14°F to 104°F)",
+          "Operating temperature: –10°C to +40°C (14°F to 104°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          11.0,
+          "Maximum power consumption: 11 W"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / 48 V DC",
+          "PoE (802.3af / 802.3at) / 48 V DC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "s, with peak antenna gain of 4.72 dBi",
+          "antennas, with peak antenna gain of 4.72 dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "of 1,800–3,000 m",
+          "range of 1,800–3,000 m"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Uplink: 1 x 1000BASE-X LC port",
+          "Uplink: 1 x 1000BASE-X LC port"
+        ],
+        "antenna_type": [
+          "text",
+          "Wi-Fi",
+          "Wi-Fi"
+        ],
+        "max_ssids": [
+          "number",
+          32,
+          "32"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz, 2 spatial streams: 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz, 2 spatial streams: 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-managed",
+          "Cloud-managed"
+        ],
+        "wireless_security": [
+          "text",
+          "Switches",
+          "Switches"
+        ]
+      }
+    },
+    {
+      "product_id": 679,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3100-24GT4SFP",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-24gt4sfp-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-24gt4sfp-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-24gt4sfp-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3100-24GT4SFP official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 672,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3100-24GT4SFP-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-24gt4sfp-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-24gt4sfp-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-24gt4sfp-p-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3100-24GT4SFP-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 658,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3100-48GT4SFP-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-48gt4sfp-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-48gt4sfp-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-48gt4sfp-p-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3100-48GT4SFP-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 686,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3100-8GT2SFP",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-8gt2sfp-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-8gt2sfp-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-8gt2sfp-p-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3100-8GT2SFP official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 714,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3100-8GT2SFP-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-8gt2sfp-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-8gt2sfp-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3100-8gt2sfp-p-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3100-8GT2SFP-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 649,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3200-24GT4XS",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24gt4xs-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24gt4xs-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24gt4xs-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3200-24GT4XS official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 643,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3200-24GT4XS-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24gt4xs-p-v2-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24gt4xs-p-v2-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24gt4xs-p-v2-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3200-24GT4XS-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 618,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3200-24SFP",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24sfp/8gt4xs-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24sfp/8gt4xs-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-24sfp/8gt4xs-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3200-24SFP official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1376,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-NBS3200-24SFP/8GT4XS"
+    },
+    {
+      "product_id": 624,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3200-48GT4XS",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-48gt4xs-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-48gt4xs-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-48gt4xs-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3200-48GT4XS official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 634,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS3200-48GT4XS-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-48gt4xs-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-48gt4xs-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs3200-48gt4xs-p-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS3200-48GT4XS-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 607,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-NBS3300-8MG2XS-P"
+    },
+    {
+      "product_id": 543,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS5200-24GT4XS-P",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs5200-24gt4xs-p-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs5200-24gt4xs-p-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nbs5200-24gt4xs-p-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS5200-24GT4XS-P official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 560,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NBS5200-48GT4XS-UP",
+      "url": "https://reyee.ruijie.com/de-de/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs-up/",
+      "source_urls": [
+        "https://reyee.ruijie.com/de-de/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs-up/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/de-de/products/reyee-switch/l3-managed-switch/rg-nbs5200-48gt4xs-up/",
+      "spec_sources": {},
+      "title": "Reyee RG-NBS5200-48GT4XS-UP official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1205,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-NIS2100-4GT2SFP-HP",
+      "url": "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-nis2100-4gt2sfp-hp-datasheet/",
+      "source_urls": [
+        "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-nis2100-4gt2sfp-hp-datasheet/",
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-nis2100-4gt2sfp-hp-datasheet/"
+      ],
+      "evidence_url": "https://reyee-uat.ruijie.com/en-global/resources/preview/rg-nis2100-4gt2sfp-hp-datasheet/",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "lightning_protection_kv": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "switching_capacity_gbps": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "poe_standard": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf",
+        "poe_ports": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/9/28/RG-NIS2100-4GT2SFP-HP_Datasheet_Official_2025-09-28.pdf"
+      },
+      "title": "RG-NIS2100-4GT2SFP-HP Datasheet Official - Ruijie Reyee",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-40℃ to +75℃ (–40° F to +167° F)",
+          "Operating temperature -40℃ to +75℃ (–40° F to +167° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          12.0,
+          "Maximum power consumption 12 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6kV surge protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching capacity 12 Gbps"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          1,
+          "1 x PoE++ Port"
+        ]
+      }
+    },
+    {
+      "product_id": 1196,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-NIS2100-8GT2SFP-HP",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nis2100-8gt2sfp-hp-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-nis2100-8gt2sfp-hp-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-nis2100-8gt2sfp-hp-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-NIS2100-8GT2SFP-HP official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1014,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-POE-50-60W-MG",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/8/product-psti-251208.pdf"
+      },
+      "title": "Reyee RG-POE-50-60W-MG official datasheet",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ]
+      }
+    },
+    {
+      "product_id": 1023,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-POE-AF15",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-accessories/rgpoeaf15",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-accessories/rgpoeaf15"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-accessories/rgpoeaf15",
+      "spec_sources": {},
+      "title": "Reyee RG-POE-AF15 official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1020,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-POE-AT30",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-accessories/rgpoeat30/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-accessories/rgpoeat30/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-accessories/rgpoeat30/",
+      "spec_sources": {},
+      "title": "Reyee RG-POE-AT30 official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 177,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-RAP2200(E)",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "supported_bands": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "power_method": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "antenna_gain_dbi": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "antenna_type": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "max_ssids": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "mimo_2g": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "mimo_5g": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "total_spatial_streams": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "mesh_support": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "fast_roaming": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf",
+        "wireless_security": "https://eo-sgp-cos.ruijie.com/Document/pdf/2025/12/18/RG-RAP2200%28E%29_Datasheet_Official_2025-12-18.pdf"
+      },
+      "title": "Reyee RG-RAP2200(E) official datasheet",
+      "wifi_standard": "Wi-Fi 5",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0° C to 40° C (32° F to 104° F)",
+          "Operating temperature 0° C to 40° C (32° F to 104° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          12.95,
+          "Maximum power consumption 12.95 W"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / ● DC power adapter",
+          "PoE (802.3af / 802.3at) / ● DC power adapter"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "(5 GHz) 2.00 dBi",
+          "Antenna gain (5 GHz) 2.00 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Antenna 2.4 GHz: 2 built-in omnidirectional antennas",
+          "Antenna 2.4 GHz: 2 built-in omnidirectional antennas"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mimo_2g": [
+          "text",
+          "2 x 2",
+          "2.4 GHz: 2 x 2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 x 2",
+          "5 GHz: 2 x 2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r",
+          "802.11k / 802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-SAE",
+          "WPA3-SAE"
+        ]
+      }
+    },
+    {
+      "product_id": 168,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-RAP2200(F)",
+      "url": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+      "source_urls": [
+        "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf"
+      ],
+      "evidence_url": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "fanless": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "rate_2g_mbps": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "rate_5g_mbps": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "supported_bands": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "power_method": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "mimo_2g": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "mimo_5g": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf",
+        "total_spatial_streams": "https://eo-sgp-cos.ruijie.com/Document/ba49aaac-d826-4112-991e-1d5e81fad435/Ruijie%20Reyee%20RG-RAP2200%28F%29%20Access%20Point%20Hardware%20Installation%20and%20Reference%20Guide%20%28V1.1%29.pdf"
+      },
+      "title": "Reyee RG-RAP2200(F) official datasheet",
+      "wifi_standard": "Wi-Fi 5",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          12.95,
+          "Power Consumption < 12.95W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          400,
+          "2.4GHz: up to 400 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          4800,
+          "5GHz: up to 4.8 Gbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / DC power",
+          "PoE (802.3af / 802.3at) / DC power"
+        ],
+        "mimo_2g": [
+          "text",
+          "2 x 2 MIMO",
+          "2.4GHz: 2 x 2 MIMO"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 x 2 MIMO",
+          "5GHz: 2 x 2 MIMO"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1258,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP2260"
+    },
+    {
+      "product_id": 1265,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP2260(G)"
+    },
+    {
+      "product_id": 87,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP2260(H)",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap2260h/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap2260h/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap2260h/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP2260(H) official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1300,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP52-OD"
+    },
+    {
+      "product_id": 1264,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP62"
+    },
+    {
+      "product_id": 290,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP62-OD",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap62-od/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap62-od/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap62-od/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP62-OD official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1279,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP62-Wall"
+    },
+    {
+      "product_id": 295,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP6260(G)",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rap6260g/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rap6260g/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rap6260g/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP6260(G) official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1290,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP6262"
+    },
+    {
+      "product_id": 291,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP6262(G)",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap6262g/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap6262g/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap6262g/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP6262(G) official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 48,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-RAP7136-R"
+    },
+    {
+      "product_id": 79,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP72",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-rap72-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-rap72-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-rap72-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP72 official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 21,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP72-Wall",
+      "url": "https://reyee.ruijie.com/en-global/products/sme/wireless/rg-rap72-wall/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/sme/wireless/rg-rap72-wall/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/sme/wireless/rg-rap72-wall/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP72-Wall official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 20,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP72Pro",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap72pro/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap72pro/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-indoor-ap/rg-rap72pro/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP72Pro official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 22,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP72Pro-OD",
+      "url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap72pro-od/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap72pro-od/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/reyee-wireless/reyee-outdoor-ap/rg-rap72pro-od/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP72Pro-OD official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 35,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP73HD",
+      "url": "https://reyee.ruijie.com/en-global/resources/preview/rg-rap73hd-datasheet/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/resources/preview/rg-rap73hd-datasheet/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/resources/preview/rg-rap73hd-datasheet/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP73HD official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 18,
+      "status": "page_found_no_specs",
+      "brand": "Reyee",
+      "model": "RG-RAP73Pro",
+      "url": "https://reyee.ruijie.com/en-global/products/sme/wireless/rg-rap73pro/",
+      "source_urls": [
+        "https://reyee.ruijie.com/en-global/products/sme/wireless/rg-rap73pro/"
+      ],
+      "evidence_url": "https://reyee.ruijie.com/en-global/products/sme/wireless/rg-rap73pro/",
+      "spec_sources": {},
+      "title": "Reyee RG-RAP73Pro official datasheet",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 498,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-S5310-24GT4XS-E"
+    },
+    {
+      "product_id": 487,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-S5310-24GT4XS-P-E"
+    },
+    {
+      "product_id": 477,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-S5310-48GT4XS-E"
+    },
+    {
+      "product_id": 467,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RG-S5310-48GT4XSP-E"
+    },
+    {
+      "product_id": 440,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-S6120-20XS4VS2QXS",
+      "url": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs",
+        "max_power_consumption_w": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs",
+        "lightning_protection_kv": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs",
+        "acl_security": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs",
+        "installation": "https://www.ruijie.com/en-global/products/switches/campus-switches/rg-s6120-20xs4vs2qxs"
+      },
+      "title": "Campus Switches RG-S6120-20XS4VS2QXS 20-Port 10G (Compatible with 2.5G) Layer 3 Managed Core and Aggregation Switch",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 50°C (32°F to 122°F)",
+          "Operating temperature: 0°C to 50°C (32°F to 122°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          85.0,
+          "Maximum power consumption 85 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "15 kV",
+          "15 kV Surge protection"
+        ],
+        "acl_security": [
+          "text",
+          "IP source guard",
+          "IP source guard"
+        ],
+        "installation": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 424,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "RG-S6150-24VS8CQ-X",
+      "url": "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x",
+      "source_urls": [
+        "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x"
+      ],
+      "evidence_url": "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x",
+        "max_power_consumption_w": "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x",
+        "lightning_protection_kv": "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x",
+        "installation": "https://www.ruijie.com/fr-fr/products/switches/campus-switches/rg-s6150-24vs8cq-x"
+      },
+      "title": "Campus Switches RG-S6150-24VS8CQ-X 24-Port 25GE All-Optical Layer 3 Managed Core & Aggregation Switch, 100G Uplink",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 45°C (32°F to 113°F)",
+          "Operating temperature: 0°C to 45°C (32°F to 113°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          270.0,
+          "Maximum power consumption 270W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "15 kV",
+          "15 kV Surge protection"
+        ],
+        "installation": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 535,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RGNBS5200-24GT4XS"
+    },
+    {
+      "product_id": 566,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RGNBS5200-24SFP"
+    },
+    {
+      "product_id": 1386,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "RGNBS5200-24SFP/8GT4XS"
+    },
+    {
+      "product_id": 417,
+      "status": "not_found",
+      "brand": "Reyee",
+      "model": "S6501-48VS8CQ"
+    },
+    {
+      "product_id": 1087,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "XG-SFP-LR-SM1310",
+      "url": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "max_power_consumption_w": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_interface_type": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_connector_type": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_data_rate_gbps": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_wavelength_nm": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_fiber_mode": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_max_distance_km": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310",
+        "accessory_mounting_type": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-lr-sm1310"
+      },
+      "title": "Accessories XG-SFP-LR-SM1310 10GBASE-LR SFP+ 1310-nm 10-km DOM Duplex LC SMF Optical Transceiver Module",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 70°C (32°F to 158°F)",
+          "Operating temperature \n \n \n 0°C to 70°C (32°F to 158°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.5,
+          "Max. power consumption 1.5 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP+",
+          "SFP+"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Duplex LC",
+          "Duplex LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.3125,
+          "Data rate 10.3125 Gbps"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "SMF"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          0.001,
+          "Length 1 m"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    },
+    {
+      "product_id": 1077,
+      "status": "ok",
+      "brand": "Reyee",
+      "model": "XG-SFP-SR-MM850",
+      "url": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "max_power_consumption_w": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_interface_type": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_connector_type": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_data_rate_gbps": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_wavelength_nm": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_fiber_mode": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_max_distance_km": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850",
+        "accessory_mounting_type": "https://www.ruijie.com/en-global/products/switches/accessories/xg-sfp-sr-mm850"
+      },
+      "title": "Accessories XG-SFP-SR-MM850 10GBASE-SR SFP+ 850-nm 300-m DOM Duplex LC MMF Optical Transceiver Module",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C to 70°C (32°F to 158°F)",
+          "Operating temperature\n \n \n 0°C to 70°C (32°F to 158°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.5,
+          "Max. power consumption 1.5 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP+",
+          "SFP+"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Duplex LC",
+          "Duplex LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.3125,
+          "Data rate 10.3125 Gbps"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "MMF"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          0.001,
+          "Length 1 m"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "Installation Guide",
+          "Installation Guide"
+        ]
+      }
+    }
+  ]
+}

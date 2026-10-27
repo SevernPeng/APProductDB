@@ -1,0 +1,140 @@
+{
+  "stats": {
+    "ok": 2
+  },
+  "results": [
+    {
+      "product_id": 1328,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "FWA710",
+      "url": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710",
+      "source_urls": [
+        "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710"
+      ],
+      "evidence_url": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710",
+      "spec_sources": {
+        "ip_rating": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710",
+        "controller_management": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710",
+        "cellular_standard": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710",
+        "router_wifi_standard": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710",
+        "router_supported_bands": "https://www.zyxel.com/global/en/products/mobile-broadband/nebula-fwa710"
+      },
+      "title": "Nebula FWA710 | Nebula 5G NR Outdoor Router | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nebula_fwa710/nebula_fwa710_01_intro.png",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP68",
+          "IP68"
+        ],
+        "controller_management": [
+          "text",
+          "Nebula Cloud Center",
+          "Nebula Cloud Center"
+        ],
+        "cellular_standard": [
+          "text",
+          "5G",
+          "5G"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 7",
+          "Wi-Fi 7"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ]
+      }
+    },
+    {
+      "product_id": 1247,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA130BE",
+      "url": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be",
+      "source_urls": [
+        "https://www.zyxel.com/us/en-us/products/wireless/nwa130be",
+        "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "wireless_security": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "rate_6g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "supported_bands": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "power_method": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "antenna_type": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "mesh_support": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications",
+        "fast_roaming": "https://www.zyxel.com/us/en-us/products/wireless/nwa130be/specifications"
+      },
+      "title": "NWA130BE | BE11000 6-Stream WiFi 7 Triple-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa130be/2025_Taiwan_Excellence_Award.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          6,
+          "6-Stream"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "2 x 1/2.5Gbps LAN",
+          "2 x 1/2.5Gbps LAN"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          688,
+          "2.4 GHz: 688 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          4324,
+          "5 GHz: 4324 Mbps"
+        ],
+        "rate_6g_mbps": [
+          "number",
+          5764,
+          "6 GHz: 5764 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    }
+  ]
+}

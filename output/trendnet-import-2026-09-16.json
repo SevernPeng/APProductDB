@@ -1,0 +1,2354 @@
+{
+  "stats": {
+    "not_found": 6,
+    "ok": 37
+  },
+  "results": [
+    {
+      "product_id": 913,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TE100-S24D",
+      "url": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf",
+        "max_power_consumption_w": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf",
+        "flow_control": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf",
+        "transmission_method": "https://downloads.trendnet.com/TE100-S24D_v11/datasheet/EN_spec_TE100-S24D%28v1.1R%29.pdf"
+      },
+      "title": "TRENDnet TE100-S24D official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TE100-S24D_v11/TE100-S24D_v11_d01_re.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "265 x 122.7 x 41 mm",
+          "265 x 122.7 x 41 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          4.65,
+          "Power Consumption • 4.65 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "• 24 x 10/100Mbps Auto-MDIX RJ-45 ports",
+          "• 24 x 10/100Mbps Auto-MDIX RJ-45 ports"
+        ],
+        "flow_control": [
+          "text",
+          "802.3X Flow Control",
+          "802.3X Flow Control"
+        ],
+        "transmission_method": [
+          "text",
+          "Store and Forward",
+          "Store-and-Forward"
+        ]
+      }
+    },
+    {
+      "product_id": 1071,
+      "status": "not_found",
+      "brand": "TRENDnet",
+      "model": "TEG-10GBRJ100"
+    },
+    {
+      "product_id": 1091,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-10GBS10",
+      "url": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "operating_temperature_c": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "accessory_input_power": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/teg-10gbs10_v2/datasheet/en_datasheet_teg-10gbs10%28v2.0r%29.pdf"
+      },
+      "title": "TRENDnet TEG-10GBS10 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-10GBS10_v3/TEG-10GBS10_v3.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "14.8 x 56.5 x 11.85 mm",
+          "14.8 x 56.5 x 11.85 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0 to 70 °C (32 to 158 °F)",
+          "Operating temperature: 0 to 70 °C (32 to 158 °F)"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single Mode"
+        ],
+        "accessory_input_power": [
+          "text",
+          "Single 3.3 volt power supply",
+          "Single 3.3 volt power supply"
+        ],
+        "accessory_power_w": [
+          "number",
+          10.0,
+          "10.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1097,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-10GBS10D2",
+      "url": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+      "source_urls": [
+        "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1"
+      ],
+      "evidence_url": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+      "spec_sources": {
+        "dimensions_mm": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "operating_temperature_c": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "fanless": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_interface_type": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_connector_type": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_data_rate_gbps": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_wavelength_nm": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_fiber_mode": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_max_distance_km": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_power_w": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_compatibility": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_mounting_type": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1",
+        "accessory_rack_units": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D2-v1"
+      },
+      "title": "10G SFP+ Dual Wavelength Single Mode LC Module (10km) – 10G BiDi SFP+ Transceivers | TRENDnet - TRENDnet TEG-10GBS10D2",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-10GBS10D2_v1/TEG-10GBS10D2_V1_d01_2.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "58 x 13.4 x 12.6mm",
+          "58 x 13.4 x 12.6mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0° – 70° C (32° – 158° F)",
+          "Operating Temperature\n 0° – 70° C (32° – 158° F)"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single Mode"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          10.0,
+          "Distance 10km"
+        ],
+        "accessory_power_w": [
+          "number",
+          8.2,
+          "8.2"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "Hot-pluggable SFP+ transceiver works with an MSA compliant 10G SFP+ port.",
+          "Hot-pluggable SFP+ transceiver works with an MSA compliant 10G SFP+ port."
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "rack mountable metal housing NDAA / TAA compliant",
+          "rack mountable metal housing NDAA / TAA compliant"
+        ],
+        "accessory_rack_units": [
+          "number",
+          2.0,
+          "2.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1101,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-10GBS10D3",
+      "url": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+      "source_urls": [
+        "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1"
+      ],
+      "evidence_url": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+      "spec_sources": {
+        "dimensions_mm": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "operating_temperature_c": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "fanless": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_interface_type": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_connector_type": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_data_rate_gbps": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_wavelength_nm": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_fiber_mode": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_max_distance_km": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_power_w": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_compatibility": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_mounting_type": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1",
+        "accessory_rack_units": "https://www.trendnet.com/products/10g-bidi-sfp-plus/10g-sfp-plus-dual-wavelength-single-mode-lc-module-10km-TEG-10GBS10D3-v1"
+      },
+      "title": "10G SFP+ Dual Wavelength Single Mode LC Module (10km) – 10G BiDi SFP+ Transceivers | TRENDnet - TRENDnet TEG-10GBS10D3",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-10GBS10D3_v1/TEG-10GBS10D3_V1_d01_2.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "58 x 13.4 x 12.6mm",
+          "58 x 13.4 x 12.6mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0° – 70° C (32° – 158° F)",
+          "Operating Temperature\n 0° – 70° C (32° – 158° F)"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single Mode"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          10.0,
+          "Distance 10km"
+        ],
+        "accessory_power_w": [
+          "number",
+          8.2,
+          "8.2"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "Hot-pluggable 10G BiDi SFP+ transceiver works with an MSA compliant 10G SFP+ port.",
+          "Hot-pluggable 10G BiDi SFP+ transceiver works with an MSA compliant 10G SFP+ port."
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "rack mountable metal housing NDAA / TAA compliant",
+          "rack mountable metal housing NDAA / TAA compliant"
+        ],
+        "accessory_rack_units": [
+          "number",
+          2.0,
+          "2.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1081,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-10GBSR",
+      "url": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "operating_temperature_c": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "accessory_input_power": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/teg-10gbsr_v2/datasheet/en_datasheet_teg-10gbsr%28v2.0r%29.pdf"
+      },
+      "title": "TRENDnet TEG-10GBSR official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-10GBSR_v3/TEG-10GBSR_v3.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "14.8 x 56.5 x 11.85 mm",
+          "14.8 x 56.5 x 11.85 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0 to 70 °C (32 to 158 °F)",
+          "Operating temperature: 0 to 70 °C (32 to 158 °F)"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi Mode"
+        ],
+        "accessory_input_power": [
+          "text",
+          "Single 3.3 volt power supply",
+          "Single 3.3 volt power supply"
+        ],
+        "accessory_power_w": [
+          "number",
+          10.0,
+          "10.0"
+        ]
+      }
+    },
+    {
+      "product_id": 613,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-30102WS",
+      "url": "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf",
+        "qos_support": "https://downloads.trendnet.com/teg-30102ws/datasheet/en_datasheet_teg-30102ws_%28v1.0r%29.pdf"
+      },
+      "title": "TRENDnet TEG-30102WS official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-30102WS/TEG-30102WS_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "330 x 230 x 44.45mm",
+          "330 x 230 x 44.45mm"
+        ],
+        "mac_address_table": [
+          "text",
+          "32K",
+          "MAC address table: 32K"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo frames: 9KB"
+        ],
+        "qos_support": [
+          "text",
+          "(QoS)",
+          "(QoS)"
+        ]
+      }
+    },
+    {
+      "product_id": 614,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-3102WS",
+      "url": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "fanless": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "l3_features": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "management_methods": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "vlan_support": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf",
+        "link_aggregation": "https://downloads.trendnet.com/TEG-3102WS/datasheets/EN_intl_datasheet_TEG-3102WS_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TEG-3102WS official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-3102WS/TEG-3102WS_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "240 x 104 x 27mm",
+          "240 x 104 x 27mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "that provide multi-gigabit speeds",
+          "that provide multi-gigabit speeds"
+        ],
+        "mac_address_table": [
+          "text",
+          "16K",
+          "MAC Address Table: 16K"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          10240,
+          "Jumbo Frames: 10KB"
+        ],
+        "l3_features": [
+          "text",
+          "• IPv4 / IPv6 static routing",
+          "• IPv4 / IPv6 static routing"
+        ],
+        "management_methods": [
+          "text",
+          "• CLI (Telnet / SSHv2) for basic administration",
+          "• CLI (Telnet / SSHv2) for basic administration"
+        ],
+        "vlan_support": [
+          "text",
+          "• 802.1Q Tagged VLAN",
+          "• 802.1Q Tagged VLAN"
+        ],
+        "link_aggregation": [
+          "text",
+          "• Static Link Aggregation",
+          "• Static Link Aggregation"
+        ]
+      }
+    },
+    {
+      "product_id": 1109,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-MGBRJ",
+      "url": "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/teg-mgbrj_2.0r/datasheet/po_datasheet_teg-mgbrj_%28v2.0r%29.pdf"
+      },
+      "title": "TRENDnet TEG-MGBRJ official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-MGBRJ_v2/TEG-MGBRJ_v2.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "68 x 13 x 13 mm",
+          "68 x 13 x 13 mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "• Compatível com SFP MSA",
+          "• Compatível com SFP MSA"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25Gbps. Compatibilidade Compatibilidade com slot SFP"
+        ]
+      }
+    },
+    {
+      "product_id": 1127,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-MGBS10",
+      "url": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/teg-mgbs10_v32/datasheet/en_datasheet_teg-mgbs10_%28v3.2r%29.pdf"
+      },
+      "title": "TRENDnet TEG-MGBS10 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-MGBS10_4/TEG-MGBS10_4_v4.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25Gbps Gigabit Ethernet"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single-Mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1134,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-MGBS20D3",
+      "url": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf",
+        "accessory_compatibility": "https://downloads.trendnet.com/TEG-MGBS20D3_v2/datasheets/EN_datasheet_TEG-MGBS20D3_%28v2.0R%29.pdf"
+      },
+      "title": "TRENDnet TEG-MGBS20D3 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-MGBS20D3_v2/TEG-MGBS20D3_v2.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "58 x 13.4 x 12.6mm",
+          "58 x 13.4 x 12.6mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Bi-Directional SFP",
+          "Bi-Directional SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25Gbps. All TRENDnet SFP"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single Mode"
+        ],
+        "accessory_power_w": [
+          "number",
+          9.0,
+          "9.0"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "Hot-pluggable with an MSA compliant SFP slot,",
+          "Hot-pluggable with an MSA compliant SFP slot,"
+        ]
+      }
+    },
+    {
+      "product_id": 1140,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-MGBS20D5",
+      "url": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf",
+        "accessory_compatibility": "https://downloads.trendnet.com/TEG-MGBS20D5_v2/datasheets/EN_datasheet_TEG-MGBS20D5_%28v2.0R%29.pdf"
+      },
+      "title": "TRENDnet TEG-MGBS20D5 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-MGBS20D5_v2/TEG-MGBS20D5_v2.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "58 x 13.4 x 12.6mm",
+          "58 x 13.4 x 12.6mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Bi-Directional Fiber",
+          "Bi-Directional Fiber"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25Gbps. All TRENDnet SFP"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1550,
+          "1550nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single Mode"
+        ],
+        "accessory_power_w": [
+          "number",
+          9.0,
+          "9.0"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "Hot-pluggable with an MSA compliant SFP slot,",
+          "Hot-pluggable with an MSA compliant SFP slot,"
+        ]
+      }
+    },
+    {
+      "product_id": 1118,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-MGBSX",
+      "url": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf",
+        "max_power_consumption_w": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/teg-mgbsx_v32/datasheet/en_datasheet_teg-mgbsx_%28v3.2r%29.pdf"
+      },
+      "title": "TRENDnet TEG-MGBSX official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-MGBSX_4/TEG-MGBSX_4_v4.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "57 x 13 x 12 mm",
+          "57 x 13 x 12 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          0.8,
+          "Power Consumption •Max. 0.8 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ]
+      }
+    },
+    {
+      "product_id": 880,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-S17D",
+      "url": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+        "fanless": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+        "switching_capacity_gbps": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/teg-s17d/datasheets/en_datasheet_teg-s17d_%28v1.0r%29.pdf"
+      },
+      "title": "TRENDnet TEG-S17D official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-S17D/TEG-S17D_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "216 x 132 x 43mm",
+          "216 x 132 x 43mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "16 x Gigabit Ethernet ports",
+          "16 x Gigabit Ethernet ports"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          32.0,
+          "Switching Capacity: 32Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC Address Table: 8K"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frames: 9KB"
+        ]
+      }
+    },
+    {
+      "product_id": 852,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-S380",
+      "url": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+        "fanless": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+        "ethernet_interfaces": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+        "switching_capacity_gbps": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+        "mac_address_table": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf",
+        "management_type": "https://download.trendnet.com/TEG-S380/datasheet/EN_intl_datasheet_TEG-S380_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TEG-S380 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-S380_v2/TEG-S380_v2.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "240 x 103 x 26mm",
+          "240 x 103 x 26mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "that provide higher gigabit",
+          "that provide higher gigabit"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          40.0,
+          "Switching Capacity: 40Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "16K",
+          "MAC Address Table: 16K"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          12288,
+          "Jumbo Frames: 12KB"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ]
+      }
+    },
+    {
+      "product_id": 781,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-S50ES",
+      "url": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+        "fanless": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+        "ethernet_interfaces": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+        "mac_address_table": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+        "vlan_support": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf",
+        "qos_support": "https://download.trendnet.com/TEG-S50ES/datasheet/EN_datasheet_TEG-S50ES_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TEG-S50ES official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-S50ES_v1/TEG-S50ES_v1_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "100.5 x 82 x 28mm",
+          "100.5 x 82 x 28mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Five gigabit ports provide a 10Gbps",
+          "Five gigabit ports provide a 10Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2K",
+          "MAC Address Table: 2K"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frames: 9KB"
+        ],
+        "vlan_support": [
+          "text",
+          "Marketing",
+          "Marketing"
+        ],
+        "qos_support": [
+          "text",
+          "(QoS)",
+          "(QoS)"
+        ]
+      }
+    },
+    {
+      "product_id": 787,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEG-S80ES",
+      "url": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf",
+        "vlan_support": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf",
+        "qos_support": "https://downloads.trendnet.com/TEG-S80ES/datasheet/GE_datasheet_TEG-S80ES_%28V1.0R%29.pdf"
+      },
+      "title": "TRENDnet TEG-S80ES official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEG-S80ES_v1/TEG-S80ES_v1_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "145 x 82 x 28mm",
+          "145 x 82 x 28mm"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Acht Gigabit-Ports bieten eine",
+          "Acht Gigabit-Ports bieten eine"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frames: 9 KB"
+        ],
+        "vlan_support": [
+          "text",
+          "Marketing",
+          "Marketing"
+        ],
+        "qos_support": [
+          "text",
+          "(QoS)",
+          "(QoS)"
+        ]
+      }
+    },
+    {
+      "product_id": 383,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TEW-840APBO",
+      "url": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "operating_temperature_c": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "rate_5g_mbps": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "supported_bands": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "antenna_gain_dbi": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "bridge_modes": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "max_ssids": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "mimo_5g": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "total_spatial_streams": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "fast_roaming": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf",
+        "wireless_security": "https://downloads.trendnet.com/tew-840apbo/datasheet/en_datasheet_tew-840apbo_%28v1.0r%29.pdf"
+      },
+      "title": "TRENDnet TEW-840APBO official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TEW-840APBO/TEW-840APBO_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "185 x 100 x 35mm",
+          "185 x 100 x 35mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "range of -10° – 60° C (14° – 140° F).",
+          "operating temperature\nrange of -10° – 60° C (14° – 140° F)."
+        ],
+        "rate_5g_mbps": [
+          "number",
+          867,
+          "5GHz up to 867Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "5 GHz",
+          "5 GHz"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "14 dBi",
+          "Antenna\n14 dBi"
+        ],
+        "bridge_modes": [
+          "text",
+          "Supports Access Point, WDS Bridge, WDS",
+          "Supports Access Point, WDS Bridge, WDS"
+        ],
+        "max_ssids": [
+          "number",
+          7,
+          "7"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5GHz: 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          2,
+          "Sum of per-radio MIMO streams"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r",
+          "802.11k / 802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 1042,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TFC-GMSC",
+      "url": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/TFC-GMSC_v2/datasheet/EN_datasheet_TFC-GMSC_%28v2.1R%29.pdf"
+      },
+      "title": "TRENDnet TFC-GMSC official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TFC-GMSC/TFC-GMSC_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "102 x 75 x 22.6 mm",
+          "102 x 75 x 22.6 mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ],
+        "accessory_power_w": [
+          "number",
+          9.0,
+          "9.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1038,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TFC-GSFP",
+      "url": "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/TFC-GSFP_v1_1/datasheet/EN_intl_datasheet_TFC-GSFP_%28v1.1R%29.pdf"
+      },
+      "title": "TRENDnet TFC-GSFP official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TFC-GSFP/TFC-GSFP_v1.2R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "75 x 60 x 12 mm",
+          "75 x 60 x 12 mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "multimode"
+        ]
+      }
+    },
+    {
+      "product_id": 1211,
+      "status": "not_found",
+      "brand": "TRENDnet",
+      "model": "TI-G62"
+    },
+    {
+      "product_id": 1346,
+      "status": "not_found",
+      "brand": "TRENDnet",
+      "model": "TI-G642i"
+    },
+    {
+      "product_id": 1202,
+      "status": "not_found",
+      "brand": "TRENDnet",
+      "model": "TI-G80"
+    },
+    {
+      "product_id": 1147,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TI-MGBS20",
+      "url": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "operating_temperature_c": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf",
+        "accessory_compatibility": "https://downloads.trendnet.com/TI-MGBS20_v1/datasheet/EN_datasheet_TI-MGBS20_%28v1.xR%29.pdf"
+      },
+      "title": "TRENDnet TI-MGBS20 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TI-MGBS20_v1/ti-mgbs20-_v1.0r_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "58 x 13.4 x 12.6mm",
+          "58 x 13.4 x 12.6mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "range of -40°– 85 ° C (-40° – 185 ° F)",
+          "operating temperature range of -40°– 85 ° C (-40° – 185 ° F)"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25Gbps. Compatibility Hot-pluggable with an MSA compliant SFP"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "single mode"
+        ],
+        "accessory_power_w": [
+          "number",
+          9.0,
+          "9.0"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "Hot-pluggable with an MSA compliant",
+          "Hot-pluggable with an MSA compliant"
+        ]
+      }
+    },
+    {
+      "product_id": 1144,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TI-MGBSX",
+      "url": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+        "accessory_wavelength_nm": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf",
+        "accessory_fiber_mode": "https://downloads.trendnet.com/ti-mgbsx_v11/datasheet/po_datasheet_ti-mgbsx%28v1.1r%29.pdf"
+      },
+      "title": "TRENDnet TI-MGBSX official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TI-MGBSX_v11/TI-MGBSX_v11_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "range of -40°– 85 °C (-40° – 185 °F)",
+          "operating temperature range of -40°– 85 °C (-40° – 185 °F)"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25 Gbps. Compatibilità Hot-pluggable com slot SFP"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1197,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TI-PG102i",
+      "url": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "operating_temperature_c": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "fanless": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "switching_capacity_gbps": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "mac_address_table": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "poe_budget_w": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "poe_standard": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "max_poe_per_port_w": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "jumbo_frame_bytes": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "acl_security": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "management_methods": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "vlan_support": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf",
+        "link_aggregation": "https://download.trendnet.com/TI-PG102i_v1.6/datasheet/EN_datasheet_TI-PG102i_%28v1.6R%29.pdf"
+      },
+      "title": "TRENDnet TI-PG102i official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TI-PG102i_v1.6/TI-PG102i_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "60 x 120 x 50mm",
+          "60 x 120 x 50mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "range of -40° – 75° C (-40° – 167° F)",
+          "Operating temperature range of -40° – 75° C (-40° – 167° F)"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          20.0,
+          "Switching Capacity 20Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC address table: 8K"
+        ],
+        "poe_budget_w": [
+          "number",
+          240.0,
+          "PoE power budget: 240W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          10240,
+          "Jumbo frames: 10KB"
+        ],
+        "acl_security": [
+          "text",
+          "• Source/Destination MAC address",
+          "• Source/Destination MAC address"
+        ],
+        "management_methods": [
+          "text",
+          "• HTTP web-based GUI",
+          "• HTTP web-based GUI"
+        ],
+        "vlan_support": [
+          "text",
+          "• 802.1Q tagged VLAN",
+          "• 802.1Q tagged VLAN"
+        ],
+        "link_aggregation": [
+          "text",
+          "• Static link aggregation and 802.3ad dynamic",
+          "• Static link aggregation and 802.3ad dynamic"
+        ]
+      }
+    },
+    {
+      "product_id": 1206,
+      "status": "not_found",
+      "brand": "TRENDnet",
+      "model": "TI-PG50"
+    },
+    {
+      "product_id": 1011,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-113GI",
+      "url": "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf",
+        "max_power_consumption_w": "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf",
+        "accessory_poe_standard": "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf",
+        "accessory_mounting_type": "https://downloads.trendnet.com/TPE-113GI_v21/datasheet/EN_spec_TPE-113GI%28v2.1R%29.pdf"
+      },
+      "title": "TRENDnet TPE-113GI official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-113GI_v3/TPE-113GI_v3_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "70 x 45 x 25mm",
+          "70 x 45 x 25mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.4,
+          "Power Consumption • 15.4 W"
+        ],
+        "accessory_poe_standard": [
+          "text",
+          "802.3af",
+          "802.3af"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "Wall mounting points",
+          "Wall mounting points"
+        ]
+      }
+    },
+    {
+      "product_id": 1008,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-115GI",
+      "url": "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf",
+        "max_power_consumption_w": "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf",
+        "accessory_poe_standard": "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/TPE-115Gi/datasheets/EN_spec_TPE-115GI%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-115GI official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-115GI_v3/TPE-115GI_V3_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "133 x 63 x 35 mm",
+          "133 x 63 x 35 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          30.0,
+          "Power Consumption • Max 30 W"
+        ],
+        "accessory_poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "accessory_power_w": [
+          "number",
+          100.0,
+          "100.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1002,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-215GI",
+      "url": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "max_power_consumption_w": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "accessory_interface_type": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "accessory_connector_type": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "accessory_data_rate_gbps": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "accessory_poe_standard": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "accessory_power_w": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf",
+        "accessory_mounting_type": "https://downloads.trendnet.com/TPE-215GI/datasheets/EN_intl_datasheet_TPE-215GI_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-215GI official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-215GI/TPE-215GI_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "154 x 73 x 36mm",
+          "154 x 73 x 36mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          0.7,
+          "Power Consumption • Max. 0.7W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          2.5,
+          "2.5G PoE+ injector to a non-PoE switch, and then run an Ethernet"
+        ],
+        "accessory_poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "accessory_power_w": [
+          "number",
+          100.0,
+          "100.0"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "Wall-mount design and a sturdy metal enclosure accommodates most installations scenarios",
+          "Wall-mount design and a sturdy metal enclosure accommodates most installations scenarios"
+        ]
+      }
+    },
+    {
+      "product_id": 739,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-224WS (C1.0R)",
+      "url": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+        "poe_budget_w": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+        "management_methods": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+        "vlan_support": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf",
+        "link_aggregation": "https://downloads.trendnet.com/TPE-224WS_c1/datasheet/EN_spec_TPE-224WS%28C1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-224WS (C1.0R) official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-224WS_c1_1/TPE-224WS_C1_1_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "440 x 210 x 44.45 mm",
+          "440 x 210 x 44.45 mm"
+        ],
+        "mac_address_table": [
+          "text",
+          "8 K",
+          "MAC Address Table: 8 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          193.0,
+          "PoE budget: 193 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "management_methods": [
+          "text",
+          "• HTTP/HTTPS (SSL v2/3 TLS) Web based GUI",
+          "• HTTP/HTTPS (SSL v2/3 TLS) Web based GUI"
+        ],
+        "vlan_support": [
+          "text",
+          "• Multiple management VLAN assignment",
+          "• Multiple management VLAN assignment"
+        ],
+        "link_aggregation": [
+          "text",
+          "• Static Link Aggregation",
+          "• Static Link Aggregation"
+        ]
+      }
+    },
+    {
+      "product_id": 609,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-30102WS",
+      "url": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+        "poe_budget_w": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+        "max_poe_per_port_w": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf",
+        "qos_support": "https://downloads.trendnet.com/TPE-30102WS/datasheet/EN_datasheet_TPE-30102WS%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-30102WS official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-30102WS/TPE-30102WS_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "330 x 230 x 44.45mm",
+          "330 x 230 x 44.45mm"
+        ],
+        "mac_address_table": [
+          "text",
+          "32K",
+          "MAC address table: 32K"
+        ],
+        "poe_budget_w": [
+          "number",
+          240.0,
+          "PoE budget: 240W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo frames: 9KB"
+        ],
+        "qos_support": [
+          "text",
+          "(QoS)•",
+          "(QoS)•"
+        ]
+      }
+    },
+    {
+      "product_id": 995,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-319GI",
+      "url": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "max_power_consumption_w": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "accessory_interface_type": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "accessory_connector_type": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "accessory_data_rate_gbps": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "accessory_poe_standard": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "accessory_power_w": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf",
+        "accessory_mounting_type": "https://download.trendnet.com/TPE-319GI/datasheets/EN_intl_datasheet_TPE-319GI_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-319GI official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-319GI/TPE-319GI_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "193 x 82 x 38mm",
+          "193 x 82 x 38mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          0.7,
+          "Power Consumption • Max. 0.7W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ-45",
+          "RJ-45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G PoE++ injector to a non-PoE switch, and then run an Ethernet"
+        ],
+        "accessory_poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "accessory_power_w": [
+          "number",
+          100.0,
+          "100.0"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "Wall-mount design and a sturdy metal enclosure accommodates most installations scenarios",
+          "Wall-mount design and a sturdy metal enclosure accommodates most installations scenarios"
+        ]
+      }
+    },
+    {
+      "product_id": 745,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-P521ES",
+      "url": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "fanless": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "ethernet_interfaces": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "mac_address_table": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "poe_standard": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "poe_ports": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf",
+        "qos_support": "https://download.trendnet.com/TPE-P521ES/datasheet/EN_intl_datasheet_TPE-P521ES_%28V1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-P521ES official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-P521ES_v2/TPE-P521ES_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "150 x 97 x 28.6mm",
+          "150 x 97 x 28.6mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "One gigabit PoE+ input port, two gigabit",
+          "One gigabit PoE+ input port, two gigabit"
+        ],
+        "mac_address_table": [
+          "text",
+          "2K",
+          "MAC Address Table: 2K"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          5,
+          "5-Port Gigabit PoE"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frames: 9KB"
+        ],
+        "qos_support": [
+          "text",
+          "(QoS)",
+          "(QoS)"
+        ]
+      }
+    },
+    {
+      "product_id": 928,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-S44",
+      "url": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+        "poe_standard": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+        "poe_ports": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+        "management_type": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+        "flow_control": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf",
+        "transmission_method": "https://downloads.trendnet.com/tpe-s44/datasheet/en_spec_tpe-s44.pdf"
+      },
+      "title": "TRENDnet TPE-S44 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-S44_v4/TPE-S44_v4_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "171 x 98 x 29mm",
+          "171 x 98 x 29mm"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af",
+          "802.3af"
+        ],
+        "poe_ports": [
+          "number",
+          4,
+          "4 PoE Ports"
+        ],
+        "management_type": [
+          "text",
+          "Web Smart",
+          "Web Smart"
+        ],
+        "flow_control": [
+          "text",
+          "802.3X Flow Control",
+          "802.3X Flow Control"
+        ],
+        "transmission_method": [
+          "text",
+          "Store and Forward",
+          "Store and Forward"
+        ]
+      }
+    },
+    {
+      "product_id": 936,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-S50",
+      "url": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+        "fanless": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+        "switching_capacity_gbps": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+        "poe_budget_w": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/tpe-s50_v2/datasheet/en_datasheet_tpe-s50_%28v2.0r%29.pdf"
+      },
+      "title": "TRENDnet TPE-S50 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-S50_v3/TPE-S50_v3.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "168 x 95 x 32 mm",
+          "168 x 95 x 32 mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          1.2,
+          "Switching Capacity 1.2Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2K",
+          "MAC Address Table: 2K"
+        ],
+        "poe_budget_w": [
+          "number",
+          60.0,
+          "PoE budget: 60 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ]
+      }
+    },
+    {
+      "product_id": 846,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-TG160H",
+      "url": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "fanless": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "mac_address_table": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "poe_budget_w": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "poe_standard": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "poe_ports": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "max_poe_per_port_w": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "jumbo_frame_bytes": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf",
+        "management_type": "https://download.trendnet.com/TPE-TG160H_v2/datasheets/EN_datasheet_TPE-TG160H_%28v2.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-TG160H official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-TG160H/TPE-TG160H_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "286 x 102 x 27mm",
+          "286 x 102 x 27mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC Address Table: 8K"
+        ],
+        "poe_budget_w": [
+          "number",
+          123.0,
+          "PoE budget: 123W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          16,
+          "16-Port Gigabit PoE"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          10240,
+          "Jumbo Frame: 10KB"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ]
+      }
+    },
+    {
+      "product_id": 887,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-TG44g",
+      "url": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "fanless": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "switching_capacity_gbps": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "poe_budget_w": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "poe_ports": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf",
+        "management_type": "https://downloads.trendnet.com/TPE-TG44g_v4/datasheet/EN_datasheet_TPE-TG44g_%28v4.xR%29.pdf"
+      },
+      "title": "TRENDnet TPE-TG44g official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-TG44g_v4/TPE-TG44g_v4.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "150 x 98 x 29mm",
+          "150 x 98 x 29mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Four gigabit PoE+ ports and",
+          "Four gigabit PoE+ ports and"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          16.0,
+          "Switching Capacity 16Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "4K",
+          "MAC Address Table: 4K"
+        ],
+        "poe_budget_w": [
+          "number",
+          60.0,
+          "PoE budget: 60W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8-Port Gigabit PoE"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frame: 9KB"
+        ],
+        "management_type": [
+          "text",
+          "unmanaged",
+          "unmanaged"
+        ]
+      }
+    },
+    {
+      "product_id": 744,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-TG50ES",
+      "url": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "fanless": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "poe_budget_w": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "packet_buffer_mb": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "management_methods": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "vlan_support": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf",
+        "link_aggregation": "https://downloads.trendnet.com/TPE-TG50ES_v1/datasheets/EN_intl_datasheet_TPE-TG50ES_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-TG50ES official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-TG50ES/TPE-TG50ES_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "150 x 98 x 28mm",
+          "150 x 98 x 28mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "mac_address_table": [
+          "text",
+          "2K",
+          "MAC Address Table: 2K"
+        ],
+        "poe_budget_w": [
+          "number",
+          31.0,
+          "PoE budget: 31W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          0.122,
+          "Packet Buffer: 125KB"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frame: 9KB"
+        ],
+        "management_methods": [
+          "text",
+          "• HTTP Web based GUI",
+          "• HTTP Web based GUI"
+        ],
+        "vlan_support": [
+          "text",
+          "• Port-based VLAN",
+          "• Port-based VLAN"
+        ],
+        "link_aggregation": [
+          "text",
+          "• Static link aggregation (only 1 group)",
+          "• Static link aggregation (only 1 group)"
+        ]
+      }
+    },
+    {
+      "product_id": 907,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-TG50g",
+      "url": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "fanless": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "switching_capacity_gbps": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "mac_address_table": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "poe_budget_w": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "poe_ports": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf",
+        "packet_buffer_mb": "https://downloads.trendnet.com/TPE-TG50g_v3/datasheets/EN_intl_datasheet_TPE-TG50g_%28v3.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-TG50g official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-TG50g_v4/TPE-TG50g_V4_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "148 x 95 x 26mm",
+          "148 x 95 x 26mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Four gigabit PoE+ ports and one",
+          "Four gigabit PoE+ ports and one"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          10.0,
+          "Switching Capacity 10Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2K",
+          "MAC Address Table: 2K"
+        ],
+        "poe_budget_w": [
+          "number",
+          31.0,
+          "PoE budget: 31W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          5,
+          "5-Port Gigabit PoE"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          0.125,
+          "Packet Buffer: 1Mb"
+        ]
+      }
+    },
+    {
+      "product_id": 897,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-TG611",
+      "url": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+      "source_urls": [
+        "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf"
+      ],
+      "evidence_url": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "fanless": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "ethernet_interfaces": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "switching_capacity_gbps": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "mac_address_table": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "poe_budget_w": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "poe_standard": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "poe_ports": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "jumbo_frame_bytes": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf",
+        "qos_support": "https://download.trendnet.com/TPE-TG611/datasheet/EN_intl_datasheet_TPE-TG611_%28v1.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-TG611 official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-TG611/TPE-TG611_v1.0R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "193 x 84 x 26mm",
+          "193 x 84 x 26mm"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          ", and one SFP slot",
+          ", and one SFP slot"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching Capacity: 12Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2K",
+          "MAC Address Table: 2K"
+        ],
+        "poe_budget_w": [
+          "number",
+          65.0,
+          "PoE budget: 65W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          6,
+          "6-Port Gigabit PoE"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frames: 9KB"
+        ],
+        "qos_support": [
+          "text",
+          "802.1p QoS",
+          "802.1p QoS"
+        ]
+      }
+    },
+    {
+      "product_id": 890,
+      "status": "ok",
+      "brand": "TRENDnet",
+      "model": "TPE-TG81g",
+      "url": "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf",
+      "source_urls": [
+        "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf"
+      ],
+      "evidence_url": "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf",
+        "ethernet_interfaces": "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf",
+        "poe_standard": "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf",
+        "jumbo_frame_bytes": "https://downloads.trendnet.com/TPE-TG81g_v2/datasheet/GE_datasheet_TPE-TG81g_%28V2.0R%29.pdf"
+      },
+      "title": "TRENDnet TPE-TG81g official datasheet",
+      "image_url": "https://www.trendnet.com/images/products/photos/TPE-TG81g_v21/TPE-TG81g_v2.1R_d01_1.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "265 x 183 x 44mm",
+          "265 x 183 x 44mm"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Acht Gigabit PoE+ Ports",
+          "Acht Gigabit PoE+ Ports"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9216,
+          "Jumbo Frames: 9 KB"
+        ]
+      }
+    },
+    {
+      "product_id": 1320,
+      "status": "not_found",
+      "brand": "TRENDnet",
+      "model": "TWG-431BR"
+    }
+  ]
+}

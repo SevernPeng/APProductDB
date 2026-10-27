@@ -1,8 +1,21 @@
 {% for row in rows %}
 <tr>
-  <td class="text-body-secondary">{{ row.display_group }}</td>
-  <td><span class="fw-semibold">{{ row.definition.display_name }}</span>{% if row.source_note %}<small class="spec-note text-body-secondary"> · {{ row.source_note }}</small>{% endif %}</td>
-  <td><span class="spec-value{% if row.display_value == 'Unknown' %} text-body-secondary{% elif row.display_value == 'Not Published' %} text-warning-emphasis{% elif row.display_value == 'Not Applicable' %} text-body-secondary{% endif %}">{{ row.display_value }}</span></td>
-  <td class="spec-source-meta">{% if row.source_url %}<a href="{{ row.source_url }}" target="_blank" rel="noopener noreferrer">Official source</a>{% else %}<span class="text-body-secondary">Unknown</span>{% endif %}<br><small class="text-body-secondary">{% if row.verified_date %}{{ row.verified_date|date:"Y-m-d" }}{% else %}Unknown{% endif %}</small></td>
+  <th scope="row">{{ row.display_name }}</th>
+  <td>
+    {% if edit_mode and row.edit_item %}
+      {{ row.edit_item.field }}
+      {% if row.edit_item.unit %}<div class="form-text">Unit: {{ row.edit_item.unit }}</div>{% endif %}
+      {% for error in row.edit_item.field.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+    {% elif edit_mode %}
+      <input class="form-control" value="{{ row.display_value }}" readonly aria-label="{{ row.display_name }} (calculated)">
+      <div class="form-text">Calculated automatically from the editable component specifications.</div>
+    {% elif row.use_two_columns %}
+      <ul class="spec-value spec-value-list spec-value-columns{% if row.display_value == 'Unknown' or row.display_value == 'Not Applicable' %} text-body-secondary{% elif row.display_value == 'Not Published' %} text-warning-emphasis{% endif %}">
+        {% for line in row.display_lines %}<li>{{ line }}</li>{% endfor %}
+      </ul>
+    {% else %}
+      <div class="spec-value{% if row.display_value == 'Unknown' %} text-body-secondary{% elif row.display_value == 'Not Published' %} text-warning-emphasis{% elif row.display_value == 'Not Applicable' %} text-body-secondary{% endif %}">{{ row.display_value|linebreaksbr }}</div>
+    {% endif %}
+  </td>
 </tr>
 {% endfor %}

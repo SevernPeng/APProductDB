@@ -3,6 +3,7 @@ from collections import Counter
 from pathlib import Path
 
 from django.core.management.base import BaseCommand, CommandError
+from django.core.management import call_command
 from django.db import transaction
 from openpyxl import load_workbook
 
@@ -48,6 +49,10 @@ SHEET_CONFIG = {
 }
 
 BRAND_ALIASES = {
+    "ruijie": "Ruijie",
+    "reyee": "Reyee",
+    "draytek": "DrayTek",
+    "instan on": "Instant On",
     "tp-link": "TP-Link",
     "tp-link ap 型号": "TP-Link",
     "ubituiti": "Ubiquiti",
@@ -124,12 +129,12 @@ def split_models(value):
 
 def parse_model(value):
     model = clean_text(value)
-    lifecycle = Product.LifecycleStatus.UNKNOWN
+    lifecycle = Product.LifecycleStatus.ACTIVE
     if re.search(r"\(\s*plan\s+eol\s*\)", model, re.IGNORECASE):
-        lifecycle = Product.LifecycleStatus.ANNOUNCED
+        lifecycle = Product.LifecycleStatus.EOL
         model = re.sub(r"\s*\(\s*plan\s+eol\s*\)\s*", "", model, flags=re.IGNORECASE)
     elif re.search(r"\(\s*eol\s*\)", model, re.IGNORECASE):
-        lifecycle = Product.LifecycleStatus.DISCONTINUED
+        lifecycle = Product.LifecycleStatus.EOL
         model = re.sub(r"\s*\(\s*eol\s*\)\s*", "", model, flags=re.IGNORECASE)
 
     hardware_version = ""
@@ -137,6 +142,14 @@ def parse_model(value):
     if version_match:
         hardware_version = f"V{version_match.group(1)}"
         model = model[: version_match.start()].strip()
+    else:
+        # Some benchmark sheets store a dotted hardware revision after the
+        # product model without a leading "V" (for example, "... KIT 3.0").
+        # Keeping it in the model creates a duplicate catalog product.
+        version_match = re.search(r"\s+(\d+\.\d+)$", model)
+        if version_match:
+            hardware_version = f"V{version_match.group(1)}"
+            model = model[: version_match.start()].strip()
     return model.strip(), hardware_version, lifecycle
 
 
@@ -166,9 +179,9 @@ def normalize_brand(header, model):
             return "Meraki", model
         return "Cisco", model
     if normalized_header == "others":
-        vendor_match = re.match(r"^(Mikrotik|MikroTik|Draytek)\s+(.+)$", model, re.IGNORECASE)
+        vendor_match = re.match(r"^(Mikrotik|Draytek|Grandstream)\s+(.+)$", model, re.IGNORECASE | re.DOTALL)
         if vendor_match:
-            vendor = "MikroTik" if vendor_match.group(1).casefold() == "mikrotik" else "DrayTek"
+            vendor = BRAND_ALIASES[vendor_match.group(1).casefold()]
             return vendor, vendor_match.group(2).strip()
         return "Other", model
     return brand_name, model
@@ -241,7 +254,10 @@ def upsert_product(
     if official_url and product.official_url != official_url:
         product.official_url = official_url
         changed.append("official_url")
-    if product.lifecycle_status == Product.LifecycleStatus.UNKNOWN and lifecycle_status != Product.LifecycleStatus.UNKNOWN:
+    if (
+        lifecycle_status != Product.LifecycleStatus.ACTIVE
+        and product.lifecycle_status != lifecycle_status
+    ):
         product.lifecycle_status = lifecycle_status
         changed.append("lifecycle_status")
     if not product.is_published:
@@ -397,6 +413,8 @@ class Command(BaseCommand):
                 rank = 0
                 for column_index, cell_value in enumerate(row[1:], start=1):
                     header = headers[column_index] if column_index < len(headers) else "Other"
+                    if clean_text(header).casefold() == "others":
+                        header, cell_value = normalize_brand(header, clean_text(cell_value))
                     for raw_competitor in split_models(cell_value):
                         competitor_model, competitor_hw, competitor_lifecycle = parse_model(raw_competitor)
                         brand_name, competitor_model = normalize_brand(header, competitor_model)
@@ -511,6 +529,7 @@ class Command(BaseCommand):
                     ProductModel.objects.filter(pk=product_model_id).update(active=False)
 
         workbook.close()
+        call_command("sync_wifi_standards", stdout=self.stdout)
         if options["dry_run"]:
             transaction.set_rollback(True)
         mode = "DRY RUN" if options["dry_run"] else "IMPORTED"

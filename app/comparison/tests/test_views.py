@@ -196,7 +196,72 @@ class ComparisonViewTests(TestCase):
         self.assertContains(response, "Not Applicable")
         self.assertContains(response, "Not Published")
         self.assertContains(response, "Unknown")
-        self.assertContains(response, "9220 Mbps")
+        self.assertNotContains(response, "Aggregate Rate")
+
+    def test_comparison_derives_streams_and_rates_from_workbook(self):
+        from comparison.services import build_comparison_rows, load_comparison_products
+
+        streams = SpecDefinition.objects.create(code="total_spatial_streams",
+            display_name="Total Spatial Streams", data_type="integer", group="Wireless", is_core=True)
+        ProductSpec.objects.create(product=self.eap772, definition=streams, value_status="unknown")
+        for code, label, text in (
+            ("matrix-test-009", "Antenna", "• 2.4 GHz: 2× 4.0 dBi\n• 5 GHz: 4× 5.0 dBi\n• 6 GHz: 2× 5.0 dBi"),
+            ("matrix-test-015", "Signal Rate", "• 6 GHz: 5.765 Gbps\n• 5 GHz: 8,648 Mbps\n• 2.4 GHz: 688 Mbps"),
+        ):
+            definition = SpecDefinition.objects.create(code=code, display_name=label,
+                data_type="text", group="Wireless", is_core=False)
+            ProductSpec.objects.create(product=self.eap772, definition=definition, value_text=text,
+                source_url="https://example.com/workbook")
+        self.eap772.specs.filter(definition__code__startswith="rate_").update(
+            value_status="unknown", value_number=None)
+
+        def rows():
+            return {r["code"]: r for r in build_comparison_rows(
+                load_comparison_products([self.eap772.pk, self.u7_pro.pk]))}
+
+        result = rows()
+        self.assertEqual(result["total_spatial_streams"]["values"][0]["display"], "8")
+        self.assertEqual(result["rate_5g_mbps"]["values"][0]["display"], "8648 Mbps")
+        self.assertNotIn("aggregate_rate_mbps", result)
+        self.assertEqual(result["rate_6g_mbps"]["values"][0]["source_url"], "https://example.com/workbook")
+        # Published MIMO takes precedence over antenna counts for that radio.
+        mimo = SpecDefinition.objects.create(code="mimo_5g", display_name="5 GHz MIMO", data_type="text")
+        ProductSpec.objects.create(product=self.eap772, definition=mimo, value_text="4×4:3 MIMO")
+        self.assertEqual(rows()["total_spatial_streams"]["values"][0]["display"], "7")
+        # Partial radio data must not be displayed as a complete total or as zero.
+        self.eap772.specs.filter(definition__code="matrix-test-015").update(value_text="5 GHz: 8648 Mbps")
+        self.assertNotIn("aggregate_rate_mbps", rows())
+
+    def test_wireless_functions_resolve_mesh_and_fast_roaming(self):
+        from comparison.services import build_comparison_rows, load_comparison_products
+
+        for code, name, kind in (("mesh_support", "Mesh Support", "boolean"),
+                                  ("fast_roaming", "Fast Roaming", "text")):
+            definition = SpecDefinition.objects.create(code=code, display_name=name,
+                data_type=kind, group="Management", is_core=True)
+            ProductSpec.objects.create(product=self.eap772, definition=definition, value_status="unknown")
+        functions = SpecDefinition.objects.create(code="matrix-wifi-016", display_name="Wireless Functions",
+            data_type="text", group="Wireless", is_core=False)
+        spec = ProductSpec.objects.create(product=self.eap772, definition=functions,
+            value_text="• Mesh\n• 802.11 k/v/r", source_url="https://example.com/functions")
+
+        def values():
+            return {r["code"]: r["values"][0] for r in build_comparison_rows(
+                load_comparison_products([self.eap772.pk, self.u7_pro.pk]))}
+
+        result = values()
+        self.assertEqual(result["mesh_support"]["display"], "Yes")
+        self.assertEqual(result["fast_roaming"], {"display": "802.11r", "source_url": spec.source_url})
+        for text, expected_mesh, expected_roaming in (
+            ("802.11k/v", "Unknown", "Unknown"),
+            ("Mesh: Not supported\n802.11r: Not supported", "No", "No"),
+            ("Mesh\n802.11k / 802.11v / 802.11r", "Yes", "802.11r"),
+        ):
+            spec.value_text = text
+            spec.save()
+            result = values()
+            self.assertEqual(result["mesh_support"]["display"], expected_mesh)
+            self.assertEqual(result["fast_roaming"]["display"], expected_roaming)
 
     def test_compare_product_selectors_are_searchable_autocomplete_fields(self):
         self.client.force_login(self.viewer)
@@ -206,6 +271,17 @@ class ComparisonViewTests(TestCase):
         self.assertContains(response, 'name="products"')
         self.assertContains(response, f'data-value="{self.eap772.pk}"')
         self.assertNotContains(response, '<select class="form-select" id="compare-product-')
+
+    def test_optional_selector_prioritizes_unselected_benchmark_products(self):
+        self.client.force_login(self.viewer)
+        response = self.client.get(self.comparison_url(self.eap772, self.u7_pro))
+
+        optional_slot = response.context["selector_slots"][2]
+        self.assertEqual(optional_slot["options"][0], self.rg_ap)
+        self.assertTrue(optional_slot["options"][0].is_benchmark_suggestion)
+        self.assertNotIn(self.eap772, optional_slot["options"])
+        self.assertNotIn(self.u7_pro, optional_slot["options"])
+        self.assertContains(response, ">Benchmark</span>", html=False)
 
     def test_compare_rejects_invalid_counts_and_unpublished_product(self):
         hidden = self.create_product(
@@ -301,8 +377,153 @@ class ComparisonViewTests(TestCase):
 
         self.assertNotContains(default_response, "PoE Output")
         self.assertContains(extended_response, "PoE Output")
-        self.assertContains(extended_response, "P2 · Power")
+        self.assertContains(extended_response, "HARDWARE FEATURES")
+        self.assertNotContains(extended_response, "P2 ·")
         self.assertContains(extended_response, 'id="include-extended"')
+
+    def test_competitor_first_still_uses_tp_link_template(self):
+        vendor_only = SpecDefinition.objects.create(
+            code="vendor_only",
+            display_name="Vendor-only Field",
+            group="Wireless",
+            data_type="text",
+        )
+        tp_link_template = ComparisonTemplate.objects.create(
+            category=self.category,
+            form_factor=Product.APType.CEILING,
+            name="TP-Link ceiling template",
+        )
+        competitor_template = ComparisonTemplate.objects.create(
+            category=self.category,
+            form_factor=Product.APType.OUTDOOR,
+            name="Competitor product-type template",
+        )
+        TemplateField.objects.create(
+            template=tp_link_template,
+            spec_definition=self.definitions["supported_bands"],
+            display_order=10,
+        )
+        TemplateField.objects.create(
+            template=competitor_template,
+            spec_definition=vendor_only,
+            display_order=10,
+        )
+        self.u7_pro.ap_type = Product.APType.OUTDOOR
+        self.u7_pro.save()
+        ProductSpec.objects.create(
+            product=self.u7_pro,
+            definition=vendor_only,
+            value_text="Must stay outside the comparison template",
+        )
+        self.client.force_login(self.viewer)
+
+        response = self.client.get(
+            self.comparison_url(self.u7_pro, self.eap772, extended="1")
+        )
+
+        self.assertContains(response, "Supported Wireless Bands")
+        self.assertNotContains(response, "Vendor-only Field")
+        self.assertNotContains(response, "Must stay outside the comparison template")
+
+    def test_imported_tp_link_layout_excludes_bridge_fields_and_keeps_management_rows(self):
+        bridge = SpecDefinition.objects.create(
+            code="bridge_modes",
+            display_name="Bridge / Operating Modes",
+            group="Wireless",
+            data_type="text",
+        )
+        polluted_template = ComparisonTemplate.objects.create(
+            category=self.category,
+            form_factor=Product.APType.CEILING,
+            name="Polluted generic ceiling template",
+        )
+        TemplateField.objects.create(
+            template=polluted_template,
+            spec_definition=bridge,
+            display_order=10,
+        )
+        ProductSpec.objects.create(
+            product=self.eap772,
+            definition=bridge,
+            value_text="Must not define the product layout",
+        )
+        interface = SpecDefinition.objects.create(
+            code="ethernet_interfaces",
+            display_name="Ethernet Interfaces",
+            group="Interfaces",
+            data_type="text",
+        )
+        anchor_interface = SpecDefinition.objects.create(
+            code="matrix-wifi-ceiling-interface",
+            display_name="Interface",
+            group="HARDWARE FEATURES",
+            data_type="text",
+            is_core=False,
+        )
+        ProductSpec.objects.create(
+            product=self.eap772,
+            definition=anchor_interface,
+            value_text="1x 10G RJ45",
+            source_note="Imported from ProductDB data 2.0.xlsx",
+        )
+        ProductSpec.objects.create(
+            product=self.u7_pro,
+            definition=interface,
+            value_text="1x 2.5G RJ45",
+        )
+        for order, label in enumerate(
+            ("Mobile APP", "Centralized Management", "SSH"),
+            start=1,
+        ):
+            anchor_definition = SpecDefinition.objects.create(
+                code=f"matrix-wifi-ceiling-{order:03d}",
+                display_name=label,
+                group="Management Features",
+                data_type="text",
+                is_core=False,
+            )
+            competitor_definition = SpecDefinition.objects.create(
+                code=f"matrix-competitor-{order:03d}",
+                display_name=label,
+                group="Management Features",
+                data_type="text",
+                is_core=False,
+            )
+            ProductSpec.objects.create(
+                product=self.eap772,
+                definition=anchor_definition,
+                value_text=f"TP-Link {label}",
+                source_note="Imported from ProductDB data 2.0.xlsx",
+            )
+            ProductSpec.objects.create(
+                product=self.u7_pro,
+                definition=competitor_definition,
+                value_text=f"Competitor {label}",
+                source_note="Imported from competitor source",
+            )
+
+        from comparison.services import build_comparison_rows, load_comparison_products
+
+        rows = build_comparison_rows(
+            load_comparison_products([self.eap772.pk, self.u7_pro.pk]),
+            include_extended=True,
+        )
+        names = [row["name"] for row in rows]
+        self.assertEqual(
+            [name for name in names if name in {"Mobile APP", "Centralized Management", "SSH"}],
+            ["Mobile APP", "Centralized Management", "SSH"],
+        )
+        self.assertNotIn("Bridge / Operating Modes", names)
+        interface_row = next(row for row in rows if row["name"] == "Interface")
+        self.assertEqual(
+            [value["display"] for value in interface_row["values"]],
+            ["1x 10G RJ45", "1x 2.5G RJ45"],
+        )
+        ssh_row = next(row for row in rows if row["name"] == "SSH")
+        self.assertEqual(
+            [value["display"] for value in ssh_row["values"]],
+            ["TP-Link SSH", "Competitor SSH"],
+        )
 
     def test_export_contains_current_products_rows_and_sources(self):
         self.client.force_login(self.viewer)
@@ -325,7 +546,7 @@ class ComparisonViewTests(TestCase):
         self.assertEqual(values[0][0], "Specification")
         self.assertIn("TP-Link EAP772", values[0])
         self.assertIn("Ubiquiti U7-Pro Source", values[0])
-        self.assertIn("Aggregate Rate", [row[0] for row in values])
+        self.assertNotIn("Aggregate Rate", [row[0] for row in values])
         poe_row = next(row for row in values if row[0] == "PoE Output")
         self.assertEqual(poe_row[1], '\'=HYPERLINK("unsafe")')
 

@@ -10,11 +10,14 @@ from django.urls import reverse
 
 from accounts.models import AccountProfile
 from audit.models import AuditLog
-from catalog.models import Brand, Category, Product, ProductSpec, SpecDefinition
+from catalog.models import (
+    Brand, Category, PriceSource, Product, ProductPriceSnapshot, ProductSpec,
+    ProductType, SpecDefinition,
+)
 from changes.models import ChangeRequest
 from changes.services import build_target_options, resolve_target
 from changes.validators import MAX_ATTACHMENT_SIZE, validate_change_attachment
-from comparison.models import ProductMatch
+from comparison.models import BenchmarkCase, ProductMatch
 
 
 class ChangeWorkflowTests(TestCase):
@@ -92,6 +95,17 @@ class ChangeWorkflowTests(TestCase):
         values.update(overrides)
         return ChangeRequest.objects.create(**values)
 
+    def inline_edit_post_data(self):
+        response = self.client.get(
+            reverse("product-detail", args=[self.product.pk]) + "?edit=1"
+        )
+        form = response.context["edit_form"]
+        return {
+            name: (form[name].value() if form[name].value() is not None else "")
+            for name in form.fields
+            if name not in {"product_image", "remove_image"}
+        }
+
     def test_all_authenticated_users_can_modify_and_only_owner_or_root_sees_history(self):
         suggest_url = reverse("changes:suggest", args=[self.product.pk])
         self.assertEqual(self.client.get(suggest_url).status_code, 302)
@@ -145,7 +159,7 @@ class ChangeWorkflowTests(TestCase):
             option["key"] for option in build_target_options(self.product)
         }
         self.assertIn("product:sku", option_keys)
-        self.assertIn("product:datasheet_url", option_keys)
+        self.assertNotIn("product:datasheet_url", option_keys)
         self.assertIn("product:launch_date", option_keys)
         self.assertIn("product:ap_type", option_keys)
         self.assertIn(f"spec:{secondary_spec.pk}", option_keys)
@@ -218,7 +232,7 @@ class ChangeWorkflowTests(TestCase):
         self.assertEqual(change.old_value, {"value_boolean": False})
         self.assertEqual(change.proposed_value, {"value_boolean": True})
 
-    def test_missing_category_specs_are_created_as_editable_unknown_fields(self):
+    def test_non_template_category_specs_are_not_created_as_placeholders(self):
         category_definition = SpecDefinition.objects.create(
             code="poe_budget",
             display_name="PoE Budget",
@@ -246,15 +260,12 @@ class ChangeWorkflowTests(TestCase):
             reverse("changes:suggest", args=[self.competitor.pk])
         )
         self.assertEqual(response.status_code, 200)
-        placeholder = ProductSpec.objects.get(
-            product=self.competitor,
-            definition=category_definition,
+        self.assertFalse(
+            ProductSpec.objects.filter(
+                product=self.competitor,
+                definition=category_definition,
+            ).exists()
         )
-        self.assertEqual(
-            placeholder.value_status,
-            ProductSpec.ValueStatus.UNKNOWN,
-        )
-        self.assertContains(response, f'value="spec:{placeholder.pk}"')
         self.assertFalse(
             ProductSpec.objects.filter(
                 product=self.competitor,
@@ -288,7 +299,7 @@ class ChangeWorkflowTests(TestCase):
         self.match.refresh_from_db()
         self.assertEqual(self.match.status, ProductMatch.Status.REJECTED)
 
-    def test_admin_can_add_and_delete_competitor_relationships(self):
+    def test_admin_can_reuse_existing_product_and_delete_competitor_relationship(self):
         second_competitor = Product.objects.create(
             brand=self.ubiquiti,
             category=self.category,
@@ -297,10 +308,13 @@ class ChangeWorkflowTests(TestCase):
         )
         self.client.force_login(self.admin)
         response = self.client.post(
-            reverse("changes:suggest", args=[self.product.pk]),
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
             {
                 "action": "add_match",
-                "competitor_product": second_competitor.pk,
+                "brand": self.ubiquiti.pk,
+                "model": "U7 Pro XG",
+                "region": second_competitor.region,
+                "hardware_version": second_competitor.hardware_version,
                 "match_type": ProductMatch.MatchType.PERFORMANCE,
                 "match_level": ProductMatch.MatchLevel.SECONDARY,
                 "rank": 3,
@@ -320,38 +334,28 @@ class ChangeWorkflowTests(TestCase):
         self.assertEqual(added.match_level, ProductMatch.MatchLevel.SECONDARY)
         self.assertEqual(added.match_score, 88)
         self.assertEqual(added.status, ProductMatch.Status.CONFIRMED)
-        add_change = ChangeRequest.objects.get(field_name="__add__")
-        self.assertEqual(add_change.status, ChangeRequest.Status.APPROVED)
+        self.assertEqual(Product.objects.filter(model_key="U7PROXG").count(), 1)
 
         response = self.client.post(
-            reverse("changes:suggest", args=[self.product.pk]),
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
             {
-                "target": f"match:{added.pk}:__delete__",
-                "reason": "This model is no longer a valid competitor",
+                "action": f"remove_match:{added.pk}",
             },
         )
         self.assertEqual(response.status_code, 302)
         added.refresh_from_db()
         self.assertEqual(added.status, ProductMatch.Status.REJECTED)
-        delete_change = ChangeRequest.objects.get(
-            target_match=added,
-            field_name="__delete__",
-        )
-        self.assertEqual(delete_change.status, ChangeRequest.Status.APPROVED)
 
-    def test_user_match_add_is_applied_immediately(self):
-        second_competitor = Product.objects.create(
-            brand=self.ubiquiti,
-            category=self.category,
-            model="U7-Lite",
-            ap_type=Product.APType.CEILING,
-        )
+    def test_user_match_add_creates_missing_product_immediately(self):
         self.client.force_login(self.contributor)
         response = self.client.post(
-            reverse("changes:suggest", args=[self.product.pk]),
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
             {
                 "action": "add_match",
-                "competitor_product": second_competitor.pk,
+                "brand": self.ubiquiti.pk,
+                "model": "U7-Lite",
+                "region": "US",
+                "hardware_version": "V1",
                 "match_type": ProductMatch.MatchType.DIRECT,
                 "match_level": ProductMatch.MatchLevel.CORE,
                 "relation_reason": "Same market segment",
@@ -360,15 +364,20 @@ class ChangeWorkflowTests(TestCase):
             },
         )
         self.assertEqual(response.status_code, 302)
+        second_competitor = Product.objects.get(
+            brand=self.ubiquiti,
+            model_key="U7LITE",
+            region="US",
+            hardware_version="V1",
+        )
         self.assertTrue(
             ProductMatch.objects.filter(
                 our_product=self.product,
                 competitor_product=second_competitor,
             ).exists()
         )
-        change = ChangeRequest.objects.get(field_name="__add__")
-        self.assertEqual(change.status, ChangeRequest.Status.APPROVED)
-        self.assertEqual(change.reviewed_by, self.contributor)
+        self.assertEqual(second_competitor.lifecycle_status, Product.LifecycleStatus.ACTIVE)
+        self.assertEqual(second_competitor.created_by, self.contributor)
         self.assertTrue(
             ProductMatch.objects.filter(
                 our_product=self.product,
@@ -452,30 +461,31 @@ class ChangeWorkflowTests(TestCase):
 
     def test_product_page_editor_updates_multiple_fields_with_audit_history(self):
         self.client.force_login(self.contributor)
-        response = self.client.get(
-            reverse("changes:edit-product", args=[self.product.pk])
-        )
+        edit_url = reverse("product-detail", args=[self.product.pk]) + "?edit=1"
+        response = self.client.get(edit_url)
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Edit page content")
+        self.assertContains(response, "Save all changes")
         self.assertContains(response, 'name="product_notes"')
         self.assertContains(response, f'name="spec_{self.spec.pk}"')
-        integer_input = str(response.context["form"][f"spec_{self.spec.pk}"])
+        integer_input = str(response.context["edit_form"][f"spec_{self.spec.pk}"])
         self.assertIn('step="1"', integer_input)
         self.assertIn('value="100"', integer_input)
         self.assertNotIn('value="100.000"', integer_input)
 
         post_data = {
             name: (
-                response.context["form"][name].value()
-                if response.context["form"][name].value() is not None
+                response.context["edit_form"][name].value()
+                if response.context["edit_form"][name].value() is not None
                 else ""
             )
-            for name in response.context["form"].fields
+            for name in response.context["edit_form"].fields
         }
+        post_data["edit_mode"] = "1"
+        post_data["action"] = "save_product"
         post_data["product_notes"] = "Updated on the product page"
         post_data[f"spec_{self.spec.pk}"] = "275"
         response = self.client.post(
-            reverse("changes:edit-product", args=[self.product.pk]),
+            reverse("product-detail", args=[self.product.pk]),
             post_data,
         )
 
@@ -493,27 +503,237 @@ class ChangeWorkflowTests(TestCase):
             2,
         )
 
+    def test_product_page_editor_updates_all_visible_content_sections(self):
+        product_type = ProductType.objects.create(
+            category=self.category, code="ceiling", name="Ceiling Mount",
+        )
+        source = PriceSource.objects.create(
+            code="syscom", name="SYSCOM México", base_url="https://www.syscom.mx",
+        )
+        price = ProductPriceSnapshot.objects.create(
+            source=source, product=self.product, external_id="123",
+            external_model=self.product.model, product_url="https://www.syscom.mx/old",
+            currency="USD", unit_price="120.00",
+        )
+        self.client.force_login(self.contributor)
+        edit_url = reverse("product-detail", args=[self.product.pk]) + "?edit=1"
+        response = self.client.get(edit_url)
+
+        for field_name in (
+            "identity_brand", "identity_model", "identity_product_name",
+            "identity_category", "identity_product_type", "identity_nom_certified",
+            "price_unit_price", "price_currency", "price_product_url",
+            f"match_{self.match.pk}_reason",
+        ):
+            self.assertContains(response, f'name="{field_name}"')
+
+        post_data = self.inline_edit_post_data()
+        post_data.update({
+            "edit_mode": "1", "action": "save_product",
+            "identity_model": "EAP772-V2",
+            "identity_product_name": "Omada Wi-Fi 7 Access Point",
+            "identity_product_type": str(product_type.pk),
+            "identity_nom_certified": "on",
+            "price_unit_price": "115.50",
+            "price_currency": "mxn",
+            "price_product_url": "https://www.syscom.mx/new",
+            f"match_{self.match.pk}_reason": "Updated benchmark rationale",
+        })
+        response = self.client.post(reverse("product-detail", args=[self.product.pk]), post_data)
+
+        self.assertRedirects(response, reverse("product-detail", args=[self.product.pk]))
+        self.product.refresh_from_db()
+        self.match.refresh_from_db()
+        price.refresh_from_db()
+        self.assertEqual(self.product.model, "EAP772-V2")
+        self.assertEqual(self.product.product_model.product_name, "Omada Wi-Fi 7 Access Point")
+        self.assertEqual(self.product.product_type, product_type)
+        self.assertTrue(self.product.has_nom)
+        self.assertEqual(self.match.reason, "Updated benchmark rationale")
+        self.assertEqual(str(price.unit_price), "115.5000")
+        self.assertEqual(price.currency, "MXN")
+        self.assertTrue(AuditLog.objects.filter(action="product.identity.updated").exists())
+        self.assertTrue(AuditLog.objects.filter(action="product.price.updated").exists())
+
     def test_product_page_editor_rejects_decimals_for_integer_specs(self):
         self.client.force_login(self.contributor)
-        url = reverse("changes:edit-product", args=[self.product.pk])
+        url = reverse("product-detail", args=[self.product.pk]) + "?edit=1"
         response = self.client.get(url)
         post_data = {
             name: (
-                response.context["form"][name].value()
-                if response.context["form"][name].value() is not None
+                response.context["edit_form"][name].value()
+                if response.context["edit_form"][name].value() is not None
                 else ""
             )
-            for name in response.context["form"].fields
+            for name in response.context["edit_form"].fields
         }
+        post_data["edit_mode"] = "1"
+        post_data["action"] = "save_product"
         post_data[f"spec_{self.spec.pk}"] = "275.5"
 
-        response = self.client.post(url, post_data)
+        response = self.client.post(reverse("product-detail", args=[self.product.pk]), post_data)
 
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Enter a whole number")
         self.spec.refresh_from_db()
         self.assertEqual(self.spec.value_number, 100)
         self.assertFalse(ChangeRequest.objects.exists())
+
+    def test_inline_editor_can_upload_and_remove_product_image(self):
+        from PIL import Image
+
+        self.client.force_login(self.contributor)
+        image_bytes = BytesIO()
+        Image.new("RGB", (24, 24), "white").save(image_bytes, format="PNG")
+        upload = SimpleUploadedFile(
+            "product.png",
+            image_bytes.getvalue(),
+            content_type="image/png",
+        )
+
+        upload_data = self.inline_edit_post_data()
+        upload_data.update({"edit_mode": "1", "action": "save_product", "product_image": upload})
+        response = self.client.post(
+            reverse("product-detail", args=[self.product.pk]),
+            upload_data,
+        )
+        self.assertEqual(response.status_code, 302)
+        self.product.refresh_from_db()
+        self.assertTrue(self.product.image)
+
+        remove_data = self.inline_edit_post_data()
+        remove_data.update({"edit_mode": "1", "action": "save_product", "remove_image": "on"})
+        response = self.client.post(
+            reverse("product-detail", args=[self.product.pk]),
+            remove_data,
+        )
+        self.assertEqual(response.status_code, 302)
+        self.product.refresh_from_db()
+        self.assertFalse(self.product.image)
+
+    def test_benchmark_manager_removal_hides_only_orphaned_competitor(self):
+        self.client.force_login(self.contributor)
+
+        response = self.client.post(
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
+            {"action": f"remove_match:{self.match.pk}"},
+        )
+
+        self.assertRedirects(
+            response,
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
+        )
+        self.match.refresh_from_db()
+        self.competitor.refresh_from_db()
+        self.assertEqual(self.match.status, ProductMatch.Status.REJECTED)
+        self.assertFalse(self.competitor.is_published)
+
+    def test_benchmark_manager_removal_keeps_competitor_with_another_match(self):
+        other_anchor = Product.objects.create(
+            brand=self.tp_link,
+            category=self.category,
+            model="EAP773",
+            ap_type=Product.APType.CEILING,
+        )
+        ProductMatch.objects.create(
+            our_product=other_anchor,
+            competitor_product=self.competitor,
+            match_type=ProductMatch.MatchType.DIRECT,
+            status=ProductMatch.Status.CONFIRMED,
+        )
+        self.client.force_login(self.contributor)
+
+        self.client.post(
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
+            {"action": f"remove_match:{self.match.pk}"},
+        )
+
+        self.competitor.refresh_from_db()
+        self.assertTrue(self.competitor.is_published)
+
+    def test_benchmark_manager_deduplicates_pair_and_remove_rejects_all_pair_records(self):
+        case = BenchmarkCase.objects.create(
+            anchor_product=self.product,
+            name="Imported benchmark",
+            region=self.product.region,
+        )
+        case_match = ProductMatch.objects.create(
+            our_product=self.product,
+            competitor_product=self.competitor,
+            benchmark_case=case,
+            region=self.product.region,
+            match_type=ProductMatch.MatchType.DIRECT,
+            status=ProductMatch.Status.CONFIRMED,
+        )
+        self.client.force_login(self.contributor)
+
+        response = self.client.get(
+            reverse("changes:edit-benchmarks", args=[self.product.pk])
+        )
+
+        self.assertEqual(len(response.context["matches"]), 1)
+        self.assertEqual(response.context["matches"][0].pk, case_match.pk)
+        self.assertContains(response, "Ubiquiti U7-Pro", count=1)
+
+        response = self.client.post(
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
+            {"action": f"remove_match:{case_match.pk}"},
+        )
+        self.assertEqual(response.status_code, 302)
+        self.assertFalse(
+            ProductMatch.objects.filter(
+                our_product=self.product,
+                competitor_product=self.competitor,
+            ).exclude(status=ProductMatch.Status.REJECTED).exists()
+        )
+        self.competitor.refresh_from_db()
+        self.assertFalse(self.competitor.is_published)
+
+    def test_benchmark_manager_reuses_hidden_competitor_and_opens_its_editor(self):
+        self.match.status = ProductMatch.Status.REJECTED
+        self.match.save(update_fields=("status", "updated_at"))
+        self.competitor.is_published = False
+        self.competitor.save(update_fields=("is_published", "updated_at"))
+        self.client.force_login(self.contributor)
+
+        response = self.client.post(
+            reverse("changes:edit-benchmarks", args=[self.product.pk]),
+            {
+                "action": "add_match",
+                "brand": self.ubiquiti.pk,
+                "model": "U7 Pro",
+                "region": self.competitor.region,
+                "hardware_version": self.competitor.hardware_version,
+                "match_type": ProductMatch.MatchType.DIRECT,
+                "match_level": ProductMatch.MatchLevel.CORE,
+            },
+        )
+
+        self.assertRedirects(
+            response,
+            reverse("product-detail", args=[self.competitor.pk]) + "?edit=1",
+        )
+        self.match.refresh_from_db()
+        self.competitor.refresh_from_db()
+        self.assertEqual(self.match.status, ProductMatch.Status.CONFIRMED)
+        self.assertTrue(self.competitor.is_published)
+
+    def test_product_editor_and_benchmark_manager_are_separate(self):
+        self.client.force_login(self.contributor)
+
+        product_editor = self.client.get(
+            reverse("product-detail", args=[self.product.pk]) + "?edit=1"
+        )
+        self.assertContains(product_editor, "Manage Benchmarks")
+        self.assertNotContains(product_editor, "Add competitor")
+        self.assertNotContains(product_editor, f"remove_match:{self.match.pk}")
+
+        benchmark_manager = self.client.get(
+            reverse("changes:edit-benchmarks", args=[self.product.pk])
+        )
+        self.assertContains(benchmark_manager, "Add Competitor Product")
+        self.assertContains(benchmark_manager, "Product Model")
+        self.assertNotContains(benchmark_manager, "Select a competitor model")
 
     def test_attachment_type_content_size_and_object_access_are_protected(self):
         self.client.force_login(self.contributor)

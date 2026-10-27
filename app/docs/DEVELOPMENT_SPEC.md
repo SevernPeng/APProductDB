@@ -29,7 +29,7 @@
 10. 第一批包含 20 个不同产品型号和 14 条已有对标关系。
 11. 原始和后续批量数据主要通过 Excel 管理和导入。
 12. 多国家或区域版本优先使用 US 版本；没有 US 页面时使用官方 Global 页面并明确标记。
-13. 规格数据只采用厂商官方产品页或官方 datasheet。
+13. 规格数据只采用厂商官方来源。
 14. 官网没有公开的参数不得猜测，应记录为缺失或 `Not Published`。
 15. 数据库和附件必须自动备份。
 
@@ -86,7 +86,7 @@ MVP 必须跑通以下闭环：
 | Excel | openpyxl | 读取和生成 `.xlsx` 文件 |
 | Web Server | Waitress | Windows 上运行 Django WSGI 应用 |
 | 静态文件 | WhiteNoise | 简化内部部署时的静态文件服务 |
-| 图片/附件 | Windows 本地目录 | 保存产品图片、datasheet 和证据附件 |
+| 图片/附件 | Windows 本地目录 | 保存产品图片和证据附件 |
 | 测试 | Django TestCase + pytest-django，可选 | 优先使用 Django 自带测试框架 |
 | 浏览器测试 | Playwright，可选 | 只覆盖关键流程 |
 | 代码版本 | Git | 所有源代码和迁移必须进入版本控制 |

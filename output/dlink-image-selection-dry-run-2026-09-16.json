@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "ok": 2
+  },
+  "results": [
+    {
+      "product_id": 1053,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-S2801SR",
+      "url": "https://www.dlink.com/en/products/dem-s2801sr",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-s2801sr",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_fiber_mode": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "operating_temperature_c": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_wavelength_nm": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf"
+      },
+      "title": "DEM-S2801SR 25GBASE-SR Multi-Mode 100 m SFP28 Transceiver | D-Link",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP28",
+          "SFP28"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "MMF"
+        ],
+        "dimensions_mm": [
+          "text",
+          "57.3 x 13.7 x 8.5 mm",
+          "57.3 x 13.7 x 8.5 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0 to 70 °C 0 to 70 °C",
+          "Operating Temperature 0 to 70 °C 0 to 70 °C"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25G SFP28 Transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850 nm"
+        ]
+      }
+    },
+    {
+      "product_id": 1347,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DIS-210G-06P",
+      "url": "https://www.dlink.com/en/products/dis-210g-06p",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dis-210g-06p",
+        "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.dlink.com/en/products/dis-210g-06p",
+        "fanless": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "lightning_protection_kv": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_standard": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "max_poe_per_port_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "management_methods": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "installation": "https://www.dlink.com/en/products/dis-210g-06p",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "max_power_consumption_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "switching_capacity_gbps": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "packet_forwarding_rate_mpps": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "mac_address_table": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_budget_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_ports": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "packet_buffer_mb": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "l2_features": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "l3_features": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "vlan_support": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "redundant_power": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf"
+      },
+      "title": "DIS-210G-06P Industrial 4-Port 1G PoE+ + 2-Port 1G SFP L2+ Managed Switch | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/210g-06p/product-images/dis210g06pa1image-hside-right.png",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "range of -40°C to 75°C, it ensures stable and reliable performance even in extreme conditions. Its industrial-grade IP40-rated enclosure protects against dust and solid particles larger than 1mm, while the fanless design and 6kV surge protection on all Ethernet ports help reduce the risk of downtime and enhance long-term reliability.",
+          "operating temperature range of -40°C to 75°C, it ensures stable and reliable performance even in extreme conditions. Its industrial-grade IP40-rated enclosure protects against dust and solid particles"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV surge protection"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "management_methods": [
+          "text",
+          "• Web-based GUI",
+          "• Web-based GUI"
+        ],
+        "installation": [
+          "text",
+          "DIN-Rail",
+          "DIN-Rail"
+        ],
+        "dimensions_mm": [
+          "text",
+          "138 x 108 x 44 mm",
+          "138 x 108 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          6.3,
+          "Power Consumption Maximum: 6.3 W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching Capacity 12 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          8.92,
+          "Packet Forwarding Rate 8.92 Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC Address Table 8K"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "total PoE budget of 120 W"
+        ],
+        "poe_ports": [
+          "number",
+          6,
+          "6 PoE ports"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          4.1,
+          "Packet Buffer Memory 4.1 MB"
+        ],
+        "l2_features": [
+          "text",
+          "• IEEE 802.1Q and port-based VLAN",
+          "• IEEE 802.1Q and port-based VLAN"
+        ],
+        "l3_features": [
+          "text",
+          "• IP interface",
+          "• IP interface"
+        ],
+        "vlan_support": [
+          "text",
+          "• 802.1Q",
+          "• 802.1Q"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    }
+  ]
+}

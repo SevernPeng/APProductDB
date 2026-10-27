@@ -1,0 +1,55 @@
+{
+  "stats": {
+    "ok": 2
+  },
+  "results": [
+    {
+      "product_id": 829,
+      "status": "ok",
+      "brand": "Buffalo",
+      "model": "LSW6-GT-5ESL",
+      "url": "https://www.buffalo.jp/product/detail/lsw6-gt-5esl_nbk.html",
+      "source_urls": [
+        "https://www.buffalo.jp/product/detail/lsw6-gt-5esl_nbk.html"
+      ],
+      "evidence_url": "https://www.buffalo.jp/product/detail/lsw6-gt-5esl_nbk.html",
+      "spec_sources": {
+        "dimensions_mm": "https://www.buffalo.jp/product/detail/lsw6-gt-5esl_nbk.html"
+      },
+      "title": "LSW6-GT-5ESL/NBK : スイッチングハブ | バッファロー",
+      "image_url": "https://www.buffalo.jp/webpim/product/image/L/LSW6-GT-5ESL_N/LSW6-GT-5ESL_NBK/LSW6-GT-5ESL_NBK__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "121×26×75mm",
+          "121×26×75mm"
+        ]
+      }
+    },
+    {
+      "product_id": 827,
+      "status": "ok",
+      "brand": "Buffalo",
+      "model": "LSW6-GT-8ESL",
+      "url": "https://www.buffalo.jp/product/detail/lsw6-gt-8esl_nbk.html",
+      "source_urls": [
+        "https://www.buffalo.jp/product/detail/lsw6-gt-8esl_nbk.html"
+      ],
+      "evidence_url": "https://www.buffalo.jp/product/detail/lsw6-gt-8esl_nbk.html",
+      "spec_sources": {
+        "dimensions_mm": "https://www.buffalo.jp/product/detail/lsw6-gt-8esl_nbk.html"
+      },
+      "title": "LSW6-GT-8ESL/NBK : スイッチングハブ | バッファロー",
+      "image_url": "https://www.buffalo.jp/webpim/product/image/L/LSW6-GT-8ESL_N/LSW6-GT-8ESL_NBK/LSW6-GT-8ESL_NBK__0100.jpg?small_light(dw=1200,dh=630,cw=1200,ch=630,da=l,cc=ffffff,q=80)",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "154×26×85mm",
+          "154×26×85mm"
+        ]
+      }
+    }
+  ]
+}

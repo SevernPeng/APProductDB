@@ -1,0 +1,1210 @@
+{
+  "stats": {
+    "error": 1,
+    "model_not_on_page": 2,
+    "not_found": 14,
+    "ok": 10,
+    "page_found_no_specs": 26
+  },
+  "results": [
+    {
+      "product_id": 993,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0105P-E/M(B)",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000008108/Data_Sheet/DS-3E0105P-E_MB_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000008108/Data_Sheet/DS-3E0105P-E_MB_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000008108/Data_Sheet/DS-3E0105P-E_MB_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0105P-E/M(B) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 992,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3E0105P-E/M(C)",
+      "url": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "lightning_protection_kv": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "ethernet_interfaces": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "switching_capacity_gbps": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "packet_forwarding_rate_mpps": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "mac_address_table": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "poe_budget_w": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "poe_standard": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "management_type": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf",
+        "extend_mode": "https://assets.hikvision.com/prd/public/all/doc/m000110625/DS-3E0105P-E_MC_Datasheet_20250110.pdf"
+      },
+      "title": "Hikvision DS-3E0105P-E/M(C) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0 °C to 40 °C (32 °F to 104 °F)",
+          "Operating Temperature\n \n0 °C to 40 °C (32 °F to 104 °F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          50.0,
+          "Max. Power Consumption 50 W"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge Protection"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "4 × 10/100 Mbps",
+          "4 × 10/100 Mbps"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          1.0,
+          "Switching Capacity 1 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          0.744,
+          "Packet Forwarding Rate 0.744 Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2 K",
+          "MAC Address Table 2 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          45.0,
+          "PoE Power Budget 45 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "extend_mode": [
+          "boolean",
+          true,
+          "EXTEND mode"
+        ]
+      }
+    },
+    {
+      "product_id": 933,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0106HP-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008116/Data_Sheet/DS-3E0106HP-E_Datasheet_20240627.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008116/Data_Sheet/DS-3E0106HP-E_Datasheet_20240627.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008116/Data_Sheet/DS-3E0106HP-E_Datasheet_20240627.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0106HP-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 991,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0106P-E/M",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000019321/Data_Sheet/DS-3E0106P-E_M_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000019321/Data_Sheet/DS-3E0106P-E_M_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000019321/Data_Sheet/DS-3E0106P-E_M_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0106P-E/M official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 990,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3E0109P-E/M(C)",
+      "url": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "ethernet_interfaces": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "switching_capacity_gbps": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "packet_forwarding_rate_mpps": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "mac_address_table": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "poe_budget_w": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "poe_standard": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "management_type": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf",
+        "extend_mode": "https://assets.hikvision.com/prd/public/all/doc/m000160712/DS-3E0109P-E_MC_Datasheet_20250110.pdf"
+      },
+      "title": "Hikvision DS-3E0109P-E/M(C) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0 °C to 40 °C (32 °F to 104 °F)",
+          "Operating Temperature\n \n0 °C to 40 °C (32 °F to 104 °F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          86.0,
+          "Max. Power Consumption 86 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "8 x 10/100 Mbps PoE port,1 × 10/100 Mbps RJ45 port",
+          "8 x 10/100 Mbps PoE port,1 × 10/100 Mbps RJ45 port"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          1.8,
+          "Switching Capacity 1.8 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          1.34,
+          "Packet Forwarding Rate 1.34 Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2 K",
+          "MAC Address Table 2 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          80.0,
+          "PoE Power Budget 80 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "extend_mode": [
+          "boolean",
+          true,
+          "EXTEND mode"
+        ]
+      }
+    },
+    {
+      "product_id": 805,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0310HP-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008117/Data_Sheet/DS-3E0310HP-E_Datasheet_20240308.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008117/Data_Sheet/DS-3E0310HP-E_Datasheet_20240308.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008117/Data_Sheet/DS-3E0310HP-E_Datasheet_20240308.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0310HP-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 806,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0310HP-E(C)",
+      "url": "https://www.hikvision.com/en/products/transmission/Network-Switches/unmanaged-switch/ds-3e0310hp-e-c-/",
+      "source_urls": [
+        "https://www.hikvision.com/en/products/transmission/Network-Switches/unmanaged-switch/ds-3e0310hp-e-c-/"
+      ],
+      "evidence_url": "https://www.hikvision.com/en/products/transmission/Network-Switches/unmanaged-switch/ds-3e0310hp-e-c-/",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0310HP-E(C) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 985,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0318P-E/M(C)",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000065873/Data_Sheet/DS-3E0318P-E_MC_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000065873/Data_Sheet/DS-3E0318P-E_MC_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000065873/Data_Sheet/DS-3E0318P-E_MC_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0318P-E/M(C) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 984,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0326P-E/M(C)",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000065874/Data_Sheet/DS-3E0326P-E_MC_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000065874/Data_Sheet/DS-3E0326P-E_MC_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000065874/Data_Sheet/DS-3E0326P-E_MC_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0326P-E/M(C) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 903,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0505HP-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000011310/Data_Sheet/DS-3E0505HP-E_Datasheet_20240315.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000011310/Data_Sheet/DS-3E0505HP-E_Datasheet_20240315.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000011310/Data_Sheet/DS-3E0505HP-E_Datasheet_20240315.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0505HP-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 901,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0505P-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008118/Data_Sheet/DS-3E0505P-E_Datasheet_20240308.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008118/Data_Sheet/DS-3E0505P-E_Datasheet_20240308.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000008118/Data_Sheet/DS-3E0505P-E_Datasheet_20240308.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0505P-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 988,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0505P-E/M",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007570/Data_Sheet/DS-3E0505P-E_M_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007570/Data_Sheet/DS-3E0505P-E_M_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007570/Data_Sheet/DS-3E0505P-E_M_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0505P-E/M official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 989,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3E0505P-E/M(B)",
+      "url": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "fanless": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "lightning_protection_kv": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "switching_capacity_gbps": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "packet_forwarding_rate_mpps": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "mac_address_table": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "poe_budget_w": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "poe_standard": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf",
+        "management_type": "https://assets.hikvision.com/prd/normal/all/doc/m000159393/DS-3E0505P-E_MB_Datasheet_20241101.pdf"
+      },
+      "title": "Hikvision DS-3E0505P-E/M(B) official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0 °C to 40 °C (32 °F to 104 °F)",
+          "Operating Temperature\n \n0 °C to 40 °C (32 °F to 104 °F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          50.0,
+          "Max. Power Consumption 50 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV Surge Protection"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          10.0,
+          "Switching Capacity 10 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          7.44,
+          "Packet Forwarding Rate 7.44 Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "2 K",
+          "MAC Address Table 2 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          45.0,
+          "Total PoE Power Budget 45 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ]
+      }
+    },
+    {
+      "product_id": 841,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0510HP-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000011311/Data_Sheet/DS-3E0510HP-E_Datasheet_20240319.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000011311/Data_Sheet/DS-3E0510HP-E_Datasheet_20240319.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000071/OFR000107/M000011311/Data_Sheet/DS-3E0510HP-E_Datasheet_20240319.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0510HP-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 840,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0510P-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007571/Data_Sheet/DS-3E0510P-E_M_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007571/Data_Sheet/DS-3E0510P-E_M_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007571/Data_Sheet/DS-3E0510P-E_M_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0510P-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 987,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0510P-E/M",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007571/Data_Sheet/DS-3E0510P-E_M_Datasheet_20240307.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007571/Data_Sheet/DS-3E0510P-E_M_Datasheet_20240307.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007571/Data_Sheet/DS-3E0510P-E_M_Datasheet_20240307.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0510P-E/M official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 835,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0520HP-E",
+      "url": "https://www.hikvision.com/content/dam/hikvision/fr/datasheet_06_2022/switch/ds-3e0520hp-e/Fiche-technique_DS-3E0520HP-E.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/fr/datasheet_06_2022/switch/ds-3e0520hp-e/Fiche-technique_DS-3E0520HP-E.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/fr/datasheet_06_2022/switch/ds-3e0520hp-e/Fiche-technique_DS-3E0520HP-E.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0520HP-E official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 986,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E0526P-E/M",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007573/Data_Sheet/DS-3E0526P-E_M_Datasheet_20240308.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007573/Data_Sheet/DS-3E0526P-E_M_Datasheet_20240308.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000000069/OFR000087/M000007573/Data_Sheet/DS-3E0526P-E_M_Datasheet_20240308.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E0526P-E/M official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 746,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E1505P-EI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011812/M000085149/Data_Sheet/DS-3E1505P-EI_Datasheet_20231023.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011812/M000085149/Data_Sheet/DS-3E1505P-EI_Datasheet_20231023.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011812/M000085149/Data_Sheet/DS-3E1505P-EI_Datasheet_20231023.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E1505P-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 750,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E1506P-EI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR013776/M000112293/Data_Sheet/DS-3E1506P-EI_M_Datasheet_20231023.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR013776/M000112293/Data_Sheet/DS-3E1506P-EI_M_Datasheet_20231023.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR013776/M000112293/Data_Sheet/DS-3E1506P-EI_M_Datasheet_20231023.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E1506P-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 788,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1508-EI"
+    },
+    {
+      "product_id": 758,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1510P-EI"
+    },
+    {
+      "product_id": 792,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1516-EI"
+    },
+    {
+      "product_id": 765,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E1518P-EI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011812/M000034947/Data_Sheet/DS-3E1518P-EI_Datasheet_20240428.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011812/M000034947/Data_Sheet/DS-3E1518P-EI_Datasheet_20240428.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011812/M000034947/Data_Sheet/DS-3E1518P-EI_Datasheet_20240428.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E1518P-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1342,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1518P-EI/M"
+    },
+    {
+      "product_id": 767,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E1518P-SI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011810/M000043338/Data_Sheet/DS-3E1518P-SI_Datasheet_20240425.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011810/M000043338/Data_Sheet/DS-3E1518P-SI_Datasheet_20240425.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR011810/M000043338/Data_Sheet/DS-3E1518P-SI_Datasheet_20240425.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E1518P-SI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 796,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1524-EI"
+    },
+    {
+      "product_id": 773,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3E1526P-EI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR013776/M000081863/Data_Sheet/DS-3E1526P-EI_M_Datasheet_20240428.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR013776/M000081863/Data_Sheet/DS-3E1526P-EI_M_Datasheet_20240428.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000068/S000005201/OFR013776/M000081863/Data_Sheet/DS-3E1526P-EI_M_Datasheet_20240428.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3E1526P-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1343,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1526P-EI/M"
+    },
+    {
+      "product_id": 774,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3E1526P-SI"
+    },
+    {
+      "product_id": 1207,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3T1506HP-SI-4P2F"
+    },
+    {
+      "product_id": 1198,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3T1510P-SI-FLT",
+      "url": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "ethernet_interfaces": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "mac_address_table": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "poe_budget_w": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "poe_standard": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "acl_security": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "vlan_support": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "qos_support": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf",
+        "link_aggregation": "https://assets.hikvision.com/prd/normal/all/doc/m000168827/DS-3T1510P-SI-FLT_Datasheet_20260706.pdf"
+      },
+      "title": "Hikvision DS-3T1510P-SI-FLT official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-40 ° C to 75 ° C (-40 ° F to 167 ° F)",
+          "Operating Temperature -40 ° C to 75 ° C (-40 ° F to 167 ° F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          250.0,
+          "Max. Power Consumption 250 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "8 × Gigabit PoE port,2 × Gigabit fiber optical port",
+          "8 × Gigabit PoE port,2 × Gigabit fiber optical port"
+        ],
+        "mac_address_table": [
+          "text",
+          "8 K",
+          "MAC Address Table 8 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          240.0,
+          "PoE Power Budget 240 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "acl_security": [
+          "text",
+          "Support ACL definitions based on source/destination MAC address, source/destination",
+          "Support ACL definitions based on source/destination MAC address, source/destination"
+        ],
+        "vlan_support": [
+          "text",
+          "VLAN is used for network scale planning and network health improvement.",
+          "VLAN is used for network scale planning and network health improvement."
+        ],
+        "qos_support": [
+          "text",
+          "QoS is used to allocate bandwidth to different services so as to provide end-to-end",
+          "QoS is used to allocate bandwidth to different services so as to provide end-to-end"
+        ],
+        "link_aggregation": [
+          "text",
+          "Link aggregation is used to aggregate multiple physical ports to form a logical port for",
+          "Link aggregation is used to aggregate multiple physical ports to form a logical port for"
+        ]
+      }
+    },
+    {
+      "product_id": 1348,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3T2506P"
+    },
+    {
+      "product_id": 244,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3WAP5112-EI"
+    },
+    {
+      "product_id": 243,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3WAP521-SI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR035719/M000113055/Data_Sheet/DS-3WAP521-SI_Datasheet_20240201-pdf.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR035719/M000113055/Data_Sheet/DS-3WAP521-SI_Datasheet_20240201-pdf.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR035719/M000113055/Data_Sheet/DS-3WAP521-SI_Datasheet_20240201-pdf.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3WAP521-SI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 189,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3WAP522-SI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR021775/M000113052/Data_Sheet/DS-3WAP522-SI_Datasheet_20240201-pdf.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR021775/M000113052/Data_Sheet/DS-3WAP522-SI_Datasheet_20240201-pdf.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR021775/M000113052/Data_Sheet/DS-3WAP522-SI_Datasheet_20240201-pdf.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3WAP522-SI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 318,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3WAP5312-EI",
+      "url": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+      "spec_sources": {
+        "ip_rating": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+        "power_method": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+        "antenna_gain_dbi": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+        "wireless_range": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+        "max_ssids": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf",
+        "wireless_security": "https://assets.hikvision.com/prd/normal/all/doc/m000171512/DS-3WAP5312-EI_Datasheet_20260228.pdf"
+      },
+      "title": "Hikvision DS-3WAP5312-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 5",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.0,
+          "Max. Power Consumption 15 W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3.7 dBi",
+          "Antenna Gain 2.4 GHz: 3.7 dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "Recommended Coverage Radius: 150 m",
+          "Range \nRecommended Coverage Radius: 150 m"
+        ],
+        "max_ssids": [
+          "number",
+          7,
+          "7"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 231,
+      "status": "model_not_on_page",
+      "brand": "Hikvision",
+      "model": "DS-3WAP6118-EI",
+      "url": "http://pro-av.hikvision.com/mena-en/products/transmission/wireless-access-point/wall-mount-ap/"
+    },
+    {
+      "product_id": 221,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3WAP6130-EI",
+      "url": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+        "max_channel_width_mhz": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+        "power_method": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+        "antenna_gain_dbi": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+        "wireless_range": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+        "max_ssids": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf",
+        "wireless_security": "https://assets.hikvision.com/prd/normal/all/doc/m000177243/DS-3WAP6130-EI_Datasheet_20260228.pdf"
+      },
+      "title": "Hikvision DS-3WAP6130-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          13.0,
+          "Max. Power Consumption 13 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 2.4 dBi",
+          "Antenna Gain 2.4 GHz: 2.4 dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "Recommended Coverage Range: 40 m",
+          "Range \nRecommended Coverage Range: 40 m"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-PSK",
+          "WPA3-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 222,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3WAP621E-SI",
+      "url": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+      "spec_sources": {
+        "rate_5g_mbps": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "supported_bands": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "max_channel_width_mhz": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "power_method": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "max_ssids": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "mimo_5g": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "total_spatial_streams": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf",
+        "wireless_security": "https://assets.hikvision.com/prd/public/all/doc/m000113056/DS-3WAP621E-SI_Datasheet_20240401-1.pdf"
+      },
+      "title": "Hikvision DS-3WAP621E-SI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "rate_5g_mbps": [
+          "number",
+          2400,
+          "5 GHz: 2400 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "5 GHz",
+          "5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 × 2",
+          "5 GHz, 2 × 2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          2,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 139,
+      "status": "error",
+      "brand": "Hikvision",
+      "model": "DS-3WAP622E-SI",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "product_id": 152,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3WAP622G-SI",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR021775/M000113053/Data_Sheet/DS-3WAP622G-SI_Datasheet_20240201-pdf.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR021775/M000113053/Data_Sheet/DS-3WAP622G-SI_Datasheet_20240201-pdf.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000013540/S000013559/OFR021775/M000113053/Data_Sheet/DS-3WAP622G-SI_Datasheet_20240201-pdf.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3WAP622G-SI official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 126,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3WAP6230-EI",
+      "url": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+        "max_channel_width_mhz": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+        "power_method": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+        "antenna_gain_dbi": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+        "wireless_range": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+        "max_ssids": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf",
+        "wireless_security": "https://assets.hikvision.com/prd/normal/all/doc/m000166836/DS-3WAP6230-EI_Datasheet_20260228.pdf"
+      },
+      "title": "Hikvision DS-3WAP6230-EI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          18.0,
+          "Max. Power Consumption 18 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at) / DC power",
+          "PoE (802.3at) / DC power"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3.5 dBi",
+          "Antenna Gain 2.4 GHz: 3.5 dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "Recommended Coverage Range: 140 m",
+          "Range \nRecommended Coverage Range: 140 m"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-PSK",
+          "WPA3-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 286,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3WAP623E-SI",
+      "url": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+      "spec_sources": {
+        "ip_rating": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+        "max_channel_width_mhz": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+        "power_method": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+        "antenna_gain_dbi": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf",
+        "max_ssids": "https://assets.hikvision.com/prd/normal/all/doc/m000113057/DS-3WAP623E-SI_Datasheet_20250925.pdf"
+      },
+      "title": "Hikvision DS-3WAP623E-SI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP68",
+          "IP68"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          14.4,
+          "Power Consumption Max. 14.4 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af) / 48 VDC",
+          "PoE (802.3af) / 48 VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 10 dBi",
+          "Antenna Gain  2.4 GHz: 10 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ]
+      }
+    },
+    {
+      "product_id": 307,
+      "status": "model_not_on_page",
+      "brand": "Hikvision",
+      "model": "DS-3WAP6618-EI",
+      "url": "http://pro-av.hikvision.com/mena-en/products/transmission/wireless-access-point/outdoor-ap/"
+    },
+    {
+      "product_id": 981,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3WF02C-5AC/O",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000061/S000000056/OFR000075/M000050901/Data_Sheet/Datasheet-of-DS-3WF02C-5AC_O_Wireless-Bridge_20230511.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000061/S000000056/OFR000075/M000050901/Data_Sheet/Datasheet-of-DS-3WF02C-5AC_O_Wireless-Bridge_20230511.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000061/S000000056/OFR000075/M000050901/Data_Sheet/Datasheet-of-DS-3WF02C-5AC_O_Wireless-Bridge_20230511.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3WF02C-5AC/O official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1335,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3WF02C-5N/O"
+    },
+    {
+      "product_id": 980,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3WF03C-5AC/O"
+    },
+    {
+      "product_id": 390,
+      "status": "ok",
+      "brand": "Hikvision",
+      "model": "DS-3WF0EC-2NT",
+      "url": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+      "source_urls": [
+        "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf"
+      ],
+      "evidence_url": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+      "spec_sources": {
+        "ip_rating": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+        "max_power_consumption_w": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+        "rate_2g_mbps": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+        "supported_bands": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+        "antenna_gain_dbi": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+        "wireless_range": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf",
+        "wireless_security": "https://assets.hikvision.com/prd/public/all/doc/m000152562/DS-3WF0EC-2NT_Datasheet_20250425.pdf"
+      },
+      "title": "Hikvision DS-3WF0EC-2NT official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP55",
+          "IP55"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.89,
+          "Power Consumption 1.89 W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          300,
+          "2.4Ghz 300Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz",
+          "2.4 GHz"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "7 dBi",
+          "Antenna Gain  7 dBi"
+        ],
+        "wireless_range": [
+          "text",
+          " 300 M",
+          "transmission distance  \n 300 M"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 982,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3WF0FA-5AC/O",
+      "url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000061/S000015960/OFR000075/M000119920/Data_Sheet/DS-3WF0FA-5AC_O_Datasheet_20240703.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000061/S000015960/OFR000075/M000119920/Data_Sheet/DS-3WF0FA-5AC_O_Datasheet_20240703.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000048/S000000061/S000015960/OFR000075/M000119920/Data_Sheet/DS-3WF0FA-5AC_O_Datasheet_20240703.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3WF0FA-5AC/O official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1339,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3WF5000S-SI-5ACG/2P"
+    },
+    {
+      "product_id": 983,
+      "status": "page_found_no_specs",
+      "brand": "Hikvision",
+      "model": "DS-3WF500T-2N/P",
+      "url": "https://www.hikvision.com/content/dam/hikvision/eu/product/transmission/Networking-Products_brochure-EU-Select-version-Oct.-2025-HR.pdf",
+      "source_urls": [
+        "https://www.hikvision.com/content/dam/hikvision/eu/product/transmission/Networking-Products_brochure-EU-Select-version-Oct.-2025-HR.pdf"
+      ],
+      "evidence_url": "https://www.hikvision.com/content/dam/hikvision/eu/product/transmission/Networking-Products_brochure-EU-Select-version-Oct.-2025-HR.pdf",
+      "spec_sources": {},
+      "title": "Hikvision DS-3WF500T-2N/P official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 1336,
+      "status": "not_found",
+      "brand": "Hikvision",
+      "model": "DS-3WFB-S-5ACG"
+    }
+  ]
+}

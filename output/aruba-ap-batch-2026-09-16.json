@@ -1,0 +1,493 @@
+{
+  "stats": {
+    "ok": 15
+  },
+  "results": [
+    {
+      "product_id": 159,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-503",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91503%e2%80%91us-dual-radio-2x2-802-11ax-wi%e2%80%91fi-6-campus-access-point/p/r8m99a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91503%e2%80%91us-dual-radio-2x2-802-11ax-wi%e2%80%91fi-6-campus-access-point/p/r8m99a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91503%e2%80%91us-dual-radio-2x2-802-11ax-wi%e2%80%91fi-6-campus-access-point/p/r8m99a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91503%e2%80%91us-dual-radio-2x2-802-11ax-wi%e2%80%91fi-6-campus-access-point/p/r8m99a"
+      },
+      "title": "HPE Aruba Networking AP‑503‑US Dual Radio 2x2 Wi‑Fi 6 Campus AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011859?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 225,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-505H",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91505h-us-dual-radio-802-11ax-2x2-14-ethernet-pse-usb-hospitality-ap/p/r3v48a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91505h-us-dual-radio-802-11ax-2x2-14-ethernet-pse-usb-hospitality-ap/p/r3v48a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91505h-us-dual-radio-802-11ax-2x2-14-ethernet-pse-usb-hospitality-ap/p/r3v48a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91505h-us-dual-radio-802-11ax-2x2-14-ethernet-pse-usb-hospitality-ap/p/r3v48a"
+      },
+      "title": "HPE Aruba Networking AP‑505H (US) Dual Radio 802.11ax 2x2 1+4 Ethernet PSE USB Hospitality AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00007110?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 88,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-535",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a",
+      "spec_sources": {
+        "mimo_2g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a",
+        "mimo_5g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a",
+        "total_spatial_streams": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91535-eg-dual-radio-4x4-802-11ax-internal-antennas-unified-campus-ap/p/jz333a"
+      },
+      "title": "HPE Aruba Networking AP‑535 (EG) Dual Radio 4x4 802.11ax Internal Antennas Unified Campus AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00002756?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "mimo_2g": [
+          "text",
+          "4x4 MIMO",
+          "2.4 GHz bands (4x4 MIMO"
+        ],
+        "mimo_5g": [
+          "text",
+          "4x4 MIMO",
+          "5 GHz and 2.4 GHz bands (4x4 MIMO"
+        ],
+        "total_spatial_streams": [
+          "number",
+          8,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 281,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-565",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91565-us-802-11ax-dual-2x2-radio-integrated-omni-antennas-outdoor-ap/p/r4w44a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91565-us-802-11ax-dual-2x2-radio-integrated-omni-antennas-outdoor-ap/p/r4w44a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91565-us-802-11ax-dual-2x2-radio-integrated-omni-antennas-outdoor-ap/p/r4w44a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91565-us-802-11ax-dual-2x2-radio-integrated-omni-antennas-outdoor-ap/p/r4w44a"
+      },
+      "title": "HPE Aruba Networking AP‑565 (US) 802.11ax Dual 2x2 Radio Integrated Omni Antennas Outdoor AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00009378?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 292,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-567",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91567-us-802-11ax-dual-2x2-radio-integrated-directional-antennas-outdoor-ap/p/r4w49a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91567-us-802-11ax-dual-2x2-radio-integrated-directional-antennas-outdoor-ap/p/r4w49a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91567-us-802-11ax-dual-2x2-radio-integrated-directional-antennas-outdoor-ap/p/r4w49a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91567-us-802-11ax-dual-2x2-radio-integrated-directional-antennas-outdoor-ap/p/r4w49a"
+      },
+      "title": "HPE Aruba Networking AP‑567 (US) 802.11ax Dual 2x2 Radio Integrated Directional Antennas Outdoor AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00009378?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 265,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-584",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91584-us-dual-radio-4x4-802-11ax-external-antennas-unified-outdoor-ap/p/r7s99a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91584-us-dual-radio-4x4-802-11ax-external-antennas-unified-outdoor-ap/p/r7s99a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91584-us-dual-radio-4x4-802-11ax-external-antennas-unified-outdoor-ap/p/r7s99a",
+      "spec_sources": {
+        "ip_rating": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91584-us-dual-radio-4x4-802-11ax-external-antennas-unified-outdoor-ap/p/r7s99a",
+        "power_method": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91584-us-dual-radio-4x4-802-11ax-external-antennas-unified-outdoor-ap/p/r7s99a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91584-us-dual-radio-4x4-802-11ax-external-antennas-unified-outdoor-ap/p/r7s99a"
+      },
+      "title": "HPE Aruba Networking AP‑584 (US) Dual Radio 4x4 802.11ax External Antennas Unified Outdoor AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011587?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3bt)",
+          "PoE (802.3bt)"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 211,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-605H",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91605h-us-2%e2%80%91radio-3%e2%80%91band-2x2-wi%e2%80%91fi-6e-14-eth-pse-usb-hospitality-ap/p/s0b62a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91605h-us-2%e2%80%91radio-3%e2%80%91band-2x2-wi%e2%80%91fi-6e-14-eth-pse-usb-hospitality-ap/p/s0b62a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91605h-us-2%e2%80%91radio-3%e2%80%91band-2x2-wi%e2%80%91fi-6e-14-eth-pse-usb-hospitality-ap/p/s0b62a",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91605h-us-2%e2%80%91radio-3%e2%80%91band-2x2-wi%e2%80%91fi-6e-14-eth-pse-usb-hospitality-ap/p/s0b62a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91605h-us-2%e2%80%91radio-3%e2%80%91band-2x2-wi%e2%80%91fi-6e-14-eth-pse-usb-hospitality-ap/p/s0b62a"
+      },
+      "title": "HPE Aruba Networking AP‑605H (US) 2‑Radio 3‑Band 2x2 Wi‑Fi 6E 1+4 ETH PSE USB Hospitality AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00012866?$product$#.png",
+      "wifi_standard": "Wi-Fi 6E",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 1274,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-721H",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91721h-us-2%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-11-eth-hospitality-ap/p/s6q70a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91721h-us-2%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-11-eth-hospitality-ap/p/s6q70a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91721h-us-2%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-11-eth-hospitality-ap/p/s6q70a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91721h-us-2%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-11-eth-hospitality-ap/p/s6q70a"
+      },
+      "title": "HPE Networking AP-721H US Wi-Fi 7 2x2 Hospitality AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00015454?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 203,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-723H",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91723h-usf1-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-12-eth-taa-dual-platform-hospitality-ap/p/s6q81a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91723h-usf1-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-12-eth-taa-dual-platform-hospitality-ap/p/s6q81a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91723h-usf1-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-12-eth-taa-dual-platform-hospitality-ap/p/s6q81a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91723h-usf1-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-12-eth-taa-dual-platform-hospitality-ap/p/s6q81a"
+      },
+      "title": "HPE Networking AP-723H US TAA Wi-Fi 7 Hospitality AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00015456?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 68,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-725",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91725-us-tri-radio-2x2-wi%e2%80%91fi-7-internal-antennas-10%e2%80%91pack-campus-access-point/p/s4a26a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91725-us-tri-radio-2x2-wi%e2%80%91fi-7-internal-antennas-10%e2%80%91pack-campus-access-point/p/s4a26a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91725-us-tri-radio-2x2-wi%e2%80%91fi-7-internal-antennas-10%e2%80%91pack-campus-access-point/p/s4a26a",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91725-us-tri-radio-2x2-wi%e2%80%91fi-7-internal-antennas-10%e2%80%91pack-campus-access-point/p/s4a26a",
+        "power_method": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91725-us-tri-radio-2x2-wi%e2%80%91fi-7-internal-antennas-10%e2%80%91pack-campus-access-point/p/s4a26a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91725-us-tri-radio-2x2-wi%e2%80%91fi-7-internal-antennas-10%e2%80%91pack-campus-access-point/p/s4a26a"
+      },
+      "title": "HPE Aruba Networking AP‑725 (US) Tri Radio 2x2 Wi‑Fi 7 Internal Antennas 10‑pack Campus Access Point | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00014324?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 198,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-725H",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91725h-us-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-14-eth-hospitality-ap/p/s6q93a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91725h-us-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-14-eth-hospitality-ap/p/s6q93a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91725h-us-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-14-eth-hospitality-ap/p/s6q93a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-networking-ap%e2%80%91725h-us-3%e2%80%91radio-2x2-802-11be-wi%e2%80%91fi-7-14-eth-hospitality-ap/p/s6q93a"
+      },
+      "title": "HPE Networking AP-725H US Wi-Fi 7 Hospitality AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00015456?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 27,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-745",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a",
+        "mimo_2g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a",
+        "mimo_5g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a",
+        "total_spatial_streams": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91745-us-tri-radio-4x4-2x2-wi%e2%80%91fi-7-internal-antennas-campus-access-point/p/s5r01a"
+      },
+      "title": "HPE Aruba Networking AP-745 US Tri Radio 4x4/2x2 Wi-Fi 7 Campus AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00014951?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "mimo_2g": [
+          "text",
+          "4x4",
+          "2.4 GHz, 4x4"
+        ],
+        "mimo_5g": [
+          "text",
+          "4x4",
+          "5 GHz, and 4x4"
+        ],
+        "total_spatial_streams": [
+          "number",
+          8,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 37,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-755",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91755-us-tri-radio-4x4-wi%e2%80%91fi-7-internal-antennas-5%e2%80%91pack-campus-access-point/p/s0h11a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91755-us-tri-radio-4x4-wi%e2%80%91fi-7-internal-antennas-5%e2%80%91pack-campus-access-point/p/s0h11a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91755-us-tri-radio-4x4-wi%e2%80%91fi-7-internal-antennas-5%e2%80%91pack-campus-access-point/p/s0h11a",
+      "spec_sources": {
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91755-us-tri-radio-4x4-wi%e2%80%91fi-7-internal-antennas-5%e2%80%91pack-campus-access-point/p/s0h11a"
+      },
+      "title": "HPE Aruba Networking AP‑755 (US) Tri Radio 4x4 Wi‑Fi 7 Internal Antennas 5‑pack Campus Access Point | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00013317?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 252,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "AP-765",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+      "spec_sources": {
+        "ip_rating": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "max_channel_width_mhz": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "mimo_2g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "mimo_5g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "mimo_6g": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "total_spatial_streams": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "mesh_support": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91765-us-flex-radio-2x2-wi%e2%80%91fi-7-dynamic-omni%e2%80%91directional-outdoor-ap/p/s4k19a"
+      },
+      "title": "HPE Aruba Networking AP-765 (US) Wi-Fi 7 Dynamic Outdoor AP | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00015030?$product$#.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2 MIMO",
+          "2.4 GHz, 5 GHz, and 6 GHz delivers up to 4.3 Gbps maximum 5 GHz + 6 GHz aggregate data rate, using dual 2x2 MIMO"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2 MIMO",
+          "5 GHz + 6 GHz aggregate data rate, using dual 2x2 MIMO"
+        ],
+        "mimo_6g": [
+          "text",
+          "4x4",
+          "6 GHz (4x4"
+        ],
+        "total_spatial_streams": [
+          "number",
+          8,
+          "Sum of per-radio MIMO streams"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 288,
+      "status": "ok",
+      "brand": "Aruba",
+      "model": "Ap-587",
+      "url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91587-us-dual-radio-4x4-wi%e2%80%91fi-6-internal-directional-outdoor-access-point/p/r7t09a",
+      "source_urls": [
+        "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91587-us-dual-radio-4x4-wi%e2%80%91fi-6-internal-directional-outdoor-access-point/p/r7t09a"
+      ],
+      "evidence_url": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91587-us-dual-radio-4x4-wi%e2%80%91fi-6-internal-directional-outdoor-access-point/p/r7t09a",
+      "spec_sources": {
+        "ip_rating": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91587-us-dual-radio-4x4-wi%e2%80%91fi-6-internal-directional-outdoor-access-point/p/r7t09a",
+        "power_method": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91587-us-dual-radio-4x4-wi%e2%80%91fi-6-internal-directional-outdoor-access-point/p/r7t09a",
+        "wireless_security": "https://buy.hpe.com/us/en/networking/wireless-devices/wlan-access-points/hpe-aruba-networking-ap%e2%80%91587-us-dual-radio-4x4-wi%e2%80%91fi-6-internal-directional-outdoor-access-point/p/r7t09a"
+      },
+      "title": "HPE Aruba Networking AP‑587 (US) Dual Radio 4x4 Wi‑Fi 6 Internal Directional Outdoor Access Point | HPE Store",
+      "image_url": "https://assets.ext.hpe.com/is/image/hpedam/s00011589?$product$#.png",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3bt)",
+          "PoE (802.3bt)"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    }
+  ]
+}

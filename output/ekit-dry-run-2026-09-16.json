@@ -1,0 +1,410 @@
+{
+  "stats": {
+    "not_found": 1,
+    "ok": 8
+  },
+  "results": [
+    {
+      "product_id": 1283,
+      "status": "not_found",
+      "brand": "eKit",
+      "model": "AP162E"
+    },
+    {
+      "product_id": 1282,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP265E",
+      "url": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992",
+      "source_urls": [
+        "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992"
+      ],
+      "evidence_url": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992",
+        "power_method": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992",
+        "mimo_2g": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992",
+        "mimo_5g": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992",
+        "total_spatial_streams": "https://ekit.huawei.com/ekit/front/ssr/en/product/1480064306648244992"
+      },
+      "title": "HUAWEI eKit AP265E",
+      "image_url": "https://ekit.huawei.com/epartner/s3/1758211727094_1758211727104.png?versionId=G00111995D95DF64FFFF880B19AC4BB1",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1281,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP266",
+      "url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+      "source_urls": [
+        "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416"
+      ],
+      "evidence_url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+      "spec_sources": {
+        "max_power_consumption_w": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+        "max_channel_width_mhz": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+        "power_method": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+        "mimo_2g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+        "mimo_5g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416",
+        "total_spatial_streams": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1862499490084291416"
+      },
+      "title": "HUAWEI eKit AP266",
+      "image_url": "https://ekit.huawei.com/epartner/s3/92ce570dc7c746698140e3d3b2fcad6c_1780311243334.png?versionId=G001119E82D1BAA2FFFF881178607900",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          9.4,
+          "power consumption [W] 9.4 W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1277,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP271E",
+      "url": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722",
+      "source_urls": [
+        "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722"
+      ],
+      "evidence_url": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722",
+        "power_method": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722",
+        "mimo_2g": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722",
+        "mimo_5g": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722",
+        "total_spatial_streams": "https://ekit.huawei.com/ekit/front/ssr/en/product/1626930002148196722"
+      },
+      "title": "HUAWEI eKit AP271E",
+      "image_url": "https://ekit.huawei.com/epartner/s3/1757866207082_1757866207090.png?versionId=G001119948FDA7BAFFFF8012168BCCF3",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / DC power",
+          "PoE (802.3af / 802.3at / 802.3bt) / DC power"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1268,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP361",
+      "url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522",
+      "source_urls": [
+        "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522"
+      ],
+      "evidence_url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522",
+      "spec_sources": {
+        "power_method": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522",
+        "mimo_2g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522",
+        "mimo_5g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522",
+        "total_spatial_streams": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1931229518437286522"
+      },
+      "title": "HUAWEI eKit AP361",
+      "image_url": "https://ekit.huawei.com/epartner/s3/6556f1e7d1cf487cbed3d734c2104153_1783339851314.png?versionId=G001119F37569F150000254B2C1B6590",
+      "wifi_standard": "",
+      "specs": {
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1262,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP362",
+      "url": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576",
+      "source_urls": [
+        "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576"
+      ],
+      "evidence_url": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576",
+        "power_method": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576",
+        "mimo_2g": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576",
+        "mimo_5g": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576",
+        "total_spatial_streams": "https://ekit.huawei.com/ekit/front/ssr/en/product/-40576"
+      },
+      "title": "HUAWEI eKit AP362",
+      "image_url": "https://ekit.huawei.com/epartner/s3/1754582988642_1754582988651.png?versionId=G0011198854BB801FFFF88150721F43B",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1251,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP371",
+      "url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169",
+      "source_urls": [
+        "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169"
+      ],
+      "evidence_url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169",
+      "spec_sources": {
+        "max_channel_width_mhz": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169",
+        "power_method": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169",
+        "mimo_2g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169",
+        "mimo_5g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169",
+        "total_spatial_streams": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238220408390169"
+      },
+      "title": "HUAWEI eKit AP371",
+      "image_url": "https://ekit.huawei.com/epartner/s3/278aaf9a84f548c1ad8bdace2366122e_1783076914753.png?versionId=G001119F27AA8695FFFF90117A6321DD",
+      "wifi_standard": "",
+      "specs": {
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1295,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP761",
+      "url": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+      "source_urls": [
+        "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400"
+      ],
+      "evidence_url": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+      "spec_sources": {
+        "ip_rating": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+        "power_method": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+        "antenna_gain_dbi": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+        "mimo_2g": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+        "mimo_5g": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400",
+        "total_spatial_streams": "https://ekit.huawei.com/ekit/front/ssr/en/product/1349309035639238400"
+      },
+      "title": "HUAWEI eKit AP761",
+      "image_url": "https://ekit.huawei.com/epartner/s3/1767524916656_1767524916663.png?versionId=G001119B88B1DE32FFFF900F497E5328",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP68",
+          "IP68"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4G: 10 dBi",
+          "Antenna gain\n 2.4G: 10 dBi"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 1288,
+      "status": "ok",
+      "brand": "eKit",
+      "model": "AP771",
+      "url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+      "source_urls": [
+        "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385"
+      ],
+      "evidence_url": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+      "spec_sources": {
+        "ip_rating": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+        "max_channel_width_mhz": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+        "power_method": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+        "mimo_2g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+        "mimo_5g": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385",
+        "total_spatial_streams": "https://ekit.huawei.com/brand/en/product/sme-network/wlan/1884238413041828385"
+      },
+      "title": "HUAWEI eKit AP771",
+      "image_url": "https://ekit.huawei.com/epartner/s3/front_left_1783679654151.png?versionId=G001119F4B9799670000214500C46498",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP65",
+          "IP65"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz): 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz): 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    }
+  ]
+}

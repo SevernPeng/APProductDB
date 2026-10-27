@@ -43,29 +43,4 @@
   </div>
 </div>
 
-{% if product.brand.is_own_brand %}
-<div class="card border-0 shadow-sm mt-4">
-  <div class="card-header bg-white">
-    <strong>Add Competitor Benchmark</strong>
-  </div>
-  <div class="card-body">
-    <form method="post" enctype="multipart/form-data" novalidate>
-      {% csrf_token %}
-      <input type="hidden" name="action" value="add_match">
-      {% if add_match_form.non_field_errors %}<div class="alert alert-danger">{{ add_match_form.non_field_errors }}</div>{% endif %}
-      <div class="row g-3">
-        {% for field in add_match_form %}
-          <div class="{% if field.name == 'relation_reason' or field.name == 'request_reason' or field.name == 'attachment' %}col-12{% else %}col-md-6{% endif %}">
-            <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
-            {{ field }}
-            {% if field.help_text %}<div class="form-text">{{ field.help_text }}</div>{% endif %}
-            {% for error in field.errors %}<div class="text-danger small">{{ error }}</div>{% endfor %}
-          </div>
-        {% endfor %}
-      </div>
-      <button class="btn btn-success mt-3" type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-{% endif %}
 {% endblock %}

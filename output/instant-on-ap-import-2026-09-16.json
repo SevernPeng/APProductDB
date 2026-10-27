@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "ok": 1,
+    "page_found_no_specs": 4
+  },
+  "results": [
+    {
+      "product_id": 1267,
+      "status": "page_found_no_specs",
+      "brand": "Instant On",
+      "model": "AP21",
+      "url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-21.html",
+      "source_urls": [
+        "https://www.hpe.com/us/en/instant-on/access-points/access-point-21.html"
+      ],
+      "evidence_url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-21.html",
+      "spec_sources": {},
+      "title": "HPE Networking Instant On Access Point AP21 | HPE Networking Instant On | HPE",
+      "image_url": "https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/instant-on/products/Instant-On-Access-Point-AP21-OG-16-9.jpg",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {}
+    },
+    {
+      "product_id": 1263,
+      "status": "page_found_no_specs",
+      "brand": "Instant On",
+      "model": "AP22",
+      "url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-22.html",
+      "source_urls": [
+        "https://www.hpe.com/us/en/instant-on/access-points/access-point-22.html"
+      ],
+      "evidence_url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-22.html",
+      "spec_sources": {},
+      "title": "HPE Networking Instant On Access Point AP22 | HPE Networking Instant On | HPE",
+      "image_url": "https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/instant-on/products/Instant-On-Access-Point-AP22-OG-16-9.jpg",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {}
+    },
+    {
+      "product_id": 1301,
+      "status": "page_found_no_specs",
+      "brand": "Instant On",
+      "model": "AP22D",
+      "url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-22d.html",
+      "source_urls": [
+        "https://www.hpe.com/us/en/instant-on/access-points/access-point-22d.html"
+      ],
+      "evidence_url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-22d.html",
+      "spec_sources": {},
+      "title": "HPE Networking Instant On Access Point AP22D | HPE Networking Instant On | HPE",
+      "image_url": "https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/instant-on/products/Instant-On-Access-Point-AP22D-OG-16-9.jpg",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {}
+    },
+    {
+      "product_id": 1255,
+      "status": "page_found_no_specs",
+      "brand": "Instant On",
+      "model": "AP25",
+      "url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-25.html",
+      "source_urls": [
+        "https://www.hpe.com/us/en/instant-on/access-points/access-point-25.html"
+      ],
+      "evidence_url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-25.html",
+      "spec_sources": {},
+      "title": "HPE Networking Instant On Access Point AP25 | HPE Networking Instant On | HPE",
+      "image_url": "https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/instant-on/products/Instant-On-Access-Point-AP25-OG-16-9.jpg",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {}
+    },
+    {
+      "product_id": 1293,
+      "status": "ok",
+      "brand": "Instant On",
+      "model": "AP27",
+      "url": "https://www.hpe.com/us/en/instant-on/access-points/access-point-27.html",
+      "source_urls": [
+        "https://www.hpe.com/us/en/instant-on/access-points/access-point-27.html",
+        "https://arubanetworking.hpe.com/techdocs/hardware/instantonaps/ap27/ig/AP27_IG_EN.pdf"
+      ],
+      "evidence_url": "https://arubanetworking.hpe.com/techdocs/hardware/instantonaps/ap27/ig/AP27_IG_EN.pdf",
+      "spec_sources": {
+        "power_method": "https://arubanetworking.hpe.com/techdocs/hardware/instantonaps/ap27/ig/AP27_IG_EN.pdf",
+        "mesh_support": "https://arubanetworking.hpe.com/techdocs/hardware/instantonaps/ap27/ig/AP27_IG_EN.pdf"
+      },
+      "title": "HPE Networking Instant On Access Point AP27 | HPE Networking Instant On | HPE",
+      "image_url": "https://www.hpe.com/content/dam/hpe/shared-publishing/images-norend/instant-on/products/Instant-On-Access-Point-AP27-OG-16-9.jpg",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "mesh"
+        ]
+      }
+    }
+  ]
+}

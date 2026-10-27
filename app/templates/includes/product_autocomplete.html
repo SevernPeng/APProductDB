@@ -24,7 +24,7 @@
         data-value="{{ option.pk }}"
         data-label="{{ option.brand.name }} {{ option.model }} · {{ option.category.name }} · {{ option.region }}{% if option.hardware_version %} · {{ option.hardware_version }}{% endif %}"
         data-search="{{ option.brand.name }} {{ option.model }} {{ option.category.name }} {{ option.region }} {{ option.hardware_version }}"
-      ><strong>{{ option.brand.name }} {{ option.model }}</strong><small class="text-body-secondary d-block">{{ option.category.name }} · {{ option.region }}{% if option.hardware_version %} · {{ option.hardware_version }}{% endif %}</small></button>
+      ><span class="d-flex align-items-center justify-content-between gap-2"><strong>{{ option.brand.name }} {{ option.model }}</strong>{% if option.is_benchmark_suggestion %}<span class="badge rounded-pill text-bg-primary fw-normal">Benchmark</span>{% endif %}</span><small class="text-body-secondary d-block">{{ option.category.name }} · {{ option.region }}{% if option.hardware_version %} · {{ option.hardware_version }}{% endif %}</small></button>
     {% empty %}
       <div class="list-group-item text-body-secondary">No products available</div>
     {% endfor %}

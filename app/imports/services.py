@@ -139,8 +139,7 @@ class ProductRow:
     existing_id: int | None = None
     category: Category | None = None
     product_type: ProductType | None = None
-    lifecycle_status: str = Product.LifecycleStatus.UNKNOWN
-    datasheet_url: str = ""
+    lifecycle_status: str = Product.LifecycleStatus.ACTIVE
     launch_date: date | None = None
 
     @property
@@ -660,7 +659,7 @@ def _build_modern_import_plan(job, workbook):
 
         lifecycle_status = (
             _text(_row_value(row, headers, "lifecycle_status"))
-            or Product.LifecycleStatus.UNKNOWN
+            or Product.LifecycleStatus.ACTIVE
         )
         if lifecycle_status not in lifecycle_values:
             plan.issues.append(
@@ -673,13 +672,9 @@ def _build_modern_import_plan(job, workbook):
                     f"lifecycle_status must be one of: {', '.join(sorted(lifecycle_values))}.",
                 )
             )
-            lifecycle_status = Product.LifecycleStatus.UNKNOWN
+            lifecycle_status = Product.LifecycleStatus.ACTIVE
         official_url = _text(_row_value(row, headers, "official_url"))
-        datasheet_url = _text(_row_value(row, headers, "datasheet_url"))
-        for column_name, url in (
-            ("official_url", official_url),
-            ("datasheet_url", datasheet_url),
-        ):
+        for column_name, url in (("official_url", official_url),):
             if url:
                 try:
                     url_validator(url)
@@ -774,7 +769,6 @@ def _build_modern_import_plan(job, workbook):
             category=product_type.category,
             product_type=product_type,
             lifecycle_status=lifecycle_status,
-            datasheet_url=datasheet_url,
             launch_date=launch_date,
         )
         plan.products.append(product_row)
@@ -1315,7 +1309,6 @@ def execute_import_job(job):
                 product.wifi_standard = row.wifi_standard
                 product.lifecycle_status = row.lifecycle_status
                 product.official_url = row.official_url
-                product.datasheet_url = row.datasheet_url
                 product.launch_date = row.launch_date
                 product.notes = row.notes
                 product.is_published = True

@@ -17,14 +17,6 @@ def product_image_upload_to(instance, filename):
     return f"products/{uuid.uuid4().hex}{suffix}"
 
 
-def datasheet_upload_to(instance, filename):
-    suffix = Path(filename).suffix.lower()[:10] or ".pdf"
-    return (
-        f"datasheets/{instance.product.brand.slug}/"
-        f"{instance.product.model_key}/{uuid.uuid4().hex}{suffix}"
-    )
-
-
 class TimestampedModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -107,10 +99,9 @@ class ProductModel(TimestampedModel):
     """Brand-owned model identity shared by regional/hardware variants."""
 
     class LifecycleStatus(models.TextChoices):
-        UNKNOWN = "unknown", "Unknown"
         ACTIVE = "active", "Active"
-        ANNOUNCED = "announced", "Announced"
         DISCONTINUED = "discontinued", "Discontinued"
+        EOL = "eol", "EOL"
 
     brand = models.ForeignKey(
         Brand,
@@ -131,7 +122,7 @@ class ProductModel(TimestampedModel):
     lifecycle_status = models.CharField(
         max_length=20,
         choices=LifecycleStatus.choices,
-        default=LifecycleStatus.UNKNOWN,
+        default=LifecycleStatus.ACTIVE,
         db_index=True,
     )
     active = models.BooleanField(default=True)
@@ -164,10 +155,9 @@ class Product(TimestampedModel):
         OTHER = "other", "Other"
 
     class LifecycleStatus(models.TextChoices):
-        UNKNOWN = "unknown", "Unknown"
         ACTIVE = "active", "Active"
-        ANNOUNCED = "announced", "Announced"
         DISCONTINUED = "discontinued", "Discontinued"
+        EOL = "eol", "EOL"
 
     brand = models.ForeignKey(Brand, on_delete=models.PROTECT, related_name="products")
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name="products")
@@ -192,6 +182,7 @@ class Product(TimestampedModel):
     region = models.CharField(max_length=50, default="US", db_index=True)
     hardware_version = models.CharField(max_length=100, blank=True)
     sku = models.CharField(max_length=150, blank=True)
+    nom_records = models.JSONField(default=list, blank=True, editable=False)
     ap_type = models.CharField(
         max_length=20,
         choices=APType.choices,
@@ -203,10 +194,9 @@ class Product(TimestampedModel):
     lifecycle_status = models.CharField(
         max_length=20,
         choices=LifecycleStatus.choices,
-        default=LifecycleStatus.UNKNOWN,
+        default=LifecycleStatus.ACTIVE,
     )
     official_url = models.URLField(blank=True)
-    datasheet_url = models.URLField(blank=True)
     launch_date = models.DateField(null=True, blank=True)
     image = models.ImageField(upload_to=product_image_upload_to, blank=True)
     notes = models.TextField(blank=True)
@@ -273,6 +263,12 @@ class Product(TimestampedModel):
         return f"{self.brand} {self.model} ({self.region}{version})"
 
     @property
+    def has_nom(self):
+        from .nom import has_current_nom
+
+        return has_current_nom(self.nom_records)
+
+    @property
     def aggregate_rate_mbps(self):
         rate_codes = ("rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps")
         cached_specs = getattr(self, "_prefetched_objects_cache", {}).get("specs")
@@ -287,6 +283,89 @@ class Product(TimestampedModel):
                 if spec.definition.code in rate_codes
             )
         return sum((value or Decimal("0") for value in values), Decimal("0"))
+
+
+class PriceSource(TimestampedModel):
+    code = models.SlugField(max_length=50, unique=True)
+    name = models.CharField(max_length=100)
+    base_url = models.URLField()
+    active = models.BooleanField(default=True)
+    last_synced_at = models.DateTimeField(null=True, blank=True)
+    last_sync_status = models.CharField(max_length=20, blank=True)
+    last_sync_message = models.TextField(blank=True)
+
+    class Meta:
+        ordering = ("name",)
+
+    def __str__(self):
+        return self.name
+
+
+class ProductPriceListing(TimestampedModel):
+    source = models.ForeignKey(
+        PriceSource,
+        on_delete=models.PROTECT,
+        related_name="product_listings",
+    )
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE,
+        related_name="price_listings",
+    )
+    external_id = models.CharField(max_length=100)
+    external_model = models.CharField(max_length=200)
+    product_url = models.URLField()
+    active = models.BooleanField(default=True)
+    last_checked_at = models.DateTimeField(null=True, blank=True)
+    last_seen_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        ordering = ("source", "product")
+        constraints = [
+            models.UniqueConstraint(
+                fields=("source", "product"),
+                name="catalog_unique_product_price_listing",
+            ),
+        ]
+        indexes = [
+            models.Index(
+                fields=("source", "external_id"),
+                name="catalog_price_external_idx",
+            ),
+        ]
+
+    def __str__(self):
+        return f"{self.product} · {self.source} · {self.external_model}"
+
+
+class ProductPriceSnapshot(TimestampedModel):
+    source = models.ForeignKey(
+        PriceSource,
+        on_delete=models.PROTECT,
+        related_name="price_snapshots",
+    )
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE,
+        related_name="price_snapshots",
+    )
+    external_id = models.CharField(max_length=100, blank=True)
+    external_model = models.CharField(max_length=200)
+    product_url = models.URLField()
+    currency = models.CharField(max_length=3, default="USD")
+    unit_price = models.DecimalField(max_digits=14, decimal_places=4)
+    list_price = models.DecimalField(max_digits=14, decimal_places=4, null=True, blank=True)
+    special_price = models.DecimalField(max_digits=14, decimal_places=4, null=True, blank=True)
+    tax_included = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ("-created_at", "-pk")
+        indexes = [
+            models.Index(fields=("product", "source", "-created_at"), name="catalog_price_product_idx"),
+        ]
+
+    def __str__(self):
+        return f"{self.product} · {self.source} · {self.currency} {self.unit_price}"
 
 
 class SpecDefinition(TimestampedModel):
@@ -479,7 +558,7 @@ class SourceDocument(TimestampedModel):
     document_type = models.CharField(max_length=30, choices=DocumentType.choices)
     title = models.CharField(max_length=250)
     url = models.URLField(max_length=500, blank=True)
-    file = models.FileField(upload_to=datasheet_upload_to, blank=True)
+    file = models.FileField(upload_to="source-documents/", blank=True)
     region = models.CharField(max_length=50, blank=True)
     document_version = models.CharField(max_length=100, blank=True)
     published_date = models.DateField(null=True, blank=True)
@@ -497,79 +576,6 @@ class SourceDocument(TimestampedModel):
 
     def __str__(self):
         return self.title
-
-
-class DatasheetIngestion(TimestampedModel):
-    class SourceType(models.TextChoices):
-        URL = "url", "Datasheet URL"
-        UPLOAD = "upload", "Uploaded file"
-
-    class Status(models.TextChoices):
-        PENDING = "pending", "Pending"
-        PROCESSING = "processing", "Processing"
-        VALIDATED = "validated", "Validated"
-        REJECTED = "rejected", "Rejected"
-        FAILED = "failed", "Failed"
-
-    class ExtractionMethod(models.TextChoices):
-        RULES = "rules", "Rules"
-        AI = "ai", "AI"
-        HYBRID = "hybrid", "AI + rules"
-
-    product = models.ForeignKey(
-        Product,
-        on_delete=models.CASCADE,
-        related_name="datasheet_ingestions",
-    )
-    source_type = models.CharField(max_length=10, choices=SourceType.choices)
-    source_url = models.URLField(max_length=500, blank=True)
-    uploaded_file = models.FileField(upload_to=datasheet_upload_to, blank=True)
-    file_sha256 = models.CharField(max_length=64, blank=True, db_index=True)
-    status = models.CharField(
-        max_length=20,
-        choices=Status.choices,
-        default=Status.PENDING,
-        db_index=True,
-    )
-    validation_message = models.TextField(blank=True)
-    detected_model = models.CharField(max_length=150, blank=True)
-    page_count = models.PositiveIntegerField(null=True, blank=True)
-    extracted_spec_count = models.PositiveIntegerField(default=0)
-    retained_spec_count = models.PositiveIntegerField(default=0)
-    extraction_method = models.CharField(
-        max_length=20,
-        choices=ExtractionMethod.choices,
-        default=ExtractionMethod.RULES,
-    )
-    ai_model = models.CharField(max_length=100, blank=True)
-    ai_spec_count = models.PositiveIntegerField(default=0)
-    average_confidence = models.DecimalField(
-        max_digits=4,
-        decimal_places=3,
-        null=True,
-        blank=True,
-    )
-    extraction_details = models.TextField(blank=True)
-    requested_by = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        null=True,
-        blank=True,
-        on_delete=models.SET_NULL,
-        related_name="datasheet_ingestions",
-    )
-    processed_at = models.DateTimeField(null=True, blank=True)
-
-    class Meta:
-        ordering = ("-created_at", "-pk")
-        indexes = [
-            models.Index(
-                fields=("product", "status"),
-                name="catalog_ds_product_status",
-            )
-        ]
-
-    def __str__(self):
-        return f"{self.product} ({self.get_source_type_display()}): {self.get_status_display()}"
 
 
 class SpecEvidence(TimestampedModel):

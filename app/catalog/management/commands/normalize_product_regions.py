@@ -135,7 +135,6 @@ class Command(BaseCommand):
             ChangeRequest.objects.filter(target_product=source).update(target_product=target)
             for field in (
                 "official_url",
-                "datasheet_url",
                 "image",
                 "notes",
                 "wifi_standard",

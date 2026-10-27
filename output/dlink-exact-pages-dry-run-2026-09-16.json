@@ -1,0 +1,754 @@
+{
+  "stats": {
+    "ok": 11
+  },
+  "results": [
+    {
+      "product_id": 1122,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-310GT",
+      "url": "https://www.dlink.com/en/products/dem-310gt",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-310gt",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf",
+        "accessory_wavelength_nm": "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf",
+        "accessory_fiber_mode": "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf",
+        "accessory_power_w": "https://www.dlink.com/en/-/media/business_products/dem/dem-310gt/datasheet/dem300-seriesdatasheetv301ww.pdf"
+      },
+      "title": "DEM-310GT 1-Port Mini GBIC Module for 1000BaseLX (LC Duplex) | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/310gt/dem-310gt-left.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          1310,
+          "1310 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single-Mode"
+        ],
+        "accessory_power_w": [
+          "number",
+          3.3,
+          "3.3"
+        ]
+      }
+    },
+    {
+      "product_id": 1068,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-410T",
+      "url": "https://www.dlink.com/en/products/dem-410t",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-410t",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_wavelength_nm": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_fiber_mode": "https://www.dlink.com/en/-/media/business_products/dem/dem-410t/datasheet/dem_400-series-datasheet-en-eu.pdf"
+      },
+      "title": "DEM-410T SFP+ 10GBASE-T Copper Transceiver | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/410t/dem410ta2image-lside.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ45",
+          "RJ45"
+        ],
+        "dimensions_mm": [
+          "text",
+          "13.7 x 68 x 8.5 mm",
+          "13.7 x 68 x 8.5 mm"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP+ Module series are hot-swappable SFP+ transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1076,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-431XT",
+      "url": "https://www.dlink.com/en/products/dem-431xt",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-431xt"
+      ],
+      "evidence_url": "https://www.dlink.com/en/products/dem-431xt",
+      "spec_sources": {
+        "dimensions_mm": "https://www.dlink.com/en/products/dem-431xt",
+        "accessory_interface_type": "https://www.dlink.com/en/products/dem-431xt",
+        "accessory_connector_type": "https://www.dlink.com/en/products/dem-431xt",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/products/dem-431xt",
+        "accessory_wavelength_nm": "https://www.dlink.com/en/products/dem-431xt",
+        "accessory_fiber_mode": "https://www.dlink.com/en/products/dem-431xt"
+      },
+      "title": "DEM-431XT 10GBASE-SR SFP+ Multi-Mode Transceiver (300m) | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/431xt/hq/dem431xtside.png",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "14.8 x 56.5 x 11.85 mm",
+          "14.8 x 56.5 x 11.85 mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "MIN.: -11.1 dBm",
+          "MIN.: -11.1 dBm"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "Duplex LC Connector",
+          "Duplex LC Connector"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G Ethernet"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1086,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-432XT",
+      "url": "https://www.dlink.com/en/products/dem-432xt",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-432xt",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_wavelength_nm": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf",
+        "accessory_fiber_mode": "https://www.dlink.com/en/-/media/business_products/dem/dem-432xt/datasheet/dem_400-series-datasheet-en-eu.pdf"
+      },
+      "title": "DEM-432XT 10GBase-LR SFP+ Transceiver (10 Km) | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/432xt/images/dem432xtd1image-lfront.png",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "13.7 x 68 x 8.5 mm",
+          "13.7 x 68 x 8.5 mm"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ45",
+          "RJ45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G SFP+ Module series are hot-swappable SFP+ transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1154,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-CB100Q28",
+      "url": "https://www.dlink.com/en/products/dem-cb100q28",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-cb100q28",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-cb100q28/datasheet/demcb100q28-demcb100q284s28a1datasheetv100ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-cb100q28/datasheet/demcb100q28-demcb100q284s28a1datasheetv100ww.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.dlink.com/en/products/dem-cb100q28",
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-cb100q28/datasheet/demcb100q28-demcb100q284s28a1datasheetv100ww.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/products/dem-cb100q28",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/-/media/business_products/dem/dem-cb100q28/datasheet/demcb100q28-demcb100q284s28a1datasheetv100ww.pdf"
+      },
+      "title": "DEM-CB100Q28 100G QSFP28 to QSFP28 1 m Direct Attach Stacking Cable | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/cb100q28/demcb100q28a1image-lfront.png",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-40 to 75 °C (-40 to 167 °F)",
+          "Operating Temperature \n\n \n -40 to 75 °C (-40 to 167 °F)"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "QSFP28",
+          "QSFP28"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "QSFP28 Cable Assembly",
+          "QSFP28 Cable Assembly"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          100.0,
+          "100G QSFP28 connection cables with optional 4 x 25G SFP"
+        ]
+      }
+    },
+    {
+      "product_id": 1176,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-CB100S",
+      "url": "https://www.dlink.com/en/products/dem-cb100s",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-cb100s",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-cbx00s/dem_cb100s_dem_cb300s_datasheet_en_eu.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-cbx00s/dem_cb100s_dem_cb300s_datasheet_en_eu.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-cbx00s/dem_cb100s_dem_cb300s_datasheet_en_eu.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/products/dem-cb100s",
+        "accessory_compatibility": "https://www.dlink.com/en/products/dem-cb100s",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/-/media/business_products/dem/dem-cbx00s/dem_cb100s_dem_cb300s_datasheet_en_eu.pdf"
+      },
+      "title": "DEM-CB100S 100 cm 10GbE Direct Attach SFP+ Cable | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/cb100s/demcb100sa1image-lfront.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "SFP+",
+          "SFP+"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "DGS-3420 Series",
+          "DGS-3420 Series"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G Passive SFP"
+        ]
+      }
+    },
+    {
+      "product_id": 1168,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-CB300S",
+      "url": "https://www.dlink.com/en/products/dem-cb300s",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-cb300s"
+      ],
+      "evidence_url": "https://www.dlink.com/en/products/dem-cb300s",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.dlink.com/en/products/dem-cb300s",
+        "accessory_connector_type": "https://www.dlink.com/en/products/dem-cb300s",
+        "accessory_compatibility": "https://www.dlink.com/en/products/dem-cb300s"
+      },
+      "title": "DEM-CB300S \t 300 cm 10GbE Direct Attach SFP+ Cable | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/cb300s/demcb300sa1image-lfront.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "SFP+",
+          "SFP+"
+        ],
+        "accessory_compatibility": [
+          "text",
+          "DGS-3420 Series",
+          "DGS-3420 Series"
+        ]
+      }
+    },
+    {
+      "product_id": 1053,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DEM-S2801SR",
+      "url": "https://www.dlink.com/en/products/dem-s2801sr",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dem-s2801sr",
+        "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_fiber_mode": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "operating_temperature_c": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_connector_type": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_data_rate_gbps": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf",
+        "accessory_wavelength_nm": "https://www.dlink.com/en/-/media/business_products/dem/dem-s28/datasheet/dems28-series-datasheet-en-eu.pdf"
+      },
+      "title": "DEM-S2801SR 25GBASE-SR Multi-Mode 100 m SFP28 Transceiver | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dem/s28/dems2810lra1image-lside.png",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP28",
+          "SFP28"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "MMF"
+        ],
+        "dimensions_mm": [
+          "text",
+          "57.3 x 13.7 x 8.5 mm",
+          "57.3 x 13.7 x 8.5 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0 to 70 °C 0 to 70 °C",
+          "Operating Temperature 0 to 70 °C 0 to 70 °C"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          25.0,
+          "25G SFP28 Transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850 nm"
+        ]
+      }
+    },
+    {
+      "product_id": 1201,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DIS-100G-8SW",
+      "url": "https://www.dlink.com/en/products/dis-100g-8sw",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dis-100g-8sw",
+        "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "max_power_consumption_w": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "fanless": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "ethernet_interfaces": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "switching_capacity_gbps": "https://www.dlink.com/en/products/dis-100g-8sw",
+        "management_methods": "https://www.dlink.com/en/products/dis-100g-8sw",
+        "operating_temperature_c": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "poe_budget_w": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "poe_standard": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "max_poe_per_port_w": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf",
+        "redundant_power": "https://www.dlink.com/en/-/media/business_products/dis/100g-8sw/datasheet/dis100ga1datasheetv200ww.pdf"
+      },
+      "title": "DIS-100G-8SW 8-Port Gigabit Unmanaged Industrial Switch | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dis/100g-8sw/dis100g8swfront.png",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "112.2 x 29.1 x 89.4 \nmm",
+          "112.2 x 29.1 x 89.4 \nmm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          3.18,
+          "Power Consumptions • Maximum: 3.18 W"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "combinations including 10/100/1000BASE-T non-PoE or PoE ports, and SFP ports. These",
+          "combinations including 10/100/1000BASE-T non-PoE or PoE ports, and SFP ports. These"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          16.0,
+          "Switching Capacity 16 Gbps"
+        ],
+        "management_methods": [
+          "text",
+          "Cloud Network Management",
+          "Cloud Network Management"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "(-40 ~ 75 °C)",
+          "operating temperature (-40 ~ 75 °C)"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "total PoE budget of 120 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 1345,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DIS-210G-06",
+      "url": "https://www.dlink.com/en/products/dis-210g-06",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dis-210g-06",
+        "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.dlink.com/en/products/dis-210g-06",
+        "fanless": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "lightning_protection_kv": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "management_methods": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "installation": "https://www.dlink.com/en/products/dis-210g-06",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "max_power_consumption_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "switching_capacity_gbps": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "packet_forwarding_rate_mpps": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "mac_address_table": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_budget_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_standard": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_ports": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "max_poe_per_port_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "packet_buffer_mb": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "l2_features": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "l3_features": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "vlan_support": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "redundant_power": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf"
+      },
+      "title": "DIS-210G-06 Industrial 4-Port 1G + 2-Port 1G SFP L2+ Managed Switch | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/210g-06/product-images/dis210g06a1image-hside-right.png",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "range of -40°C to 75°C, it ensures stable and reliable performance even in extreme conditions. Its industrial-grade IP40-rated enclosure protects against dust and solid particles larger than 1mm, while the fanless design and 6kV surge protection on all Ethernet ports help reduce the risk of downtime and enhance long-term reliability.",
+          "operating temperature range of -40°C to 75°C, it ensures stable and reliable performance even in extreme conditions. Its industrial-grade IP40-rated enclosure protects against dust and solid particles"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV surge protection"
+        ],
+        "management_methods": [
+          "text",
+          "• Web-based GUI",
+          "• Web-based GUI"
+        ],
+        "installation": [
+          "text",
+          "DIN-Rail",
+          "DIN-Rail"
+        ],
+        "dimensions_mm": [
+          "text",
+          "138 x 108 x 44 mm",
+          "138 x 108 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          6.3,
+          "Power Consumption Maximum: 6.3 W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching Capacity 12 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          8.92,
+          "Packet Forwarding Rate 8.92 Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC Address Table 8K"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "total PoE budget of 120 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          6,
+          "6 PoE ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          4.1,
+          "Packet Buffer Memory 4.1 MB"
+        ],
+        "l2_features": [
+          "text",
+          "• IEEE 802.1Q and port-based VLAN",
+          "• IEEE 802.1Q and port-based VLAN"
+        ],
+        "l3_features": [
+          "text",
+          "• IP interface",
+          "• IP interface"
+        ],
+        "vlan_support": [
+          "text",
+          "• 802.1Q",
+          "• 802.1Q"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 1347,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DIS-210G-06P",
+      "url": "https://www.dlink.com/en/products/dis-210g-06p",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dis-210g-06p",
+        "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.dlink.com/en/products/dis-210g-06p",
+        "fanless": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "lightning_protection_kv": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_standard": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "max_poe_per_port_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "management_methods": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "installation": "https://www.dlink.com/en/products/dis-210g-06p",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "max_power_consumption_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "switching_capacity_gbps": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "packet_forwarding_rate_mpps": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "mac_address_table": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_budget_w": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "poe_ports": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "packet_buffer_mb": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "l2_features": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "l3_features": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "vlan_support": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf",
+        "redundant_power": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/dis210gseriesa1datasheetv101ww.pdf"
+      },
+      "title": "DIS-210G-06P Industrial 4-Port 1G PoE+ + 2-Port 1G SFP L2+ Managed Switch | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dis/210g-series/210g-06p/assets/dis210g06p-uninterrupted-power-redundancy.png?h=480&w=560&la=en-GL&hash=5B2EFC58F00AF10F6D2622B6E5D63C68",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "range of -40°C to 75°C, it ensures stable and reliable performance even in extreme conditions. Its industrial-grade IP40-rated enclosure protects against dust and solid particles larger than 1mm, while the fanless design and 6kV surge protection on all Ethernet ports help reduce the risk of downtime and enhance long-term reliability.",
+          "operating temperature range of -40°C to 75°C, it ensures stable and reliable performance even in extreme conditions. Its industrial-grade IP40-rated enclosure protects against dust and solid particles"
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6 kV surge protection"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "management_methods": [
+          "text",
+          "• Web-based GUI",
+          "• Web-based GUI"
+        ],
+        "installation": [
+          "text",
+          "DIN-Rail",
+          "DIN-Rail"
+        ],
+        "dimensions_mm": [
+          "text",
+          "138 x 108 x 44 mm",
+          "138 x 108 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          6.3,
+          "Power Consumption Maximum: 6.3 W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          12.0,
+          "Switching Capacity 12 Gbps"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          8.92,
+          "Packet Forwarding Rate 8.92 Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC Address Table 8K"
+        ],
+        "poe_budget_w": [
+          "number",
+          120.0,
+          "total PoE budget of 120 W"
+        ],
+        "poe_ports": [
+          "number",
+          6,
+          "6 PoE ports"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          4.1,
+          "Packet Buffer Memory 4.1 MB"
+        ],
+        "l2_features": [
+          "text",
+          "• IEEE 802.1Q and port-based VLAN",
+          "• IEEE 802.1Q and port-based VLAN"
+        ],
+        "l3_features": [
+          "text",
+          "• IP interface",
+          "• IP interface"
+        ],
+        "vlan_support": [
+          "text",
+          "• 802.1Q",
+          "• 802.1Q"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    }
+  ]
+}

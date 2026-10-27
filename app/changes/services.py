@@ -20,7 +20,6 @@ PRODUCT_FIELDS = {
     "sku": "SKU",
     "lifecycle_status": "Lifecycle Status",
     "official_url": "Official URL",
-    "datasheet_url": "Datasheet URL",
     "launch_date": "Launch Date",
     "notes": "Notes",
 }
@@ -331,7 +330,7 @@ def parse_proposed_value(selection, raw_value):
             raise ValidationError("Invalid AP Type value.")
         if field_name == "lifecycle_status" and value not in Product.LifecycleStatus.values:
             raise ValidationError("Invalid Lifecycle Status value.")
-        if field_name in {"official_url", "datasheet_url"} and value:
+        if field_name == "official_url" and value:
             URLValidator()(value)
         if field_name == "launch_date" and value:
             try:

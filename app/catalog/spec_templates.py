@@ -24,7 +24,7 @@ SPEC_DEFINITIONS = {
     "rate_2g_mbps": spec("2.4 GHz Max Rate", "Performance", "decimal", "Mbps", filterable=True, direction="higher", category="access-point"),
     "rate_5g_mbps": spec("5 GHz Max Rate", "Performance", "decimal", "Mbps", filterable=True, direction="higher", category="access-point"),
     "rate_6g_mbps": spec("6 GHz Max Rate", "Performance", "decimal", "Mbps", filterable=True, direction="higher", category="access-point"),
-    "max_channel_width_mhz": spec("Max Channel Width", "Wireless", "integer", "MHz", filterable=True, direction="higher", category="access-point"),
+    "max_channel_width_mhz": spec("Band Width", "Wireless", "integer", "MHz", filterable=True, direction="higher", category="access-point"),
     "antenna_type": spec("Antenna Type", "Wireless", category="access-point"),
     "antenna_gain_dbi": spec("Antenna Gain", "Wireless", unit="dBi", direction="higher", category="access-point"),
     "beamwidth": spec("Antenna Beamwidth", "Wireless", category="wireless-bridge"),
@@ -126,6 +126,8 @@ SPEC_DEFINITIONS = {
     "gre_tunnel": spec("GRE Tunnel", "Layer 3", "boolean", category="managed-switches"),
     "isp_features": spec("ISP Features", "Features", category="managed-switches"),
     "management_type": spec("Management Type", "Management", category="unmanaged-easy-smart-switches"),
+    "flow_control": spec("Flow Control", "Software Features", category="unmanaged-easy-smart-switches"),
+    "transmission_method": spec("Transmission Method", "Software Features", category="unmanaged-easy-smart-switches"),
     "vlan_support": spec("VLAN", "Features", category="unmanaged-easy-smart-switches"),
     "qos_support": spec("QoS", "Features", category="unmanaged-easy-smart-switches"),
     "link_aggregation": spec("Link Aggregation", "Features", category="unmanaged-easy-smart-switches"),
@@ -180,11 +182,13 @@ TEMPLATES = (
         "category_slug": "access-point",
         "form_factor": "",
         "description": "Indoor ceiling, desktop and general-purpose access points.",
-        "fields": fields(
-            "supported_bands", "total_spatial_streams", "mimo_2g", "mimo_5g", "mimo_6g",
-            "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps", "max_channel_width_mhz",
-            "ethernet_interfaces", "power_method", "max_clients",
-        ) + [
+        "fields": fields("supported_bands") + [
+            ("total_spatial_streams", "p1"), ("mimo_2g", "p1"),
+            ("mimo_5g", "p1"), ("mimo_6g", "p1"),
+            ("rate_2g_mbps", "p1"), ("rate_5g_mbps", "p1"),
+            ("rate_6g_mbps", "p1"), ("max_channel_width_mhz", "p1"),
+            ("ethernet_interfaces", "p1"), ("power_method", "p1"),
+            ("max_clients", "p1"),
             ("antenna_type", "p1"), ("antenna_gain_dbi", "p1"), ("max_ssids", "p1"),
             ("centralized_management", "p1"), ("mesh_support", "p1"), ("fast_roaming", "p1"),
             ("wireless_security", "p1"),
@@ -195,11 +199,14 @@ TEMPLATES = (
         "category_slug": "access-point",
         "form_factor": "outdoor",
         "description": "Outdoor access points with weather, range and surge characteristics.",
-        "fields": fields(
-            "supported_bands", "total_spatial_streams", "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps",
-            "max_channel_width_mhz", "ethernet_interfaces", "power_method", "max_clients", "ip_rating",
-            "antenna_type", "antenna_gain_dbi", "wireless_range", "lightning_protection_kv",
-        ) + [
+        "fields": fields("supported_bands") + [
+            ("total_spatial_streams", "p1"), ("rate_2g_mbps", "p1"),
+            ("rate_5g_mbps", "p1"), ("rate_6g_mbps", "p1"),
+            ("max_channel_width_mhz", "p1"), ("ethernet_interfaces", "p1"),
+            ("power_method", "p1"), ("max_clients", "p1"),
+            ("ip_rating", "p1"), ("antenna_type", "p1"),
+            ("antenna_gain_dbi", "p1"), ("wireless_range", "p1"),
+            ("lightning_protection_kv", "p1"),
             ("centralized_management", "p1"), ("mesh_support", "p1"),
             ("fast_roaming", "p1"), ("wireless_security", "p1"),
         ] + COMMON_PHYSICAL,
@@ -209,10 +216,11 @@ TEMPLATES = (
         "category_slug": "access-point",
         "form_factor": "wall_plate",
         "description": "Wall-plate access points with downlink and PoE passthrough characteristics.",
-        "fields": fields(
-            "supported_bands", "total_spatial_streams", "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps",
-            "ethernet_interfaces", "power_method", "poe_output", "max_clients",
-        ) + [
+        "fields": fields("supported_bands") + [
+            ("total_spatial_streams", "p1"), ("rate_2g_mbps", "p1"),
+            ("rate_5g_mbps", "p1"), ("rate_6g_mbps", "p1"),
+            ("ethernet_interfaces", "p1"), ("power_method", "p1"),
+            ("poe_output", "p1"), ("max_clients", "p1"),
             ("mimo_2g", "p1"), ("mimo_5g", "p1"), ("mimo_6g", "p1"),
             ("max_channel_width_mhz", "p1"), ("max_ssids", "p1"),
             ("centralized_management", "p1"), ("fast_roaming", "p1"),
@@ -224,34 +232,43 @@ TEMPLATES = (
         "category_slug": "wireless-bridge",
         "form_factor": "",
         "description": "Point-to-point and point-to-multipoint wireless bridges.",
-        "fields": fields(
-            "supported_bands", "rate_2g_mbps", "rate_5g_mbps", "rate_6g_mbps", "wireless_range",
-            "antenna_gain_dbi", "beamwidth", "ethernet_interfaces", "poe_input",
-            "bridge_modes", "ip_rating", "lightning_protection_kv",
-        ) + [("antenna_type", "p1"), ("max_bridge_pairs", "p1")] + COMMON_PHYSICAL,
+        "fields": fields("supported_bands") + [
+            ("rate_2g_mbps", "p1"), ("rate_5g_mbps", "p1"),
+            ("rate_6g_mbps", "p1"), ("wireless_range", "p1"),
+            ("antenna_gain_dbi", "p1"), ("beamwidth", "p1"),
+            ("ethernet_interfaces", "p1"), ("poe_input", "p1"),
+            ("bridge_modes", "p1"), ("ip_rating", "p1"),
+            ("lightning_protection_kv", "p1"), ("antenna_type", "p1"),
+            ("max_bridge_pairs", "p1"),
+        ] + COMMON_PHYSICAL,
     },
     {
         "name": "Gateway General",
         "category_slug": "gateway",
         "form_factor": "",
         "description": "Wired and security gateways with routing, VPN and session capacity.",
-        "fields": fields(
-            "wan_interfaces", "lan_interfaces", "ethernet_interfaces", "uplink_interfaces",
-            "routing_throughput_mbps", "nat_throughput_mbps", "vpn_throughput_mbps",
-            "concurrent_sessions", "vpn_tunnels", "wan_load_balancing", "sd_wan",
-            "firewall_features", "vpn_protocols", "controller_management",
-        ) + [("usb_interfaces", "p1"), ("lightning_protection_kv", "p1")] + COMMON_PHYSICAL,
+        "fields": fields("ethernet_interfaces") + [
+            ("wan_interfaces", "p1"), ("vpn_protocols", "p1"),
+            ("controller_management", "p1"),
+            ("lan_interfaces", "p1"), ("uplink_interfaces", "p1"),
+            ("routing_throughput_mbps", "p1"), ("nat_throughput_mbps", "p1"),
+            ("vpn_throughput_mbps", "p1"), ("concurrent_sessions", "p1"),
+            ("vpn_tunnels", "p1"), ("wan_load_balancing", "p1"),
+            ("sd_wan", "p1"), ("firewall_features", "p1"),
+            ("usb_interfaces", "p1"), ("lightning_protection_kv", "p1"),
+        ] + COMMON_PHYSICAL,
     },
     {
         "name": "Managed General",
         "category_slug": "managed-switches",
         "form_factor": "",
         "description": "Managed switches with forwarding, PoE, L2/L3 and management capabilities.",
-        "fields": fields(
-            "ethernet_interfaces", "uplink_interfaces", "switching_capacity_gbps", "packet_forwarding_rate_mpps",
-            "poe_configuration", "poe_standard", "poe_ports", "poe_budget_w",
-            "max_poe_per_port_w",
-        ) + [
+        "fields": fields("ethernet_interfaces") + [
+            ("switching_capacity_gbps", "p1"),
+            ("packet_forwarding_rate_mpps", "p1"),
+            ("poe_standard", "p1"), ("poe_ports", "p1"),
+            ("poe_budget_w", "p1"),
+            ("poe_configuration", "p1"), ("max_poe_per_port_w", "p1"),
             ("mac_address_table", "p1"), ("packet_buffer_mb", "p1"),
             ("console_interfaces", "p1"), ("management_interfaces", "p1"),
             ("switch_usb_interfaces", "p1"), ("cpu", "p1"), ("flash_memory", "p1"),
@@ -281,11 +298,21 @@ TEMPLATES = (
         "form_factor": "",
         "description": "Unmanaged and Easy Smart switches focused on ports, PoE and basic controls.",
         "fields": fields(
-            "ethernet_interfaces", "uplink_interfaces", "switching_capacity_gbps", "packet_forwarding_rate_mpps",
-            "poe_standard", "poe_ports", "poe_budget_w", "max_poe_per_port_w", "management_type",
-            "extend_mode", "poe_auto_recovery", "port_isolation", "loop_prevention",
+            "ethernet_interfaces",
+            "management_type",
+            "switching_capacity_gbps",
+            "packet_forwarding_rate_mpps",
+            "mac_address_table",
+            "packet_buffer_mb",
+            "jumbo_frame_bytes",
+            "poe_standard",
+            "poe_ports",
+            "poe_budget_w",
+            "max_poe_per_port_w",
         ) + [
-            ("mac_address_table", "p1"), ("vlan_support", "p1"), ("qos_support", "p1"),
+            ("extend_mode", "p1"), ("poe_auto_recovery", "p1"),
+            ("port_isolation", "p1"), ("loop_prevention", "p1"),
+            ("vlan_support", "p1"), ("qos_support", "p1"),
             ("link_aggregation", "p1"), ("igmp_snooping", "p1"),
             ("port_mirroring", "p1"), ("cable_test", "p1"),
             ("fanless", "p1"), ("installation", "p1"),
@@ -293,37 +320,138 @@ TEMPLATES = (
     },
 )
 
-AP_CORE_FIELDS = fields(
-    "supported_bands",
-    "total_spatial_streams",
-    "rate_2g_mbps",
-    "rate_5g_mbps",
-    "rate_6g_mbps",
-    "max_channel_width_mhz",
-    "ethernet_interfaces",
-    "power_method",
-    "max_clients",
-)
+AP_CORE_FIELDS = fields("supported_bands") + [
+    ("total_spatial_streams", "p1"),
+    ("rate_2g_mbps", "p1"), ("rate_5g_mbps", "p1"),
+    ("rate_6g_mbps", "p1"), ("max_channel_width_mhz", "p1"),
+    ("ethernet_interfaces", "p1"), ("power_method", "p1"),
+    ("max_clients", "p1"),
+]
 
-MANAGED_SWITCH_CORE_FIELDS = fields(
+MANAGED_SWITCH_CORE_FIELDS = fields("ethernet_interfaces") + [
+    ("switching_capacity_gbps", "p1"),
+    ("packet_forwarding_rate_mpps", "p1"),
+    ("mac_address_table", "p1"),
+    ("packet_buffer_mb", "p1"),
+    ("jumbo_frame_bytes", "p1"),
+    ("power_supply", "p1"),
+    ("fan_design", "p1"),
+    ("management_methods", "p1"),
+]
+
+MANAGED_SWITCH_POE_FIELDS = [
+    ("poe_configuration", "p1"),
+    ("poe_standard", "p1"),
+    ("poe_ports", "p1"),
+    ("poe_budget_w", "p1"),
+    ("max_poe_per_port_w", "p1"),
+]
+
+MANAGED_SWITCH_L2_FIELDS = [
+    ("vlan_count", "p1"),
+    ("l2_features", "p1"),
+    ("stp_features", "p1"),
+    ("acl_security", "p1"),
+]
+
+MANAGED_SWITCH_L3_FIELDS = MANAGED_SWITCH_L2_FIELDS + [
+    ("l3_features", "p1"),
+    ("ip_interface_capacity", "p1"),
+    ("routing_entry_capacity", "p1"),
+    ("ospf_support", "p1"),
+    ("rip_support", "p1"),
+    ("pbr_support", "p1"),
+    ("vrrp_support", "p1"),
+    ("multicast_routing", "p1"),
+    ("stacking", "p1"),
+    ("stacking_bandwidth_gbps", "p1"),
+    ("stacking_units", "p1"),
+]
+
+UNMANAGED_SWITCH_CORE_FIELDS = fields(
     "ethernet_interfaces",
-    "uplink_interfaces",
+    "management_type",
     "switching_capacity_gbps",
     "packet_forwarding_rate_mpps",
-    "poe_standard",
-    "poe_ports",
-    "poe_budget_w",
+    "mac_address_table",
+    "packet_buffer_mb",
+    "jumbo_frame_bytes",
 )
 
-ROUTER_CORE_FIELDS = fields(
-    "wan_interfaces",
-    "lan_interfaces",
-    "routing_throughput_mbps",
-    "nat_throughput_mbps",
-    "vpn_throughput_mbps",
-    "concurrent_sessions",
-    "vpn_protocols",
+UNMANAGED_SWITCH_POE_FIELDS = [
+    ("poe_standard", "p1"),
+    ("poe_ports", "p1"),
+    ("poe_budget_w", "p1"),
+    ("max_poe_per_port_w", "p1"),
+    ("extend_mode", "p1"),
+    ("poe_auto_recovery", "p1"),
+]
+
+MANAGED_SWITCH_TEMPLATE_TYPES = (
+    ("campus_poe", "Campus PoE", "Campus-class managed switches with PoE output.", "l3", True),
+    ("campus_non_poe", "Campus Non-PoE", "Campus-class managed switches without PoE output.", "l3", False),
+    ("l2_poe", "Layer 2 PoE", "Layer 2 and Layer 2+ managed switches with PoE output.", "l2", True),
+    ("l2_non_poe", "Layer 2 Non-PoE", "Layer 2 and Layer 2+ managed switches without PoE output.", "l2", False),
+    ("l3_poe", "Layer 3 PoE", "Layer 3 managed switches with PoE output.", "l3", True),
+    ("l3_non_poe", "Layer 3 Non-PoE", "Layer 3 managed switches without PoE output.", "l3", False),
+    ("agile_poe", "Agile PoE", "Omada Agile easy-managed switches with PoE output.", "agile", True),
+    ("agile_non_poe", "Agile Non-PoE", "Omada Agile easy-managed switches without PoE output.", "agile", False),
+    ("industrial_poe", "Industrial PoE", "Industrial managed switches with PoE output.", "industrial", True),
+    ("industrial_non_poe", "Industrial Non-PoE", "Industrial managed switches without PoE output.", "industrial", False),
 )
+
+UNMANAGED_SWITCH_TEMPLATE_TYPES = (
+    ("unmanaged_poe", "Unmanaged PoE", "Plug-and-play unmanaged switches with PoE output.", "unmanaged", True),
+    ("unmanaged_non_poe", "Unmanaged Non-PoE", "Plug-and-play unmanaged switches without PoE output.", "unmanaged", False),
+    ("easy_smart_poe", "Easy Smart PoE", "Easy Smart switches with PoE output.", "easy_smart", True),
+    ("easy_smart_non_poe", "Easy Smart Non-PoE", "Easy Smart switches without PoE output.", "easy_smart", False),
+)
+
+
+def managed_switch_template_fields(layer, has_poe):
+    if layer in {"l3", "campus"}:
+        feature_fields = MANAGED_SWITCH_L3_FIELDS
+    elif layer == "industrial":
+        feature_fields = MANAGED_SWITCH_L2_FIELDS + [("transmission_method", "p1")]
+    else:
+        feature_fields = MANAGED_SWITCH_L2_FIELDS
+    poe_fields = MANAGED_SWITCH_POE_FIELDS if has_poe else []
+    return MANAGED_SWITCH_CORE_FIELDS + poe_fields + feature_fields + COMMON_PHYSICAL
+
+
+def unmanaged_switch_template_fields(management_type, has_poe):
+    features = [
+        ("flow_control", "p1"),
+        ("qos_support", "p1"),
+        ("igmp_snooping", "p1"),
+        ("port_isolation", "p1"),
+        ("loop_prevention", "p1"),
+        ("fanless", "p1"),
+        ("installation", "p1"),
+    ]
+    if management_type == "easy_smart":
+        features += [
+            ("vlan_support", "p1"),
+            ("link_aggregation", "p1"),
+            ("port_mirroring", "p1"),
+            ("cable_test", "p1"),
+        ]
+    poe_fields = UNMANAGED_SWITCH_POE_FIELDS if has_poe else []
+    return UNMANAGED_SWITCH_CORE_FIELDS + poe_fields + features + COMMON_PHYSICAL
+
+ROUTER_CORE_FIELDS = fields("ethernet_interfaces") + [
+    ("wan_interfaces", "p1"), ("vpn_protocols", "p1"),
+    ("controller_management", "p1"),
+]
+
+ROUTER_OPTIONAL_FIELDS = [
+    ("lan_interfaces", "p1"),
+    ("routing_throughput_mbps", "p1"),
+    ("nat_throughput_mbps", "p1"),
+    ("vpn_throughput_mbps", "p1"),
+    ("concurrent_sessions", "p1"),
+    ("vpn_tunnels", "p1"),
+]
 
 ACCESSORY_COMMON_FIELDS = [
     ("accessory_compatibility", "p1"),
@@ -381,142 +509,46 @@ TYPE_SPECIFIC_TEMPLATES = (
         "category_slug": "access-point",
         "form_factor": "extender",
         "description": "Wireless range extenders.",
-        "fields": fields(
-            "supported_bands",
-            "rate_2g_mbps",
-            "rate_5g_mbps",
-            "rate_6g_mbps",
-            "max_channel_width_mhz",
-        )
-        + [
+        "fields": fields("supported_bands") + [
+            ("rate_2g_mbps", "p1"), ("rate_5g_mbps", "p1"),
+            ("rate_6g_mbps", "p1"), ("max_channel_width_mhz", "p1"),
             ("antenna_type", "p1"),
             ("mesh_support", "p1"),
             ("wireless_security", "p1"),
         ]
         + COMMON_PHYSICAL,
     },
-    {
-        "name": "Managed L2",
-        "category_slug": "managed-switches",
-        "form_factor": "l2",
-        "description": "Layer 2 managed switches.",
-        "fields": MANAGED_SWITCH_CORE_FIELDS
-        + [
-            ("mac_address_table", "p1"),
-            ("vlan_count", "p1"),
-            ("l2_features", "p1"),
-            ("stp_features", "p1"),
-            ("acl_security", "p1"),
-            ("management_methods", "p1"),
-            ("fanless", "p1"),
-        ]
-        + COMMON_PHYSICAL,
-    },
-    {
-        "name": "Managed L2 Plus",
-        "category_slug": "managed-switches",
-        "form_factor": "l2_plus",
-        "description": "Layer 2+ switches with static routing and enhanced management.",
-        "fields": MANAGED_SWITCH_CORE_FIELDS
-        + [
-            ("mac_address_table", "p1"),
-            ("vlan_count", "p1"),
-            ("l2_features", "p1"),
-            ("l3_features", "p1"),
-            ("ip_interface_capacity", "p1"),
-            ("routing_entry_capacity", "p1"),
-            ("stp_features", "p1"),
-            ("dhcp_features", "p1"),
-            ("acl_security", "p1"),
-            ("management_methods", "p1"),
-        ]
-        + COMMON_PHYSICAL,
-    },
-    {
-        "name": "Managed L3",
-        "category_slug": "managed-switches",
-        "form_factor": "l3",
-        "description": "Layer 3 managed switches with dynamic routing.",
-        "fields": MANAGED_SWITCH_CORE_FIELDS
-        + [
-            ("l2_features", "p1"),
-            ("l3_features", "p1"),
-            ("ip_interface_capacity", "p1"),
-            ("routing_entry_capacity", "p1"),
-            ("ospf_support", "p1"),
-            ("rip_support", "p1"),
-            ("pbr_support", "p1"),
-            ("vrrp_support", "p1"),
-            ("multicast_routing", "p1"),
-            ("stacking", "p1"),
-            ("stacking_bandwidth_gbps", "p1"),
-            ("management_methods", "p1"),
-        ]
-        + COMMON_PHYSICAL,
-    },
-    {
-        "name": "Unmanaged Switch",
-        "category_slug": "unmanaged-easy-smart-switches",
-        "form_factor": "unmanaged",
-        "description": "Plug-and-play unmanaged switches.",
-        "fields": fields(
-            "ethernet_interfaces",
-            "uplink_interfaces",
-            "switching_capacity_gbps",
-            "packet_forwarding_rate_mpps",
-            "poe_standard",
-            "poe_ports",
-            "poe_budget_w",
-            "extend_mode",
-            "poe_auto_recovery",
-            "port_isolation",
-            "loop_prevention",
-        )
-        + [
-            ("fanless", "p1"),
-            ("installation", "p1"),
-        ]
-        + COMMON_PHYSICAL,
-    },
-    {
-        "name": "Easy Smart Switch",
-        "category_slug": "unmanaged-easy-smart-switches",
-        "form_factor": "easy_smart",
-        "description": "Easy Smart switches with VLAN, QoS, and diagnostics.",
-        "fields": fields(
-            "ethernet_interfaces",
-            "uplink_interfaces",
-            "switching_capacity_gbps",
-            "packet_forwarding_rate_mpps",
-            "management_type",
-            "vlan_support",
-            "qos_support",
-            "igmp_snooping",
-            "port_mirroring",
-            "cable_test",
-            "poe_standard",
-            "poe_ports",
-            "poe_budget_w",
-        )
-        + [
-            ("link_aggregation", "p1"),
-            ("fanless", "p1"),
-            ("installation", "p1"),
-        ]
-        + COMMON_PHYSICAL,
-    },
+    *(
+        {
+            "name": name,
+            "category_slug": "managed-switches",
+            "form_factor": code,
+            "description": description,
+            "fields": managed_switch_template_fields(layer, has_poe),
+        }
+        for code, name, description, layer, has_poe in MANAGED_SWITCH_TEMPLATE_TYPES
+    ),
+    *(
+        {
+            "name": name,
+            "category_slug": "unmanaged-easy-smart-switches",
+            "form_factor": code,
+            "description": description,
+            "fields": unmanaged_switch_template_fields(management_type, has_poe),
+        }
+        for code, name, description, management_type, has_poe in UNMANAGED_SWITCH_TEMPLATE_TYPES
+    ),
     {
         "name": "Wired Router",
         "category_slug": "gateway",
         "form_factor": "wired_router",
         "description": "Wired VPN and security routers.",
         "fields": ROUTER_CORE_FIELDS
+        + ROUTER_OPTIONAL_FIELDS
         + [
-            ("vpn_tunnels", "p1"),
             ("wan_load_balancing", "p1"),
             ("sd_wan", "p1"),
             ("firewall_features", "p1"),
-            ("controller_management", "p1"),
         ]
         + COMMON_PHYSICAL,
     },
@@ -526,12 +558,10 @@ TYPE_SPECIFIC_TEMPLATES = (
         "form_factor": "wireless_router",
         "description": "Routers with integrated Wi-Fi.",
         "fields": ROUTER_CORE_FIELDS
-        + fields(
-            "router_wifi_standard",
-            "router_supported_bands",
-            "router_wireless_rate_mbps",
-        )
-        + [("controller_management", "p1")]
+        + ROUTER_OPTIONAL_FIELDS
+        + [("router_wifi_standard", "p1"),
+           ("router_supported_bands", "p1"),
+           ("router_wireless_rate_mbps", "p1")]
         + COMMON_PHYSICAL,
     },
     {
@@ -540,11 +570,9 @@ TYPE_SPECIFIC_TEMPLATES = (
         "form_factor": "cellular_router",
         "description": "Indoor 4G and 5G routers.",
         "fields": ROUTER_CORE_FIELDS
-        + fields(
-            "cellular_standard",
-            "sim_interfaces",
-            "cellular_downlink_mbps",
-        )
+        + ROUTER_OPTIONAL_FIELDS
+        + [("cellular_standard", "p1"), ("sim_interfaces", "p1"),
+           ("cellular_downlink_mbps", "p1")]
         + [("router_wifi_standard", "p1"), ("router_supported_bands", "p1")]
         + COMMON_PHYSICAL,
     },
@@ -554,13 +582,10 @@ TYPE_SPECIFIC_TEMPLATES = (
         "form_factor": "outdoor_cellular_router",
         "description": "Outdoor cellular routers with environmental protection.",
         "fields": ROUTER_CORE_FIELDS
-        + fields(
-            "cellular_standard",
-            "sim_interfaces",
-            "cellular_downlink_mbps",
-            "ip_rating",
-            "lightning_protection_kv",
-        )
+        + ROUTER_OPTIONAL_FIELDS
+        + [("cellular_standard", "p1"), ("sim_interfaces", "p1"),
+           ("cellular_downlink_mbps", "p1"), ("ip_rating", "p1"),
+           ("lightning_protection_kv", "p1")]
         + COMMON_PHYSICAL,
     },
     {
@@ -569,12 +594,9 @@ TYPE_SPECIFIC_TEMPLATES = (
         "form_factor": "integrated_gateway",
         "description": "Controller, switch, and PoE integrated gateways.",
         "fields": ROUTER_CORE_FIELDS
-        + fields(
-            "controller_management",
-            "router_poe_ports",
-            "router_poe_budget_w",
-        )
-        + [("ethernet_interfaces", "p1"), ("usb_interfaces", "p1")]
+        + ROUTER_OPTIONAL_FIELDS
+        + [("router_poe_ports", "p1"), ("router_poe_budget_w", "p1")]
+        + [("usb_interfaces", "p1")]
         + COMMON_PHYSICAL,
     },
     {
@@ -582,14 +604,12 @@ TYPE_SPECIFIC_TEMPLATES = (
         "category_slug": "accessories",
         "form_factor": "poe_injector",
         "description": "PoE injectors and adapters.",
-        "fields": fields(
-            "accessory_interface_type",
-            "accessory_input_power",
-            "accessory_output_power",
-            "accessory_poe_standard",
-            "accessory_power_w",
-            "accessory_data_rate_gbps",
-        )
+        "fields": fields("accessory_interface_type") + [
+            ("accessory_poe_standard", "p1"), ("accessory_power_w", "p1"),
+            ("accessory_data_rate_gbps", "p1"),
+            ("accessory_input_power", "p1"),
+            ("accessory_output_power", "p1"),
+        ]
         + ACCESSORY_COMMON_FIELDS,
     },
     {
@@ -597,12 +617,12 @@ TYPE_SPECIFIC_TEMPLATES = (
         "category_slug": "accessories",
         "form_factor": "power_supply",
         "description": "Power supply and replaceable power modules.",
-        "fields": fields(
-            "accessory_input_power",
-            "accessory_output_power",
-            "accessory_power_w",
-            "accessory_compatibility",
-        )
+        "fields": [
+            ("accessory_power_w", "p1"),
+            ("accessory_input_power", "p1"),
+            ("accessory_output_power", "p1"),
+            ("accessory_compatibility", "p1"),
+        ]
         + COMMON_PHYSICAL,
     },
     {
@@ -610,77 +630,73 @@ TYPE_SPECIFIC_TEMPLATES = (
         "category_slug": "accessories",
         "form_factor": "media_converter",
         "description": "Copper and fiber media converters.",
-        "fields": fields(
-            "accessory_interface_type",
-            "accessory_connector_type",
-            "accessory_data_rate_gbps",
-            "accessory_fiber_mode",
-            "accessory_max_distance_km",
-            "accessory_input_power",
-        )
-        + ACCESSORY_COMMON_FIELDS,
+        "fields": fields("accessory_interface_type") + [
+            ("accessory_connector_type", "p1"),
+            ("accessory_data_rate_gbps", "p1"),
+            ("accessory_fiber_mode", "p1"),
+            ("accessory_max_distance_km", "p1"),
+            ("accessory_input_power", "p1"),
+        ] + ACCESSORY_COMMON_FIELDS,
     },
     {
         "name": "Optical Module",
         "category_slug": "accessories",
         "form_factor": "optical_module",
         "description": "Pluggable optical transceiver modules.",
-        "fields": fields(
-            "accessory_interface_type",
-            "accessory_connector_type",
-            "accessory_data_rate_gbps",
-            "accessory_wavelength_nm",
-            "accessory_fiber_mode",
-            "accessory_max_distance_km",
-        )
-        + ACCESSORY_COMMON_FIELDS,
+        "fields": fields("accessory_interface_type") + [
+            ("accessory_connector_type", "p1"),
+            ("accessory_data_rate_gbps", "p1"),
+            ("accessory_wavelength_nm", "p1"),
+            ("accessory_fiber_mode", "p1"),
+            ("accessory_max_distance_km", "p1"),
+        ] + ACCESSORY_COMMON_FIELDS,
     },
     {
         "name": "DAC Cable",
         "category_slug": "accessories",
         "form_factor": "dac_cable",
         "description": "Direct-attach copper cables.",
-        "fields": fields(
-            "accessory_interface_type",
-            "accessory_data_rate_gbps",
-            "accessory_cable_length_m",
-        )
-        + ACCESSORY_COMMON_FIELDS,
+        "fields": fields("accessory_interface_type") + [
+            ("accessory_data_rate_gbps", "p1"),
+            ("accessory_cable_length_m", "p1"),
+        ] + ACCESSORY_COMMON_FIELDS,
     },
     {
         "name": "Mounting Accessory",
         "category_slug": "accessories",
         "form_factor": "mounting",
         "description": "Rack, wall, and magnetic mounting accessories.",
-        "fields": fields(
-            "accessory_mounting_type",
-            "accessory_compatibility",
-        )
-        + [("accessory_rack_units", "p1"), ("dimensions_mm", "p1")],
+        "fields": [
+            ("accessory_mounting_type", "p1"),
+            ("accessory_compatibility", "p1"),
+            ("accessory_rack_units", "p1"),
+            ("dimensions_mm", "p1"),
+        ],
     },
     {
         "name": "Accessory Chassis",
         "category_slug": "accessories",
         "form_factor": "chassis",
         "description": "Accessory and media-converter chassis.",
-        "fields": fields(
-            "accessory_rack_units",
-            "accessory_compatibility",
-            "accessory_input_power",
-        )
-        + [("dimensions_mm", "p1"), ("operating_temperature_c", "p2")],
+        "fields": [
+            ("dimensions_mm", "p1"),
+            ("accessory_rack_units", "p1"),
+            ("accessory_compatibility", "p1"),
+            ("accessory_input_power", "p1"),
+            ("operating_temperature_c", "p2"),
+        ],
     },
     {
         "name": "Antenna",
         "category_slug": "accessories",
         "form_factor": "antenna",
         "description": "External antennas and antenna accessories.",
-        "fields": fields(
-            "accessory_connector_type",
-            "accessory_frequency_range",
-            "accessory_antenna_gain_dbi",
-            "accessory_compatibility",
-        )
+        "fields": [
+            ("accessory_antenna_gain_dbi", "p1"),
+            ("accessory_connector_type", "p1"),
+            ("accessory_frequency_range", "p1"),
+            ("accessory_compatibility", "p1"),
+        ]
         + COMMON_PHYSICAL,
     },
     {
@@ -688,11 +704,10 @@ TYPE_SPECIFIC_TEMPLATES = (
         "category_slug": "accessories",
         "form_factor": "junction_box",
         "description": "Outdoor junction and cable-management boxes.",
-        "fields": fields(
-            "accessory_compatibility",
-            "ip_rating",
-            "accessory_mounting_type",
-        )
+        "fields": [
+            ("accessory_mounting_type", "p1"), ("ip_rating", "p1"),
+            ("accessory_compatibility", "p1"),
+        ]
         + COMMON_PHYSICAL,
     },
     {
@@ -700,12 +715,11 @@ TYPE_SPECIFIC_TEMPLATES = (
         "category_slug": "accessories",
         "form_factor": "",
         "description": "Fallback structure for other accessories.",
-        "fields": fields(
-            "accessory_interface_type",
-            "accessory_connector_type",
-            "accessory_compatibility",
-        )
-        + COMMON_PHYSICAL,
+        "fields": [
+            ("accessory_interface_type", "p1"),
+            ("accessory_connector_type", "p1"),
+            ("accessory_compatibility", "p1"),
+        ] + COMMON_PHYSICAL,
     },
 )
 

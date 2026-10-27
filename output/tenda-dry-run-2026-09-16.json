@@ -1,0 +1,151 @@
+{
+  "stats": {
+    "ok": 3
+  },
+  "results": [
+    {
+      "product_id": 943,
+      "status": "ok",
+      "brand": "Tenda",
+      "model": "S105",
+      "url": "https://www.tendacn.com/product/specification/S105v10",
+      "source_urls": [
+        "https://www.tendacn.com/product/specification/S105v10"
+      ],
+      "evidence_url": "https://www.tendacn.com/product/specification/S105v10",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.tendacn.com/product/specification/S105v10",
+        "packet_forwarding_rate_mpps": "https://www.tendacn.com/product/specification/S105v10",
+        "mac_address_table": "https://www.tendacn.com/product/specification/S105v10",
+        "installation": "https://www.tendacn.com/product/specification/S105v10",
+        "transmission_method": "https://www.tendacn.com/product/specification/S105v10"
+      },
+      "title": "Tenda 5-port Ethernet Switch S105 - Tenda Global",
+      "image_url": "https://static.tenda.com.cn/tdeweb/UserFiles/Image/Product/2015610/2015610111509734.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C - 45℃",
+          "Operating temperature: 0°C - 45℃"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          0.74,
+          "Packet forwarding rate 0.74Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "1K",
+          "MAC address table 1K"
+        ],
+        "installation": [
+          "text",
+          "Desktop mounting: support Wall mounting: support Rack mounting:non-support",
+          "Desktop mounting: support Wall mounting: support Rack mounting:non-support"
+        ],
+        "transmission_method": [
+          "text",
+          "Store and Forward",
+          "Store-and-forward"
+        ]
+      }
+    },
+    {
+      "product_id": 930,
+      "status": "ok",
+      "brand": "Tenda",
+      "model": "S108",
+      "url": "https://www.tendacn.com/product/specification/S108V8",
+      "source_urls": [
+        "https://www.tendacn.com/product/specification/S108V8"
+      ],
+      "evidence_url": "https://www.tendacn.com/product/specification/S108V8",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.tendacn.com/product/specification/S108V8",
+        "packet_forwarding_rate_mpps": "https://www.tendacn.com/product/specification/S108V8",
+        "mac_address_table": "https://www.tendacn.com/product/specification/S108V8",
+        "installation": "https://www.tendacn.com/product/specification/S108V8",
+        "transmission_method": "https://www.tendacn.com/product/specification/S108V8"
+      },
+      "title": "Tenda S108 8-port Ethernet Switch - Tenda Global",
+      "image_url": "https://static.tenda.com.cn/tdeweb/uploadfile/2015810/20158101052197743.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C - 45℃",
+          "Operating temperature: 0°C - 45℃"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          1.19,
+          "Packet forwarding rate 1.19Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "1K",
+          "MAC address table 1K"
+        ],
+        "installation": [
+          "text",
+          "Desktop mounting: support Wall mounting: support Rack mounting:non-support",
+          "Desktop mounting: support Wall mounting: support Rack mounting:non-support"
+        ],
+        "transmission_method": [
+          "text",
+          "Store and Forward",
+          "Store-and-forward"
+        ]
+      }
+    },
+    {
+      "product_id": 920,
+      "status": "ok",
+      "brand": "Tenda",
+      "model": "S16",
+      "url": "https://www.tendacn.com/product/specification/S16",
+      "source_urls": [
+        "https://www.tendacn.com/product/specification/S16"
+      ],
+      "evidence_url": "https://www.tendacn.com/product/specification/S16",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.tendacn.com/product/specification/S16",
+        "packet_forwarding_rate_mpps": "https://www.tendacn.com/product/specification/S16",
+        "mac_address_table": "https://www.tendacn.com/product/specification/S16",
+        "installation": "https://www.tendacn.com/product/specification/S16",
+        "transmission_method": "https://www.tendacn.com/product/specification/S16"
+      },
+      "title": "Tenda S16 6-Port 10/100 Desktop Switch - Tenda Global",
+      "image_url": "https://static.tenda.com.cn/img/2025/06/03/048f7209f49047919e0d9330095caa09/33.png",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "0°C - 45℃",
+          "Operating temperature: 0°C - 45℃"
+        ],
+        "packet_forwarding_rate_mpps": [
+          "number",
+          2.38,
+          "Packet forwarding rate 2.38Mpps"
+        ],
+        "mac_address_table": [
+          "text",
+          "4K",
+          "MAC address table 4K"
+        ],
+        "installation": [
+          "text",
+          "Desktop mounting: support Wall mounting: support Rack mounting:non-support",
+          "Desktop mounting: support Wall mounting: support Rack mounting:non-support"
+        ],
+        "transmission_method": [
+          "text",
+          "Store and Forward",
+          "Store-and-forward"
+        ]
+      }
+    }
+  ]
+}

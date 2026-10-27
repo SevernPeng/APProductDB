@@ -9,6 +9,8 @@ from catalog.models import (
     SpecDefinition,
     TemplateField,
 )
+from catalog.product_types import product_type_code
+from catalog.spec_applicability import field_is_applicable, specs_by_code
 
 
 @dataclass(frozen=True)
@@ -22,10 +24,13 @@ class ResolvedTemplateField:
 
 
 def ensure_product_spec_placeholders(product):
-    definitions = SpecDefinition.objects.filter(
-        Q(category=product.category) | Q(category__isnull=True),
-        active=True,
-    ).order_by("display_order", "display_name")
+    product_specs = specs_by_code(product)
+    definitions = [
+        field.spec_definition
+        for field in template_fields(product.category, product_type_code(product))
+        if field.spec_definition.active
+        and field_is_applicable(product, field.spec_definition.code, product_specs)
+    ]
     existing_definition_ids = set(
         product.specs.values_list("definition_id", flat=True)
     )

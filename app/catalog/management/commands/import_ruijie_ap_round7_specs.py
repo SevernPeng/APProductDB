@@ -1,0 +1,101 @@
+from catalog.management.commands.import_aruba_ap_priority_round3_specs import (
+    Command as VerifiedImportCommand,
+    n,
+    t,
+)
+
+
+PRODUCTS = {
+    "RG-AP9220": {
+        "url": "https://www.ruijie.com/en-global/products/wireless/indoor-access-points/rg-ap9220-v2",
+        "page": "Current RG-AP9220(V2) hardware/software specifications",
+        "title": "Ruijie RG-AP9220(V2) official product specifications (current version)",
+        "values": {
+            "supported_bands": t("2.4 GHz / 5 GHz"),
+            "rate_2g_mbps": n(688),
+            "rate_5g_mbps": n(2882),
+            "mimo_2g": t("2x2 uplink/downlink MU-MIMO"),
+            "mimo_5g": t("2x2 uplink/downlink MU-MIMO"),
+            "total_spatial_streams": n(4),
+            "max_channel_width_mhz": n(160),
+            "max_clients": n(1024, "Up to 512 associated STAs per radio; recommended total: 64"),
+            "max_ssids": n(32, "Up to 16 BSSIDs per radio"),
+            "ethernet_interfaces": t("1 x 2.5GBASE-T port; 1 x 5GE SFP port compatible with 1GE/2.5GE; RJ45 console; USB 2.0; Bluetooth 5.3"),
+            "power_method": t("48 V DC or IEEE 802.3af/at PoE"),
+            "max_power_consumption_w": n(18.5),
+            "dimensions_mm": t("200 x 200 x 40 mm"),
+            "operating_temperature_c": t("-10 to 50 °C"),
+            "operating_humidity": t("5% to 95% RH, non-condensing"),
+            "antenna_type": t("Built-in omnidirectional smart antennas: two 2.4 GHz and two 5 GHz; built-in Bluetooth antenna"),
+            "antenna_gain_dbi": t("2.4 GHz: 4.5 dBi; 5 GHz: 5.2 dBi; Bluetooth: 4.5 dBi"),
+            "centralized_management": t("WIS Cloud, Eweb, Ruijie wireless controller, or Fat/Fit/Cloud modes"),
+            "fast_roaming": t("Layer 2 and Layer 3 wireless roaming"),
+            "wireless_security": t("WEP; WPA/WPA2/WPA3 Personal and Enterprise; OWE; PSK, web, 802.1X, RADIUS, SMS and MAB"),
+            "mounting_options": t("Wall or ceiling"),
+        },
+    },
+    "RG-AP880-AR": {
+        "url": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR/",
+        "page": "Official hardware/software specifications",
+        "title": "Ruijie RG-AP880-AR official product specifications",
+        "values": {
+            "supported_bands": t("2.4 GHz / 5 GHz"),
+            "rate_2g_mbps": n(575),
+            "rate_5g_mbps": n(7200, "Two 5 GHz service radios: 2.4 Gbps plus 4.8 Gbps; the switchable AI radio is scan-only in the current datasheet"),
+            "mimo_2g": t("2x2 MIMO"),
+            "mimo_5g": t("2x2 MU-MIMO plus 4x4 MU-MIMO service radios"),
+            "total_spatial_streams": n(10, "Includes two spatial streams on the independent AI scanning radio"),
+            "max_channel_width_mhz": n(160),
+            "max_clients": n(1552),
+            "ethernet_interfaces": t("1 x 5GBASE-T PoE port; 1 x 5GE SFP port compatible with 1GE/2.5GE; 1 x Gigabit PoE-out port; RJ45 console; USB 3.0; Bluetooth 5.1"),
+            "poe_output": t("1 x Gigabit downlink port supplies 48 V / 12.95 W to IoT modules when adequate input power is used"),
+            "power_method": t("54 V DC or IEEE 802.3af/at/bt PoE"),
+            "max_power_consumption_w": n(40),
+            "dimensions_mm": t("230 x 230 x 51 mm"),
+            "operating_temperature_c": t("-10 to 50 °C"),
+            "operating_humidity": t("5% to 95% RH, non-condensing"),
+            "antenna_type": t("Built-in smart antennas"),
+            "antenna_gain_dbi": t("2.4 GHz: 3 dBi; 5 GHz: 3 dBi"),
+            "centralized_management": t("WIS Cloud, web, Ruijie wireless controller, or Fat/Fit modes"),
+            "fast_roaming": t("Independent AI radio assists roaming; measured roaming latency below 30 ms and packet loss below 0.5% in Ruijie testing"),
+            "wireless_security": t("WEP; WPA/WPA2/WPA3; PSK, web, QR-code, SMS, MAB and RADIUS authentication"),
+            "mounting_options": t("Wall or ceiling"),
+        },
+    },
+    "RG-SAP150-SP-W": {
+        "url": "https://www.ruijie.com/en-global/support/documents/slide_ruijie-rg-sap150-sp-w-access-point-hardware-installation-and-reference-guide/",
+        "page": "Hardware Installation and Reference Guide V1.5 and official EOS description",
+        "title": "Ruijie RG-SAP150-SP-W official hardware guide V1.5 specifications",
+        "values": {
+            "supported_bands": t("2.4 GHz / 5 GHz"),
+            "rate_2g_mbps": n(300),
+            "rate_5g_mbps": n(433),
+            "mimo_2g": t("2x2 MIMO"),
+            "mimo_5g": t("1x1 MIMO"),
+            "total_spatial_streams": n(3),
+            "max_channel_width_mhz": n(80),
+            "max_clients": n(256, "Up to 128 associated STAs per radio; published allocation: 156 on 2.4 GHz and 100 on 5 GHz"),
+            "max_ssids": n(16, "Up to 8 BSSIDs per radio"),
+            "ethernet_interfaces": t("1 x 10/100BASE-T PoE uplink; 1 x 10/100BASE-T downlink"),
+            "poe_output": t("No; the downlink is data-only and external power supply is not supported"),
+            "power_method": t("IEEE 802.3af PoE"),
+            "max_power_consumption_w": n(8),
+            "dimensions_mm": t("86 x 86 x 40 mm"),
+            "operating_temperature_c": t("-10 to 40 °C"),
+            "operating_humidity": t("5% to 95% RH, non-condensing"),
+            "antenna_type": t("Built-in omnidirectional antennas: two 2.4 GHz and two 5 GHz"),
+            "antenna_gain_dbi": t("2.4 GHz: 3 dBi; 5 GHz: 5 dBi"),
+            "centralized_management": t("Ruijie Cloud, Eweb, Ruijie wireless controller, or Fat/Fit/Cloud modes"),
+            "fast_roaming": t("Layer 2 and Layer 3 wireless roaming"),
+            "wireless_security": t("WEP; WPA/WPA2/WPA3; PSK, web, QR-code, SMS, MAB and RADIUS authentication"),
+            "mounting_options": t("86 x 86 mm junction box"),
+        },
+    },
+}
+
+
+class Command(VerifiedImportCommand):
+    help = "Import manually verified Ruijie RG-AP9220(V2), RG-AP880-AR and RG-SAP150-SP-W specifications."
+    products = PRODUCTS
+    document_version = "Current official Ruijie pages/guides; accessed 2026-10-19"
+    brand_name = "Ruijie"

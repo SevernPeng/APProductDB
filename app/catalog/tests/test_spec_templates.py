@@ -57,7 +57,7 @@ class ProductTypeTemplateTests(TestCase):
         self.assertNotIn("ap_type", codes)
         self.assertNotIn("wifi_standard", codes)
 
-    def test_unmanaged_operational_features_are_all_p0(self):
+    def test_unmanaged_operational_features_are_optional(self):
         category = Category.objects.get(slug="unmanaged-easy-smart-switches")
         template = category.comparison_templates.get(active=True, form_factor="")
         priorities = dict(
@@ -74,10 +74,10 @@ class ProductTypeTemplateTests(TestCase):
         self.assertEqual(
             priorities,
             {
-                "extend_mode": "p0",
-                "poe_auto_recovery": "p0",
-                "port_isolation": "p0",
-                "loop_prevention": "p0",
+                "extend_mode": "p1",
+                "poe_auto_recovery": "p1",
+                "port_isolation": "p1",
+                "loop_prevention": "p1",
             },
         )
 
@@ -100,7 +100,21 @@ class ProductTypeTemplateTests(TestCase):
         }:
             self.assertIn(code, fields_by_code)
         self.assertNotIn("easy_smart_features", fields_by_code)
-        self.assertEqual(fields_by_code["mac_address_table"].priority, "p1")
+        self.assertNotIn("management_methods", fields_by_code)
+        for code in {
+            "ethernet_interfaces",
+            "management_type",
+            "switching_capacity_gbps",
+            "packet_forwarding_rate_mpps",
+            "mac_address_table",
+            "packet_buffer_mb",
+            "jumbo_frame_bytes",
+            "poe_standard",
+            "poe_ports",
+            "poe_budget_w",
+            "max_poe_per_port_w",
+        }:
+            self.assertEqual(fields_by_code[code].priority, "p0")
         self.assertEqual(fields_by_code["fanless"].priority, "p1")
         self.assertEqual(fields_by_code["dimensions_mm"].priority, "p2")
         self.assertEqual(fields_by_code["operating_temperature_c"].priority, "p2")
@@ -112,7 +126,7 @@ class ProductTypeTemplateTests(TestCase):
             for field in template_fields(category)
         }
 
-        self.assertEqual(fields_by_code["switching_capacity_gbps"].priority, "p0")
+        self.assertEqual(fields_by_code["switching_capacity_gbps"].priority, "p1")
         self.assertEqual(fields_by_code["switching_capacity_gbps"].display_group, "Performance")
         self.assertEqual(fields_by_code["mac_address_table"].priority, "p1")
         self.assertEqual(fields_by_code["dimensions_mm"].priority, "p2")

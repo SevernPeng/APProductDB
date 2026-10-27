@@ -1,61 +1,168 @@
 {% extends "base.html" %}
 
-{% block title %}Products · APProductDB{% endblock %}
+{% block title %}TP-Link Products · APProductDB{% endblock %}
+{% block main_class %}container-fluid product-catalog-page px-0{% endblock %}
 
 {% block content %}
-<div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
-  <div>
-    <h1 class="h3 mb-1">Products</h1>
-    <p class="text-body-secondary mb-0">{{ page_obj.paginator.count }} published products</p>
-  </div>
-</div>
-
-<form method="get" class="card border-0 shadow-sm mb-4">
-  <div class="card-body">
-    <div class="row g-3 align-items-end">
-      <div class="col-12 col-md-9">
-        <label class="form-label" for="product-search">Model</label>
-        <input class="form-control" id="product-search" name="q" value="{{ filters.q }}" placeholder="Search by model">
+<section class="catalog-intro">
+  <div class="container-xl">
+    <div class="catalog-intro-row">
+      <div>
+        <span>{% if active_family %}<a class="catalog-back-link" href="{% url 'product-list' %}">Products</a> / {{ active_family.title }}{% else %}TP-Link product database{% endif %}</span>
+        <h1>{% if active_family %}{{ active_family.title }}{% else %}Products{% endif %}</h1>
+        <p>{% if active_family %}{{ active_family.description }}{% else %}Browse {{ tp_link_count }} TP-Link product{{ tp_link_count|pluralize }} by family or model.{% endif %}</p>
       </div>
-      <div class="col-12 col-md-3"><button class="btn btn-primary w-100" type="submit">Search</button></div>
+      <form method="get" action="{% url 'product-list' %}#catalog" class="catalog-search" role="search">
+        <label class="visually-hidden" for="product-search">Search products</label>
+        <input id="product-search" name="q" value="{{ filters.q }}" placeholder="Search model, e.g. EAP772 or SG3428XMP" autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </div>
-</form>
+</section>
 
-<form method="get" action="{% url 'comparison:compare' %}">
-<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2">
-  <small class="text-body-secondary">Select 2–4 products</small>
-  <button class="btn btn-sm btn-primary" type="submit">Compare Selected</button>
-</div>
-<div class="card border-0 shadow-sm overflow-hidden">
-  <div class="table-responsive">
-    <table class="table table-hover align-middle mb-0 product-table">
-      <thead class="table-light"><tr><th><span class="visually-hidden">Select</span></th><th>Brand / Model</th><th>Product Type</th><th>Region / Hardware</th><th>Last Updated</th></tr></thead>
-      <tbody>
-      {% for product in page_obj %}
-        <tr>
-          <td><input class="form-check-input" type="checkbox" name="products" value="{{ product.pk }}" aria-label="Select {{ product.brand.name }} {{ product.model }}"></td>
-          <td><strong>{{ product.brand.name }}</strong><br><a class="font-monospace fw-semibold" href="{% url 'product-detail' product.pk %}">{{ product.model }}</a></td>
-          <td>{{ product.category.name }}</td>
-          <td>{{ product.region }}{% if product.hardware_version %}<br><small class="text-body-secondary">{{ product.hardware_version }}</small>{% endif %}</td>
-          <td class="text-nowrap">{{ product.updated_at|date:"Y-m-d" }}</td>
-        </tr>
-      {% empty %}
-        <tr><td colspan="5" class="text-center py-5 text-body-secondary">No matching products.</td></tr>
+{% if not active_family %}
+<section class="catalog-section catalog-family-section" id="families">
+  <div class="container-xl">
+    <div class="catalog-section-heading">
+      <div><span>Explore the portfolio</span><h2>Products for every layer of the network</h2></div>
+      <a href="?scope=all#catalog">Search all brands in the database</a>
+    </div>
+    <div class="catalog-family-grid">
+      {% for family in product_families %}
+      <a class="catalog-family-card catalog-family-{{ family.key }}" href="{% url 'product-family' family.key %}">
+        <div class="catalog-family-copy">
+          <span>{{ family.eyebrow }}</span>
+          <h3>{{ family.title }}</h3>
+          <p>{{ family.description }}</p>
+          <strong>{{ family.count }} product{{ family.count|pluralize }} <span>→</span></strong>
+        </div>
+        <div class="catalog-family-visual">
+          {% if family.featured_product.image %}<img src="{% url 'product-image' family.featured_product.pk %}" alt="">{% else %}<span>{{ family.title|slice:':1' }}</span>{% endif %}
+        </div>
+      </a>
       {% endfor %}
-      </tbody>
-    </table>
+    </div>
   </div>
-</div>
-</form>
-
-{% if page_obj.paginator.num_pages > 1 %}
-<nav class="mt-4" aria-label="Product pagination">
-  <ul class="pagination justify-content-center">
-    <li class="page-item{% if not page_obj.has_previous %} disabled{% endif %}">{% if page_obj.has_previous %}<a class="page-link" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.previous_page_number }}">Previous</a>{% else %}<span class="page-link">Previous</span>{% endif %}</li>
-    <li class="page-item disabled"><span class="page-link">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span></li>
-    <li class="page-item{% if not page_obj.has_next %} disabled{% endif %}">{% if page_obj.has_next %}<a class="page-link" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.next_page_number }}">Next</a>{% else %}<span class="page-link">Next</span>{% endif %}</li>
-  </ul>
-</nav>
+</section>
 {% endif %}
+
+{% if active_family %}
+<section class="catalog-section catalog-category-section" id="subcategories">
+  <div class="container-xl">
+    <div class="catalog-section-heading compact">
+      <div><span>{{ active_family.title }}</span><h2>Browse by product type</h2></div>
+    </div>
+    <div class="catalog-category-strip">
+      <a class="catalog-category-card{% if not active_subcategory %} is-active{% endif %}" href="{% url 'product-family' active_family.key %}#catalog">
+        <span class="catalog-category-all" aria-hidden="true">▦</span><strong>View All</strong><small>{{ current_portfolio_count }} TP-Link models</small>
+      </a>
+      {% for category in category_cards %}
+      <a class="catalog-category-card{% if active_subcategory.key == category.key %} is-active{% endif %}{% if not category.product_count %} is-empty{% endif %}" href="{% url 'product-subcategory' active_family.key category.key %}#catalog">
+        <span class="catalog-category-image">{% if category.featured_product.image %}<img src="{% url 'product-image' category.featured_product.pk %}" alt="">{% else %}<span aria-hidden="true">{{ category.title|slice:':1' }}</span>{% endif %}</span>
+        <strong>{{ category.title }}</strong><small>{{ category.product_count }} product{{ category.product_count|pluralize }}</small>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="catalog-section catalog-products-section" id="catalog">
+  <div class="container-xl">
+    <div class="catalog-products-toolbar">
+      <div>
+        <span class="catalog-results-eyebrow">{% if show_all_brands %}Product database{% else %}TP-Link portfolio{% endif %}</span>
+        <h2>{% if filters.q %}Results for “{{ filters.q }}”{% elif active_subcategory %}{{ active_subcategory.title }}{% elif selected_category %}{{ selected_category.name }}{% elif active_family %}All {{ active_family.title }}{% else %}All TP-Link products{% endif %}</h2>
+        <p>{{ page_obj.paginator.count }} published product{{ page_obj.paginator.count|pluralize }}</p>
+      </div>
+      {% if active_subcategory %}<a class="btn btn-outline-secondary" href="{% url 'product-family' active_family.key %}#catalog">View all {{ active_family.title }}</a>{% elif filters.q or show_all_brands or selected_category %}<a class="btn btn-outline-secondary" href="{% url 'product-list' %}#catalog">Reset view</a>{% endif %}
+    </div>
+
+    <form class="catalog-filters" id="catalog-filters" method="get" action="#catalog">
+      {% if filters.q %}<input type="hidden" name="q" value="{{ filters.q }}">{% endif %}
+      {% if filters.family %}<input type="hidden" name="family" value="{{ filters.family }}">{% endif %}
+      {% if filters.subcategory %}<input type="hidden" name="subcategory" value="{{ filters.subcategory }}">{% endif %}
+      {% if filters.category %}<input type="hidden" name="category" value="{{ filters.category }}">{% endif %}
+      {% if filters.scope %}<input type="hidden" name="scope" value="{{ filters.scope }}">{% endif %}
+      <div class="catalog-filter-fields">
+        {% for field in product_filter_fields %}
+        <label><span>{{ field.label }}</span><select name="{{ field.name }}">
+          <option value="">All</option>
+          {% for value, label in field.options %}<option value="{{ value }}"{% if field.value == value %} selected{% endif %}>{{ label }}</option>{% endfor %}
+        </select></label>
+        {% endfor %}
+      </div>
+      {% if has_product_filters %}
+      <div class="catalog-filter-actions">
+        <a class="btn btn-outline-secondary" href="{% if active_subcategory %}{% url 'product-subcategory' active_family.key active_subcategory.key %}{% elif active_family %}{% url 'product-family' active_family.key %}{% else %}{% url 'product-list' %}{% endif %}{% if clear_filter_querystring %}?{{ clear_filter_querystring }}{% endif %}#catalog">Clear filters</a>
+      </div>
+      {% endif %}
+    </form>
+
+    <form method="get" action="{% url 'comparison:compare' %}">
+      <div class="catalog-compare-bar">
+        <span>Select 2–4 products to compare specifications</span>
+        <button class="btn btn-primary" type="submit">Compare selected</button>
+      </div>
+      <div class="catalog-product-grid">
+        {% for product in page_obj %}
+        <article class="catalog-product-card">
+          <div class="catalog-product-select"><input class="form-check-input" type="checkbox" name="products" value="{{ product.pk }}" aria-label="Select {{ product.brand.name }} {{ product.model }}"></div>
+          <a class="catalog-product-image" href="{% url 'product-detail' product.pk %}">
+            {% if product.image %}<img src="{% url 'product-image' product.pk %}" alt="{{ product.brand.name }} {{ product.model }}">{% else %}<span>{{ product.brand.name|slice:':1' }}</span>{% endif %}
+          </a>
+          <div class="catalog-product-body">
+            <div class="catalog-product-meta"><span>{{ product.brand.name }}</span><span>{{ product.category.name }}</span></div>
+            <h3><a href="{% url 'product-detail' product.pk %}">{{ product.model }}</a></h3>
+            {% if product.product_model.product_name %}<p>{{ product.product_model.product_name }}</p>{% else %}<p>{{ product.product_type.name|default:product.category.name }}</p>{% endif %}
+            <div class="catalog-product-badges">
+              {% if product.has_nom %}<span class="nom-badge" title="NOM certification">NOM</span>{% endif %}
+              {% if product.product_type %}<span>{{ product.product_type.name }}</span>{% endif %}
+              <span>{{ product.region }}{% if product.hardware_version %} · {{ product.hardware_version }}{% endif %}</span>
+              <span class="lifecycle-{{ product.lifecycle_status }}">{{ product.get_lifecycle_status_display }}</span>
+            </div>
+          </div>
+          <a class="catalog-product-link" href="{% url 'product-detail' product.pk %}">View product <span>→</span></a>
+        </article>
+        {% empty %}
+        <div class="catalog-empty-state">
+          <strong>No matching products</strong><p>Try another model or return to the full TP-Link portfolio.</p><a class="btn btn-primary" href="{% url 'product-list' %}">View all products</a>
+        </div>
+        {% endfor %}
+      </div>
+    </form>
+
+    {% if page_obj.paginator.num_pages > 1 %}
+    <nav class="mt-5" aria-label="Product pagination">
+      <ul class="pagination justify-content-center">
+        <li class="page-item{% if not page_obj.has_previous %} disabled{% endif %}">{% if page_obj.has_previous %}<a class="page-link" aria-label="First page" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page=1#catalog">First</a>{% else %}<span class="page-link" aria-disabled="true">First</span>{% endif %}</li>
+        <li class="page-item{% if not page_obj.has_previous %} disabled{% endif %}">{% if page_obj.has_previous %}<a class="page-link" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.previous_page_number }}#catalog">Previous</a>{% else %}<span class="page-link">Previous</span>{% endif %}</li>
+        <li class="page-item disabled"><span class="page-link">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span></li>
+        <li class="page-item{% if not page_obj.has_next %} disabled{% endif %}">{% if page_obj.has_next %}<a class="page-link" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.next_page_number }}#catalog">Next</a>{% else %}<span class="page-link">Next</span>{% endif %}</li>
+        <li class="page-item{% if not page_obj.has_next %} disabled{% endif %}">{% if page_obj.has_next %}<a class="page-link" aria-label="Last page" href="?{% if querystring %}{{ querystring }}&amp;{% endif %}page={{ page_obj.paginator.num_pages }}#catalog">Last</a>{% else %}<span class="page-link" aria-disabled="true">Last</span>{% endif %}</li>
+      </ul>
+    </nav>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  (() => {
+    const form = document.getElementById("catalog-filters");
+    if (!form) return;
+
+    let submitting = false;
+    form.querySelectorAll("select").forEach((select) => {
+      select.addEventListener("change", () => {
+        if (submitting) return;
+        submitting = true;
+        form.setAttribute("aria-busy", "true");
+        form.requestSubmit();
+      });
+    });
+  })();
+</script>
 {% endblock %}

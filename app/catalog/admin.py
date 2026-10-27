@@ -4,17 +4,55 @@ from .models import (
     Brand,
     Category,
     ComparisonTemplate,
-    DatasheetIngestion,
     Product,
     ProductHighlight,
     ProductModel,
+    ProductPriceListing,
+    ProductPriceSnapshot,
     ProductSpec,
     ProductType,
+    PriceSource,
     SourceDocument,
     SpecDefinition,
     SpecEvidence,
     TemplateField,
 )
+
+
+@admin.register(PriceSource)
+class PriceSourceAdmin(admin.ModelAdmin):
+    list_display = ("name", "code", "active", "last_synced_at", "last_sync_status")
+    list_filter = ("active", "last_sync_status")
+    search_fields = ("name", "code", "base_url")
+    readonly_fields = ("last_synced_at", "last_sync_status", "last_sync_message", "created_at", "updated_at")
+
+
+@admin.register(ProductPriceSnapshot)
+class ProductPriceSnapshotAdmin(admin.ModelAdmin):
+    list_display = ("product", "source", "currency", "unit_price", "list_price", "special_price", "created_at")
+    list_filter = ("source", "currency", "tax_included", "created_at")
+    search_fields = ("product__model", "external_model", "external_id")
+    autocomplete_fields = ("product", "source")
+    readonly_fields = ("created_at", "updated_at")
+    list_select_related = ("product", "product__brand", "source")
+
+
+@admin.register(ProductPriceListing)
+class ProductPriceListingAdmin(admin.ModelAdmin):
+    list_display = (
+        "product",
+        "source",
+        "external_id",
+        "external_model",
+        "active",
+        "last_seen_at",
+        "last_checked_at",
+    )
+    list_filter = ("source", "active")
+    search_fields = ("product__model", "external_model", "external_id")
+    autocomplete_fields = ("product", "source")
+    readonly_fields = ("created_at", "updated_at", "last_seen_at", "last_checked_at")
+    list_select_related = ("product", "product__brand", "source")
 
 
 @admin.register(Brand)
@@ -137,7 +175,7 @@ class ProductAdmin(admin.ModelAdmin):
         ("Identity", {"fields": ("product_model", "brand", "category", "product_type", "model", "model_key")} ),
         ("Version", {"fields": ("region", "hardware_version", "sku", "ap_type", "wifi_standard", "launch_date")} ),
         ("Lifecycle", {"fields": ("lifecycle_status", "is_published")} ),
-        ("Source", {"fields": ("official_url", "datasheet_url", "image", "notes")} ),
+        ("Source", {"fields": ("official_url", "image", "notes")} ),
         ("Audit", {"fields": ("created_by", "updated_by", "created_at", "updated_at")} ),
     )
 
@@ -219,47 +257,6 @@ class SourceDocumentAdmin(admin.ModelAdmin):
     search_fields = ("title", "url", "document_version", "product__model")
     autocomplete_fields = ("brand", "product")
     readonly_fields = ("created_at", "updated_at")
-
-
-@admin.register(DatasheetIngestion)
-class DatasheetIngestionAdmin(admin.ModelAdmin):
-    list_display = (
-        "product",
-        "source_type",
-        "status",
-        "extraction_method",
-        "ai_model",
-        "detected_model",
-        "extracted_spec_count",
-        "retained_spec_count",
-        "processed_at",
-    )
-    list_filter = ("source_type", "status", "extraction_method", "processed_at")
-    search_fields = (
-        "product__model",
-        "product__brand__name",
-        "source_url",
-        "validation_message",
-        "file_sha256",
-    )
-    autocomplete_fields = ("product", "requested_by")
-    readonly_fields = (
-        "file_sha256",
-        "status",
-        "validation_message",
-        "detected_model",
-        "page_count",
-        "extracted_spec_count",
-        "retained_spec_count",
-        "extraction_method",
-        "ai_model",
-        "ai_spec_count",
-        "average_confidence",
-        "extraction_details",
-        "processed_at",
-        "created_at",
-        "updated_at",
-    )
 
 
 @admin.register(SpecEvidence)

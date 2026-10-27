@@ -22,7 +22,7 @@ D:\APProductDB\
 - 当前地址：`192.168.68.56`
 - 当前网段：`192.168.68.0/22`
 - 同事访问：`http://192.168.68.56:8000/`
-- 防火墙只允许 Domain/Private 网络配置文件中的 `192.168.68.0/22` 访问 TCP 8000。
+- 防火墙只允许配置的局域网网段访问 TCP 8000；规则适用于 Domain/Private/Public 配置文件，以兼容被 Windows 标记为“公用”的受信任局域网。
 
 必须在路由器或 DHCP 服务器上为本机设置 `192.168.68.56` 的地址保留；如果地址变化，重新运行 `configure_runtime.py`，并使用新网段重新安装防火墙规则。不得配置公网端口映射。
 
@@ -54,7 +54,8 @@ cd D:\APProductDB\app
 
 - `APProductDB-Server`：开机启动 Waitress；失败后每5分钟重试，最多3次；
 - `APProductDB-Backup`：每天23:00运行一致性备份；
-- `APProductDB-HealthCheck`：每15分钟检查 `/health/`；
+- `APProductDB-SyscomPrices`：每周日02:00抓取 SYSCOM 账户价格；使用独立多轮会话补扫，并把日志写入 `logs\syscom-prices.log`；
+- `APProductDB-HealthCheck`：每5分钟检查 `/health/`，失败时自动完整重启服务并再次验证；
 - `APProductDB-LAN-8000`：仅允许当前局域网访问8000端口；
 - 交流电源下不自动睡眠，合盖不睡眠。
 - 数据库、附件、备份、日志、恢复报告和 `.env` ACL 仅允许当前管理员、SYSTEM 与本机 Administrators。
@@ -77,6 +78,15 @@ Stop-ScheduledTask -TaskName APProductDB-Server
 Get-ScheduledTask -TaskName APProductDB-*
 Get-ScheduledTaskInfo -TaskName APProductDB-Server
 ```
+
+如只需重新安装价格抓取任务（不会修改服务、防火墙或备份任务），以管理员身份执行：
+
+```powershell
+D:\APProductDB\app\scripts\install_syscom_price_task.ps1 -DayOfWeek Sunday -At 02:00
+```
+
+价格抓取由项目内的 Django 管理命令完成。已匹配产品会保存 SYSCOM 商品代码、外部型号和链接；价格变化时追加历史快照，价格不变时只更新检查时间。
+现有的每日备份任务还会检查 `data\syscom-price-last-success.txt`；如果超过七天没有成功同步，会自动调用价格抓取脚本作为兜底，并通过同一成功标记避免重复运行。
 
 正式运行只使用 Waitress，不使用 `manage.py runserver`。启动计划任务前应关闭仍占用8000端口的开发服务器。
 

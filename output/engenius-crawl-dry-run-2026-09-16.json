@@ -1,0 +1,1772 @@
+{
+  "stats": {
+    "not_found": 1,
+    "ok": 22
+  },
+  "results": [
+    {
+      "product_id": 190,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW120",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW120-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW120 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 5",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          12.0,
+          "Maximum Power Consumption 12W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af) / 12VDC",
+          "PoE (802.3af) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "1 x 2.4 GHz: 5 dBi",
+          "Antenna\n1 x 2.4 GHz: 5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "1 x 2.4 GHz: 5 dBi",
+          "1 x 2.4 GHz: 5 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "OWE",
+          "OWE"
+        ]
+      }
+    },
+    {
+      "product_id": 319,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW160",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW160-Product-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW160 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 5",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP67",
+          "IP67"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          12.0,
+          "Maximum Power Consumption 12W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 6 dBi",
+          "Antenna\n2 x 2.4 GHz: 6 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Standards",
+          "Standards"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "OWE",
+          "OWE"
+        ]
+      }
+    },
+    {
+      "product_id": 127,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW210L",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2024/11/ECW210L-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW210L official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "160 x 160 x 30 mm",
+          "160 x 160 x 30 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          10.7,
+          "Maximum Power Consumption 10.7W"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af) / 12VDC",
+          "PoE (802.3af) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 4dBi",
+          "Antenna\n2 x 2.4 GHz: 4dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 4dBi(Integrated Omni-Directional)",
+          "2 x 2.4 GHz: 4dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 232,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW215",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "poe_output": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "centralized_management": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2022/09/ECW215-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW215 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          14.2,
+          "Maximum Power Consumption 14.2W"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          200,
+          "200 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "5 GHz",
+          "5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x  2.4 GHz: 4 dBi",
+          "Antenna\n2 x  2.4 GHz: 4 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 4 dBi",
+          "2 x 2.4 GHz: 4 dBi"
+        ],
+        "poe_output": [
+          "text",
+          "Port 2 - 802.3af/at",
+          "Port 2 - 802.3af/at"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3 Enterprise",
+          "WPA3 Enterprise"
+        ]
+      }
+    },
+    {
+      "product_id": 153,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW220",
+      "url": "https://store.engeniustech.com/products/ecw220",
+      "source_urls": [
+        "https://store.engeniustech.com/products/ecw220"
+      ],
+      "evidence_url": "https://store.engeniustech.com/products/ecw220",
+      "spec_sources": {
+        "max_power_consumption_w": "https://store.engeniustech.com/products/ecw220",
+        "power_method": "https://store.engeniustech.com/products/ecw220",
+        "antenna_gain_dbi": "https://store.engeniustech.com/products/ecw220",
+        "antenna_type": "https://store.engeniustech.com/products/ecw220",
+        "max_ssids": "https://store.engeniustech.com/products/ecw220",
+        "centralized_management": "https://store.engeniustech.com/products/ecw220",
+        "mesh_support": "https://store.engeniustech.com/products/ecw220",
+        "wireless_security": "https://store.engeniustech.com/products/ecw220"
+      },
+      "title": "ECW220: Cloud Managed Wi-Fi 6 2×2 Indoor Wireless Access Point\n – EnGenius Store",
+      "image_url": "http://store.engeniustech.com/cdn/shop/files/ECW220-top.jpg?v=1745267295",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          12.8,
+          "Maximum Power Consumption 12.8W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12VDC",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 3 dBi",
+          "Antenna 2 x 2.4 GHz: 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2x2 Dual-band",
+          "2x2 Dual-band"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 154,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW220S",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2021/11/ECW220S-Datasheet-v1.pdf"
+      },
+      "title": "EnGenius ECW220S official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          12.8,
+          "Maximum Power Consumption 12.8W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af) / 12VDC",
+          "PoE (802.3af) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 4dBi",
+          "Antenna\n2 x 2.4 GHz: 4dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 4dBi",
+          "2 x 2.4 GHz: 4dBi"
+        ],
+        "max_ssids": [
+          "number",
+          5,
+          "5"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3 Enterprise",
+          "WPA3 Enterprise"
+        ]
+      }
+    },
+    {
+      "product_id": 116,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW230",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW230-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW230 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          19.5,
+          "Maximum Power Consumption 19.5W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at) / 12VDC",
+          "PoE (802.3at) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "4 x 2.4 GHz: 4 dBi",
+          "Antenna\n4 x 2.4 GHz: 4 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "• Supports up to 2,400 Mbps in 5-GHz frequency band &",
+          "• Supports up to 2,400 Mbps in 5-GHz frequency band &"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 117,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW230S",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW230S-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW230S official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "205 x 205 x 33.2 mm",
+          "205 x 205 x 33.2 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          19.5,
+          "Maximum Power Consumption 19.5W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          600,
+          "600 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          400,
+          "400 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / 12VDC",
+          "PoE (802.3af / 802.3at) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "4 x 2.4 GHz: 5 dBi",
+          "Antenna\n4 x 2.4 GHz: 5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "4 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)",
+          "4 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 300,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW260",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2021/07/ECW260-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW260 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP67",
+          "IP67"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.9,
+          "Maximum Power Consumption 15.9W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 6 dBi",
+          "Antenna\n2 x 2.4 GHz: 6 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 6 dBi",
+          "2 x 2.4 GHz: 6 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "OWE",
+          "OWE"
+        ]
+      }
+    },
+    {
+      "product_id": 271,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW270",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2023/01/ECW270-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW270 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP68",
+          "IP68"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          46.0,
+          "Maximum Power Consumption 46W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "Four (4) External 7 dBi",
+          "Antenna \nFour (4) External 7 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "• Supports up to 2,400 Mbps in 5-GHz band & 1,200 Mbps in 2.4-GHz band",
+          "• Supports up to 2,400 Mbps in 5-GHz band & 1,200 Mbps in 2.4-GHz band"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-PSK (SAE)",
+          "WPA3-PSK (SAE)"
+        ]
+      }
+    },
+    {
+      "product_id": 77,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW510",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2025/07/ECW510-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW510 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "160 x 160 x 32 mm",
+          "160 x 160 x 32 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.5,
+          "Maximum Power Consumption 15.5W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          700,
+          "700 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          300,
+          "300 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / 12VDC",
+          "PoE (802.3af / 802.3at) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz:  3 dBi",
+          "Antenna\n2 x 2.4 GHz:  3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 3 dBi(Integrated Omni-Directional)",
+          "2 x 2.4 GHz: 3 dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 1253,
+      "status": "not_found",
+      "brand": "EnGenius",
+      "model": "ECW510P"
+    },
+    {
+      "product_id": 205,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW515",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "centralized_management": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2026/04/EnGenius-ECW515-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW515 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "110 x 130 x 42mm",
+          "110 x 130 x 42mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          26.0,
+          "Power Consumption DC in 26W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          700,
+          "700 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          900,
+          "900Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz:  5 dBi",
+          "Antenna\n2 x 2.4 GHz:  5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)",
+          "2 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 63,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW520",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2025/06/ECW520-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW520 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "158 x 158 x 35 mm",
+          "158 x 158 x 35 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          25.4,
+          "Maximum Power Consumption 25.4W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          700,
+          "700 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          300,
+          "300 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / 12VDC",
+          "PoE (802.3af / 802.3at) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz:  6 dBi",
+          "Antenna\n2 x 2.4 GHz:  6 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 6 dBi(Integrated Omni-Directional)",
+          "2 x 2.4 GHz: 6 dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 58,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW526",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2024/04/ECW526-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW526 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "190 x 190 x 39.5 mm",
+          "190 x 190 x 39.5 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          21.0,
+          "Maximum Power Consumption 21W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          700,
+          "700 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          900,
+          "900 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at) / 12VDC",
+          "PoE (802.3at) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz:  5 dBi",
+          "Antenna\n2 x 2.4 GHz:  5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)",
+          "2 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 43,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW536",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "fast_roaming": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2024/01/ECW536-Datasheet.pdf"
+      },
+      "title": "EnGenius ECW536 official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "230 x 230 x 37 mm",
+          "230 x 230 x 37 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          38.0,
+          "Maximum Power Consumption 38W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          400,
+          "400 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          800,
+          "800 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3bt) / 12VDC",
+          "PoE (802.3bt) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "4 x 2.4 GHz:  5 dBi",
+          "Antenna\n4 x 2.4 GHz:  5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "4 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)",
+          "4 x 2.4 GHz: 5 dBi(Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA2-PSK",
+          "WPA2-PSK"
+        ]
+      }
+    },
+    {
+      "product_id": 44,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW536S",
+      "url": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+      "source_urls": [
+        "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/"
+      ],
+      "evidence_url": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "max_power_consumption_w": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "rate_2g_mbps": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "rate_5g_mbps": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "supported_bands": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "max_channel_width_mhz": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "power_method": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "antenna_gain_dbi": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "antenna_type": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "max_ssids": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "centralized_management": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "mesh_support": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "fast_roaming": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/",
+        "wireless_security": "https://www.engeniustech.com/in/products/wireless/indoor-access-points/ecw536s/"
+      },
+      "title": "Cloud7 4x4x4 S | EnGenius India",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "230 x 230 x 39.5mm",
+          "230 x 230 x 39.5mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          37.0,
+          "Maximum Power Consumption 37W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          400,
+          "400 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          800,
+          "800 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at / 802.3bt) / 12VDC",
+          "PoE (802.3at / 802.3bt) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "4 x 2.4 GHz: 5 dBi",
+          "Antenna\n\n \n 4 x 2.4 GHz: 5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "4 x 2.4 GHz: 5 dBi (Integrated Omni-Directional)",
+          "4 x 2.4 GHz: 5 dBi (Integrated Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Outdoor Wireless",
+          "Outdoor Wireless"
+        ]
+      }
+    },
+    {
+      "product_id": 261,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "ECW560",
+      "url": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+      "source_urls": [
+        "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/"
+      ],
+      "evidence_url": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+      "spec_sources": {
+        "ip_rating": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "dimensions_mm": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "max_power_consumption_w": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "rate_2g_mbps": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "rate_5g_mbps": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "supported_bands": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "max_channel_width_mhz": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "power_method": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "antenna_gain_dbi": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "antenna_type": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "max_ssids": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "centralized_management": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "mesh_support": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "fast_roaming": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/",
+        "wireless_security": "https://www.engeniustech.com/eu/products/wireless/outdoor-access-points/ecw560/"
+      },
+      "title": "Cloud7 2x2 Outdoor | EnGenius Networks Europe B.V",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "dimensions_mm": [
+          "text",
+          "152 x 220 x 44 mm",
+          "152 x 220 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          22.5,
+          "Maximum Power Consumption 22.5w"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          700,
+          "700 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          900,
+          "900 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 5 dBi",
+          "Antenna\n\n 2 x 2.4 GHz: 5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 5 dBi(External Omni-Directional) 2 x 5 GHz: 5 dBi(External Omni-Directional)",
+          "2 x 2.4 GHz: 5 dBi(External Omni-Directional) 2 x 5 GHz: 5 dBi(External Omni-Directional)"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Outdoor Wireless",
+          "Outdoor Wireless"
+        ]
+      }
+    },
+    {
+      "product_id": 1257,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "EWS276-FIT",
+      "url": "https://store.engeniustech.com/products/ews276-fit",
+      "source_urls": [
+        "https://store.engeniustech.com/products/ews276-fit"
+      ],
+      "evidence_url": "https://store.engeniustech.com/products/ews276-fit",
+      "spec_sources": {
+        "max_power_consumption_w": "https://store.engeniustech.com/products/ews276-fit",
+        "power_method": "https://store.engeniustech.com/products/ews276-fit",
+        "max_clients": "https://store.engeniustech.com/products/ews276-fit",
+        "antenna_gain_dbi": "https://store.engeniustech.com/products/ews276-fit",
+        "max_ssids": "https://store.engeniustech.com/products/ews276-fit",
+        "centralized_management": "https://store.engeniustech.com/products/ews276-fit",
+        "wireless_security": "https://store.engeniustech.com/products/ews276-fit"
+      },
+      "title": "EWS276-FIT: EnGenius Fit 4×4 Indoor Wireless Wi-Fi 6 Access Point\n – EnGenius Store",
+      "image_url": "http://store.engeniustech.com/cdn/shop/files/ews276-fit-front2.jpg?v=1745267279",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          17.0,
+          "Maximum Power Consumption 17W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at) / 12VDC",
+          "PoE (802.3at) / 12VDC"
+        ],
+        "max_clients": [
+          "number",
+          250,
+          "250 concurrent connections"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "4 x 2.4 GHz: 5 dBi",
+          "Antenna 4 x 2.4 GHz: 5 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 128,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "EWS356-FIT",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "rate_2g_mbps": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "rate_5g_mbps": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "supported_bands": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "max_channel_width_mhz": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2023/08/EWS356-FIT-Datasheet.pdf"
+      },
+      "title": "EnGenius EWS356-FIT official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          12.4,
+          "Maximum Power Consumption 12.4W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          574,
+          "574 Mbps (2.4 GHz)"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          400,
+          "400 Mbps (5 GHz)"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / 12VDC",
+          "PoE (802.3af / 802.3at) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 4 dBi",
+          "Antenna \n2 x 2.4 GHz: 4 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 4 dBi",
+          "2 x 2.4 GHz: 4 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-PSK (SAE)",
+          "WPA3-PSK (SAE)"
+        ]
+      }
+    },
+    {
+      "product_id": 155,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "EWS357-FIT",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS357-Fit-Datasheet.pdf"
+      },
+      "title": "EnGenius EWS357-FIT official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          12.8,
+          "Maximum Power Consumption 12.8W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af) / 12VDC",
+          "PoE (802.3af) / 12VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 2.4 GHz: 4 dBi",
+          "Antenna \n2 x 2.4 GHz: 4 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2 x 2.4 GHz: 4 dBi",
+          "2 x 2.4 GHz: 4 dBi"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 249,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "EWS510AP",
+      "url": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+      "source_urls": [
+        "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/"
+      ],
+      "evidence_url": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+      "spec_sources": {
+        "dimensions_mm": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "rate_2g_mbps": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "rate_5g_mbps": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "supported_bands": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "power_method": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "antenna_gain_dbi": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "ethernet_interfaces": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "antenna_type": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "max_ssids": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "centralized_management": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "mesh_support": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "fast_roaming": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/",
+        "wireless_security": "https://www.engeniustech.com/apac/products/wireless/indoor-access-points/ews510ap/"
+      },
+      "title": "EWS510AP Indoor Access Point | EnGenius APAC .",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "130 x 110 x 37 mm",
+          "130 x 110 x 37 mm"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          300,
+          "2.4GHz 300 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          867,
+          "5GHz 867 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / DC Power",
+          "PoE (802.3af / 802.3at) / DC Power"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2 x 4 dBi",
+          "Antenna\n\n \n 2 x 4 dBi"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "3 x 10/100/1000 Ethernet Ports",
+          "3 x 10/100/1000 Ethernet Ports"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Omni-Directional Antennas",
+          "Internal Omni-Directional Antennas"
+        ],
+        "max_ssids": [
+          "number",
+          16,
+          "16"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r",
+          "802.11k / 802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Outdoor Wireless",
+          "Outdoor Wireless"
+        ]
+      }
+    },
+    {
+      "product_id": 301,
+      "status": "ok",
+      "brand": "EnGenius",
+      "model": "EWS850-FIT",
+      "url": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+      "source_urls": [
+        "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf"
+      ],
+      "evidence_url": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "max_power_consumption_w": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "power_method": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "antenna_gain_dbi": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "antenna_type": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "max_ssids": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "mesh_support": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf",
+        "wireless_security": "https://www.engeniustech.com/wp-content/uploads/2022/10/EWS850-FIT-Datasheet.pdf"
+      },
+      "title": "EnGenius EWS850-FIT official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP67",
+          "IP67"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          15.9,
+          "Maximum Power Consumption 15.9W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af)",
+          "PoE (802.3af)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "Four (4) External 5 dBi",
+          "Antenna \nFour (4) External 5 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Four (4) External 5 dBi Dual-Concurrent Omni-Direc",
+          "Four (4) External 5 dBi Dual-Concurrent Omni-Direc"
+        ],
+        "max_ssids": [
+          "number",
+          8,
+          "8"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3-PSK (SAE)",
+          "WPA3-PSK (SAE)"
+        ]
+      }
+    }
+  ]
+}

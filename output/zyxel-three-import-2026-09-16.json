@@ -1,0 +1,214 @@
+{
+  "stats": {
+    "ok": 3
+  },
+  "results": [
+    {
+      "product_id": 1266,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA110AX",
+      "url": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax",
+      "source_urls": [
+        "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax",
+        "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification"
+      ],
+      "evidence_url": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "wireless_security": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "rate_2g_mbps": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "rate_5g_mbps": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "supported_bands": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "power_method": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "antenna_gain_dbi": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "antenna_type": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "mesh_support": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification",
+        "fast_roaming": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa110ax/specification"
+      },
+      "title": "NWA110AX | AX1800 4-Stream WiFi 6 Dual-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/nwa110ax/expand/nwa110ax_hw-top.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4 GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          1200,
+          "5 GHz: 1200 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "5dBi",
+          "Gain 5dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2x2 + 2x2 MIMO Embedded Antenna",
+          "2x2 + 2x2 MIMO Embedded Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 1350,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "RGS200-12P",
+      "url": "https://www.zyxel.com/em/en-em/products/switch/rgs200-12p",
+      "source_urls": [
+        "https://www.zyxel.com/em/en-em/products/switch/rgs200-12p",
+        "https://www.zyxel.com/em/en-em/products/switch/rgs200-12p/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/em/en-em/products/switch/rgs200-12p/specifications",
+      "spec_sources": {
+        "fanless": "https://www.zyxel.com/em/en-em/products/switch/rgs200-12p/specifications",
+        "mac_address_table": "https://www.zyxel.com/em/en-em/products/switch/rgs200-12p/specifications"
+      },
+      "title": "RGS200-12P | 12-port GbE Managed PoE Switch | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/rgs200-12p/img_rgs200-12p_p_600.png",
+      "wifi_standard": "",
+      "specs": {
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "mac_address_table": [
+          "text",
+          "8 K",
+          "MAC address table: 8 K"
+        ]
+      }
+    },
+    {
+      "product_id": 1244,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "WBE665S",
+      "url": "https://www.zyxel.com/global/en/products/wireless/wbe665s",
+      "source_urls": [
+        "https://www.zyxel.com/global/en/products/wireless/wbe665s",
+        "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+      "spec_sources": {
+        "ip_rating": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "lightning_protection_kv": "https://www.zyxel.com/global/en/products/wireless/wbe665s",
+        "total_spatial_streams": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "wireless_security": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "rate_6g_mbps": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "supported_bands": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "power_method": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "antenna_type": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "mesh_support": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications",
+        "fast_roaming": "https://www.zyxel.com/global/en/products/wireless/wbe665s/specifications"
+      },
+      "title": "WBE665S | BE22000 12-Stream WiFi 7 Triple-Radio NebulaFlex Pro Ruggedized Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/wbe665s/WBE665S_ICO_1.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP67",
+          "IP67"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6KV surge protection"
+        ],
+        "total_spatial_streams": [
+          "number",
+          12,
+          "12-Stream"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          1376,
+          "2.4GHz: 1376Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          8646,
+          "5GHz: 8646Mbps"
+        ],
+        "rate_6g_mbps": [
+          "number",
+          11530,
+          "6GHz: 11530Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / 48VDC",
+          "PoE (802.3af / 802.3at / 802.3bt) / 48VDC"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5/5/10Gbps LAN or SFP+",
+          "1 x 1/2.5/5/10Gbps LAN or SFP+"
+        ],
+        "antenna_type": [
+          "text",
+          "Smart Antenna",
+          "Smart Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    }
+  ]
+}

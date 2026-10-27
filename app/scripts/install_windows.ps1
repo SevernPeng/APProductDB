@@ -2,6 +2,9 @@
 param(
     [string]$LanSubnet = '192.168.68.0/22',
     [string]$DailyBackupTime = '23:00',
+    [ValidateSet('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday')]
+    [string]$WeeklyPriceDay = 'Sunday',
+    [string]$WeeklyPriceTime = '02:00',
     [switch]$SkipPowerSettings
 )
 
@@ -38,7 +41,7 @@ function New-ScriptAction([string]$ScriptName) {
 
 $ruleName = 'APProductDB-LAN-8000'
 Get-NetFirewallRule -DisplayName $ruleName -ErrorAction SilentlyContinue | Remove-NetFirewallRule
-New-NetFirewallRule -DisplayName $ruleName -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8000 -RemoteAddress $LanSubnet -Profile Domain,Private | Out-Null
+New-NetFirewallRule -DisplayName $ruleName -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8000 -RemoteAddress $LanSubnet -Profile Domain,Private,Public | Out-Null
 
 $userId = "$env:USERDOMAIN\$env:USERNAME"
 $taskPrincipal = New-ScheduledTaskPrincipal -UserId $userId -LogonType S4U -RunLevel Highest
@@ -51,8 +54,14 @@ $backupSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIf
 $backupTask = New-ScheduledTask -Action (New-ScriptAction 'backup.ps1') -Trigger (New-ScheduledTaskTrigger -Daily -At $backupAt) -Settings $backupSettings -Principal $taskPrincipal
 Register-ScheduledTask -TaskName 'APProductDB-Backup' -InputObject $backupTask -Force | Out-Null
 
-$healthTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(2) -RepetitionInterval (New-TimeSpan -Minutes 15) -RepetitionDuration (New-TimeSpan -Days 3650)
-$healthSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit (New-TimeSpan -Minutes 2)
+$priceAt = [DateTime]::Today.Add([TimeSpan]::Parse($WeeklyPriceTime))
+$priceSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit (New-TimeSpan -Hours 6) -MultipleInstances IgnoreNew
+$priceTrigger = New-ScheduledTaskTrigger -Weekly -WeeksInterval 1 -DaysOfWeek $WeeklyPriceDay -At $priceAt
+$priceTask = New-ScheduledTask -Action (New-ScriptAction 'sync_syscom_prices.ps1') -Trigger $priceTrigger -Settings $priceSettings -Principal $taskPrincipal
+Register-ScheduledTask -TaskName 'APProductDB-SyscomPrices' -InputObject $priceTask -Force | Out-Null
+
+$healthTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(2) -RepetitionInterval (New-TimeSpan -Minutes 5) -RepetitionDuration (New-TimeSpan -Days 3650)
+$healthSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit (New-TimeSpan -Minutes 3)
 $healthTask = New-ScheduledTask -Action (New-ScriptAction 'health_check.ps1') -Trigger $healthTrigger -Settings $healthSettings -Principal $taskPrincipal
 Register-ScheduledTask -TaskName 'APProductDB-HealthCheck' -InputObject $healthTask -Force | Out-Null
 
@@ -61,4 +70,4 @@ if (-not $SkipPowerSettings) {
     powercfg /setacvalueindex SCHEME_CURRENT SUB_BUTTONS LIDACTION 0 | Out-Null
     powercfg /setactive SCHEME_CURRENT | Out-Null
 }
-Write-Output "Installed firewall rule for $LanSubnet and three APProductDB scheduled tasks."
+Write-Output "Installed firewall rule for $LanSubnet and four APProductDB scheduled tasks."

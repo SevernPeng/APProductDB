@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "ok": 3
+  },
+  "results": [
+    {
+      "product_id": 942,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DES-105",
+      "url": "https://www.dlink.com/sg/en/products/des-105-5-port-fast-ethernet-switch",
+      "source_urls": [
+        "https://www.dlink.com/sg/en/products/des-105-5-port-fast-ethernet-switch",
+        "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/datasheet/des-105_datasheet_en_uk.pdf",
+        "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/quick-install-guide/des-105_qig_v101_deu.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/quick-install-guide/des-105_qig_v101_deu.pdf",
+      "spec_sources": {
+        "fanless": "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/datasheet/des-105_datasheet_en_uk.pdf",
+        "switching_capacity_gbps": "https://www.dlink.com/sg/en/products/des-105-5-port-fast-ethernet-switch",
+        "management_type": "https://www.dlink.com/sg/en/products/des-105-5-port-fast-ethernet-switch",
+        "flow_control": "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/datasheet/des-105_datasheet_en_uk.pdf",
+        "dimensions_mm": "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/datasheet/des-105_datasheet_en_uk.pdf",
+        "qos_support": "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/datasheet/des-105_datasheet_en_uk.pdf",
+        "transmission_method": "https://www.dlink.com/sg/en/-/media/business_products/des/des-105/datasheet/des-105_datasheet_en_uk.pdf"
+      },
+      "title": "DES-105 5-Port Fast Ethernet Unmanaged Desktop Switch | D-Link",
+      "image_url": "https://www.dlink.com/sg/en/-/media/product-pages/des/105/des-105-c2-front.png",
+      "wifi_standard": "",
+      "specs": {
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          1.0,
+          "Switching capacity 1 Gbps"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "flow_control": [
+          "text",
+          "802.3X Flow Control",
+          "802.3X Flow Control"
+        ],
+        "dimensions_mm": [
+          "text",
+          "100 \t x \t 98 \t x \t 28 \t mm",
+          "100 \t x \t 98 \t x \t 28 \t mm"
+        ],
+        "qos_support": [
+          "text",
+          "802.1p QoS",
+          "802.1p QoS"
+        ],
+        "transmission_method": [
+          "text",
+          "Store and Forward",
+          "Store-and-forward"
+        ]
+      }
+    },
+    {
+      "product_id": 719,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DGS-1210-10P",
+      "url": "https://www.dlink.com/us/en/products/dgs-1210-10p-10-port-gigabit-smart-managed-poe-switch",
+      "source_urls": [
+        "https://www.dlink.com/us/en/products/dgs-1210-10p-10-port-gigabit-smart-managed-poe-switch",
+        "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+      "spec_sources": {
+        "management_methods": "https://www.dlink.com/us/en/products/dgs-1210-10p-10-port-gigabit-smart-managed-poe-switch",
+        "dimensions_mm": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "operating_temperature_c": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "max_power_consumption_w": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "switching_capacity_gbps": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "mac_address_table": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "poe_standard": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "packet_buffer_mb": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "acl_security": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "qos_support": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "igmp_snooping": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf",
+        "port_mirroring": "https://www.dlink.com/us/en/-/media/business_products/dgs/dgs-1210/datasheet/dgs1210seriesrevfdatasheet210enus.pdf"
+      },
+      "title": "DGS-1210-10P 10-Port Gigabit Smart Managed PoE Switch with 65W PoE Budget | D-Link",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "management_methods": [
+          "text",
+          "Cloud Network Management",
+          "Cloud Network Management"
+        ],
+        "dimensions_mm": [
+          "text",
+          "280 x 126 x 44 mm",
+          "280 x 126 x 44 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "23˚F to 122˚F (-5˚C to 50˚C) 23˚F to 122˚F (-5˚C to 50˚C) 23˚F to 122˚F (-5˚C to 50˚C)",
+          "Operating Temperature 23˚F to 122˚F (-5˚C to 50˚C) 23˚F to 122˚F (-5˚C to 50˚C) 23˚F to 122˚F (-5˚C to 50˚C)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          81.9,
+          "Power Consumption (PoE enabled) N/A 81.9W"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          20.0,
+          "Switching Capacity 20 Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "8K",
+          "MAC Address Table 8K"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "packet_buffer_mb": [
+          "number",
+          0.512,
+          "Packet Buffer Memory 4.1 Mb"
+        ],
+        "acl_security": [
+          "text",
+          "(ACL)",
+          "(ACL)"
+        ],
+        "qos_support": [
+          "text",
+          "(QoS)",
+          "(QoS)"
+        ],
+        "igmp_snooping": [
+          "text",
+          "• IGMP v1/v2 Snooping",
+          "• IGMP v1/v2 Snooping"
+        ],
+        "port_mirroring": [
+          "text",
+          "• One-to-One",
+          "• One-to-One"
+        ]
+      }
+    },
+    {
+      "product_id": 532,
+      "status": "ok",
+      "brand": "D-Link",
+      "model": "DGS-1510-28X",
+      "url": "https://www.dlink.com/en/products/dgs-1510-28x-28-port-stackable-gigabit-switch-including-4-10gbe-sfp-ports",
+      "source_urls": [
+        "https://www.dlink.com/en/products/dgs-1510-28x-28-port-stackable-gigabit-switch-including-4-10gbe-sfp-ports",
+        "https://www.dlink.com/en/-/media/business_products/dgs/dgs-1510/datasheet/dgs1510seriesa1datasheetv112ww.pdf"
+      ],
+      "evidence_url": "https://www.dlink.com/en/-/media/business_products/dgs/dgs-1510/datasheet/dgs1510seriesa1datasheetv112ww.pdf",
+      "spec_sources": {
+        "ethernet_interfaces": "https://www.dlink.com/en/products/dgs-1510-28x-28-port-stackable-gigabit-switch-including-4-10gbe-sfp-ports",
+        "max_poe_per_port_w": "https://www.dlink.com/en/products/dgs-1510-28x-28-port-stackable-gigabit-switch-including-4-10gbe-sfp-ports",
+        "management_methods": "https://www.dlink.com/en/products/dgs-1510-28x-28-port-stackable-gigabit-switch-including-4-10gbe-sfp-ports",
+        "redundant_power": "https://www.dlink.com/en/-/media/business_products/dgs/dgs-1510/datasheet/dgs1510seriesa1datasheetv112ww.pdf",
+        "dimensions_mm": "https://www.dlink.com/en/-/media/business_products/dgs/dgs-1510/datasheet/dgs1510seriesa1datasheetv112ww.pdf",
+        "max_power_consumption_w": "https://www.dlink.com/en/-/media/business_products/dgs/dgs-1510/datasheet/dgs1510seriesa1datasheetv112ww.pdf",
+        "poe_standard": "https://www.dlink.com/en/-/media/business_products/dgs/dgs-1510/datasheet/dgs1510seriesa1datasheetv112ww.pdf"
+      },
+      "title": "DGS-1510-28X 28-port Stackable Gigabit Switch including 4 10GbE SFP+ ports | D-Link",
+      "image_url": "https://www.dlink.com/en/-/media/product-pages/dgs/1510/28x/dgs151028xfront.png",
+      "wifi_standard": "",
+      "specs": {
+        "ethernet_interfaces": [
+          "text",
+          "10GbE SFP+ ports",
+          "10GbE SFP+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "management_methods": [
+          "text",
+          "Cloud Network Management",
+          "Cloud Network Management"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "Redundant Power Supply"
+        ],
+        "dimensions_mm": [
+          "text",
+          "280 x 180 x 44 mm",
+          "280 x 180 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          20.3,
+          "Power Consumption • 20.3 W"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ]
+      }
+    }
+  ]
+}

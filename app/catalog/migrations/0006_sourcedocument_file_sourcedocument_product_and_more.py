@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='sourcedocument',
             name='file',
-            field=models.FileField(blank=True, upload_to=catalog.models.datasheet_upload_to),
+            field=models.FileField(blank=True, upload_to='datasheets/'),
         ),
         migrations.AddField(
             model_name='sourcedocument',
@@ -37,7 +37,7 @@ class Migration(migrations.Migration):
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('source_type', models.CharField(choices=[('url', 'Datasheet URL'), ('upload', 'Uploaded file')], max_length=10)),
                 ('source_url', models.URLField(blank=True, max_length=500)),
-                ('uploaded_file', models.FileField(blank=True, upload_to=catalog.models.datasheet_upload_to)),
+                ('uploaded_file', models.FileField(blank=True, upload_to='datasheets/')),
                 ('file_sha256', models.CharField(blank=True, db_index=True, max_length=64)),
                 ('status', models.CharField(choices=[('pending', 'Pending'), ('processing', 'Processing'), ('validated', 'Validated'), ('rejected', 'Rejected'), ('failed', 'Failed')], db_index=True, default='pending', max_length=20)),
                 ('validation_message', models.TextField(blank=True)),

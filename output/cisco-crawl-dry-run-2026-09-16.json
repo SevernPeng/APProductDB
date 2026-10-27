@@ -1,0 +1,1430 @@
+{
+  "stats": {
+    "error": 4,
+    "not_found": 32,
+    "ok": 18,
+    "page_found_no_specs": 5
+  },
+  "results": [
+    {
+      "product_id": 538,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C1300-24FP-4X",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "l2_features": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "stacking": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "management_methods": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf"
+      },
+      "title": "Cisco C1300-24FP-4X official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "268 x 185 x 43.94 mm",
+          "268 x 185 x 43.94 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "23° to 122°F (-5° to 50°C)",
+          "Operating temperature  23° to 122°F (-5° to 50°C)  "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "l2_features": [
+          "text",
+          "Spanning Tree Protocol Standard 802.1d Spanning Tree support",
+          "Spanning Tree Protocol Standard 802.1d Spanning Tree support"
+        ],
+        "stacking": [
+          "text",
+          "Hardware stacking Stacking information for C1300 and C1300X",
+          "Hardware stacking Stacking information for C1300 and C1300X"
+        ],
+        "management_methods": [
+          "text",
+          "Active/standby for resilient stack control",
+          "Active/standby for resilient stack control"
+        ],
+        "qos_support": [
+          "text",
+          "Priority levels 8 hardware queues",
+          "Priority levels 8 hardware queues"
+        ]
+      }
+    },
+    {
+      "product_id": 530,
+      "status": "error",
+      "brand": "Cisco",
+      "model": "C1300-24T-4X",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "product_id": 554,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C1300-48FP-4X",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "l2_features": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "stacking": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "management_methods": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-1300-series-switches/nb-06-cat1300-ser-data-sheet-cte-en.pdf"
+      },
+      "title": "Cisco C1300-48FP-4X official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "268 x 185 x 43.94 mm",
+          "268 x 185 x 43.94 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "23° to 122°F (-5° to 50°C)",
+          "Operating temperature  23° to 122°F (-5° to 50°C)  "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "l2_features": [
+          "text",
+          "Spanning Tree Protocol Standard 802.1d Spanning Tree support",
+          "Spanning Tree Protocol Standard 802.1d Spanning Tree support"
+        ],
+        "stacking": [
+          "text",
+          "Hardware stacking Stacking information for C1300 and C1300X",
+          "Hardware stacking Stacking information for C1300 and C1300X"
+        ],
+        "management_methods": [
+          "text",
+          "Active/standby for resilient stack control",
+          "Active/standby for resilient stack control"
+        ],
+        "qos_support": [
+          "text",
+          "Priority levels 8 hardware queues",
+          "Priority levels 8 hardware queues"
+        ]
+      }
+    },
+    {
+      "product_id": 546,
+      "status": "error",
+      "brand": "Cisco",
+      "model": "C1300-48T-4X",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "product_id": 1310,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C8111-G2-MX"
+    },
+    {
+      "product_id": 1305,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C8355-G2-MX"
+    },
+    {
+      "product_id": 162,
+      "status": "error",
+      "brand": "Cisco",
+      "model": "C9105AXI",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "product_id": 91,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9115AXI",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+        "max_channel_width_mhz": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+        "power_method": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+        "antenna_gain_dbi": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+        "antenna_type": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf",
+        "wireless_security": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/datasheet-c78-741988.pdf"
+      },
+      "title": "Cisco C9115AXI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "32° to 122°F (0° to 50°C)",
+          "Operating temperature: 32° to 122°F (0° to 50°C) "
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "● 2.4 GHz, peak gain 3 dBi",
+          "antenna ● 2.4 GHz, peak gain 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "● C9115AXE-x: Cisco Catalyst 9115 Series",
+          "● C9115AXE-x: Cisco Catalyst 9115 Series"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 92,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9120AXI",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet="
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+        "max_channel_width_mhz": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+        "power_method": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+        "antenna_gain_dbi": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+        "antenna_type": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet=",
+        "wireless_security": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9120ax-series-access-points/datasheet-c78-742115.pdf?+Catalyst+9120AXE+Access+Point+Data+Sheet="
+      },
+      "title": "Cisco C9120AXI official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "32° to 122°F (0° to 50°C)",
+          "Operating temperature: 32° to 122°F (0° to 50°C) "
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "4 dBi",
+          "gain 4 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Flexible radio (either on 2.4 GHz or on 5 GHz)",
+          "Flexible radio (either on 2.4 GHz or on 5 GHz)"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 268,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9124AXE",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "max_channel_width_mhz": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "power_method": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "antenna_gain_dbi": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "mimo_2g": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "total_spatial_streams": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf",
+        "wireless_security": "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/nb-06-cat9124-ser-ap-ds-cte-en.pdf"
+      },
+      "title": "Cisco C9124AXE official datasheet",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 6",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-40° to 149°F (-40° to 65°C) with no solar loading, -40° to 131°F (-40° to 55°C)",
+          "Operating temperature: -40° to 149°F (-40° to 65°C) with no solar loading, -40° to 131°F (-40° to 55°C) "
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / DC power",
+          "PoE (802.3af / 802.3at / 802.3bt) / DC power"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "7 dBi",
+          "gain 7 dBi"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4GHz + two 2x2"
+        ],
+        "total_spatial_streams": [
+          "number",
+          2,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 480,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9200L-24P-4X",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "ethernet_interfaces": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_ports": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "max_poe_per_port_w": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "jumbo_frame_bytes": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "vlan_count": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "stacking": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "redundant_power": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      },
+      "title": "Cisco C9200L-24P-4X official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "* and altitudes:",
+          "operating temperature* and altitudes: "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Gigabit Ethernet models,",
+          "Gigabit Ethernet models,"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          48,
+          "48 PoE+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9198,
+          "Jumbo frames 9198 bytes"
+        ],
+        "vlan_count": [
+          "number",
+          4094,
+          "4094"
+        ],
+        "stacking": [
+          "text",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,"
+        ],
+        "qos_support": [
+          "text",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 490,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9200L-24T-4X",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "ethernet_interfaces": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_ports": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "max_poe_per_port_w": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "jumbo_frame_bytes": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "vlan_count": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "stacking": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "redundant_power": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      },
+      "title": "Cisco C9200L-24T-4X official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "* and altitudes:",
+          "operating temperature* and altitudes: "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Gigabit Ethernet models,",
+          "Gigabit Ethernet models,"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          48,
+          "48 PoE+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9198,
+          "Jumbo frames 9198 bytes"
+        ],
+        "vlan_count": [
+          "number",
+          4094,
+          "4094"
+        ],
+        "stacking": [
+          "text",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,"
+        ],
+        "qos_support": [
+          "text",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 459,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9200L-48P-4X",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "ethernet_interfaces": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_ports": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "max_poe_per_port_w": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "jumbo_frame_bytes": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "vlan_count": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "stacking": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "redundant_power": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      },
+      "title": "Cisco C9200L-48P-4X official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "* and altitudes:",
+          "operating temperature* and altitudes: "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Gigabit Ethernet models,",
+          "Gigabit Ethernet models,"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          48,
+          "48 PoE+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9198,
+          "Jumbo frames 9198 bytes"
+        ],
+        "vlan_count": [
+          "number",
+          4094,
+          "4094"
+        ],
+        "stacking": [
+          "text",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,"
+        ],
+        "qos_support": [
+          "text",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 470,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "C9200L-48T-4X",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "ethernet_interfaces": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "poe_ports": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "max_poe_per_port_w": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "jumbo_frame_bytes": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "vlan_count": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "stacking": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf",
+        "redundant_power": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9200-series-switches/nb-06-cat9200-ser-data-sheet-cte-en.pdf"
+      },
+      "title": "Cisco C9200L-48T-4X official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "* and altitudes:",
+          "operating temperature* and altitudes: "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "Gigabit Ethernet models,",
+          "Gigabit Ethernet models,"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at / 802.3bt",
+          "802.3af / 802.3at / 802.3bt"
+        ],
+        "poe_ports": [
+          "number",
+          48,
+          "48 PoE+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          9198,
+          "Jumbo frames 9198 bytes"
+        ],
+        "vlan_count": [
+          "number",
+          4094,
+          "4094"
+        ],
+        "stacking": [
+          "text",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,",
+          "Cisco Catalyst 9200 Series switch models are designed for stacking switches as a single virtual switch,"
+        ],
+        "qos_support": [
+          "text",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent",
+          "● Superior QoS: Cisco Catalyst 9200 Series Switches offer Gigabit Ethernet speeds with intelligent"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "redundant power supply"
+        ]
+      }
+    },
+    {
+      "product_id": 420,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C9500-24Y4C"
+    },
+    {
+      "product_id": 403,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C9500-32C"
+    },
+    {
+      "product_id": 426,
+      "status": "page_found_no_specs",
+      "brand": "Cisco",
+      "model": "C9500-40X-2Q",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-12q-c9500-24q-c9500-40x-eol.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-12q-c9500-24q-c9500-40x-eol.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-12q-c9500-24q-c9500-40x-eol.pdf",
+      "spec_sources": {},
+      "title": "Cisco C9500-40X-2Q official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {}
+    },
+    {
+      "product_id": 411,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C9500-48Y4C"
+    },
+    {
+      "product_id": 1030,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C9K-PWR-1000WAC"
+    },
+    {
+      "product_id": 1033,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "C9K-PWR-650WAC-R"
+    },
+    {
+      "product_id": 696,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "CBS250-16P-2G",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "poe_ports": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "vlan_count": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "l2_features": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "l3_features": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "management_methods": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf"
+      },
+      "title": "Cisco CBS250-16P-2G official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "160 x 128 x 30 mm",
+          "160 x 128 x 30 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "32° to 122°F (0° to 50°C) for CBS250-8T-D and CBS250-8PP-D",
+          "Operating temperature 32° to 122°F (0° to 50°C) for CBS250-8T-D and CBS250-8PP-D "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          0,
+          "000 PoE+ ports"
+        ],
+        "vlan_count": [
+          "number",
+          802,
+          "802"
+        ],
+        "l2_features": [
+          "text",
+          "Spanning Tree Protocol",
+          "Spanning Tree Protocol"
+        ],
+        "l3_features": [
+          "text",
+          "IPv4 routing Wire-speed routing of IPv4 packets",
+          "IPv4 routing Wire-speed routing of IPv4 packets"
+        ],
+        "management_methods": [
+          "text",
+          "Cisco Business Dashboard Support for embedded probe for Cisco Business Dashboard running on the switch.",
+          "Cisco Business Dashboard Support for embedded probe for Cisco Business Dashboard running on the switch."
+        ],
+        "qos_support": [
+          "text",
+          "Priority levels 8 hardware queues",
+          "Priority levels 8 hardware queues"
+        ]
+      }
+    },
+    {
+      "product_id": 690,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "CBS250-24P-4G",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "fanless": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "poe_standard": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "poe_ports": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "vlan_count": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "l2_features": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "l3_features": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "management_methods": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf",
+        "qos_support": "https://www.cisco.com/c/en/us/products/collateral/switches/business-250-series-smart-switches/nb-06-bus250-smart-switch-ds-cte-en.pdf"
+      },
+      "title": "Cisco CBS250-24P-4G official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "160 x 128 x 30 mm",
+          "160 x 128 x 30 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "32° to 122°F (0° to 50°C) for CBS250-8T-D and CBS250-8PP-D",
+          "Operating temperature 32° to 122°F (0° to 50°C) for CBS250-8T-D and CBS250-8PP-D "
+        ],
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "poe_ports": [
+          "number",
+          0,
+          "000 PoE+ ports"
+        ],
+        "vlan_count": [
+          "number",
+          802,
+          "802"
+        ],
+        "l2_features": [
+          "text",
+          "Spanning Tree Protocol",
+          "Spanning Tree Protocol"
+        ],
+        "l3_features": [
+          "text",
+          "IPv4 routing Wire-speed routing of IPv4 packets",
+          "IPv4 routing Wire-speed routing of IPv4 packets"
+        ],
+        "management_methods": [
+          "text",
+          "Cisco Business Dashboard Support for embedded probe for Cisco Business Dashboard running on the switch.",
+          "Cisco Business Dashboard Support for embedded probe for Cisco Business Dashboard running on the switch."
+        ],
+        "qos_support": [
+          "text",
+          "Priority levels 8 hardware queues",
+          "Priority levels 8 hardware queues"
+        ]
+      }
+    },
+    {
+      "product_id": 513,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "CBS350-24FP-4X"
+    },
+    {
+      "product_id": 525,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "CBS350-24T-4X"
+    },
+    {
+      "product_id": 506,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "CBS350-48FP-4X"
+    },
+    {
+      "product_id": 520,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "CBS350-48T-4X"
+    },
+    {
+      "product_id": 1280,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "CW9105AXW"
+    },
+    {
+      "product_id": 71,
+      "status": "page_found_no_specs",
+      "brand": "Cisco",
+      "model": "CW9171I",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9171i/b-hig-cw9171i.html",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9171i/b-hig-cw9171i.html",
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9171i/b-hig-cw9171i.html"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9171i/b-hig-cw9171i.html",
+      "spec_sources": {},
+      "title": "Cisco Wireless 9171I Series Wi-Fi 7 Access Point Hardware Installation Guide - Cisco",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {}
+    },
+    {
+      "product_id": 199,
+      "status": "page_found_no_specs",
+      "brand": "Cisco",
+      "model": "CW9172H",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/cw9172h/b-hig-cw9172h/overview.html",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/cw9172h/b-hig-cw9172h/overview.html",
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/cw9172h/b-hig-cw9172h.html"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/cw9172h/b-hig-cw9172h.html",
+      "spec_sources": {},
+      "title": "About the Access Point | Cisco Wireless 9172H Series Wi-Fi 7 Access Point Hardware Installation Guide - Cisco",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {}
+    },
+    {
+      "product_id": 52,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "CW9172I",
+      "url": "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html",
+      "source_urls": [
+        "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html"
+      ],
+      "evidence_url": "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html",
+      "spec_sources": {
+        "mimo_2g": "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html",
+        "mimo_5g": "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html",
+        "mimo_6g": "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html",
+        "total_spatial_streams": "https://www.cisco.com/site/us/en/products/networking/wireless/access-points/meraki-access-points/cw9172i.html"
+      },
+      "title": "Meraki CW9172I - Wi-Fi 7 Future-Ready Wireless Solutions - Cisco",
+      "image_url": "https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/products/networking/wireless/access-points/meraki/cw9172i-800x600.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "mimo_2g": [
+          "text",
+          "4x4",
+          "2.4 GHz, 5 GHz, 6 GHz or 2.4 GHz + 5 GHz (4x4"
+        ],
+        "mimo_5g": [
+          "text",
+          "4x4",
+          "5 GHz, 6 GHz or 2.4 GHz + 5 GHz (4x4"
+        ],
+        "mimo_6g": [
+          "text",
+          "4x4",
+          "6 GHz or 2.4 GHz + 5 GHz (4x4"
+        ],
+        "total_spatial_streams": [
+          "number",
+          12,
+          "Sum of per-radio MIMO streams"
+        ]
+      }
+    },
+    {
+      "product_id": 29,
+      "status": "page_found_no_specs",
+      "brand": "Cisco",
+      "model": "CW9174I",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9174I/b-hig-cw9174i/overview.html",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9174I/b-hig-cw9174i/overview.html",
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9174I/b-hig-cw9174i.html"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9174I/b-hig-cw9174i.html",
+      "spec_sources": {},
+      "title": "About the Access Point | Cisco Wireless 9174I Series Wi-Fi 7 Access Point Hardware Installation Guide - Cisco",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {}
+    },
+    {
+      "product_id": 1243,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "CW9176I"
+    },
+    {
+      "product_id": 39,
+      "status": "page_found_no_specs",
+      "brand": "Cisco",
+      "model": "CW9178I",
+      "url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9178I/b-hig-cw9178i/overview.html",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9178I/b-hig-cw9178i/overview.html",
+        "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9178I/b-hig-cw9178i.html"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/td/docs/wireless/access_point/cw917x/c9178I/b-hig-cw9178i.html",
+      "spec_sources": {},
+      "title": "About the Access Point | Cisco Wireless 9178I Series Wi-Fi 7 Access Point Hardware Installation Guide - Cisco",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {}
+    },
+    {
+      "product_id": 1138,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-BX-D"
+    },
+    {
+      "product_id": 1132,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "GLC-BX-U",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf",
+        "max_power_consumption_w": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf",
+        "accessory_interface_type": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf",
+        "accessory_connector_type": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf",
+        "accessory_data_rate_gbps": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6800-series-supervisor-engine-6t/datasheet-c78-736408.pdf"
+      },
+      "title": "Cisco GLC-BX-U official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "32 to 104°F (0 to 40°C)",
+          "Operating temperature: 32 to 104°F (0 to 40°C) "
+        ],
+        "max_power_consumption_w": [
+          "number",
+          341.0,
+          "Power consumption ● Standard: 341 W"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ45",
+          "RJ45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G-SR 10-Gb SFP+ SFP-10G-LR 10-Gb SFP+ SFP-10G-LRM 10-Gb SFP+ SFP"
+        ]
+      }
+    },
+    {
+      "product_id": 1151,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-BX40-D-I"
+    },
+    {
+      "product_id": 1149,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "GLC-BX40-U-I",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+        "accessory_interface_type": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+        "accessory_connector_type": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+        "accessory_data_rate_gbps": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+        "accessory_wavelength_nm": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+        "accessory_fiber_mode": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf",
+        "accessory_power_w": "https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-4200-series/datasheet-c78-738105.pdf"
+      },
+      "title": "Cisco GLC-BX40-U-I official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "range, RJ-45 connector",
+          "operating temperature range, RJ-45 connector "
+        ],
+        "accessory_interface_type": [
+          "text",
+          "QSFP28",
+          "QSFP28"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "ONS-SE-Z1 16.5.1 1000BASE-LX Gigabit Ethernet / OC-48/STM-16 IR / OC-12/-2 /",
+          "ONS-SE-Z1 16.5.1 1000BASE-LX Gigabit Ethernet / OC-48/STM-16 IR / OC-12/-2 /"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          100.0,
+          "100G-SR4-S 16.11.1 Cisco SR4 QSFP transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850 nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "Multi-Mode"
+        ],
+        "accessory_power_w": [
+          "number",
+          15.0,
+          "15.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1124,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-LH-SMD"
+    },
+    {
+      "product_id": 1146,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-LX-SM-RGD"
+    },
+    {
+      "product_id": 1143,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-SX-MM-RGD"
+    },
+    {
+      "product_id": 1115,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-SX-MMD"
+    },
+    {
+      "product_id": 1106,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "GLC-TE"
+    },
+    {
+      "product_id": 998,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "MA-INJ-6"
+    },
+    {
+      "product_id": 1319,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "MX67"
+    },
+    {
+      "product_id": 1325,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "MX67W"
+    },
+    {
+      "product_id": 1313,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "MX85"
+    },
+    {
+      "product_id": 134,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "Meraki",
+      "url": "https://www.cisco.com/site/us/en/about/corporate-strategy-office/acquisitions/meraki/index.html",
+      "source_urls": [
+        "https://www.cisco.com/site/us/en/about/corporate-strategy-office/acquisitions/meraki/index.html"
+      ],
+      "evidence_url": "https://www.cisco.com/site/us/en/about/corporate-strategy-office/acquisitions/meraki/index.html",
+      "spec_sources": {
+        "centralized_management": "https://www.cisco.com/site/us/en/about/corporate-strategy-office/acquisitions/meraki/index.html"
+      },
+      "title": "Cisco Meraki: Cloud-Managed Networking - Cisco",
+      "image_url": "https://www.cisco.com/content/dam/cisco-cdc/site/images/testing/mh-testing/box-testing/test-meraki-bg.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "centralized_management": [
+          "text",
+          "Cloud-Managed",
+          "Cloud-Managed"
+        ]
+      }
+    },
+    {
+      "product_id": 1155,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "QSFP-100G-CU1M",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+        "operating_temperature_c": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+        "accessory_interface_type": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+        "accessory_connector_type": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+        "accessory_data_rate_gbps": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+        "accessory_wavelength_nm": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf",
+        "accessory_fiber_mode": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.pdf"
+      },
+      "title": "Cisco QSFP-100G-CU1M official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "13.5 x 18.4 x 72.4 mm",
+          "13.5 x 18.4 x 72.4 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "range is from +10 to +60°C with an optical link budget of 4.2",
+          "operating temperature range is from +10 to +60°C with an optical link budget of 4.2 "
+        ],
+        "accessory_interface_type": [
+          "text",
+          "MPO",
+          "MPO"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "MPO",
+          "MPO"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          100.0,
+          "100G modules are our latest generation of 100G transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Multi-mode",
+          "MMF"
+        ]
+      }
+    },
+    {
+      "product_id": 1047,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "QSFP-100G-SR4-S"
+    },
+    {
+      "product_id": 1061,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-10/25G-LR-S"
+    },
+    {
+      "product_id": 1099,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-10G-BXD-I"
+    },
+    {
+      "product_id": 1095,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-10G-BXU-I"
+    },
+    {
+      "product_id": 1088,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-10G-LR"
+    },
+    {
+      "product_id": 1078,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-10G-SR"
+    },
+    {
+      "product_id": 1069,
+      "status": "error",
+      "brand": "Cisco",
+      "model": "SFP-10G-T-X",
+      "error": "<urlopen error [Errno 11002] getaddrinfo failed>"
+    },
+    {
+      "product_id": 1054,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "SFP-25G-SR-S",
+      "url": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf",
+        "accessory_connector_type": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf",
+        "accessory_data_rate_gbps": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf",
+        "accessory_input_power": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf",
+        "accessory_power_w": "https://www.cisco.com/c/en/us/products/collateral/security/firesight-management-center/x800-series-ds.pdf"
+      },
+      "title": "Cisco SFP-25G-SR-S official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ45",
+          "RJ45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G-SR (10 GB) SFP-10G-LR (10 GB) SFP-10G-SR (10 GB) SFP"
+        ],
+        "accessory_input_power": [
+          "text",
+          "Configuration Two 1200-W AC power supplies",
+          "Configuration Two 1200-W AC power supplies"
+        ],
+        "accessory_power_w": [
+          "number",
+          1200.0,
+          "1200.0"
+        ]
+      }
+    },
+    {
+      "product_id": 1177,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-H10GB-CU1M"
+    },
+    {
+      "product_id": 1169,
+      "status": "ok",
+      "brand": "Cisco",
+      "model": "SFP-H10GB-CU3M",
+      "url": "https://www.cisco.com/c/dam/en/us/products/collateral/wireless/campus-gateway-ds.pdf",
+      "source_urls": [
+        "https://www.cisco.com/c/dam/en/us/products/collateral/wireless/campus-gateway-ds.pdf"
+      ],
+      "evidence_url": "https://www.cisco.com/c/dam/en/us/products/collateral/wireless/campus-gateway-ds.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://www.cisco.com/c/dam/en/us/products/collateral/wireless/campus-gateway-ds.pdf",
+        "accessory_connector_type": "https://www.cisco.com/c/dam/en/us/products/collateral/wireless/campus-gateway-ds.pdf",
+        "accessory_data_rate_gbps": "https://www.cisco.com/c/dam/en/us/products/collateral/wireless/campus-gateway-ds.pdf"
+      },
+      "title": "Cisco SFP-H10GB-CU3M official datasheet",
+      "image_url": "",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "RJ45",
+          "RJ45"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "RJ45",
+          "RJ45"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10 Gbps Ethernet"
+        ]
+      }
+    },
+    {
+      "product_id": 1161,
+      "status": "not_found",
+      "brand": "Cisco",
+      "model": "SFP-H25G-CU1M"
+    }
+  ]
+}

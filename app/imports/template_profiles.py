@@ -52,7 +52,7 @@ BASE_FIELDS = (
         "data_type": "choice",
         "unit": "",
         "required": False,
-        "description": "unknown, active, announced, or discontinued.",
+        "description": "active, discontinued, or eol; defaults to active.",
     },
     {
         "code": "official_url",
@@ -62,15 +62,6 @@ BASE_FIELDS = (
         "unit": "",
         "required": False,
         "description": "Official manufacturer product page URL.",
-    },
-    {
-        "code": "datasheet_url",
-        "display_name": "Datasheet",
-        "group": "Source",
-        "data_type": "url",
-        "unit": "",
-        "required": False,
-        "description": "Official Datasheet URL.",
     },
     {
         "code": "launch_date",

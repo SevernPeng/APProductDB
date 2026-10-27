@@ -40,6 +40,11 @@ class CatalogModelTests(TestCase):
         product = self.make_product()
         self.assertEqual(product.model_key, "U7PROOUTDOOR")
 
+    def test_product_lifecycle_defaults_to_active(self):
+        product = self.make_product()
+        self.assertEqual(product.lifecycle_status, Product.LifecycleStatus.ACTIVE)
+        self.assertEqual(product.product_model.lifecycle_status, ProductModel.LifecycleStatus.ACTIVE)
+
     def test_product_automatically_creates_canonical_model(self):
         product = self.make_product()
         self.assertIsNotNone(product.product_model_id)

@@ -2,6 +2,7 @@ from io import BytesIO
 from urllib.parse import urlencode
 
 from django.http import HttpResponse, HttpResponseBadRequest
+from django.db.models import Q
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views.decorators.http import require_GET
@@ -26,6 +27,60 @@ def _all_published_products():
     return Product.objects.filter(is_published=True).select_related("brand", "category").order_by(
         "category__name", "brand__name", "model", "region", "hardware_version"
     )
+
+
+def _prioritized_picker_products(all_products, anchor=None):
+    products = list(all_products)
+    if anchor is None:
+        return products
+
+    benchmark_order = {}
+    matches = ProductMatch.objects.filter(
+        Q(our_product=anchor) | Q(competitor_product=anchor)
+    ).exclude(status=ProductMatch.Status.REJECTED).order_by(
+        "rank", "-match_score", "pk"
+    )
+    for match in matches:
+        related_id = (
+            match.competitor_product_id
+            if match.our_product_id == anchor.pk
+            else match.our_product_id
+        )
+        benchmark_order.setdefault(related_id, len(benchmark_order))
+
+    products = [product for product in products if product.category_id == anchor.category_id]
+    for product in products:
+        product.is_benchmark_suggestion = product.pk in benchmark_order
+    return sorted(
+        products,
+        key=lambda product: (
+            0 if product.pk in benchmark_order else 1,
+            benchmark_order.get(product.pk, 0),
+            product.brand.name.casefold(),
+            product.model.casefold(),
+            product.region.casefold(),
+            product.hardware_version.casefold(),
+        ),
+    )
+
+
+def _selector_slots(products, picker_products):
+    selected_products = list(products)
+    slot_count = min(4, max(2, len(selected_products) + 1))
+    selected_ids = {product.pk for product in selected_products}
+    slots = []
+    for index in range(slot_count):
+        selected = selected_products[index] if index < len(selected_products) else None
+        excluded_ids = selected_ids - ({selected.pk} if selected else set())
+        slots.append(
+            {
+                "product": selected,
+                "options": [
+                    product for product in picker_products if product.pk not in excluded_ids
+                ],
+            }
+        )
+    return slots
 
 
 def _comparison_query(
@@ -140,7 +195,7 @@ def compare(request):
                 {
                     "all_products": all_products,
                     "products": [],
-                    "selector_slots": [None, None],
+                    "selector_slots": _selector_slots([], list(all_products)),
                     "only_differences": only_differences,
                     "show_sources": show_sources,
                     "include_extended": include_extended,
@@ -154,7 +209,7 @@ def compare(request):
             {
                 "all_products": all_products,
                 "products": [],
-                "selector_slots": [None, None],
+                "selector_slots": _selector_slots([], list(all_products)),
                 "error": str(exc),
                 "only_differences": only_differences,
                 "show_sources": show_sources,
@@ -184,11 +239,8 @@ def compare(request):
         product_ids, only_differences, show_sources, include_extended
     )
     export_url = reverse("comparison:export") + "?" + query
-    selector_slots = list(products)
-    if len(selector_slots) < 4:
-        selector_slots.append(None)
-    while len(selector_slots) < 2:
-        selector_slots.append(None)
+    picker_products = _prioritized_picker_products(all_products, products[0])
+    selector_slots = _selector_slots(products, picker_products)
     return render(
         request,
         "comparison/compare.html",
@@ -196,8 +248,9 @@ def compare(request):
             "all_products": all_products,
             "products": products,
             "selector_slots": selector_slots,
-            "grouped_rows": group_comparison_rows(rows),
+            "grouped_rows": group_comparison_rows(rows, products[0].category.slug),
             "row_count": len(rows),
+            "difference_count": sum(1 for row in rows if row["is_different"]),
             "only_differences": only_differences,
             "show_sources": show_sources,
             "include_extended": include_extended,

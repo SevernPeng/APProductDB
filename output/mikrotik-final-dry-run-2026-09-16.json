@@ -1,0 +1,819 @@
+{
+  "stats": {
+    "ok": 16
+  },
+  "results": [
+    {
+      "product_id": 1329,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "ATL 5G R16",
+      "url": "https://mikrotik.com/product/atl_5g_r16",
+      "source_urls": [
+        "https://mikrotik.com/product/atl_5g_r16",
+        "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf",
+      "spec_sources": {
+        "ip_rating": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf",
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf",
+        "cellular_standard": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf",
+        "cellular_downlink_mbps": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf",
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf",
+        "operating_temperature_c": "https://cdn.mikrotik.com/web-assets/product_files/ATL5GR16_260114.pdf"
+      },
+      "title": "MikroTik\n                    · ATL 5G R16",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/2456_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          10.0,
+          "Max power consumption 10 W"
+        ],
+        "cellular_standard": [
+          "text",
+          "5G",
+          "5G"
+        ],
+        "cellular_downlink_mbps": [
+          "number",
+          900,
+          "5G SA Category 4.2 Gbps Downlink, 900 Mbps"
+        ],
+        "dimensions_mm": [
+          "text",
+          "311 x 311 x 179 mm",
+          "311 x 311 x 179 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-40°C to +70°C",
+          "Operating temperature -40°C to +70°C"
+        ]
+      }
+    },
+    {
+      "product_id": 332,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "CCR1009-7G-1C-1S+",
+      "url": "https://mikrotik.com/product/CCR1009-7G-1C-1Splus",
+      "source_urls": [
+        "https://mikrotik.com/product/CCR1009-7G-1C-1Splus",
+        "https://cdn.mikrotik.com/web-assets/product_files/CCR1009-7G-1C-1S_210502.pdf",
+        "https://cdn.mikrotik.com/web-assets/product_files/CCR1009-7G-1C-1Splus-qg_190707.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/CCR1009-7G-1C-1Splus-qg_190707.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/CCR1009-7G-1C-1S_210502.pdf",
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/CCR1009-7G-1C-1Splus-qg_190707.pdf",
+        "ethernet_interfaces": "https://cdn.mikrotik.com/web-assets/product_files/CCR1009-7G-1C-1Splus-qg_190707.pdf",
+        "vpn_protocols": "https://mikrotik.com/product/CCR1009-7G-1C-1Splus",
+        "cellular_standard": "https://mikrotik.com/product/CCR1009-7G-1C-1Splus"
+      },
+      "title": "MikroTik\n                    · CCR1009-7G-1C-1S+",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1228_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "443 x 175 x 44 mm",
+          "443 x 175 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          34.0,
+          "Maximum power consumption 34 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "7x Gigabit Ethernet, 1x Combo port",
+          "7x Gigabit Ethernet, 1x Combo port"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ]
+      }
+    },
+    {
+      "product_id": 587,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "CRS309-1G-8S+IN",
+      "url": "https://mikrotik.com/product/crs309_1g_8s_in",
+      "source_urls": [
+        "https://mikrotik.com/product/crs309_1g_8s_in"
+      ],
+      "evidence_url": "https://mikrotik.com/product/crs309_1g_8s_in",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/crs309_1g_8s_in",
+        "max_power_consumption_w": "https://mikrotik.com/product/crs309_1g_8s_in",
+        "ethernet_interfaces": "https://mikrotik.com/product/crs309_1g_8s_in",
+        "poe_standard": "https://mikrotik.com/product/crs309_1g_8s_in"
+      },
+      "title": "MikroTik\n                    · CRS309-1G-8S+IN",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1730_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "272 x 191 x 44 mm",
+          "272 x 191 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          23.0,
+          "Max power consumption 23 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "10Gbps ports",
+          "10Gbps ports"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ]
+      }
+    },
+    {
+      "product_id": 584,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "CRS317-1G-16S+RM",
+      "url": "https://mikrotik.com/product/crs317_1g_16s_rm",
+      "source_urls": [
+        "https://mikrotik.com/product/crs317_1g_16s_rm"
+      ],
+      "evidence_url": "https://mikrotik.com/product/crs317_1g_16s_rm",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/crs317_1g_16s_rm",
+        "max_power_consumption_w": "https://mikrotik.com/product/crs317_1g_16s_rm",
+        "ethernet_interfaces": "https://mikrotik.com/product/crs317_1g_16s_rm"
+      },
+      "title": "MikroTik\n                    · CRS317-1G-16S+RM",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1324_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "443 x 224 x 44 mm",
+          "443 x 224 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          44.0,
+          "Max power consumption 44 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1G-16S+RM is a rack-mountable manageable switch with Layer3 features, it has 16 SFP+ ports for high performance 10GbE connectivity and a 1GbE copper port",
+          "1G-16S+RM is a rack-mountable manageable switch with Layer3 features, it has 16 SFP+ ports for high performance 10GbE connectivity and a 1GbE copper port"
+        ]
+      }
+    },
+    {
+      "product_id": 504,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "CRS326-24S+2Q+RM",
+      "url": "https://mikrotik.com/product/crs326_24s_2q_rm",
+      "source_urls": [
+        "https://mikrotik.com/product/crs326_24s_2q_rm"
+      ],
+      "evidence_url": "https://mikrotik.com/product/crs326_24s_2q_rm",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/crs326_24s_2q_rm",
+        "max_power_consumption_w": "https://mikrotik.com/product/crs326_24s_2q_rm",
+        "ethernet_interfaces": "https://mikrotik.com/product/crs326_24s_2q_rm"
+      },
+      "title": "MikroTik\n                    · CRS326-24S+2Q+RM",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1831_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "443 x 200 x 44 mm",
+          "443 x 200 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          69.0,
+          "Max power consumption 69 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "40 Gbps QSFP+ ports",
+          "40 Gbps QSFP+ ports"
+        ]
+      }
+    },
+    {
+      "product_id": 619,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "CRS328-4C-20S-4S+RM",
+      "url": "https://mikrotik.com/product/crs328_4c_20s_4s_rm",
+      "source_urls": [
+        "https://mikrotik.com/product/crs328_4c_20s_4s_rm"
+      ],
+      "evidence_url": "https://mikrotik.com/product/crs328_4c_20s_4s_rm",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/crs328_4c_20s_4s_rm",
+        "max_power_consumption_w": "https://mikrotik.com/product/crs328_4c_20s_4s_rm",
+        "ethernet_interfaces": "https://mikrotik.com/product/crs328_4c_20s_4s_rm",
+        "uplink_interfaces": "https://mikrotik.com/product/crs328_4c_20s_4s_rm"
+      },
+      "title": "MikroTik\n                    · CRS328-4C-20S-4S+RM",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1526_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "443 x 194 x 44 mm",
+          "443 x 194 x 44 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          43.0,
+          "Max power consumption 43 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "10G modules and four combo ports, where you can choose to use SFP or RJ45 ports from the combo group. These ports",
+          "10G modules and four combo ports, where you can choose to use SFP or RJ45 ports from the combo group. These ports"
+        ],
+        "uplink_interfaces": [
+          "text",
+          "20",
+          "20"
+        ]
+      }
+    },
+    {
+      "product_id": 354,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "Chateau LTE6 ax",
+      "url": "https://mikrotik.com/product/chateau_lte6_ax",
+      "source_urls": [
+        "https://mikrotik.com/product/chateau_lte6_ax",
+        "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "vpn_protocols": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "cellular_standard": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "router_wifi_standard": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "router_supported_bands": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "operating_temperature_c": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "ethernet_interfaces": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf",
+        "cellular_downlink_mbps": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE6ax_250355.pdf"
+      },
+      "title": "MikroTik\n                    · Chateau LTE6 ax",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/2260_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          17.0,
+          "Max power consumption 17 W"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 6",
+          "Wi-Fi 6"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "dimensions_mm": [
+          "text",
+          "240 x 156 x 44 mm",
+          "240 x 156 x 44 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-40°C to +70°C",
+          "Operating temperature -40°C to +70°C"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "4X GIGABIT ETHERNET PORTS",
+          "4X GIGABIT ETHERNET PORTS"
+        ],
+        "cellular_downlink_mbps": [
+          "number",
+          11.2,
+          "LTE TDD bands 38 (2600MHz) / 40 (2300MHz) / 41 (2500MHz) 3G Category R8 (42.2Mbps Downlink, 11.2Mbps"
+        ]
+      }
+    },
+    {
+      "product_id": 1326,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "Chateau LTE7 ax",
+      "url": "https://mikrotik.com/product/chateau_lte7_ax",
+      "source_urls": [
+        "https://mikrotik.com/product/chateau_lte7_ax",
+        "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+        "ethernet_interfaces": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+        "vpn_protocols": "https://mikrotik.com/product/chateau_lte7_ax",
+        "cellular_standard": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+        "router_wifi_standard": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+        "router_supported_bands": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf",
+        "operating_temperature_c": "https://cdn.mikrotik.com/web-assets/product_files/ChateauLTE7ax_260101.pdf"
+      },
+      "title": "MikroTik\n                    · Chateau LTE7 ax",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/2558_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          21.5,
+          "Max power consumption 21.5 W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "4X GIGABIT ETHERNET PORTS",
+          "4X GIGABIT ETHERNET PORTS"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 6",
+          "Wi-Fi 6"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "dimensions_mm": [
+          "text",
+          "240 x 156 x 44 mm",
+          "240 x 156 x 44 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-40°C to +70°C",
+          "Operating temperature -40°C to +70°C"
+        ]
+      }
+    },
+    {
+      "product_id": 727,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "RB260GSP",
+      "url": "https://mikrotik.com/product/RB260GSP",
+      "source_urls": [
+        "https://mikrotik.com/product/RB260GSP"
+      ],
+      "evidence_url": "https://mikrotik.com/product/RB260GSP",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/RB260GSP",
+        "max_power_consumption_w": "https://mikrotik.com/product/RB260GSP",
+        "uplink_interfaces": "https://mikrotik.com/product/RB260GSP"
+      },
+      "title": "MikroTik\n                    · RB260GSP",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/911_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "113x139x28mm",
+          "113x139x28mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          53.0,
+          "Max power consumption 53 W"
+        ],
+        "uplink_interfaces": [
+          "text",
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "product_id": 1323,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "hAP ax S",
+      "url": "https://mikrotik.com/product/hap_ax_s",
+      "source_urls": [
+        "https://mikrotik.com/product/hap_ax_s",
+        "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf",
+      "spec_sources": {
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf",
+        "uplink_interfaces": "https://mikrotik.com/product/hap_ax_s",
+        "ethernet_interfaces": "https://mikrotik.com/product/hap_ax_s",
+        "vpn_protocols": "https://mikrotik.com/product/hap_ax_s",
+        "cellular_standard": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf",
+        "router_wifi_standard": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf",
+        "router_supported_bands": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf",
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf",
+        "operating_temperature_c": "https://cdn.mikrotik.com/web-assets/product_files/hAPaxS_251111.pdf"
+      },
+      "title": "MikroTik\n                    · hAP ax S",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/2502_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "max_power_consumption_w": [
+          "number",
+          34.0,
+          "Max power consumption 34 W"
+        ],
+        "uplink_interfaces": [
+          "text",
+          "1 (2.5G supported)",
+          "1 (2.5G supported)"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "5x Gigabit Ethernet ports",
+          "5x Gigabit Ethernet ports"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "5G",
+          "5G"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 6",
+          "Wi-Fi 6"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "dimensions_mm": [
+          "text",
+          "156 x 127 x 36 mm",
+          "156 x 127 x 36 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-40°C to +70°C",
+          "Operating temperature -40°C to +70°C"
+        ]
+      }
+    },
+    {
+      "product_id": 1321,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "hEX",
+      "url": "https://mikrotik.com/product/RB750Gr3",
+      "source_urls": [
+        "https://mikrotik.com/product/RB750Gr3",
+        "https://cdn.mikrotik.com/web-assets/product_files/hEX_250130.pdf",
+        "https://cdn.mikrotik.com/web-assets/product_files/RBhEX_191018.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/RBhEX_191018.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/hEX_250130.pdf",
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/hEX_250130.pdf",
+        "vpn_protocols": "https://cdn.mikrotik.com/web-assets/product_files/hEX_250130.pdf",
+        "cellular_standard": "https://mikrotik.com/product/RB750Gr3"
+      },
+      "title": "MikroTik\n                    · hEX",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1405_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "113x89x28mm",
+          "113x89x28mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          5.0,
+          "Max Power consumption 5 W"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ]
+      }
+    },
+    {
+      "product_id": 345,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "hEX RB750Gr3",
+      "url": "https://mikrotik.com/product/RB750Gr3",
+      "source_urls": [
+        "https://mikrotik.com/product/RB750Gr3"
+      ],
+      "evidence_url": "https://mikrotik.com/product/RB750Gr3",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/RB750Gr3",
+        "max_power_consumption_w": "https://mikrotik.com/product/RB750Gr3",
+        "vpn_protocols": "https://mikrotik.com/product/RB750Gr3",
+        "cellular_standard": "https://mikrotik.com/product/RB750Gr3"
+      },
+      "title": "MikroTik\n                    · hEX",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1405_tm.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "113x89x28mm",
+          "113x89x28mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          10.0,
+          "Max power consumption 10 W"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ]
+      }
+    },
+    {
+      "product_id": 1317,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "hEX S",
+      "url": "https://mikrotik.com/product/hex_s",
+      "source_urls": [
+        "https://mikrotik.com/product/hex_s",
+        "https://cdn.mikrotik.com/web-assets/product_files/hEX_S_250118.pdf",
+        "https://cdn.mikrotik.com/web-assets/product_files/hEXSqg_191001.pdf",
+        "https://cdn.mikrotik.com/web-assets/product_files/HEXs-DIM-v1_210736.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/HEXs-DIM-v1_210736.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/hEX_S_250118.pdf",
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/hEX_S_250118.pdf",
+        "uplink_interfaces": "https://mikrotik.com/product/hex_s",
+        "ethernet_interfaces": "https://mikrotik.com/product/hex_s",
+        "vpn_protocols": "https://cdn.mikrotik.com/web-assets/product_files/hEX_S_250118.pdf",
+        "cellular_standard": "https://mikrotik.com/product/hex_s",
+        "operating_temperature_c": "https://cdn.mikrotik.com/web-assets/product_files/hEX_S_250118.pdf"
+      },
+      "title": "MikroTik\n                    · hEX S",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1539_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "113 x 89 x 28 mm",
+          "113 x 89 x 28 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          24.0,
+          "Max power consumption 24 W"
+        ],
+        "uplink_interfaces": [
+          "text",
+          "1",
+          "1"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "5x Gigabit Ethernet, SFP, Dual Core 880MHz CPU, 256MB RAM, USB, microSD, RouterOS L4, IPsec hardware encryption support",
+          "5x Gigabit Ethernet, SFP, Dual Core 880MHz CPU, 256MB RAM, USB, microSD, RouterOS L4, IPsec hardware encryption support"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-40°C to +70°C",
+          "Operating temperature -40°C to +70°C"
+        ]
+      }
+    },
+    {
+      "product_id": 343,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "hEX S RB760iGS",
+      "url": "https://mikrotik.com/product/hex_s",
+      "source_urls": [
+        "https://mikrotik.com/product/hex_s"
+      ],
+      "evidence_url": "https://mikrotik.com/product/hex_s",
+      "spec_sources": {
+        "dimensions_mm": "https://mikrotik.com/product/hex_s",
+        "max_power_consumption_w": "https://mikrotik.com/product/hex_s",
+        "uplink_interfaces": "https://mikrotik.com/product/hex_s",
+        "ethernet_interfaces": "https://mikrotik.com/product/hex_s",
+        "vpn_protocols": "https://mikrotik.com/product/hex_s",
+        "cellular_standard": "https://mikrotik.com/product/hex_s"
+      },
+      "title": "MikroTik\n                    · hEX S",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1539_tm.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "113 x 89 x 28 mm",
+          "113 x 89 x 28 mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          24.0,
+          "Max power consumption 24 W"
+        ],
+        "uplink_interfaces": [
+          "text",
+          "1",
+          "1"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "5x Gigabit Ethernet, SFP, Dual Core 880MHz CPU, 256MB RAM, USB, microSD, RouterOS L4, IPsec hardware encryption support",
+          "5x Gigabit Ethernet, SFP, Dual Core 880MHz CPU, 256MB RAM, USB, microSD, RouterOS L4, IPsec hardware encryption support"
+        ],
+        "vpn_protocols": [
+          "text",
+          "IPsec",
+          "IPsec"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ]
+      }
+    },
+    {
+      "product_id": 1322,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "hEX lite",
+      "url": "https://mikrotik.com/product/RB750r2",
+      "source_urls": [
+        "https://mikrotik.com/product/RB750r2",
+        "https://cdn.mikrotik.com/web-assets/product_files/hEX_lite_210251.pdf",
+        "https://cdn.mikrotik.com/web-assets/product_files/hEXlite-qgwnc_191023.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/hEXlite-qgwnc_191023.pdf",
+      "spec_sources": {
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/hEX_lite_210251.pdf",
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/hEXlite-qgwnc_191023.pdf",
+        "cellular_standard": "https://mikrotik.com/product/RB750r2"
+      },
+      "title": "MikroTik\n                    · hEX lite",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/1040_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "dimensions_mm": [
+          "text",
+          "113 x 89 x 28mm",
+          "113 x 89 x 28mm"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          2.0,
+          "power consumption of this device is 2 W"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ]
+      }
+    },
+    {
+      "product_id": 1327,
+      "status": "ok",
+      "brand": "MikroTik",
+      "model": "wAP ax LTE7 kit",
+      "url": "https://mikrotik.com/product/wap_ax_lte7",
+      "source_urls": [
+        "https://mikrotik.com/product/wap_ax_lte7",
+        "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf"
+      ],
+      "evidence_url": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+      "spec_sources": {
+        "ip_rating": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+        "max_power_consumption_w": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+        "cellular_standard": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+        "router_wifi_standard": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+        "router_supported_bands": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+        "dimensions_mm": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf",
+        "operating_temperature_c": "https://cdn.mikrotik.com/web-assets/product_files/wAPaxLTE7kit_260359.pdf"
+      },
+      "title": "MikroTik\n                    · wAP ax LTE7 kit",
+      "image_url": "https://cdn.mikrotik.com/web-assets/rb_images/2598_lg.webp",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          13.0,
+          "Max power consumption 13 W"
+        ],
+        "cellular_standard": [
+          "text",
+          "LTE",
+          "LTE"
+        ],
+        "router_wifi_standard": [
+          "text",
+          "Wi-Fi 6",
+          "Wi-Fi 6"
+        ],
+        "router_supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "dimensions_mm": [
+          "text",
+          "229 x 113 x 43 mm",
+          "229 x 113 x 43 mm"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "-30°C to +70°C",
+          "Operating temperature -30°C to +70°C"
+        ]
+      }
+    }
+  ]
+}

@@ -166,13 +166,13 @@ class ImportServiceTests(TestCase):
     def test_product_type_template_rejects_metadata_mismatch(self):
         product_type = ProductType.objects.get(
             category__slug="managed-switches",
-            code="l2",
+            code="l2_non_poe",
         )
         job = create_job(
             self.user,
             product_type_workbook_upload(
                 product_type,
-                metadata_product_type_code="l3",
+                metadata_product_type_code="l3_non_poe",
             ),
             product_type=product_type,
         )

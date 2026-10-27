@@ -1,0 +1,199 @@
+{
+  "stats": {
+    "ok": 3
+  },
+  "results": [
+    {
+      "product_id": 1246,
+      "status": "ok",
+      "brand": "Grandstream",
+      "model": "GWN7672L",
+      "url": "https://www.grandstream.com/networking-solutions/indoor-wifi-access-points/product/gwn7672l",
+      "source_urls": [
+        "https://www.grandstream.com/networking-solutions/indoor-wifi-access-points/product/gwn7672l",
+        "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_French.pdf",
+        "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_German.pdf",
+        "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf"
+      ],
+      "evidence_url": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.grandstream.com/networking-solutions/indoor-wifi-access-points/product/gwn7672l",
+        "max_power_consumption_w": "https://www.grandstream.com/networking-solutions/indoor-wifi-access-points/product/gwn7672l",
+        "power_method": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "wireless_range": "https://www.grandstream.com/networking-solutions/indoor-wifi-access-points/product/gwn7672l",
+        "max_ssids": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "centralized_management": "https://www.grandstream.com/networking-solutions/indoor-wifi-access-points/product/gwn7672l",
+        "wireless_security": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "max_channel_width_mhz": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "mimo_5g": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "mimo_6g": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "total_spatial_streams": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "fast_roaming": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf",
+        "mesh_support": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7672L/Datasheet_GWN7672L_Polish.pdf"
+      },
+      "title": "GWN7672L | Grandstream Networks",
+      "image_url": "https://www.grandstream.com/hubfs/GWN7672L_1.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          22.0,
+          "Maximum Power Consumption: 22W"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "wireless_range": [
+          "text",
+          "Up to 175 M",
+          "Range Up to 175 M"
+        ],
+        "max_ssids": [
+          "number",
+          48,
+          "48"
+        ],
+        "centralized_management": [
+          "text",
+          "Product Search Tool",
+          "Product Search Tool"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 × 5",
+          "5 GHz: 2 × 5"
+        ],
+        "mimo_6g": [
+          "text",
+          "2 × 5",
+          "6 GHz: 2 × 5"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11k / 802.11r / 802.11v",
+          "802.11k / 802.11r / 802.11v"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ]
+      }
+    },
+    {
+      "product_id": 1272,
+      "status": "ok",
+      "brand": "Grandstream",
+      "model": "GWN7672WM",
+      "url": "https://documentation.grandstream.com/knowledge-base/gwn7672wm-quick-installation-guide/",
+      "source_urls": [
+        "https://documentation.grandstream.com/knowledge-base/gwn7672wm-quick-installation-guide/"
+      ],
+      "evidence_url": "https://documentation.grandstream.com/knowledge-base/gwn7672wm-quick-installation-guide/",
+      "spec_sources": {
+        "max_clients": "https://documentation.grandstream.com/knowledge-base/gwn7672wm-quick-installation-guide/",
+        "mesh_support": "https://documentation.grandstream.com/knowledge-base/gwn7672wm-quick-installation-guide/"
+      },
+      "title": "GWN7672WM – Quick Installation Guide - Documentation Center",
+      "image_url": "https://documentation.grandstream.com/wp-content/uploads/2026/06/GWN7672WM-Packge-Content.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "max_clients": [
+          "number",
+          384,
+          "384 concurrent clients"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "mesh"
+        ]
+      }
+    },
+    {
+      "product_id": 568,
+      "status": "ok",
+      "brand": "Grandstream",
+      "model": "GWN7831",
+      "url": "https://www.grandstream.com/products/networking-solutions/network-switches/product/gwn7830-gwn7831-gwn7832",
+      "source_urls": [
+        "https://www.grandstream.com/products/networking-solutions/network-switches/product/gwn7830-gwn7831-gwn7832",
+        "https://www.grandstream.com/hubfs/Grandstream%20Marketing%20Assets/Datasheets/Fiber_Port_Module_English.pdf",
+        "https://www.grandstream.com/hubfs/Product_Documentation/GWN7830%20Series/Datasheet_GWN7830_Series_French.pdf",
+        "https://www.grandstream.com/hubfs/Product_Documentation/GWN7830%20Series/Datasheet_GWN7830_Series_German.pdf"
+      ],
+      "evidence_url": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7830%20Series/Datasheet_GWN7830_Series_German.pdf",
+      "spec_sources": {
+        "ip_rating": "https://www.grandstream.com/products/networking-solutions/network-switches/product/gwn7830-gwn7831-gwn7832",
+        "lightning_protection_kv": "https://www.grandstream.com/products/networking-solutions/network-switches/product/gwn7830-gwn7831-gwn7832",
+        "qos_support": "https://www.grandstream.com/products/networking-solutions/network-switches/product/gwn7830-gwn7831-gwn7832",
+        "redundant_power": "https://www.grandstream.com/products/networking-solutions/network-switches/product/gwn7830-gwn7831-gwn7832",
+        "max_power_consumption_w": "https://www.grandstream.com/hubfs/Grandstream%20Marketing%20Assets/Datasheets/Fiber_Port_Module_English.pdf",
+        "ethernet_interfaces": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7830%20Series/Datasheet_GWN7830_Series_German.pdf",
+        "dimensions_mm": "https://www.grandstream.com/hubfs/Product_Documentation/GWN7830%20Series/Datasheet_GWN7830_Series_German.pdf"
+      },
+      "title": "GWN7830 / GWN7831 / GWN7832 | Grandstream Networks",
+      "image_url": "https://www.grandstream.com/hubfs/Partner_Marketing_Kit/GWN_Switches_PMK/Social%20Image-GWN7830-Series-No%20text.png",
+      "wifi_standard": "",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP66",
+          "IP66"
+        ],
+        "lightning_protection_kv": [
+          "text",
+          "6 kV",
+          "6KV surge protection"
+        ],
+        "qos_support": [
+          "text",
+          "Port priority",
+          "Port priority"
+        ],
+        "redundant_power": [
+          "boolean",
+          true,
+          "Redundant Power Supply"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          1.0,
+          "Max Power Consumption 1W"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "4 Gigabit-Ethernet-Ports",
+          "4 Gigabit-Ethernet-Ports"
+        ],
+        "dimensions_mm": [
+          "text",
+          "330 × 175 × 44 mm",
+          "330 × 175 × 44 mm"
+        ]
+      }
+    }
+  ]
+}

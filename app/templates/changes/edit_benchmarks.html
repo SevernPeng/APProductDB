@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Manage Benchmarks · {{ product.brand.name }} {{ product.model }}{% endblock %}
+
+{% block content %}
+<nav aria-label="Breadcrumb" class="mb-3">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'product-detail' product.pk %}">{{ product.brand.name }} {{ product.model }}</a></li>
+    <li class="breadcrumb-item active">Manage Benchmarks</li>
+  </ol>
+</nav>
+
+<div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+  <div>
+    <h1 class="h3 mb-1">Manage Benchmarks</h1>
+    <p class="text-body-secondary mb-0">Competitor relationships are managed separately from product content.</p>
+  </div>
+  <a class="btn btn-outline-secondary" href="{% url 'product-detail' product.pk %}">Back to product</a>
+</div>
+
+<div class="row g-4 align-items-start">
+  <div class="col-12 col-xl-5">
+    <div class="card border-0 shadow-sm">
+      <div class="card-header bg-white py-3"><strong>Current Competitors</strong></div>
+      <div class="list-group list-group-flush">
+        {% for match in matches %}
+          <div class="list-group-item p-3 d-flex justify-content-between align-items-center gap-3">
+            <div>
+              <a class="fw-semibold text-decoration-none" href="{% url 'product-detail' match.competitor_product.pk %}">{{ match.competitor_product.brand.name }} {{ match.competitor_product.model }}</a>
+              <div class="small text-body-secondary">{{ match.competitor_product.region }}{% if match.competitor_product.hardware_version %} · {{ match.competitor_product.hardware_version }}{% endif %} · {{ match.get_match_type_display }} · {{ match.get_match_level_display }}</div>
+            </div>
+            <form method="post">
+              {% csrf_token %}
+              <button class="btn btn-sm btn-outline-danger" type="submit" name="action" value="remove_match:{{ match.pk }}">Remove</button>
+            </form>
+          </div>
+        {% empty %}
+          <div class="list-group-item p-4 text-body-secondary">No competitors are currently linked.</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-7">
+    <div class="card border-0 shadow-sm">
+      <div class="card-header bg-white py-3"><strong>Add Competitor Product</strong></div>
+      <div class="card-body p-4">
+        <div class="alert alert-light border small">Enter the competitor as product data. The database is checked automatically; an exact existing product is reused, otherwise a new product is created. You will then continue on that competitor's Edit page.</div>
+        <form method="post" enctype="multipart/form-data" novalidate>
+          {% csrf_token %}
+          <input type="hidden" name="action" value="add_match">
+          {% if form.non_field_errors %}<div class="alert alert-danger">{{ form.non_field_errors }}</div>{% endif %}
+          <div class="row g-3">
+            {% for field in form %}
+              <div class="{% if field.name == 'relation_reason' or field.name == 'request_reason' or field.name == 'attachment' %}col-12{% else %}col-md-6{% endif %}">
+                <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.help_text %}<div class="form-text">{{ field.help_text }}</div>{% endif %}
+                {% for error in field.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+          <button class="btn btn-primary mt-4" type="submit">Add and edit competitor</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

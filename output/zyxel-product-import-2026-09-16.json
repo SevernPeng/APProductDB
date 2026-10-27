@@ -1,0 +1,2059 @@
+{
+  "stats": {
+    "not_found": 2,
+    "ok": 29
+  },
+  "results": [
+    {
+      "product_id": 1158,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "DAC100G-1M",
+      "url": "https://store.zyxel.com/dac100g-1m-zz0101f.html",
+      "source_urls": [
+        "https://store.zyxel.com/dac100g-1m-zz0101f.html",
+        "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/DAC100G-1M/datasheet/DAC100G-1M_4.pdf"
+      },
+      "title": "100G QSFP28 DAC 1M  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/d/a/dac100g-1m.png?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265&format=jpeg",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1180,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "DAC10G-1M",
+      "url": "https://store.zyxel.com/dac10g-1m-zz0103f.html?___store=us_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/dac10g-1m-zz0103f.html?___store=us_en_storeview",
+        "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/DAC10G-1M/datasheet/DAC10G-1M_17.pdf"
+      },
+      "title": "Fiber Accessory - Fiber Transceiver Accessories | Zyxel Networks  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/b/0/b08k6j57nk.main.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1164,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "DAC25G-1M",
+      "url": "https://store.zyxel.com/dac25g-1m-zz0101f.html?___store=nd_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/dac25g-1m-zz0101f.html?___store=nd_en_storeview",
+        "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/DAC25G-1M/datasheet/DAC25G-1M_4.pdf"
+      },
+      "title": "25G SFP28 DAC Cable 1M   | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/d/a/dac25g-1m-zz0101f.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1328,
+      "status": "not_found",
+      "brand": "Zyxel",
+      "model": "FWA710"
+    },
+    {
+      "product_id": 905,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "GS1005HP",
+      "url": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp",
+      "source_urls": [
+        "https://www.zyxel.com/us/en-us/products/switch/gs1005hp",
+        "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+      "spec_sources": {
+        "fanless": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp",
+        "poe_standard": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "management_type": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "dimensions_mm": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "mac_address_table": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "poe_budget_w": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "poe_ports": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "max_poe_per_port_w": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications",
+        "qos_support": "https://www.zyxel.com/us/en-us/products/switch/gs1005hp/specifications"
+      },
+      "title": "GS1005HP | 5-Port GbE Unmanaged PoE Switch | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/gs1005hp/GS1005hp_Fanless_Noiseless_Design.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "dimensions_mm": [
+          "text",
+          "121 x 75 x 26 mm",
+          "121 x 75 x 26 mm"
+        ],
+        "mac_address_table": [
+          "text",
+          "2 K",
+          "MAC address table: 2 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          60.0,
+          "Total PoE Budget : 60W"
+        ],
+        "poe_ports": [
+          "number",
+          4,
+          "4 PoE+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "qos_support": [
+          "text",
+          "802.1p QoS",
+          "802.1p QoS"
+        ]
+      }
+    },
+    {
+      "product_id": 948,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "GS1008HP",
+      "url": "https://www.zyxel.com/global/en/products/switch/gs1008hp",
+      "source_urls": [
+        "https://www.zyxel.com/global/en/products/switch/gs1008hp",
+        "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+      "spec_sources": {
+        "fanless": "https://www.zyxel.com/global/en/products/switch/gs1008hp",
+        "poe_standard": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "management_type": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "dimensions_mm": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "mac_address_table": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "poe_budget_w": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "poe_ports": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "max_poe_per_port_w": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications",
+        "qos_support": "https://www.zyxel.com/global/en/products/switch/gs1008hp/specifications"
+      },
+      "title": "GS1008HP | 8-Port GbE Unmanaged PoE Switch | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/gs1008hp/gs1008hp_Fanless_Noiseless_Design.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "poe_standard": [
+          "text",
+          "802.3af / 802.3at",
+          "802.3af / 802.3at"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "dimensions_mm": [
+          "text",
+          "240 x 105 x 26 mm",
+          "240 x 105 x 26 mm"
+        ],
+        "mac_address_table": [
+          "text",
+          "4 K",
+          "MAC address table: 4 K"
+        ],
+        "poe_budget_w": [
+          "number",
+          60.0,
+          "Total PoE Budget : 60W"
+        ],
+        "poe_ports": [
+          "number",
+          8,
+          "8 PoE+ ports"
+        ],
+        "max_poe_per_port_w": [
+          "number",
+          30.0,
+          "30.0"
+        ],
+        "qos_support": [
+          "text",
+          "802.1p QoS",
+          "802.1p QoS"
+        ]
+      }
+    },
+    {
+      "product_id": 1039,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "MC1000-SFP-A",
+      "url": "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a",
+      "source_urls": [
+        "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a",
+        "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a/specification"
+      ],
+      "evidence_url": "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a/specification",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a/specification",
+        "accessory_interface_type": "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a/specification",
+        "accessory_mounting_type": "https://www.zyxel.com/in/en-in/products/switch/mc1000-sfp-a"
+      },
+      "title": "MC1000-SFP-A | 1000BASE-T to 1000BASE-X Media Converter | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/MC1000-SFP-A/MC1000-SFP-A_02_profile.jpg",
+      "wifi_standard": "",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "-10°C ~ 55°C",
+          "Operating temperature: -10°C ~ 55°C"
+        ],
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_mounting_type": [
+          "text",
+          "wall-mount design allow users to easily deploy the MC",
+          "wall-mount design allow users to easily deploy the MC"
+        ]
+      }
+    },
+    {
+      "product_id": 853,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "MG-108",
+      "url": "https://store.zyxel.com/mg-108-zz0101f.html?___store=us_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/mg-108-zz0101f.html?___store=us_en_storeview",
+        "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+      "spec_sources": {
+        "fanless": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "ethernet_interfaces": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "management_type": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "operating_temperature_c": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "switching_capacity_gbps": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "mac_address_table": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "jumbo_frame_bytes": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf",
+        "qos_support": "https://download.zyxel.com/MG-108/datasheet/MG-108_4.pdf"
+      },
+      "title": "MG-108 | 8-Port 2.5GbE Unmanaged Switch | Zyxel Networks  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/m/g/mg-108_p.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+      "wifi_standard": "",
+      "specs": {
+        "fanless": [
+          "boolean",
+          true,
+          "Fanless"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "8 x 2.5 Gigabit Ports",
+          "8 x 2.5 Gigabit Ports"
+        ],
+        "management_type": [
+          "text",
+          "Unmanaged",
+          "Unmanaged"
+        ],
+        "operating_temperature_c": [
+          "text",
+          "0°C to 40°C/32°F to 104°F 0°C to 40°C/32°F to 104°F",
+          "Operating Temperature 0°C to 40°C/32°F to 104°F 0°C to 40°C/32°F to 104°F"
+        ],
+        "switching_capacity_gbps": [
+          "number",
+          25.0,
+          "Switching capacity 25 Gbps"
+        ],
+        "mac_address_table": [
+          "text",
+          "16 K",
+          "MAC address table 16 K"
+        ],
+        "jumbo_frame_bytes": [
+          "number",
+          12288,
+          "Jumbo frame 12 KB"
+        ],
+        "qos_support": [
+          "text",
+          "802.1p QoS",
+          "802.1p QoS"
+        ]
+      }
+    },
+    {
+      "product_id": 1247,
+      "status": "not_found",
+      "brand": "Zyxel",
+      "model": "NWA130BE"
+    },
+    {
+      "product_id": 104,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA210AXv2",
+      "url": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2",
+      "source_urls": [
+        "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2",
+        "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications",
+        "mimo_5g": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2",
+        "mesh_support": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications",
+        "max_channel_width_mhz": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications",
+        "power_method": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications",
+        "fast_roaming": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications",
+        "wireless_security": "https://www.zyxel.com/pl/pl/products/wireless/nwa210axv2/specifications"
+      },
+      "title": "NWA210AXv2 | Punkt dostępowy AX5400 6-Stream WiFi 6 Dual-Radio NebulaFlex | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa210axv2/NWA210AXv2_ICO_1.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          6,
+          "6-Stream"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz) + 2x2"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "WPA3",
+          "WPA3"
+        ]
+      }
+    },
+    {
+      "product_id": 32,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA240BE",
+      "url": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be",
+      "source_urls": [
+        "https://www.zyxel.com/nl/nl/products/wireless/nwa240be",
+        "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "mesh_support": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "wireless_security": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "rate_6g_mbps": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "supported_bands": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "power_method": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "antenna_type": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications",
+        "fast_roaming": "https://www.zyxel.com/nl/nl/products/wireless/nwa240be/specifications"
+      },
+      "title": "NWA240BE | BE15000 8-Stream WiFi 7 Triple-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa240be/NWA240BE_1200x628_openg.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          8,
+          "8-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          688,
+          "2.4 GHz: 688 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          8646,
+          "5 GHz: 8646 Mbps"
+        ],
+        "rate_6g_mbps": [
+          "number",
+          5764,
+          "6 GHz: 5764 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5/5/10GbE LAN",
+          "1 x 1/2.5/5/10GbE LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 149,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA50AX",
+      "url": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax",
+      "source_urls": [
+        "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax",
+        "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "wireless_security": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "supported_bands": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "power_method": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "antenna_type": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "mimo_2g": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "mimo_5g": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "mesh_support": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications",
+        "fast_roaming": "https://www.zyxel.com/uk/en-gb/products/wireless/nwa50ax/specifications"
+      },
+      "title": "NWA50AX | AX1800 4-Stream WiFi 6 Dual-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa50ax/award_Taiwan_excellence_2023.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          1200,
+          "5GHz: 1200 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3 dBi",
+          "Antenna gain\n \n 2.4 GHz: 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz: 3 dBi, 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz: 4 dBi, 2x2"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 136,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA50AX PRO",
+      "url": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro",
+      "source_urls": [
+        "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro",
+        "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "mesh_support": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "wireless_security": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "supported_bands": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "power_method": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications",
+        "antenna_type": "https://www.zyxel.com/us/en-us/products/wireless/nwa50ax-pro/specifications"
+      },
+      "title": "NWA50AX PRO | AX3000 WiFi 6 Dual-Radio Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa50ax-pro/01_multi-gig_wifi6.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          2400,
+          "5GHz: 2400 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4GHz: 3 dBi",
+          "Antenna gain\n \n 2.4GHz: 3 dBi"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5Gbps LAN",
+          "1 x 1/2.5Gbps LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "3x3 + 2x2 MIMO Embedded Antenna",
+          "3x3 + 2x2 MIMO Embedded Antenna"
+        ]
+      }
+    },
+    {
+      "product_id": 74,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA50BE",
+      "url": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be",
+      "source_urls": [
+        "https://www.zyxel.com/pl/pl/products/wireless/nwa50be",
+        "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "mesh_support": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "supported_bands": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "power_method": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "antenna_type": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "fast_roaming": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications",
+        "wireless_security": "https://www.zyxel.com/pl/pl/products/wireless/nwa50be/specifications"
+      },
+      "title": "NWA50BE | BE5100 4-Stream WiFi 7 Dual-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa50be/06_onboarding_zyxel_access_point_to_cloud_with_nebula_app_thumbnail_1280x720.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          688,
+          "2.4GHz: 688Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          4324,
+          "5GHz: 4324Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5GbE LAN",
+          "1 x 1/2.5GbE LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Encryption",
+          "Encryption"
+        ]
+      }
+    },
+    {
+      "product_id": 284,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA55AX Pro",
+      "url": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro",
+      "source_urls": [
+        "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro",
+        "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+      "spec_sources": {
+        "ip_rating": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "total_spatial_streams": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "mesh_support": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "wireless_security": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "supported_bands": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "power_method": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "antenna_type": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications",
+        "fast_roaming": "https://www.zyxel.com/dk/da/products/wireless/nwa55ax-pro/specifications"
+      },
+      "title": "NWA55AX PRO | AX3000 4-Stream WiFi 6 Dual-Radio NebulaFlex Outdoor Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa55ax-pro/NWA55AXPRO_1200x628.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP55",
+          "IP55"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          2400,
+          "5GHz: 2400Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1GbE LAN",
+          "1 x 1GbE LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 305,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA55AXE",
+      "url": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe",
+      "source_urls": [
+        "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe",
+        "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+      "spec_sources": {
+        "ip_rating": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "total_spatial_streams": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "mesh_support": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "wireless_security": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "supported_bands": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "power_method": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "antenna_type": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications",
+        "fast_roaming": "https://www.zyxel.com/us/en-us/products/wireless/nwa55axe/specifications"
+      },
+      "title": "NWA55AXE | AX1800 4-Stream WiFi 6 Dual-Radio NebulaFlex Outdoor Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/nwa55axe/Durable_Weatherproof_Outdoor_WiFi_6_AP.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP55",
+          "IP55"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          1200,
+          "5GHz: 1200 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4GHz: 4 dBi",
+          "Antenna gain\n \n 2.4GHz: 4 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2x2 External Antenna",
+          "2x2 External Antenna"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 259,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA55BE",
+      "url": "https://www.zyxel.com/global/en/products/wireless/nwa55be",
+      "source_urls": [
+        "https://www.zyxel.com/global/en/products/wireless/nwa55be",
+        "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+      "spec_sources": {
+        "ip_rating": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "total_spatial_streams": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "mesh_support": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "wireless_security": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "supported_bands": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "power_method": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "antenna_type": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications",
+        "fast_roaming": "https://www.zyxel.com/global/en/products/wireless/nwa55be/specifications"
+      },
+      "title": "NWA55BE | BE5100 4-Stream WiFi 7 Dual-Radio NebulaFlex Outdoor Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa55be/07_zyxel-nebula-nwa55axe-how-to-configure-app_1280x720.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "ip_rating": [
+          "text",
+          "IP55",
+          "IP55"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          688,
+          "2.4GHz: 688Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          4324,
+          "5GHz: 4324Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5GbE LAN",
+          "1 x 1/2.5GbE LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "2 detachable 2.4/5GHz external antenna",
+          "2 detachable 2.4/5GHz external antenna"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 150,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA90AX",
+      "url": "https://www.zyxel.com/it/it/products/wireless/nwa90ax",
+      "source_urls": [
+        "https://www.zyxel.com/it/it/products/wireless/nwa90ax",
+        "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "wireless_security": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "supported_bands": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "power_method": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "antenna_type": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "mimo_2g": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "mimo_5g": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "mesh_support": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications",
+        "fast_roaming": "https://www.zyxel.com/it/it/products/wireless/nwa90ax/specifications"
+      },
+      "title": "NWA90AX | Access point dual-radio WiFi 6 a 4 stream AX1800 con tecnologia NebulaFlex | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/nwa90ax/pc_pro_award.png",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4 stream"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          1200,
+          "5GHz: 1200 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3at)",
+          "PoE (802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3 dBi",
+          "Antenna gain\n\n\n \n 2.4 GHz: 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz: 3 dBi, 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5GHz: 4 dBi, 2x2"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 135,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA90AX PRO",
+      "url": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro",
+      "source_urls": [
+        "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro",
+        "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "mesh_support": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "wireless_security": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "supported_bands": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "power_method": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "antenna_type": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "mimo_2g": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "mimo_5g": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications",
+        "fast_roaming": "https://www.zyxel.com/in/en-in/products/wireless/nwa90ax-pro/specifications"
+      },
+      "title": "NWA90AX PRO | AX3000 4-Stream WiFi 6 Dual-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa90ax-pro/01_multi-gig_wifi6.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          2400,
+          "5GHz: 2400 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3 dBi",
+          "Antenna gain\n\n 2.4 GHz: 3 dBi"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5Gbps LAN",
+          "1 x 1/2.5Gbps LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2",
+          "2.4 GHz: 3 dBi, 2x2"
+        ],
+        "mimo_5g": [
+          "text",
+          "3x3",
+          "5GHz: 4 dBi, 3x3"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 75,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "NWA90BE",
+      "url": "https://www.zyxel.com/global/en/products/wireless/nwa90be",
+      "source_urls": [
+        "https://www.zyxel.com/global/en/products/wireless/nwa90be",
+        "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "mesh_support": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "wireless_security": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "supported_bands": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "power_method": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "antenna_type": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications",
+        "fast_roaming": "https://www.zyxel.com/global/en/products/wireless/nwa90be/specifications"
+      },
+      "title": "NWA90BE | BE5100 4-Stream WiFi 7 Dual-Radio NebulaFlex Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/nwa90be/04_Secure-Authentication-mobile.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          688,
+          "2.4GHz: 688Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          4324,
+          "5GHz: 4324Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5GbE LAN",
+          "1 x 1/2.5GbE LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 1050,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "QSFP100G-SR4",
+      "url": "https://store.zyxel.com/qsfp100g-sr4-zz0101f.html?___store=emea_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/qsfp100g-sr4-zz0101f.html?___store=emea_en_storeview",
+        "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/QSFP100G-SR4/datasheet/QSFP100G-SR4_4.pdf"
+      },
+      "title": "100G QSFP28 850nm Transceiver  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/q/s/qsfp100g-sr4-zz0101f_1.png?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265&format=jpeg",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1092,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "SFP10G-LR",
+      "url": "https://store.zyxel.com/sfp10g-lr-zz0101f.html?___store=us_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/sfp10g-lr-zz0101f.html?___store=us_en_storeview",
+        "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/SFP10G-LR/datasheet/SFP10G-LR_18.pdf"
+      },
+      "title": "Fiber Accessory - Fiber Transceiver Accessories | Zyxel Networks  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/b/0/b008m2v5hk.main.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1082,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "SFP10G-SR",
+      "url": "https://store.zyxel.com/sfp10g-sr-zz0101f.html?___store=us_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/sfp10g-sr-zz0101f.html?___store=us_en_storeview",
+        "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/SFP10G-SR/datasheet/SFP10G-SR_17.pdf"
+      },
+      "title": "Fiber Accessory - Fiber Transceiver Accessories | Zyxel Networks  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/b/0/b008m2v5so.main.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ]
+      }
+    },
+    {
+      "product_id": 1072,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "SFP10G-T",
+      "url": "https://store.zyxel.com/sfp10g-t-zz0101f.html",
+      "source_urls": [
+        "https://store.zyxel.com/sfp10g-t-zz0101f.html",
+        "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/SFP10G-T/datasheet/SFP10G-T_8.pdf"
+      },
+      "title": "SFP Plus 10Gb RJ45 module - 30m  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/4/e/4e7e061e-53d2-4764-a8db-d6987d285ca9-0.png?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265&format=jpeg",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 1064,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "SFP25G-LR",
+      "url": "https://store.zyxel.com/sfp25g-lr-zz0101f.html?___store=uk_en_storeview",
+      "source_urls": [
+        "https://store.zyxel.com/sfp25g-lr-zz0101f.html?___store=uk_en_storeview",
+        "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/SFP25G-LR/datasheet/SFP25G-LR_4.pdf",
+        "accessory_max_distance_km": "https://store.zyxel.com/sfp25g-lr-zz0101f.html?___store=uk_en_storeview"
+      },
+      "title": "25G SFP28 1310nm Transceiver  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/s/f/sfp25g-lr-zz0101f_2.png?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265&format=jpeg",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ],
+        "accessory_max_distance_km": [
+          "number",
+          0.01,
+          "Max transmission distance: 10m"
+        ]
+      }
+    },
+    {
+      "product_id": 1057,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "SFP25G-SR",
+      "url": "https://store.zyxel.com/sfp25g-sr-zz0101f.html",
+      "source_urls": [
+        "https://store.zyxel.com/sfp25g-sr-zz0101f.html",
+        "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf"
+      ],
+      "evidence_url": "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf",
+      "spec_sources": {
+        "accessory_interface_type": "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf",
+        "accessory_connector_type": "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf",
+        "accessory_data_rate_gbps": "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf",
+        "accessory_wavelength_nm": "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf",
+        "accessory_fiber_mode": "https://download.zyxel.com/SFP25G-SR/datasheet/SFP25G-SR_4.pdf"
+      },
+      "title": "25G SFP28 850nm Transceiver  | Zyxel Store",
+      "image_url": "https://store.zyxel.com/media/catalog/product/s/f/sfp25g-sr-zz0101f_2.png?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265&format=jpeg",
+      "wifi_standard": "",
+      "specs": {
+        "accessory_interface_type": [
+          "text",
+          "SFP",
+          "SFP"
+        ],
+        "accessory_connector_type": [
+          "text",
+          "LC",
+          "LC"
+        ],
+        "accessory_data_rate_gbps": [
+          "number",
+          10.0,
+          "10G copper transceiver"
+        ],
+        "accessory_wavelength_nm": [
+          "number",
+          850,
+          "Wavelength 850nm"
+        ],
+        "accessory_fiber_mode": [
+          "text",
+          "Single-mode",
+          "Single mode"
+        ]
+      }
+    },
+    {
+      "product_id": 242,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "WAC500H",
+      "url": "https://www.zyxel.com/es/es/products/wireless/wac500h",
+      "source_urls": [
+        "https://www.zyxel.com/es/es/products/wireless/wac500h",
+        "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+      "spec_sources": {
+        "rate_2g_mbps": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "supported_bands": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "power_method": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "antenna_type": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "mesh_support": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "fast_roaming": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications",
+        "wireless_security": "https://www.zyxel.com/es/es/products/wireless/wac500h/specifications"
+      },
+      "title": "WAC500H | Punto de Acceso de Pared AC1200 WiFi 5 Wave 2 de 4 Flujos y Doble Radio NebulaFlex Pro | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/wac500h/mounting_01.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "rate_2g_mbps": [
+          "number",
+          300,
+          "2.4GHz: 300 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          866,
+          "5GHz: 866 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at)",
+          "PoE (802.3af / 802.3at)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3 dBi",
+          "Antenna gain\n \n 2.4 GHz: 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2x2 MIMO Embedded Antenna",
+          "2x2 MIMO Embedded Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Encryption",
+          "Encryption"
+        ]
+      }
+    },
+    {
+      "product_id": 214,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "WAX300H",
+      "url": "https://www.zyxel.com/br/pt/products/wireless/wax300h",
+      "source_urls": [
+        "https://www.zyxel.com/br/pt/products/wireless/wax300h",
+        "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "max_channel_width_mhz": "https://www.zyxel.com/br/pt/products/wireless/wax300h",
+        "power_method": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "centralized_management": "https://www.zyxel.com/br/pt/products/wireless/wax300h",
+        "wireless_security": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "supported_bands": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "antenna_gain_dbi": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "antenna_type": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "mimo_2g": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "mimo_5g": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "mesh_support": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications",
+        "fast_roaming": "https://www.zyxel.com/br/pt/products/wireless/wax300h/specifications"
+      },
+      "title": "WAX300H | AX3000 4-Stream WiFi 6 Dual-Radio NebulaFlex Pro Wall-Plate Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/wax300h/01_WiFi_connection.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          4,
+          "4-Stream"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          160,
+          "160 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "centralized_management": [
+          "text",
+          "cloud-managed",
+          "cloud-managed"
+        ],
+        "wireless_security": [
+          "text",
+          "Management and Reporting",
+          "Management and Reporting"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          2400,
+          "5GHz: 2400 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3 dBi",
+          "Antenna gain\n \n 2.4 GHz: 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "mimo_2g": [
+          "text",
+          "2X2",
+          "2.4 GHz: 3 dBi, 2X2"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2",
+          "5 GHz: 4 dBi, 2x2"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ]
+      }
+    },
+    {
+      "product_id": 163,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "WAX510D",
+      "url": "https://www.zyxel.com/es/es/products/wireless/wax510d",
+      "source_urls": [
+        "https://www.zyxel.com/es/es/products/wireless/wax510d",
+        "https://www.zyxel.com/es/es/products/wireless/wax510d/specification"
+      ],
+      "evidence_url": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+      "spec_sources": {
+        "centralized_management": "https://www.zyxel.com/es/es/products/wireless/wax510d",
+        "rate_2g_mbps": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "rate_5g_mbps": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "supported_bands": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "power_method": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "antenna_gain_dbi": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "antenna_type": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "mesh_support": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "fast_roaming": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification",
+        "wireless_security": "https://www.zyxel.com/es/es/products/wireless/wax510d/specification"
+      },
+      "title": "WAX510D | Punto de Acceso AX1800 WiFi 6 de 4 Flujos y Doble Radio NebulaFlex Pro | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/library/assets/products/wax510d/True_WiFi6_600x500_video_1.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "centralized_management": [
+          "text",
+          "cloud-managed",
+          "cloud-managed"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          575,
+          "2.4 GHz: 575 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          1200,
+          "5 GHz: 1200 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "5dBi",
+          "Gain 5dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "2x2 Dual-optimized Antenna",
+          "2x2 Dual-optimized Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Encryption",
+          "Encryption"
+        ]
+      }
+    },
+    {
+      "product_id": 56,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "WBE530",
+      "url": "https://www.zyxel.com/es/es/products/wireless/wbe530",
+      "source_urls": [
+        "https://www.zyxel.com/es/es/products/wireless/wbe530",
+        "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+      "spec_sources": {
+        "centralized_management": "https://www.zyxel.com/es/es/products/wireless/wbe530",
+        "rate_2g_mbps": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "rate_6g_mbps": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "supported_bands": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "power_method": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "antenna_type": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "mesh_support": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "fast_roaming": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications",
+        "wireless_security": "https://www.zyxel.com/es/es/products/wireless/wbe530/specifications"
+      },
+      "title": "WBE530 | Punto de Acceso BE11000 WiFi 7 de 6 Flujos y Triple Radio NebulaFlex Pro | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/wbe530/02_Purpose-Built_for_Modern_Classrooms.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "centralized_management": [
+          "text",
+          "cloud-managed",
+          "cloud-managed"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          688,
+          "2.4 GHz: 688 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          4324,
+          "5 GHz: 4324 Mbps"
+        ],
+        "rate_6g_mbps": [
+          "number",
+          5764,
+          "6 GHz: 5764 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC",
+          "PoE (802.3af / 802.3at / 802.3bt) / 12 VDC"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "2 x 1/2.5Gbps LAN",
+          "2 x 1/2.5Gbps LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Internal Antenna",
+          "Internal Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Encryption",
+          "Encryption"
+        ]
+      }
+    },
+    {
+      "product_id": 40,
+      "status": "ok",
+      "brand": "Zyxel",
+      "model": "WBE660S",
+      "url": "https://www.zyxel.com/de/de/products/wireless/wbe660s",
+      "source_urls": [
+        "https://www.zyxel.com/de/de/products/wireless/wbe660s",
+        "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications"
+      ],
+      "evidence_url": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+      "spec_sources": {
+        "total_spatial_streams": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "power_method": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "rate_2g_mbps": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "rate_5g_mbps": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "rate_6g_mbps": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "supported_bands": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "ethernet_interfaces": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "antenna_type": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "mesh_support": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "fast_roaming": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications",
+        "wireless_security": "https://www.zyxel.com/de/de/products/wireless/wbe660s/specifications"
+      },
+      "title": "WBE660S | BE22000 12-Stream WiFi 7 Triple-Radio NebulaFlex Pro Access Point | Zyxel Networks",
+      "image_url": "https://www.zyxel.com/sites/zyxel/files/library/assets/products/wbe660s/01_Enterprise-grade_WiFi_7.jpg",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "total_spatial_streams": [
+          "number",
+          12,
+          "12-Stream"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          1376,
+          "2.4 GHz: 1376 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          8646,
+          "5 GHz: 8646 Mbps"
+        ],
+        "rate_6g_mbps": [
+          "number",
+          11530,
+          "6 GHz: 11530 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz / 6 GHz",
+          "2.4 GHz / 5 GHz / 6 GHz"
+        ],
+        "ethernet_interfaces": [
+          "text",
+          "1 x 1/2.5/5/10Gbps LAN",
+          "1 x 1/2.5/5/10Gbps LAN"
+        ],
+        "antenna_type": [
+          "text",
+          "Smart Antenna",
+          "Smart Antenna"
+        ],
+        "mesh_support": [
+          "boolean",
+          true,
+          "Mesh"
+        ],
+        "fast_roaming": [
+          "text",
+          "802.11r",
+          "802.11r"
+        ],
+        "wireless_security": [
+          "text",
+          "Encryption",
+          "Encryption"
+        ]
+      }
+    }
+  ]
+}

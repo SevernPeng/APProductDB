@@ -1,0 +1,260 @@
+{
+  "stats": {
+    "ok": 4
+  },
+  "results": [
+    {
+      "product_id": 1273,
+      "status": "ok",
+      "brand": "Ruijie",
+      "model": "RG-AP1920",
+      "url": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+      "source_urls": [
+        "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "https://www.ruijie.com/en-global/resources/preview/rg-ap1920/"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/resources/preview/rg-ap1920/",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "max_power_consumption_w": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "rate_2g_mbps": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "rate_5g_mbps": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "supported_bands": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "max_channel_width_mhz": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "power_method": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "antenna_gain_dbi": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "wireless_range": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "antenna_type": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "max_ssids": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "mimo_2g": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "mimo_5g": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "total_spatial_streams": "https://www.ruijie.com/es-es/products/wireless/wall-plate-access-points/rg-ap1920",
+        "centralized_management": "https://www.ruijie.com/en-global/resources/preview/rg-ap1920/",
+        "wireless_security": "https://www.ruijie.com/en-global/resources/preview/rg-ap1920/"
+      },
+      "title": "RG-AP1920, Wi-Fi 7 Dual-Radio 3.570 Gbps Wall-Plate Access Point",
+      "image_url": "https://eo-sgp-cos.ruijie.com/background/other/2025-01-08/wireless-rg-ap1920_e4a3cba88e7942fc9f914660f7759775-20250108-181250.webp",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "–10°C to +40°C (14°F to 104°F)",
+          "Operating temperature: –10°C to +40°C (14°F to 104°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          16.8,
+          "Maximum power consumption: 16.8 W"
+        ],
+        "rate_2g_mbps": [
+          "number",
+          7.3,
+          "2.4 GHz: 7.3 Mbps"
+        ],
+        "rate_5g_mbps": [
+          "number",
+          7.3,
+          "5 GHz: 7.3 Mbps"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "max_channel_width_mhz": [
+          "number",
+          320,
+          "320 MHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at) / DC power",
+          "PoE (802.3af / 802.3at) / DC power"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "s, with peak antenna gain of 3 dBi",
+          "antennas, with peak antenna gain of 3 dBi"
+        ],
+        "wireless_range": [
+          "text",
+          "of 1,800–5,000 m",
+          "range of 1,800–5,000 m"
+        ],
+        "antenna_type": [
+          "text",
+          "Wi-Fi",
+          "Wi-Fi"
+        ],
+        "max_ssids": [
+          "number",
+          32,
+          "32"
+        ],
+        "mimo_2g": [
+          "text",
+          "2x2 MIMO",
+          "2.4 GHz: 2x2 MIMO"
+        ],
+        "mimo_5g": [
+          "text",
+          "2x2 MIMO",
+          "5 GHz: 2x2 MIMO"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ],
+        "centralized_management": [
+          "text",
+          "Cloud-managed",
+          "Cloud-managed"
+        ],
+        "wireless_security": [
+          "text",
+          "Switches",
+          "Switches"
+        ]
+      }
+    },
+    {
+      "product_id": 1270,
+      "status": "ok",
+      "brand": "Ruijie",
+      "model": "RG-AP210-L",
+      "url": "https://www.ruijie.com/en-global/support/documents/slide_75455/",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/support/documents/slide_75455/"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/support/documents/slide_75455/",
+      "spec_sources": {
+        "centralized_management": "https://www.ruijie.com/en-global/support/documents/slide_75455/",
+        "wireless_security": "https://www.ruijie.com/en-global/support/documents/slide_75455/"
+      },
+      "title": "Ruijie RG-AP210-L Series Access Points Hardware Installation and Reference Guide V1.00 - Ruijie Networks",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "centralized_management": [
+          "text",
+          "Cloud-managed",
+          "Cloud-managed"
+        ],
+        "wireless_security": [
+          "text",
+          "Switches",
+          "Switches"
+        ]
+      }
+    },
+    {
+      "product_id": 1254,
+      "status": "ok",
+      "brand": "Ruijie",
+      "model": "RG-AP880-AR",
+      "url": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+      "source_urls": [
+        "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR"
+      ],
+      "evidence_url": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+      "spec_sources": {
+        "operating_temperature_c": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "max_power_consumption_w": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "supported_bands": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "power_method": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "antenna_gain_dbi": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "antenna_type": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "mimo_2g": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "mimo_5g": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "total_spatial_streams": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR",
+        "wireless_security": "https://www.ruijie.com/vi-vn/products/wireless/indoor-access-points/RG-AP880-AR"
+      },
+      "title": "RG-AP880-AR, Wi-Fi 6 Quad-Radio 8.642 Gbps High-Density Indoor Access Point - Ruijie Networks",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "operating_temperature_c": [
+          "text",
+          "–10°C to +50°C (14°F to 122°F)",
+          "Operating temperature: –10°C to +50°C (14°F to 122°F)"
+        ],
+        "max_power_consumption_w": [
+          "number",
+          40.0,
+          "Max. Power Consumption 40 W"
+        ],
+        "supported_bands": [
+          "text",
+          "2.4 GHz / 5 GHz",
+          "2.4 GHz / 5 GHz"
+        ],
+        "power_method": [
+          "text",
+          "PoE (802.3af / 802.3at / 802.3bt)",
+          "PoE (802.3af / 802.3at / 802.3bt)"
+        ],
+        "antenna_gain_dbi": [
+          "text",
+          "2.4 GHz: 3 dBi",
+          "Antenna Gain \n \n \n 2.4 GHz: 3 dBi"
+        ],
+        "antenna_type": [
+          "text",
+          "Built-in smart antenna",
+          "Built-in smart antenna"
+        ],
+        "mimo_2g": [
+          "text",
+          "2 × 2 MIMO",
+          "2.4 GHz: 2 spatial streams, 2 × 2 MIMO"
+        ],
+        "mimo_5g": [
+          "text",
+          "2 × 2 MU-MIMO",
+          "5 GHz: 2 spatial streams, 2 × 2 MU-MIMO"
+        ],
+        "total_spatial_streams": [
+          "number",
+          4,
+          "Sum of per-radio MIMO streams"
+        ],
+        "wireless_security": [
+          "text",
+          "PSK and web authentication",
+          "PSK and web authentication"
+        ]
+      }
+    },
+    {
+      "product_id": 1249,
+      "status": "ok",
+      "brand": "Ruijie",
+      "model": "RG-AP9220",
+      "url": "https://www.ruijie.com/en-global/resources/preview/rg-ap9220/",
+      "source_urls": [
+        "https://www.ruijie.com/en-global/resources/preview/rg-ap9220/"
+      ],
+      "evidence_url": "https://www.ruijie.com/en-global/resources/preview/rg-ap9220/",
+      "spec_sources": {
+        "centralized_management": "https://www.ruijie.com/en-global/resources/preview/rg-ap9220/",
+        "wireless_security": "https://www.ruijie.com/en-global/resources/preview/rg-ap9220/"
+      },
+      "title": "Ruijie RG-AP9220 Wi-Fi 7 Dual-Radio Indoor Access Point Datasheet - Ruijie Networks",
+      "image_url": "",
+      "wifi_standard": "Wi-Fi 7",
+      "specs": {
+        "centralized_management": [
+          "text",
+          "Cloud-managed",
+          "Cloud-managed"
+        ],
+        "wireless_security": [
+          "text",
+          "Switches",
+          "Switches"
+        ]
+      }
+    }
+  ]
+}
